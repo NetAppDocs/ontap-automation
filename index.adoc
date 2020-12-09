@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: index.html
+summary: Welcome to the ONTAP Automation documentation portal.
+---
+
+= ONTAP Automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+This site contains the content for ONTAP automation.
