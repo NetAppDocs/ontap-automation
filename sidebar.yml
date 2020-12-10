@@ -1,22 +1,6 @@
 entries:
   - title: ONTAP Automation
     url: /index.html
-  - title: Getting started with the REST API
-    url: getting_started_with_the_rest_api.html
-    entries:
-      - title: Retrieving the cluster software version
-        url: /retrieving_the_cluster_software_version.html
-      - title: Hello world
-        url: /hello_world.html
-      - title: Accessing the ONTAP API documentation page
-        url: /accessing_the_ontap_api_documentation_page.html
-      - title: Workflow processes using the ONTAP REST API
-        url: /workflow_processes_using_the_ontap_rest_api.html
-        entries:
-          - title: Preparing to use the workflow processes
-            url: /preparing_to_use_the_workflow_processes.html
-          - title: Workflow 1  Updating the cluster contact and checking job state
-            url: /workflow_1__updating_the_cluster_contact_and_checking_job_state.html
   - title: Understanding the ONTAP REST API
     entries:
       - title: REST implementation details
@@ -52,9 +36,8 @@ entries:
           - title: Performance metrics for storage resources
             url: /performance_metrics_for_storage_resources.html
       - title: Summary of the REST resource categories
+        url: /summary_of_the_rest_resource_categories.html
         entries:
-          - title: Overview
-            url: /summary_of_the_rest_resource_categories_overview.html
           - title: Application
             url: /application.html
           - title: Cloud
@@ -89,3 +72,19 @@ entries:
             url: /support.html
           - title: SVM
             url: /svm.html
+  - title: Getting started with the REST API
+    url: getting_started_with_the_rest_api.html
+    entries:
+      - title: Retrieving the cluster software version
+        url: /retrieving_the_cluster_software_version.html
+      - title: Hello world
+        url: /hello_world.html
+      - title: Accessing the ONTAP API documentation page
+        url: /accessing_the_ontap_api_documentation_page.html
+      - title: Workflow processes using the ONTAP REST API
+        url: /workflow_processes_using_the_ontap_rest_api.html
+        entries:
+          - title: Preparing to use the workflow processes
+            url: /preparing_to_use_the_workflow_processes.html
+          - title: Workflow 1  Updating the cluster contact and checking job state
+            url: /workflow_1__updating_the_cluster_contact_and_checking_job_state.html
