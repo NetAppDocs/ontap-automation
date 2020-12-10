@@ -1,0 +1,92 @@
+---
+sidebar: sidebar
+permalink: workflow_1__updating_the_cluster_contact_and_checking_job_state.html
+keywords:
+summary:
+---
+
+= Workflow 1: Updating the cluster contact and checking job state
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-09 12:46:18.752627
+//
+
+[.lead]
+This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
+
+You can issue an API call to update the contact information. Because the request runs asynchronously, you must confirm success of the associated job.
+
+|===
+|Category |HTTP method |Path
+
+|Cluster
+|GET
+|/cluster/jobs/{uuid}
+|===
+
+Asynchronous
+
+....
+curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01
+'https://10.222.81.101/api/cluster'
+{
+"contact": "support@company-demo.com"
+}
+....
+
+A job object with the associated identifier is returned.
+
+....
+{ "job": {
+"uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+"_links": {
+"self": {
+"href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+}
+}
+}
+}
+....
+
+You must retrieve the state of the job to determine if the asynchronous request has completed successfully.
+
+|===
+|Category |HTTP method |Path
+
+|Cluster
+|GET
+|/cluster/jobs/{uuid}
+|===
+
+Synchronous
+
+....
+curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https://
+10.222.81.101/api/cluster/jobs/uuid'
+....
+
+A job object with the state and other fields is returned.
+
+....
+{
+"uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+"description": "PATCH /api/cluster",
+"state": "success",
+REST API Developers Guide 38
+Workflow processes using the ONTAP REST API
+"message": "success",
+"code": 0,
+"_links": {
+"self": {
+"href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+}
+}
+}
+....
