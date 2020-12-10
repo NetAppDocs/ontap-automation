@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: overview_of_the_ontap_automation_options.html
+keywords:
+summary:
+---
+
+= Overview of the ONTAP automation options
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.644064
+//
+
+[.lead]
+xxx
+
+=== Accessing the ONTAP REST API natively
+
+xxx
+
+=== Accessing the ONTAP REST API through the Python client library
+
+xxx
+
+=== Using Ansible
+
+xxx
+
