@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: svm.html
+keywords:
+summary:
+---
+
+= SVM
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:01.104308
+//
+
+[.lead]
+You can use these API calls to manage storage virtual machines (SVMs).
+
+==== Peer permissions
+
+Peer permissions can be assigned which enable the SVM peering relationships. This resource type was introduced with ONTAP 9.6.
+
+==== Peers
+
+The peering relationships establish connectivity among the SVMs. This resource type was introduced with ONTAP 9.6.
+
+==== SVMs
+
+You can manage the SVMs that are bound to a cluster. This resource type was introduced with ONTAP 9.6.

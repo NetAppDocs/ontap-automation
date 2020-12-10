@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: summary_of_the_rest_resource_categories.html
+keywords:
+summary:
+---
+
+= Summary of the REST resource categories
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.695900
+//
+
+

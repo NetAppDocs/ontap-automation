@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: users_of_the_ontapi_api_and_ontap_cli.html
+keywords:
+summary:
+---
+
+= Users of the ONTAPI API and ONTAP CLI
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.631603
+//
+
+[.lead]
+ONTAPI is a set of API calls provided through the Network Manageability SDK that can be used to administer ONTAP storage systems. There are differences between the REST API and the ONTAPI API calls, as well as between the REST API and ONTAP CLI. You should understand these differences before using the REST API in a production environment.
+
+=== General design differences
+
+The ONTAP REST API and command line interface have a fundamentally different designs. The CLI commands and parameters do not map directly to the REST API calls. And even where there might be a similarity, the details of the input parameters can be different. For example, numeric units might be specified in bytes or using a suffix (such as KB). You should review Input variables controlling an API request as well as the ONTAP online documentation page for more information.
+
+=== Data SVMs exposed through the API
+
+ONTAP supports several types of storage virtual machines (SVMs). However, only the data SVMs are directly exposed through the ONTAP REST API. The configuration information describing the cluster and nodes is available through the REST API, however the cluster and nodes are not treated as separate SVMs.
+
+ADD LINK
+
+You can control how an API call is processed through parameters and variables set in the HTTP request.
+
+

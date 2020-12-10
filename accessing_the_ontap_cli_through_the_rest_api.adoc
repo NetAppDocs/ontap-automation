@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: accessing_the_ontap_cli_through_the_rest_api.html
+keywords:
+summary:
+---
+
+= Accessing the ONTAP CLI through the REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.644064
+//
+
+[.lead]
+To assist CLI and ONTAPI API users in their transition to the ONTAP REST API, ONTAP provides a REST endpoint to access the CLI. You can use this passthrough feature to execute any CLI command.  Usage of the REST endpoint is returned in AutoSupport data so that NetApp can identify gaps in the REST API and make improvements in future releases.
+
+To issue a CLI command, you must make a REST API call that is properly formed based on rules regarding:
+
+* Resource paths
+* Field names
+* HTTP methodsThe base resource path for CLI access is /private/cli. Refer to the ONTAP API online documentation page for details about accessing the CLI through the REST API.
+
+

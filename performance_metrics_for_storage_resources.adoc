@@ -1,0 +1,128 @@
+---
+sidebar: sidebar
+permalink: performance_metrics_for_storage_resources.html
+keywords:
+summary:
+---
+
+= Performance metrics for storage resources
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.676366
+//
+
+[.lead]
+ONTAP collects performance metrics about selected SVM storage objects and protocols, and reports this information through the REST API. You can use this data to monitor the performance of an ONTAP system.
+
+For a given storage object or protocol, the performance data falls into three categories:
+
+* IOPS
+* Latency
+* ThroughputWithin each category, one or more of the following types of data is available:
+
+* Read (R)
+* Write (W)
+* Other (O)
+* Total (T)The following table summarizes the performance data available through the ONTAP REST API,  including the release when it was added. Refer to the REST API online documentation page at your ONTAP system for more information.
+
+|===
+|Storage object or protocol |IOPS |Latency |Throughput |ONTAP release
+
+|Ethernet port
+|Not applicable
+|Not applicable
+|RWT
+|9.8
+|FC port
+|RWOT
+|RWOT
+|RWT
+|9.8
+|IP interface
+|Not applicable
+|Not applicable
+|RWT
+|9.8
+|FC interface
+|RWOT
+|RWOT
+|RWT
+|9.8
+|NVMe namespace
+|RWOT
+|RWOT
+|RWOT
+|9.8
+|Qtree statistics
+|Raw RWOT
+|Not applicable
+|Raw RWOT
+|9.8
+|Volume Flexcache
+|RWOT
+|RWOT
+|RWT
+|9.8
+|Node – process utilization
+|Process utilization as a numerical value
+|Process utilization as a numerical value
+|Process utilization as a numerical value
+|9.8
+|Cloud volume
+|RWOT
+|RWOT
+|Not appliable
+|9.7
+|LUN
+|RWOT
+|RWOT
+|RWOT
+|9.7
+|Aggregate
+|RWOT
+|RWOT
+|RWOT
+|9.7
+|SVM NFS protocol
+|RWOT
+|RWOT
+|RWT
+|9.7
+|SVM CIFS protocol
+|RWOT
+|RWOT
+|RWT
+|9.7
+|SVM FCP protocol
+|RWOT
+|RWOT
+|RWT
+|9.7
+|SVM iSCSI protocol
+|RWOT
+|RWOT
+|RWT
+|9.7
+|SVM NVMe protocol
+|RWOT
+|RWOT
+|RWT
+|9.7
+|Cluster
+|RWOT
+|RWOT
+|RWOT
+|9.6
+|Volumes
+|RWOT
+|RWOT
+|RWOT
+|9.6
+|===
