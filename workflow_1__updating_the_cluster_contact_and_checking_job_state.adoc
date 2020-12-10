@@ -21,6 +21,8 @@ summary:
 [.lead]
 This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
 
+1. Update the contact information for the cluster
+
 You can issue an API call to update the contact information. Because the request runs asynchronously, you must confirm success of the associated job.
 
 |===
@@ -31,29 +33,32 @@ You can issue an API call to update the contact information. Because the request
 |/cluster/jobs/{uuid}
 |===
 
+.Processing type
 Asynchronous
 
-....
-curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01
-'https://10.222.81.101/api/cluster'
-{
-"contact": "support@company-demo.com"
-}
-....
+.Curl
 
+[source,curl,%autofill]
+curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01 'https://10.222.81.101/api/cluster'
+{
+  "contact": "support@company-demo.com"
+}
+
+.JSON output
 A job object with the associated identifier is returned.
 
-....
+[source,curl,%autofill]
 { "job": {
-"uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-"_links": {
-"self": {
-"href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+  }
 }
-}
-}
-}
-....
+
+2. Retrieve the status of the job
 
 You must retrieve the state of the job to determine if the asynchronous request has completed successfully.
 
@@ -65,28 +70,30 @@ You must retrieve the state of the job to determine if the asynchronous request 
 |/cluster/jobs/{uuid}
 |===
 
+.Processing type
+
 Synchronous
 
+.Curl
+
+[source,curl,%autofill]
+curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'
 ....
-curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https://
-10.222.81.101/api/cluster/jobs/uuid'
-....
+
+.Output
 
 A job object with the state and other fields is returned.
 
-....
+[source,json,%autofill]
 {
-"uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-"description": "PATCH /api/cluster",
-"state": "success",
-REST API Developers Guide 38
-Workflow processes using the ONTAP REST API
-"message": "success",
-"code": 0,
-"_links": {
-"self": {
-"href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
 }
-}
-}
-....

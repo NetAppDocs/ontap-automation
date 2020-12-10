@@ -43,12 +43,9 @@ The path determines the specific resource which the action applies to as part of
 
 In addition to the ONTAP documentation page, you can also access the ONTAP REST API directly through a programming language such as Python. In this case, the core URL is slightly different than the URL used when accessing the online documentation page. When accessing the API directly, you must append /api to the domain and port string. For example:
 
-....
-https://ontap.mycompany.com/api
-....
+`https://ontap.mycompany.com/api`
 
+.Related links
 ADD LINK
 
 ADD LINK
-
-
