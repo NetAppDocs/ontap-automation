@@ -90,5 +90,5 @@ entries:
             url: /workflow_1__updating_the_cluster_contact_and_checking_job_state.html
   - title: Accessing the REST API using Python
     url: /overview_of_the_ontap_automation_options.html
-  - title: Getting more information
-    url: /overview_of_the_ontap_automation_options.html
+  - title: Get more information
+    url: /get_more_information.html
