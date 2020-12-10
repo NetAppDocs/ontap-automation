@@ -6,9 +6,8 @@ entries:
   - title: Understanding the ONTAP REST API
     entries:
       - title: REST implementation details
+        url: /rest_implementation_details.html
         entries:
-          - title: Overview
-            url: /rest_implementation_details_overview.html
           - title: REST web services foundation
             url: /rest_web_services_foundation.html
           - title: ONTAP REST API versioning
@@ -24,9 +23,8 @@ entries:
           - title: How asynchronous processing works using the Job object
             url: /how_asynchronous_processing_works_using_the_job_object.html
       - title: Additional considerations when using the REST API
+        url: /additional_considerations_when_using_the_rest_api.html
         entries:
-          - title: Overview
-            url: /additional_considerations_when_using_the_rest_api_overview.html
           - title: Object references and access
             url: /object_references_and_access.html
           - title: Users of the ONTAPI API and ONTAP CLI

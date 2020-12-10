@@ -18,4 +18,11 @@ summary:
 // 2020-12-10 15:58:00.565351
 //
 
+[.lead]
+There are several characteristics of the ONTAP REST API affecting its operation and use. You should be aware of these considerations before issuing an API call.
 
+You should review the resources exposed through the API.
+
+.Related links
+
+*ADD LINK*
