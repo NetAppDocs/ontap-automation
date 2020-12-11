@@ -19,4 +19,4 @@ summary:
 //
 
 [.lead]
-xxx
+Python is a popular programming language, especially for datacenter automation. You can access the ONTAP REST API using the native features of Python or through the NetApp Python client library.

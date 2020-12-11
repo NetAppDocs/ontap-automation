@@ -5,6 +5,7 @@ keywords:
 summary:
 ---
 
+[[how-access-api]]
 = How to access the ONTAP API
 :hardbreaks:
 :nofooter:
@@ -56,5 +57,3 @@ To access a specific API version where multiple versions are supported, the form
 ....
 https://<cluster_mgmt_ip_address>/api/v1
 ....
-
-

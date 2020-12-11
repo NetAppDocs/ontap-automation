@@ -21,11 +21,15 @@ summary:
 [.lead]
 There are additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 
-=== ONTAP product resources
+=== ONTAP 9 resources
 
-xxx
+* https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
++
+Provides all of the documentation for ONTAP 9.
 
-=== ONTAP developer resources
+* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources]
+
+=== ONTAP 9 developer resources
 
 xxx
 
@@ -34,5 +38,9 @@ xxx
 xxx
 
 === Blogs
+
+xxx
+
+=== NetApp resources
 
 xxx
