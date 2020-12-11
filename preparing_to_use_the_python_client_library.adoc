@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: preparing_to_use_the_ontap_python_client_library.html
+permalink: preparing_to_use_the_python_client_library.html
 keywords:
 summary:
 ---
 
-= Preparing to use the ONTAP Python client library
+= Preparing to use the Python client library
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -42,5 +42,3 @@ You must use pip to install the netapp_ontap package from the Python Package Ind
 See the NetApp Developer Network for links to documentation and other resources.
 
 ADD LINK
-
-
