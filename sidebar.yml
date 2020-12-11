@@ -89,6 +89,14 @@ entries:
           - title: Workflow 1  Updating the cluster contact and checking job state
             url: /workflow_1__updating_the_cluster_contact_and_checking_job_state.html
   - title: Accessing the REST API using Python
-    url: /overview_of_the_ontap_automation_options.html
+    url: /accessing_the_rest_api_using_python.html
+    entries:
+      - title: NetApp ONTAP Python client library
+        url: /netapp_ontap_python_client_library.html
+        entries:
+          - title: Preparing to use the Python client library
+            url: /preparing_to_use_the_python_client_library.html
+          - title: Script to retrieve the cluster configuration
+            url: /script_to_retrieve_the_cluster_configuration.html
   - title: Get more information
     url: /get_more_information.html

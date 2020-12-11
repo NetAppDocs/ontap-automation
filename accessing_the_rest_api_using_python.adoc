@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: accessing_the_rest_api_using_python.html
+keywords:
+summary:
+---
+
+= Accessing the REST API using Python
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-09 12:46:18.665755
+//
+
+[.lead]
+xxx

@@ -21,10 +21,10 @@ summary:
 [.lead]
 You can use these API calls to manage the ONTAP application resources.
 
-===== Applications
+==== Applications
 
 The ONTAP applications are arranged based on type, including: templates, applications,  components, and Snapshot copies. This resource type was introduced with ONTAP 9.6.
 
-===== Application snapshots
+==== Application snapshots
 
 Applications support snapshot copies, which can be created or restored at any time. This resource type was introduced with ONTAP 9.6.
