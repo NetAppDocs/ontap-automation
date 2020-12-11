@@ -19,13 +19,13 @@ summary:
 //
 
 [.lead]
-xxx
+You can access the ONTAP REST API directly using any programming language that supports a REST client or through the Python client library. In addition, NetApp also provides support for ONTAP automation using Ansible.
 
 === Accessing the ONTAP REST API natively
 
 xxx
 
-=== Accessing the ONTAP REST API through the Python client library
+=== Using the NetApp Python client library
 
 xxx
 

@@ -23,9 +23,9 @@ You should prepare the environment before using the Python client library.
 
 === Basic requirements
 
-You must use Python 3.5 or later. The following packages are also required:
+You must use Python 3.5 or later. In addition, the following packages are also required:
 
-* requests 2.22.0 or later
+* requests 2.22.1 or later
 * requests-toolbelt 0.9.1 or later
 * marshmallow 3.2.1 or later
 
@@ -39,6 +39,8 @@ You must use pip to install the netapp_ontap package from the Python Package Ind
 
 === Documentation and additional resources
 
-See the NetApp Developer Network for links to documentation and other resources.
+See the _NetApp Developer Network_ for links to documentation and other resources.
 
-ADD LINK
+.Related links
+
+https://devnet.netapp.com/restapi[NetApp Developer Network: ONTAP RESTful API^]

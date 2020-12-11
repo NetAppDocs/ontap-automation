@@ -21,7 +21,7 @@ summary:
 [.lead]
 The following script provides a simple example of how to use the Python client library. You can run the script using Python 3 at the CLI to retrieve the ONTAP cluster configuration.
 
-....
+[source,python,%autofill]
 ##--------------------------------------------------------------------
 #
 # Description: Python script to retrieve the cluster configuration.
