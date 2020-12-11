@@ -2,7 +2,7 @@ entries:
   - title: ONTAP Automation
     url: /index.html
   - title: Options for ONTAP automation
-    url: /overview_of_the_ontap_automation_options.html
+    url: /options_for_ontap_automation.html
   - title: Understanding the ONTAP REST API
     entries:
       - title: REST implementation details
