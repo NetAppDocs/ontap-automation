@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: new_ontap_automation.html
+keywords: new features
+summary: There are several new and changed automation features with the current release of ONTAP.
+---
+
+= What's new with ONTAP 9.8 automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+There are several new and changed automation features provided with the current release of ONTAP.
+
+== ONTAP REST API
+
+xxx

@@ -12,4 +12,14 @@ summary: Welcome to the ONTAP Automation documentation portal.
 :imagesdir: ./media/
 
 [.lead]
-This site contains the content for ONTAP automation.
+xxx
+
+== Discover what's new
+
+* link:new_ontap_automation.html[What's new with ONTAP automation]
+
+xxx
+
+== Get more information and connect with peers
+
+* link:get_more_information.html[Where to get more information]
