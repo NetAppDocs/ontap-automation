@@ -32,7 +32,7 @@ Enhanced online documentation::
 The ONTAP online documentation page now includes labels indicating the ONTAP release that each REST endpoint or parameter was introduced, including those new in 9.8.
 
 Improved support for transitioning to REST from ONTAPI::
-More legacy ONTAPI calls now have corresponding REST API equivalents. Documentation is also available to help identify which REST endpoint should be used in place of an existing ONTAPI call.
+More legacy ONTAPI calls now have corresponding REST API equivalents. You can review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAPI to REST API mapping information^] to identify which REST endpoint should be used in place of an existing ONTAPI call.
 
 Expanded performance metrics::
 Performance metrics for the REST API have been expanded to include several new storage and network objects.
