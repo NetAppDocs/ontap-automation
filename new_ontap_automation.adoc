@@ -15,6 +15,24 @@ summary: There are several new and changed automation features with the current 
 [.lead]
 There are several new and changed automation features provided with the current release of ONTAP.
 
-== ONTAP REST API
+=== ONTAP 9.8 REST API
 
-xxx
+ONTAP 9.8 greatly expands the breadth and depth of the ONTAP REST API. It includes several new features which enhance your ability to automate the deployment and management of ONTAP storage systems. In addition, support has been improved for assisting with the transition to REST from the legacy ONTAPI API.
+
+API endpoints for new ONTAP 9.8 core features::
+Support for the new core ONTAP 9.8 features not available through ONTAPI has been added to the REST API. This includes REST API support for ONTAP S3 buckets and services, SnapMirror Business Continuity, and File System Analytics.
+
+Expanded support for enhanced security::
+Security has been enhanced through the support of several services and protocols, including Azure Key Vault, Google Cloud Key Management Services, IPSec, and Certificate Signing Requests.
+
+Enhancements to improve simplicity::
+ONTAP 9.8 delivers more efficient and modern workflows using the REST API. For example, one-click firmware updates are now available for several different types of firmware.
+
+Enhanced online documentation::
+The ONTAP online documentation page now includes labels indicating the ONTAP release that each REST endpoint or parameter was introduced, including those new in 9.8.
+
+Improved support for transitioning to REST from ONTAPI::
+More legacy ONTAPI calls now have corresponding REST API equivalents. Documentation is also available to help identify which REST endpoint should be used in place of an existing ONTAPI call.
+
+Expanded performance metrics::
+Performance metrics for the REST API have been expanded to include several new storage and network objects.

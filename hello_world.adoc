@@ -29,7 +29,7 @@ The Curl utility must be available on your workstation. In addition, you must ha
 * User name and password for an account with authority to access the ONTAP REST API (cluster resource).
 
 [NOTE]
-If your credentials include special characters, you need to format them in a way that is acceptable to Curl based on the shell you are using. For example, you can insert a backslash before each special character or wrap the entire username:password string in single quotes.
+If your credentials include special characters, you need to format them in a way that is acceptable to Curl based on the shell you are using. For example, you can insert a backslash before each special character or wrap the entire `username:password` string in single quotes.
 
 .Steps
 

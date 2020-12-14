@@ -38,4 +38,4 @@ You must have the following:
 +
 The ONTAP API documentation page is displayed with the API calls organized in major resource categories at the bottom.
 +
-. To see the details of an individual API call, scroll down to the cluster category and click *GET /cluster*.
+. To see the details of an individual API call, scroll down to the *cluster* category and click *GET /cluster*.

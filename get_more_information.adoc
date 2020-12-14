@@ -40,6 +40,8 @@ Provides resources and documentation needed to use the ONTAP REST API, including
 === Videos
 
 * https://www.youtube.com/watch?v=Wws3SB5d9Ss[Getting started with the NetApp ONTAP Python client library^]
++
+Good introduction to the NetApp Python client library and how to get started writing code using the library.
 
 === Blogs
 
