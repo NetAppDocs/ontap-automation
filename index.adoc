@@ -12,7 +12,7 @@ summary: Welcome to the ONTAP Automation documentation portal.
 :imagesdir: ./media/
 
 [.lead]
-Beginning with ONTAP 9.6, ONTAP includes an expansive REST API that provides the foundation for automating the deployment and administration of your storage systems.
+You can automate the deployment and administration of your ONTAP storage systems. There are several automation options available, all of which are built on the REST API foundation introduced with ONTAP 9.6.
 
 == Discover what's new
 

@@ -33,6 +33,9 @@ Provides documentation and other helpful links needed to plan, administer, and s
 
 === ONTAP 9 developer resources
 
+>> ZAPI to REST
+>> API ref
+
 * https://devnet.netapp.com/restapi[NetApp Developer Network: ONTAP RESTful API]
 +
 Provides resources and documentation needed to use the ONTAP REST API, including the ONTAP Python client library.
@@ -45,7 +48,7 @@ Good introduction to the NetApp Python client library and how to get started wri
 
 === Blogs
 
-xxx
+https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[Get started with automating your dev work flows with NetApp and Ansible]
 
 === NetApp resources
 
