@@ -25,12 +25,16 @@ For a given storage object or protocol, the performance data falls into three ca
 
 * IOPS
 * Latency
-* ThroughputWithin each category, one or more of the following types of data is available:
+* Throughput
+
+Within each category, one or more of the following types of data is available:
 
 * Read (R)
 * Write (W)
 * Other (O)
-* Total (T)The following table summarizes the performance data available through the ONTAP REST API,  including the release when it was added. Refer to the REST API online documentation page at your ONTAP system for more information.
+* Total (T)
+
+The following table summarizes the performance data available through the ONTAP REST API,  including the release when it was added. Refer to the REST API online documentation page at your ONTAP system for more information.
 
 |===
 |Storage object or protocol |IOPS |Latency |Throughput |ONTAP release

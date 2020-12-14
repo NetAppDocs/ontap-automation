@@ -33,8 +33,8 @@ For valid requests, ONTAP returns a 202 HTTP status code along with the job obje
 Request is completed before the timer expires::
 If the request is valid and completes successfully before the time expires, ONTAP returns a 200 HTTP status code along with the job object. Because the request is completed synchronously, as indicated by the 200, you do not need to retrieve the job state.
 +
-[Note]
-The default value for the return_timeout parameter is zero seconds. Therefore, if you don't include the parameter, the 202 HTTP status code is always returned for a valid request.
+[NOTE]
+The default value for the `return_timeout` parameter is zero seconds. Therefore, if you don't include the parameter, the 202 HTTP status code is always returned for a valid request.
 
 === Querying the Job object associated with an API request
 
@@ -44,7 +44,7 @@ Non-terminal states::
 +
 * Queued
 * Running
-* Paused*Terminal states*
+* Paused
 
 Terminal states::
 +
@@ -61,7 +61,7 @@ You can use the following high-level procedure to complete an asynchronous API c
 . Within a timed loop, perform the following in each cycle:
 .. Get the current state of the Job.
 .. If the Job is in a non-terminal state, perform loop again.
-. Stop when the Job reaches a terminal state (success, failure).*Related references*
+. Stop when the Job reaches a terminal state (success, failure).
 
 .Related links
 

@@ -32,13 +32,16 @@ Each of the resources available through the ONTAP REST API is accessed based on 
 * Create
 * Read
 * Update
-* DeleteFor some of the resources, only a subset of the operations is supported. You should review the ONTAP API documentation page at your ONTAP cluster for more information about each resource.
+* Delete
+
+For some of the resources, only a subset of the operations is supported. You should review the ONTAP API documentation page at your ONTAP cluster for more information about each resource.
 
 === Object identifiers
 
 Each resource instance or object is assigned a unique identifier when it is created. In most cases, the identifier is a 128-bit UUID. These identifiers are globally unique within a specific ONTAP cluster.  After issuing an API call that creates a new object instance, a URL with the associated id value is returned to the caller in the location header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
-
-*Attention:* The content and internal structure of the object identifiers can change at any time. You should only use the identifiers on the applicable API calls as needed when referring to the associated objects.
++
+[IMPORTANT]
+The content and internal structure of the object identifiers can change at any time. You should only use the identifiers on the applicable API calls as needed when referring to the associated objects.
 
 === Object instances and collections
 
@@ -48,17 +51,18 @@ Depending on the resource path and HTTP method, an API call can apply to a speci
 
 There are two ways that ONTAP performs an HTTP request received from a client.
 
+Synchronous processing::
 ONTAP performs the request immediately and responds with an HTTP status code of 200 or 201 if it is successful.
-
++
 Every request using the methods GET, HEAD, and OPTIONS is always performed synchronously. In addition, requests that use POST, PATCH, and DELETE are designed to run synchronously if they are expected to complete in less than two seconds.
 
-*Asynchronous processing*
-
+Asynchronous processing::
 If an asynchronous request is valid, ONTAP creates a background task to process the request and a job object to anchor the task. The 202 HTTP status is returned to the caller along with the job object. To determine final success or failure, you must retrieve the state of the job.
-
++
 Requests that use the methods POST, PATCH, and DELETE are designed to run asynchronously if they are expected to take more than two seconds to complete.
-
-*Note:* The return_timeout query parameter is available with asynchronous API calls and can convert an asynchronous call to complete synchronously. Refer to How asynchronous processing works using the Job object for more information.
++
+[NOTE]
+The `return_timeout` query parameter is available with asynchronous API calls and can convert an asynchronous call to complete synchronously. Refer to `How asynchronous processing works using the Job object` for more information.
 
 === Security
 
@@ -80,6 +84,6 @@ At an HTTP level, basic authentication is used for the API transactions. An HTTP
 +
 ONTAP implements a role-based authorization model. The account you use when accessing the ONTAP REST API or API documentation page should have the proper authority.
 
-Security using RBAC on page 21
+.Related links
 
-
+link:security_using_rbac.html[Security using RBAC]

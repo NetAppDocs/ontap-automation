@@ -23,10 +23,13 @@ The REST API included with ONTAP 9 is assigned a version number. The API version
 
 The ONTAP system software contains versions of the REST API as follows:
 
+ONTAP 9.8::
 Version 1
 
+ONTAP 9.7::
+Version 1
+
+ONTAP 9.6::
 Version 1
 
 https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html[ONTAP 9 Release Notes^]
-
-

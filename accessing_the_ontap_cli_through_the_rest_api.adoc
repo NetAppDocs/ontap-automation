@@ -25,6 +25,6 @@ To issue a CLI command, you must make a REST API call that is properly formed ba
 
 * Resource paths
 * Field names
-* HTTP methodsThe base resource path for CLI access is /private/cli. Refer to the ONTAP API online documentation page for details about accessing the CLI through the REST API.
+* HTTP methods
 
-
+The base resource path for CLI access is `/private/cli`. Refer to the ONTAP API online documentation page for details about accessing the CLI through the REST API.

@@ -50,7 +50,7 @@ Not all the HTTP methods are available at each of the REST endpoints. Also, both
 You must include several headers in the HTTP request.
 
 Content-type::
-If the request body includes JSON, this header must be set to application/json.
+If the request body includes JSON, this header must be set to `application/json`.
 
 Accept::
 This header should be set to `application/hal+json`. If it is instead set to `application/json` none of the HAL links will be returned except a link needed to retrieve the next batch of records. If the header is anything else aside from these two values, the default value of the `content-type` header in the response will be `application/hal+json`.
@@ -69,7 +69,7 @@ The content of the request body varies depending on the specific call. The HTTP 
 
 When issuing an API call that uses GET, you can limit or filter the returned objects based on any attribute. For example, you can specify an exact value to match:
 
-``<field>=<query value>`
+`<field>=<query value>`
 
 In addition to an exact match, other operators are available to return a set of objects over a range of values. The ONTAP REST API supports the filtering operators shown in the table below.
 
@@ -94,14 +94,14 @@ In addition to an exact match, other operators are available to return a set of 
 |Greedy wildcard
 |===
 
-You can also return a collection of objects based on whether a specific field is set or not set by using the null keyword or its negation !null as part of the query.
+You can also return a collection of objects based on whether a specific field is set or not set by using the `null` keyword or its negation `!null` as part of the query.
 
 [NOTE]
 Any fields that are not set are generally excluded from matching queries.
 
 === Requesting specific object fields
 
-By default, issuing an API call using GET returns only the attributes that uniquely identify the object or objects, along with a HAL self link. This minimum set of fields acts as a key for each object and varies based on the object type. You can select additional object properties using the fields query parameter in the following ways:
+By default, issuing an API call using GET returns only the attributes that uniquely identify the object or objects, along with a HAL self link. This minimum set of fields acts as a key for each object and varies based on the object type. You can select additional object properties using the `fields` query parameter in the following ways:
 
 * Common or standard fields
 +
@@ -109,14 +109,14 @@ Specify `fields=*`` to retrieve the most commonly used object fields. These fiel
 
 * All fields
 +
-Specify `fields=**`` to retrieve all the object fields, including those requiring additional server processing to access.
+Specify `fields=**` to retrieve all the object fields, including those requiring additional server processing to access.
 
 * Custom field selection
 +
-Use 'fields=<field_name>'' to specify the exact field you want. When requesting multiple fields, the values must be separated using commas without spaces.
+Use `fields=<field_name>` to specify the exact field you want. When requesting multiple fields, the values must be separated using commas without spaces.
 +
 [IMPORTANT]
-As a best practice, you should always identify the specific fields you want. You should only retrieve the set of common fields or all fields when needed. Which fields are classified as common, and returned using fields=*, is determined by NetApp based on internal performance analysis. The classification of a field might change in future releases.
+As a best practice, you should always identify the specific fields you want. You should only retrieve the set of common fields or all fields when needed. Which fields are classified as common, and returned using `fields=*`, is determined by NetApp based on internal performance analysis. The classification of a field might change in future releases.
 
 === Sorting objects in the output set
 

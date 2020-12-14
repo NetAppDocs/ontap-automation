@@ -81,7 +81,7 @@ A single object can be returned with a set of fields based on the request. For e
 
 * Multiple objects
 +
-Multiple objects from a resource collection can be returned. In all cases, there is a consistent format used, with num_records indicating the number of records and records containing an array of the object instances. For example, you can retrieve the nodes defined in a specific cluster.
+Multiple objects from a resource collection can be returned. In all cases, there is a consistent format used, with `num_records` indicating the number of records and records containing an array of the object instances. For example, you can retrieve the nodes defined in a specific cluster.
 
 * Job object
 +

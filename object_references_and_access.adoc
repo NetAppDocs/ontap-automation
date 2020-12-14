@@ -33,18 +33,26 @@ The object is the primary or direct target of the API call.
 +
 The object is not the primary reference of the API call, but rather is linked to from the primary object. It is therefore a foreign or downstream object and referenced through a field in the primary object.
 
+== Accessing an object using the UUID
+
+Every object is assigned a unique identifier when it is created, which in most cases is a 128-bit UUID. The assigned UUID values are immutable and are used internally within ONTAP to access and manage the resources. Because of this, the UUID generally provides the fastest and most stable way to access objects.
+
+For many of the resource types, a UUID value can be provided as part of the path key in the URL to access a specific object. For example, you can use the following to access a node instance: ``/cluster/nodes/{uuid}`
+
 === Accessing an object using an object property
 
-In addition to a UUID, you can also access an object using an object property. In most cases, it is convenient to use the name property. For example, you can use the following query parameter in the URL string to access a node instance by its name: /cluster/nodes?name=node_one. In addition to a query parameter, a foreign object can be accessed through a property in the primary object.
+In addition to a UUID, you can also access an object using an object property. In most cases, it is convenient to use the name property. For example, you can use the following query parameter in the URL string to access a node instance by its name: `/cluster/nodes?name=node_one`. In addition to a query parameter, a foreign object can be accessed through a property in the primary object.
 
 While you can use the name or other property to access an object instead of the UUID, there are several possible disadvantages:
 
 * The name field is not immutable and can be changed. If the name of an object is changed before accessing an object, the wrong object will be returned or an object access error will fail.
-
++
 [NOTE]
 This issue can occur with a POST or PATCH method on a foreign object or with a GET method on a primary object.
 
-* ONTAP must translate the name field into the corresponding UUID. This is a type of indirect access which can become a performance issue.In particular, a performance degradation is possible when one or more of the following is true:
+* ONTAP must translate the name field into the corresponding UUID. This is a type of indirect access which can become a performance issue.
+
+In particular, a performance degradation is possible when one or more of the following is true:
 
 * GET method is used
 * A large collection of objects is accessed
@@ -52,7 +60,7 @@ This issue can occur with a POST or PATCH method on a foreign object or with a G
 
 === Cluster versus SVM context
 
-There are several REST endpoints that support both a cluster and SVM. When using one of these endpoints, you can indicate the context of the API call through the scope=[svm|cluster] value. Examples of endpoints supporting a dual context include IP interfaces and security roles.
+There are several REST endpoints that support both a cluster and SVM. When using one of these endpoints, you can indicate the context of the API call through the `scope=[svm|cluster]` value. Examples of endpoints supporting a dual context include IP interfaces and security roles.
 
 [NOTE]
 The scope value has a default value base on the properties provided for each API call.
@@ -62,6 +70,6 @@ The scope value has a default value base on the properties provided for each API
 Every REST endpoint supporting PATCH or DELETE on a resource instance also supports the same method on a collection of objects. The only requirement is that at least one field must be provided through a query parameter in the URL string. When issuing a PATCH or DELETE over a collection, this is equivalent to doing the following internally:
 
 * Query-based GET to retrieve the collection
-* Serial sequence of PATCH or DELETE calls on each object in the collectionThe time out for the operation can be set by return_timeout with a default of 15 seconds. If not completed before the timeout, the response includes a link to the next object. You must reissue the same HTTP method using the next link to continue the operation.
+* Serial sequence of PATCH or DELETE calls on each object in the collection
 
-
+The time out for the operation can be set by `return_timeout` with a default of 15 seconds. If not completed before the timeout, the response includes a link to the next object. You must reissue the same HTTP method using the next link to continue the operation.
