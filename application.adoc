@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: application.html
+keywords:
+summary:
+---
+
+= Application
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.715535
+//
+
+[.lead]
+You can use these API calls to manage the ONTAP application resources.
+
+==== Applications
+
+The ONTAP applications are arranged based on type, including: templates, applications,  components, and Snapshot copies. This resource type was introduced with ONTAP 9.6.
+
+==== Application snapshots
+
+Applications support snapshot copies, which can be created or restored at any time. This resource type was introduced with ONTAP 9.6.

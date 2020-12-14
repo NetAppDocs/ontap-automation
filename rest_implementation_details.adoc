@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: rest_implementation_details.html
+keywords:
+summary:
+---
+
+= REST implementation details
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.276314
+//
+
+Beginning with version 9.6, ONTAP includes a REST web services API. You can use the REST API to deploy and administer ONTAP storage resources. Before using the API, you should understand its design, architectural components, and limitations.

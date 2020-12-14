@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: index.html
+summary: Welcome to the ONTAP Automation documentation portal.
+---
+
+= ONTAP Automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can automate the deployment and administration of your ONTAP storage systems using one of several available options. The ONTAP REST API provides the foundation for the various automation technologies.
+
+== Discover what's new
+
+* link:new_ontap_automation.html[What's new with ONTAP 9.8 automation]
+
+== Get more information and connect with peers
+
+* link:get_more_information.html[Where to get more information]

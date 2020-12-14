@@ -1,0 +1,72 @@
+---
+sidebar: sidebar
+permalink: networking.html
+keywords:
+summary:
+---
+
+= Networking
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.868193
+//
+
+[.lead]
+You can use these API calls to manage the physical and logical networking resources used with the cluster.
+
+==== Ethernet broadcast domains
+
+An Ethernet broadcast domain is a set of physical ports that appear to be part of the same physical network. All the ports receive a packet when broadcast from one of the ports in the domain. Each broadcast domain is part of an IPspace. This resource type was introduced with ONTAP 9.6.
+
+==== Ethernet ports
+
+An Ethernet port is a physical or virtual networking endpoint. The ports can be combined into a Link Aggregate Group (LAG) or separated using a Virtual LAN (VLAN). This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== Ethernet switch ports
+
+You can retrieve the port information for an Ethernet switch. This resource type is new with ONTAP 9.8.
+
+==== Ethernet switches
+
+You can retrieve or modify the configuration for Ethernet switches used for the ONTAP cluster or storage network. This resource type is new with ONTAP 9.8.
+
+==== Fibre Channel interfaces
+
+A Fibre Channel interface is a logical endpoint associated with an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== Fibre Channel ports
+
+A Fibre Channel port is a physical adapter on an ONTAP node used to connect to the Fibre Channel network. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== HTTP proxy
+
+You can configure an HTTP proxy for either an SVM or a cluster IPSpace. This resource type was introduced with ONTAP 9.7.
+
+==== BGP peer groups
+
+You can create and administer Border Gateway Protocol peer groups. This resource type was introduced with ONTAP 9.7.
+
+==== IP interfaces
+
+A logical interface (LIF) is an IP address with additional configuration attributes. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== IP routes
+
+A routing table is a collection of IP routes used to forward traffic to its destination. This resource type was introduced with ONTAP 9.6.
+
+==== IP service policies
+
+The IP service polices define the services available at a specific LIF. Service policies can be configured within the context of an SVM or IPspace. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== IPspaces
+
+An IPspace creates a networking space to support one or more SVMs. The IPspaces can be isolated from each other, providing security and privacy. This resource type was introduced with ONTAP 9.6.
+
+

@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: getting_started_with_the_rest_api.html
+keywords:
+summary:
+---
+
+= Getting started with the REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-09 12:46:18.665755
+//
+
+[.lead]
+You can quickly get started using the ONTAP REST API. Accessing the API provides some perspective before you begin using it with the more complex workflow processes on a live system.

@@ -1,0 +1,38 @@
+---
+sidebar: sidebar
+permalink: options_for_ontap_automation.html
+keywords:
+summary:
+---
+
+= Options for ONTAP automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.644064
+//
+
+[.lead]
+Beginning with ONTAP 9.6, ONTAP includes an expansive REST API that provides the foundation for automating the deployment and administration of your storage systems. You can access the REST API directly or through the NetApp Python client library. In addition, NetApp supports automation using Ansible as well as other high level software abstractions.
+
+=== Accessing the ONTAP REST API natively
+
+You can access the ONTAP REST API directly using any programming language supporting a REST client. Popular language choices include Python, PowerShell, and Java.
+
+=== Adapt legacy ONTAPI code to use REST
+
+If you have existing code using the ONTAPI API, NetApp provides support in converting the code to use the newer ONTAP REST API.
+
+=== Using the NetApp Python client library
+
+The Python client library is a package you can use when writing scripts to access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous request processing, and exception handling. By using the Python client library, you can quickly develop robust code to support the automation of your ONTAP deployments.
+
+=== Using Ansible
+
+Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems.
