@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: additional_considerations_when_using_the_rest_api.html
+keywords:
+summary:
+---
+
+= Additional considerations when using the REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.565351
+//
+
+[.lead]
+There are several characteristics of the ONTAP REST API affecting its operation and use. You should be aware of these considerations before issuing an API call.
+
+You should review the resources exposed through the API.
+
+.Related links
+
+link:summary_of_the_rest_resource_categories.html[Summary of the REST resource categories]

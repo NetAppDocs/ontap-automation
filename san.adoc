@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: san.html
+keywords:
+summary:
+---
+
+= SAN
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.935977
+//
+
+[.lead]
+You can use these API calls to manage storage area networking (SAN) resources.
+
+==== Fibre Channel logins
+
+Fibre Channel logins represent connections formed by Fibre Channel initiators that have logged in to ONTAP. This resource type was introduced with ONTAP 9.6.
+
+==== Fibre Channel WWPN aliases
+
+A world wide port name (WWPN) is a 64-bit value uniquely identifying a Fibre Channel port.  This resource type was introduced with ONTAP 9.6.
+
+==== Fibre Channel Protocol services
+
+A Fibre Channel Protocol (FCP) service defines the properties of a Fibre Channel target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+==== igroups
+
+An initiator group (igroup) is a collection of Fibre Channel WWPNs (world wide port names), and iSCSI IQNs (qualified names), and iSCSI EUIs (extended unique identifiers) that identify host initiators. This resource type was introduced with ONTAP 9.6.
+
+==== iSCSI credentials
+
+The iSCSI credentials object contains authentication credentials which are used by an initiator and ONTAP. This resource type was introduced with ONTAP 9.6.
+
+==== iSCSI services
+
+An iSCSI service defines the properties of the iSCSI target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+==== iSCSI sessions
+
+An iSCSI session is one or more TCP connections that link an iSCSI initiator with an iSCSI target.  This resource type was introduced with ONTAP 9.6.
+
+==== LUN maps
+
+A LUN map is an association between a LUN and an initiator group. This resource type was introduced with ONTAP 9.6.
+
+==== LUNs
+
+A LUN is the logical representation of storage in a storage area network (SAN). This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+

@@ -1,0 +1,55 @@
+---
+sidebar: sidebar
+permalink: how_to_access_the_ontap_api.html
+keywords:
+summary:
+---
+
+= How to access the ONTAP API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.319855
+//
+
+[.lead]
+You can access the ONTAP REST API in several different ways.
+
+=== Network considerations
+
+You can connect to the REST API through the following interfaces:
+
+* Cluster management LIF
+* Node management LIF
+* SVM management LIF
+
+The LIF you choose to use must be configured to support the HTTPS management protocol. Also,  the firewall configuration in your network must allow the HTTPS traffic.
+
+[TIP]
+You should always use the cluster management LIF. This will load balance the API requests across all nodes and avoid nodes that are offline or experiencing connectivity issues.
+
+=== ONTAP API online documentation page
+
+The ONTAP API online documentation page provides an access point when using a web browser. In addition to providing a way to execute individual API calls directly, the page includes a detailed description of the API, including input parameters and other options for each call. The API calls are organized into functional categories. See _Summary of the REST resource categories_ for more information.
+
+The format of the URL used to access the documentation page for the most recent version of the API is:
+
+`https://<cluster_mgmt_ip_address>/docs/api`
+
+=== Custom software and tools
+
+You can access the ONTAP API using any of several different programming languages and tools.  Popular choices include Python, Java, Curl, and PowerShell. A program, script, or tool that uses the API acts as a REST web services client. Using a programming language enables a deeper understanding of the API and provides an opportunity to automate the ONTAP administration.
+
+The format of the base URL used to directly access the most recent version of the API is:
+
+`https://<cluster_mgmt_ip_address>/api`
+
+To access a specific API version where multiple versions are supported, the format of the URL is:
+
+`https://<cluster_mgmt_ip_address>/api/v1`

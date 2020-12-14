@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: accessing_the_ontap_api_documentation_page.html
+keywords:
+summary:
+---
+
+= Accessing the ONTAP API documentation page
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-09 12:46:18.665755
+//
+
+[.lead]
+You can access the ONTAP API online documentation page to display the documentation for the REST API.
+
+.Before you begin
+
+You must have the following:
+
+* IP address or host name of the ONTAP cluster management LIF
+* User name and password for an account with authority to access the ONTAP REST API
+
+.Steps
+
+. Type the URL in your browser and press *Enter*:
++
+`https://<ip_address>/docs/api`
++
+. Sign in using the ONTAP account.
++
+The ONTAP API documentation page is displayed with the API calls organized in major resource categories at the bottom.
++
+. To see the details of an individual API call, scroll down to the *cluster* category and click *GET /cluster*.

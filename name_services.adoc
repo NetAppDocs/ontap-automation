@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: name_services.html
+keywords:
+summary:
+---
+
+= Name services
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-10 15:58:00.784986
+//
+
+[.lead]
+You can use these API calls to manage the name services supported by ONTAP.
+
+==== DDNS
+
+You can display the Dynamic DNS (DDNS) information and manage the DDNS subsystem. This resource type is new with ONTAP 9.8.
+
+==== DNS
+
+DNS supports the integration of the ONTAP cluster in your network. This resource type was introduced with ONTAP 9.6.
+
+==== LDAP
+
+LDAP servers can be used to maintain user information. This resource type was introduced with ONTAP 9.6.
+
+==== Name mappings
+
+Name mappings allow you to map identities from one name domain to another. For example, you can map identities from CIFS to UNIX, Kerberos to UNIX, and UNIX to CIFS. This resource type was introduced with ONTAP 9.6.
+
+==== NIS
+
+NIS servers can be used to authenticate users and client workstations. This resource type was introduced with ONTAP 9.6.
+
+

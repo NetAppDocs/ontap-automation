@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: workflow_processes_using_the_ontap_rest_api.html
+keywords:
+summary:
+---
+
+= Workflow processes using the ONTAP REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-09 12:46:18.689248
+//
+
+
+[.lead]
+You can use the ONTAP REST API to administer ONTAP systems and perform other storage administrative tasks. Each of the tasks is described using a workflow process consisting of one or more API calls.
