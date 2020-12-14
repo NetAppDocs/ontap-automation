@@ -27,7 +27,7 @@ You can access the ONTAP REST API directly using any programming language suppor
 
 === Adapt legacy ONTAPI code to use REST
 
-If you have existing code using the ONTAPI API, NetApp provides support in converting the code to use the newer ONTAP REST API.
+If you have existing code using the ONTAPI API, NetApp provides documentation support for converting the code to use the newer ONTAP REST API.
 
 === Using the NetApp Python client library
 

@@ -32,4 +32,6 @@ Version 1
 ONTAP 9.6::
 Version 1
 
+.Related links
+
 https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html[ONTAP 9 Release Notes^]
