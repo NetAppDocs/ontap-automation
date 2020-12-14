@@ -19,7 +19,7 @@ summary:
 //
 
 [.lead]
-There are additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
+There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 
 === ONTAP 9 resources
 
