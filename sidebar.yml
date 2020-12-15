@@ -44,8 +44,6 @@ entries:
             url: /cloud.html
           - title: Cluster
             url: /cluster.html
-          - title: Manage
-            url: /manage.html
           - title: Name services
             url: /name_services.html
           - title: NAS
