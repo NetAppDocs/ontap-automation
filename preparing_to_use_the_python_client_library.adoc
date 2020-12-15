@@ -39,10 +39,8 @@ You must use pip to install the netapp_ontap package from the Python Package Ind
 
 === Documentation and additional resources
 
-See the _NetApp Developer Network_ for links to documentation and other resources. There is also a GitHub repository containing code samples and other helpful information.
+See the _NetApp Developer Network_ for links to documentation and other resources.
 
 .Related links
 
 https://devnet.netapp.com/restapi[NetApp Developer Network: ONTAP RESTful API^]
-
-https://github.com/NetApp/ontap-rest-python[ONTAP REST Python GitHub repository^]
