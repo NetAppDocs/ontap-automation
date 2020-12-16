@@ -49,7 +49,9 @@ Good introduction to the NetApp Python client library and how to get started wri
 
 === Blogs
 
-https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[Get started with automating your dev work flows with NetApp and Ansible]
+* https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[Get started with automating your dev work flows with NetApp and Ansible]
++
+If you're new to using Ansible for ONTAP automation, this is a good place to start.
 
 === NetApp resources
 
