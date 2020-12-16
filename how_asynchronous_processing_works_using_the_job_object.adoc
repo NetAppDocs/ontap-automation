@@ -65,4 +65,4 @@ You can use the following high-level procedure to complete an asynchronous API c
 
 .Related links
 
-link:workflow_1__updating_the_cluster_contact_and_checking_job_state[Workflow 1: Updating the cluster contact and checking job state]
+link:workflow_1__updating_the_cluster_contact_and_checking_job_state.html[Workflow 1: Updating the cluster contact and checking job state]
