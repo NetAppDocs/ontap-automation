@@ -96,5 +96,9 @@ entries:
             url: /preparing_to_use_the_python_client_library.html
           - title: Script to retrieve the cluster configuration
             url: /script_to_retrieve_the_cluster_configuration.html
+  - title: ONTAP and Ansible
+    url: /ontap_ansible.html
+  - title: Automation blogs
+    url: /blogs.html
   - title: Get more information
     url: /get_more_information.html

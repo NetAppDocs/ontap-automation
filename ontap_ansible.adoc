@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: ontap_ansible.html
+keywords:
+summary:
+---
+
+= ONTAP and Ansible automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

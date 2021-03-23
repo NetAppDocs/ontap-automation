@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: blogs.html
+keywords:
+summary:
+---
+
+= Blogs about ONTAP automation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+There are several blog articles available to help you better understand different technologies and approaches to ONTAP automation.
+
+=== ONTAP 9 resources
+
+* https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
++
+Provides all of the documentation for ONTAP 9.
+
+* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
++
+Provides documentation and other helpful links needed to plan, administer, and support ONTAP 9.
