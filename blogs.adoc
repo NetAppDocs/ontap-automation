@@ -14,14 +14,14 @@ summary:
 
 
 [.lead]
-There are several blog articles available to help you better understand different technologies and approaches to ONTAP automation.
+There are several blog articles available to help you better understand the different technologies and approaches to ONTAP automation.
 
-=== ONTAP 9 resources
+===== ONTAPI to REST Mapping
 
-* https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
-+
-Provides all of the documentation for ONTAP 9.
+NetApp provides documentation to support moving from the earlier proprietary ONTAPI or Zephyr API to a new robust REST API.
 
-* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
-+
-Provides documentation and other helpful links needed to plan, administer, and support ONTAP 9.
+https://netapp.io/2020/12/17/ontapi-to-rest-mapping/[link:https://netapp.io/2020/12/17/ontapi-to-rest-mapping^]
+
+===== Using the private CLI passthrough with the ONTAP REST API
+
+xxx
