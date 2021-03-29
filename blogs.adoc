@@ -24,6 +24,6 @@ https://netapp.io/2020/12/17/ontapi-to-rest-mapping/[netapp.io/2020/12/17/ontapi
 
 ===== Using the private CLI passthrough with the ONTAP REST API
 
-The ONTAP REST API provides a technique for executing ONTAP CLI commands.
+The CLI passthrough provides a technique for executing ONTAP CLI commands using the REST API.
 
 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api^]

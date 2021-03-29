@@ -19,7 +19,7 @@ There are several resources available to help you understand how Ansible can be 
 
 video::L5DZBV_Sg9E[youtube, width=848, height=480]
 
-This video is also available through NetApp TV at link:https://tv.netapp.com/detail/video/6217195551001[Ansible Certified Modules^].
+The above video is also available through NetApp TV at link:https://tv.netapp.com/detail/video/6217195551001[Ansible Certified Modules^].
 
 video::ZlmQ5IuVZD8[youtube, width=848, height=480]
 
