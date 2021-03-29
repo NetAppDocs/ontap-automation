@@ -18,12 +18,12 @@ There are several blog articles available to help you better understand the diff
 
 ===== ONTAPI to REST Mapping
 
-NetApp provides support for moving from the proprietary ONTAPI (formerly Zephyr) API to the new more robust REST API.
+NetApp provides support for moving from the proprietary ONTAPI (formerly Zephyr) API to the new more robust ONTAP REST API.
 
 https://netapp.io/2020/12/17/ontapi-to-rest-mapping/[netapp.io/2020/12/17/ontapi-to-rest-mapping^]
 
 ===== Using the private CLI passthrough with the ONTAP REST API
 
-The ONTAP REST API provides a technique for running CLI commands.
+The ONTAP REST API provides a technique for executing ONTAP CLI commands.
 
 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api^]
