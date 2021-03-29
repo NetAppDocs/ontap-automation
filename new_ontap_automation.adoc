@@ -20,9 +20,7 @@ There are several new and changed automation features provided with the current 
 ONTAP 9.8 greatly expands the breadth and depth of the ONTAP REST API. It includes several new features which enhance your ability to automate the deployment and management of ONTAP storage systems. In addition, support has been improved for assisting with the transition to REST from the legacy ONTAPI API.
 
 New sample Python scripts::
-The collection of sample Python scripts using the NetApp Python Client Library and native REST API has been expanded and enhanced. Support has been added for several features, including the CLI passthrough facility and file system analytics.
-+
-See link:https://github.com/NetApp/ontap-rest-python/blob/master/examples/[NetApp/ontap-rest-python/examples^] for more information.
+The collection of sample Python scripts using the NetApp Python Client Library and native REST API has been expanded and enhanced. Support has been added for several features, including the CLI passthrough facility and file system analytics. See link:https://github.com/NetApp/ontap-rest-python/blob/master/examples/[NetApp/ontap-rest-python/examples^] for more information.
 
 API endpoints for new ONTAP 9.8 core features::
 Support for the new core ONTAP 9.8 features not available through ONTAPI has been added to the REST API. This includes REST API support for ONTAP S3 buckets and services, SnapMirror Business Continuity, and File System Analytics.

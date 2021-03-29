@@ -14,3 +14,7 @@ summary:
 
 [.lead]
 There are several resources available to help you understand how Ansible can be used to automate the deployment and administration of ONTAP storage resources.
+
+video::L5DZBV_Sg9E[youtube, width=848, height=480]
+
+This is a test.
