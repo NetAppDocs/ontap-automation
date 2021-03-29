@@ -15,6 +15,12 @@ summary:
 [.lead]
 There are several resources available to help you understand how Ansible can be used to automate the deployment and administration of ONTAP storage resources.
 
+=== Video resources
+
 video::L5DZBV_Sg9E[youtube, width=848, height=480]
 
-This is a test.
+This video is also available through NetApp TV at link:https://tv.netapp.com/detail/video/6217195551001[Ansible Certified Modules].
+
+=== Developer resources
+
+link:https://www.netapp.com/devops-solutions/ansible/[NetApp Ansible DevOps Solutions^].
