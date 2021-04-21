@@ -25,12 +25,16 @@ ONTAPI is a set of API calls provided through the Network Manageability SDK that
 
 The ONTAP REST API and command line interface have a fundamentally different designs. The CLI commands and parameters do not map directly to the REST API calls. And even where there might be a similarity, the details of the input parameters can be different. For example, numeric units might be specified in bytes or using a suffix (such as KB). You should review _Input variables controlling an API request_ as well as the ONTAP online documentation page for more information.
 
-=== Data SVMs exposed through the API
+=== Data SVMs exposed through the REST PI
 
 ONTAP supports several types of storage virtual machines (SVMs). However, only the data SVMs are directly exposed through the ONTAP REST API. The configuration information describing the cluster and nodes is available through the REST API, however the cluster and nodes are not treated as separate SVMs.
 
+=== Migrating from ONTAPI to REST
+
+The REST API is the primary and strategic choice for automating ONTAP system administration. If you are currently using the ONTAPI API, you should consider migrating to the REST API. NetApp provides mapping documentation to assist with the migration from ONTAPI to REST.
+
 .Related links
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAPI to REST API mapping information^]
-
 link:input_variables_controlling_an_api_request.html[Input variables controlling an API request]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAPI to REST API mapping information^]

@@ -77,8 +77,6 @@ entries:
         url: /retrieving_the_cluster_software_version.html
       - title: Hello world
         url: /hello_world.html
-      - title: Accessing the ONTAP API documentation page
-        url: /accessing_the_ontap_api_documentation_page.html
       - title: Workflow processes using the ONTAP REST API
         url: /workflow_processes_using_the_ontap_rest_api.html
         entries:
@@ -96,5 +94,11 @@ entries:
             url: /preparing_to_use_the_python_client_library.html
           - title: Script to retrieve the cluster configuration
             url: /script_to_retrieve_the_cluster_configuration.html
+  - title: API reference
+    url: /api_reference.html
+  - title: ONTAP and Ansible
+    url: /ontap_ansible.html
+  - title: Automation blogs
+    url: /blogs.html
   - title: Get more information
     url: /get_more_information.html
