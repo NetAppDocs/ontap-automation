@@ -35,6 +35,6 @@ The REST API is the primary and strategic choice for automating ONTAP system adm
 
 .Related links
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAPI to REST API mapping information^]
-
 link:input_variables_controlling_an_api_request.html[Input variables controlling an API request]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAPI to REST API mapping information^]
