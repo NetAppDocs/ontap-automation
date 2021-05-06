@@ -41,4 +41,8 @@ Name mappings allow you to map identities from one name domain to another. For e
 
 NIS servers can be used to authenticate users and client workstations. This resource type was introduced with ONTAP 9.6.
 
+==== UNIX users and groups
 
+Local UNIX users and groups have been a part of previous ONTAP releases. However, support has now been added to the REST API allowing you to display and manage the users and groups. These REST resource types were introduced with ONTAP 9.9
+
+// 9.9
