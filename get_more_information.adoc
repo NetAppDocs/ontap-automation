@@ -33,7 +33,7 @@ Provides documentation and other helpful links needed to plan, administer, and s
 
 === ONTAP 9 developer resources
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAPI to REST API mapping information^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895[ONTAPI to REST API mapping information^]
 +
 Provides the key ONTAPI calls and the mapping to the equivalent REST API calls.
 

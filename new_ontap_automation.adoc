@@ -15,7 +15,7 @@ summary: There are several new and changed automation features with the current 
 [.lead]
 There are several new and changed automation features provided with the current ONTAP release.
 
-=== ONTAP 9.8 REST API
+=== ONTAP 9.9.1 REST API
 
 ONTAP 9.9.1 continues to expand the capabilities of the ONTAP REST API. There are new API endpoints for existing ONTAP features, including SAN port sets and vServer file directory security. In addition, endpoints have been added to support new ONTAP 9.9.1 features and enhancements. And the related documentation has also been improved. A summary of the enhancements is presented below.
 
