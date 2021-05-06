@@ -63,6 +63,6 @@ A LUN is the logical representation of storage in a storage area network (SAN). 
 
 ==== Port sets
 
-A port set is a collection of Fibre Channel or iSCSI network interfaces associated with the _portset_ Storage VM. While this feature has existed with previous releases of ONTAP, support has now been added to the REST API. This REST resource type is introduced with ONTAP 9.9.
+A port set is a collection of Fibre Channel or iSCSI network interfaces associated with the _portset_ Storage VM. While this feature has existed with previous releases of ONTAP, support has now been added to the REST API. This REST resource type was introduced with ONTAP 9.9.
 
 // 9.9

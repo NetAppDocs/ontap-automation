@@ -45,7 +45,7 @@ The physical disks in the cluster. This resource type was introduced with ONTAP 
 
 ==== FlexCaches
 
-The persistent cache of an origin volume. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
 
 ==== FlexCache origins
 

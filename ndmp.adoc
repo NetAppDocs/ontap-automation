@@ -39,6 +39,6 @@ You can manage the NDMP configuration of the SVMs. This resource type was introd
 
 ==== NDMP SVM user passwords
 
-You can generate and retrieve passwords for a specific NDMP user within the SVM content. This resource type is new with the ONTAP 9.8 REST API and enhanced with ONTAP 9.9.
+You can generate and retrieve passwords for a specific NDMP user within the SVM content. This resource type was introduced with the ONTAP 9.8 REST API and enhanced with ONTAP 9.9.
 
 // 9.9
