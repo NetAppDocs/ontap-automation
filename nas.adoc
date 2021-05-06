@@ -39,7 +39,9 @@ The core configuration of the CIFS server. This resource type was introduced wit
 
 ==== CIFS sessions
 
-You can use this API to retrieve detailed information about a CIFS session. This resource type is new with ONTAP 9.8.
+You can use this API to retrieve detailed information about a CIFS session. This resource type was introduced with the ONTAP 9.8 REST API and enhanced with ONTAP 9.9.
+
+// 9.9
 
 ==== CIFS shares
 
@@ -59,7 +61,9 @@ You can use these API calls to trace access to specific files. This resource typ
 
 ==== File security permissions
 
-You can use these API calls displays the effective permission granted to Windows or Unix user for a specific file or folder. You can also manage NTFS file security and audit policies. This resource type is new with ONTAP 9.8.
+You can use these API calls displays the effective permission granted to Windows or Unix user for a specific file or folder. You can also manage NTFS file security and audit policies. This resource type was introduced with the ONTAP 9.8 REST API and significantly enhanced with ONTAP 9.9.
+
+// 9.9
 
 ==== FPolicy
 
@@ -116,5 +120,3 @@ A set of attributes used to manage the connection between ONTAP and an external 
 ==== Vscan server status
 
 The status of the external virus-scanning server. This resource type was introduced with ONTAP 9.6.
-
-

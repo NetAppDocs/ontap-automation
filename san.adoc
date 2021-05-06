@@ -37,7 +37,7 @@ A Fibre Channel Protocol (FCP) service defines the properties of a Fibre Channel
 
 An initiator group (igroup) is a collection of Fibre Channel WWPNs (world wide port names), and iSCSI IQNs (qualified names), and iSCSI EUIs (extended unique identifiers) that identify host initiators. This resource type was originally introduced with ONTAP 9.6.
 
-The nested initiator groups is a new feature with ONTAP 9.9.1. Support has also been added to the REST API. This resource type was introduced with ONTAP 9.9.
+Nested igroups is a new feature with ONTAP 9.9.1 and support has also been added to the REST API. This REST resource type was introduced with ONTAP 9.9.
 
 // 9.9
 
@@ -63,6 +63,6 @@ A LUN is the logical representation of storage in a storage area network (SAN). 
 
 ==== Port sets
 
-A port set is a collection of Fibre Channel Protocol or iSCSI network interfaces associated with the _portset_ Storage VM. While this feature has existed with previous releases of ONTAP, support has now been added to the REST API. These resource types were introduced with ONTAP 9.9.
+A port set is a collection of Fibre Channel or iSCSI network interfaces associated with the _portset_ Storage VM. While this feature has existed with previous releases of ONTAP, support has now been added to the REST API. This REST resource type is introduced with ONTAP 9.9.
 
 // 9.9

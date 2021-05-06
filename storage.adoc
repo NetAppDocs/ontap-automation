@@ -49,7 +49,7 @@ The persistent cache of an origin volume. This resource type was introduced with
 
 ==== FlexCache origins
 
-FlexCache is a persistent cache of an origin volume. This resource type was originally introduced with ONTAP 9.6. Support has been enhanced with ONTAP 9.9 to support modification through the HTTP PATCH method.
+FlexCache is a persistent cache of an origin volume. This resource type was originally introduced with ONTAP 9.6. Support has been enhanced with the ONTAP 9.9 REST API to support modification through the HTTP PATCH method.
 
 // 9.9
 
@@ -103,11 +103,9 @@ You can use these API calls to configure the efficiencies applied to an entire v
 
 ==== Volumes
 
-Logical containers are used to serve data to clients. This resource type was introduced with ONTAP 9.6.
+Logical containers are used to serve data to clients. This resource type was originally introduced with ONTAP 9.6 REST API. Many of the parameter values used with the API were significantly expanded with ONTAP 9.9 including those used with space management.
 
-*update 9.9.1*
->> more attributes
->> /storage/volumes  and then open GET and open model and click *space*
+// 9.9
 
 ==== Volume files
 
