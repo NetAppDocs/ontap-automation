@@ -83,7 +83,9 @@ The APIs calls can be used to install, display, and delete certificates used by 
 
 ==== GCP KMS
 
-This set of API calls allows you to use the Google Cloud Platform Key Management Service to store the ONTAP encryption keys. This resource type is new with ONTAP 9.8.
+This set of API calls allows you to use the Google Cloud Platform Key Management Service to store and manage the ONTAP encryption keys. This resource type was initially introduced with ONTAP 9.8. However it has been completely redesigned and enhanced. And so, this is considered to be a new feature and new resources types with ONTAP 9.9.
+
+// 9.9
 
 ==== IPSec
 
@@ -120,5 +122,3 @@ Manage the privileges for a specific role. This resource type was introduced wit
 ==== SSH
 
 These calls allow you to set the SSH configuration. This resource type was introduced with ONTAP 9.7.
-
-
