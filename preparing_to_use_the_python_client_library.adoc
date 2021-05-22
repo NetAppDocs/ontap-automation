@@ -43,4 +43,4 @@ See the _NetApp Developer Network_ for links to documentation and other resource
 
 .Related links
 
-https://devnet.netapp.com/restapi[NetApp Developer Network: ONTAP RESTful API^]
+https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]
