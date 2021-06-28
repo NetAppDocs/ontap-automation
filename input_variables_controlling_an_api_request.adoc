@@ -28,6 +28,7 @@ The HTTP methods supported by the ONTAP REST API are shown in the following tabl
 [NOTE]
 Not all the HTTP methods are available at each of the REST endpoints. Also, both PATCH and DELETE can be used on a collection. See _Object references and access_ for more information.
 
+[cols="20,80"*,options="header"]
 |===
 |HTTP method |Description
 
@@ -63,7 +64,7 @@ Basic authentication must be set with the user name and password encoded as a ba
 The content of the request body varies depending on the specific call. The HTTP request body consists of one of the following:
 
 * JSON object with input variables
-* Empty
+* Empty JSON object
 
 === Filtering objects
 
@@ -165,6 +166,7 @@ You can issue multiple requests to page through the objects. Each subsequent API
 
 The input values used with some API calls as well as certain query parameters are numeric. Rather than provide an integer in bytes, you can optionally use a suffix as shown in the following table.
 
+[cols="20,80"*,options="header"]
 |===
 |Suffix |Description
 
@@ -175,9 +177,9 @@ The input values used with some API calls as well as certain query parameters ar
 |GB
 |GB Gigabytes (MB x 1024 bytes) or gibibytes
 |TB
-|TB Terabytes (GB x 1024 byes) or tebibytes
+|TB Terabytes (GB x 1024 bytes) or tebibytes
 |PB
-|PB Petabytes (TB x 1024 byes) or pebibytes
+|PB Petabytes (TB x 1024 bytes) or pebibytes
 |===
 
 .Related links

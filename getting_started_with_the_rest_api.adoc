@@ -19,4 +19,4 @@ summary:
 //
 
 [.lead]
-You can quickly get started using the ONTAP REST API. Accessing the API provides some perspective before you begin using it with the more complex workflow processes on a live system.
+You can quickly get started using the ONTAP REST API. After preparing and understanding the basic request-response flow, you can issue a simple call using curl. This provides the introduction and perspective needed before using it with more complex workflows on a live system.
