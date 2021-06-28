@@ -92,7 +92,7 @@ If an API call is processed asynchronously, a Job object is returned which ancho
 +
 If an error occurs, an Error object is always returned. For example, you will receive an error when attempting to change a field not defined for a cluster.
 
-* Empty
+* Empty JSON object
 +
 In certain cases, no data is returned and the response body includes an empty JSON object.
 

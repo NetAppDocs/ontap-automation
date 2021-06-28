@@ -17,7 +17,7 @@ There are several steps you should take to prepare to use the ONTAP REST API.
 
 ===== Experience with ONTAP 9
 
-You should have experience with ONTAP 9. This includes understanding the basic concepts and terminology as well as some experience with system administration. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-concepts/home.html[ONTAP 9 Concepts] to get started.
+You should have experience with ONTAP 9. This includes understanding the basic concepts and terminology as well as some experience with system administration. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-concepts/home.html[ONTAP 9 Concepts^] to get started.
 
 ===== Review REST concepts and implementation
 
