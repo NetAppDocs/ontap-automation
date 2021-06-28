@@ -13,4 +13,20 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+There are several steps you should take to prepare to use the ONTAP REST API.
+
+===== Experience with ONTAP 9
+
+You should have experience with ONTAP 9. This includes understanding the basic concepts and terminology as well as having some experience with system administration.
+
+===== Review REST concepts and implementation
+
+Make sure to review link:rest_implementation.html[REST implementation details] for information about REST concepts and details regarding how the ONTAP REST API is designed.
+
+===== Software development background
+
+It is helpful to have some experience with software development, including one or more programming languages as well as common utilities such as curl.
+
+===== Get more information
+
+You should be aware of the additional information resources as suggested in link:get_more_information.html[Get more information].
