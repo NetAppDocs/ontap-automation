@@ -1,0 +1,17 @@
+---
+sidebar: sidebar
+permalink: understanding_rest.html
+keywords:
+summary:
+---
+
+= Understanding the ONTAP REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+
+[.lead]
+xxx

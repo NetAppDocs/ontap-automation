@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: getting_started_before.html
+keywords:
+summary:
+---
+
+= Before you begin
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
