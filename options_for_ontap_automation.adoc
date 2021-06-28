@@ -31,7 +31,7 @@ If you have existing code using the ONTAPI API, NetApp provides support for conv
 
 === Using the NetApp Python client library
 
-The Python client library is a package you can use when writing scripts to access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous request processing, and exception handling. By using the Python client library, you can quickly develop robust code to support your ONTAP automation goals. You should begin by reviewing the documentation at this site, including link:accessing_the_rest_api_using_python.html[Accessing the REST API using Python].
+The Python client library is a package you can use when writing scripts to access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous request processing, and exception handling. By using the Python client library, you can quickly develop robust code to support your ONTAP automation goals. You should begin by reviewing the documentation at this site, including link:using_python.html[Using Python].
 
 === Using Ansible
 
