@@ -31,7 +31,7 @@ You must use Python 3.5 or later. In addition, the following packages are also r
 
 === Package name and version
 
-The name of the Python client library package is *netapp_ontap*. The version associated with the package is a combination of the ONTAP major and minor version numbers the library was generated from, along with a minor version for the client within the ONTAP release. For example,  valid version numbers include: 9.6.1, 9.6.2, and 9.7.1.
+The name of the Python client library package is *netapp-ontap*. The version associated with the package is a combination of the ONTAP major and minor version numbers the library was generated from, along with a minor version for the client within the ONTAP release. For example,  valid version numbers include: 9.6.1, 9.6.2, and 9.7.1.
 
 === Installation
 
