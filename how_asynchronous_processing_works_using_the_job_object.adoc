@@ -21,7 +21,7 @@ summary:
 [.lead]
 After issuing an API request that is designed to run asynchronously, a job object is always created and returned to the caller. The job describes and anchors a background task that processes the request. Depending on the HTTP status code, you must retrieve the state of the job to determine if the request was successful.
 
-Refer to the ONTAP API online documentation page to determine which API calls are designed to be performed asynchronously.
+Refer to link:api_reference.html[API reference] to determine which API calls are designed to be performed asynchronously.
 
 === Controlling how a request is processed
 
