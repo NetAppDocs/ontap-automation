@@ -80,15 +80,15 @@ entries:
             url: /support.html
           - title: SVM
             url: /svm.html
-  - title: Workflow processes using the ONTAP REST API
-    url: /workflow_processes_using_the_ontap_rest_api.html
+  - title: Workflows
+    url: /workflows.html
     entries:
       - title: Preparing to use the workflow processes
         url: /preparing_to_use_the_workflow_processes.html
       - title: Workflow 1  Updating the cluster contact and checking job state
         url: /workflow_1__updating_the_cluster_contact_and_checking_job_state.html
-  - title: Accessing the REST API using Python
-    url: /accessing_the_rest_api_using_python.html
+  - title: Using Python
+    url: /using_python.html
     entries:
       - title: NetApp ONTAP Python client library
         url: /netapp_ontap_python_client_library.html

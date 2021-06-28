@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: accessing_the_rest_api_using_python.html
+permalink: using_python.html
 keywords:
 summary:
 ---
 
-= Accessing the REST API using Python
+= Using Python
 :hardbreaks:
 :nofooter:
 :icons: font
