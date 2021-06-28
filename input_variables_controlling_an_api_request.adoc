@@ -177,9 +177,9 @@ The input values used with some API calls as well as certain query parameters ar
 |GB
 |GB Gigabytes (MB x 1024 bytes) or gibibytes
 |TB
-|TB Terabytes (GB x 1024 byes) or tebibytes
+|TB Terabytes (GB x 1024 bytes) or tebibytes
 |PB
-|PB Petabytes (TB x 1024 byes) or pebibytes
+|PB Petabytes (TB x 1024 bytes) or pebibytes
 |===
 
 .Related links

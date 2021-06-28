@@ -134,7 +134,7 @@ The common error codes are described in the following table. Specific API calls 
 |The operation is not supported.
 |4
 |405
-|An object with the specified identifier cannot be not found.
+|An object with the specified identifier cannot be found.
 |6
 |403
 |Permission to perform the request is denied.
