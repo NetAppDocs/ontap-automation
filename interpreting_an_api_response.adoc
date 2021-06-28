@@ -25,8 +25,9 @@ Each API request generates a response back to the client. You should examine the
 
 The HTTP status codes used by the ONTAP REST API are described below.
 
+[cols="15,25,60"*,options="header"]
 |===
-|Code | |Description
+|Code | Reason phrase |Description
 
 |200
 |OK
@@ -91,7 +92,7 @@ If an API call is processed asynchronously, a Job object is returned which ancho
 +
 If an error occurs, an Error object is always returned. For example, you will receive an error when attempting to change a field not defined for a cluster.
 
-* Empty
+* Empty JSON object
 +
 In certain cases, no data is returned and the response body includes an empty JSON object.
 
@@ -133,7 +134,7 @@ The common error codes are described in the following table. Specific API calls 
 |The operation is not supported.
 |4
 |405
-|An object with the specified identifier cannot be not found.
+|An object with the specified identifier cannot be found.
 |6
 |403
 |Permission to perform the request is denied.

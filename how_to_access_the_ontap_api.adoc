@@ -36,7 +36,7 @@ You should always use the cluster management LIF. This will load balance the API
 
 === ONTAP API online documentation page
 
-The ONTAP API online documentation page provides an access point when using a web browser. In addition to providing a way to execute individual API calls directly, the page includes a detailed description of the API, including input parameters and other options for each call. The API calls are organized into functional categories. See _Summary of the REST resource categories_ for more information.
+The ONTAP API online documentation page provides an access point when using a web browser. In addition to providing a way to execute individual API calls directly, the page includes a detailed description of the API, including input parameters and other options for each call. The API calls are organized into functional categories. See link:summary_of_the_rest_resource_categories.html[Summary of the REST resource categories] for more information.
 
 The format of the URL used to access the documentation page for the most recent version of the API is:
 

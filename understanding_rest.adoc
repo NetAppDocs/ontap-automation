@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: understanding_rest.html
+keywords:
+summary:
+---
+
+= Understanding the ONTAP REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Beginning with version 9.6, ONTAP includes a REST web services API. You can use the REST API to deploy and administer ONTAP storage resources. Before using the API, you should understand its design, architectural components, and limitations.

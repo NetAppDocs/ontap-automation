@@ -19,11 +19,11 @@ summary:
 //
 
 [.lead]
-You can issue a simple command at your workstation's CLI to get started using the ONTAP REST API and confirm its availability.
+You can issue a simple curl command at the CLI to get started using the ONTAP REST API and confirm its availability.
 
 .Before you begin
 
-The Curl utility must be available on your workstation. In addition, you must have the following:
+The curl utility must be available on your workstation. In addition, you must have the following:
 
 * IP address or host name of the ONTAP cluster management LIF
 * User name and password for an account with authority to access the ONTAP REST API (cluster resource).
@@ -34,11 +34,11 @@ If your credentials include special characters, you need to format them in a way
 .Steps
 
 . At the command line interface of your local workstation, retrieve the version of the ONTAP software:
-
++
 `curl -X GET -u username:password -k "https://<ip_address>/api/cluster?fields=version"`
-
++
 *Example*
-
++
 `curl -X GET -u admin:password -k "'https://10.222.81.101/api/cluster?fields=version"`
 
 .After you finish
