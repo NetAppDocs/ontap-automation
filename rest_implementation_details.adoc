@@ -13,4 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-xxx
+REST establishes a common set of technologies and best practices, however the details of each API can vary based on the choices made during development. You should be aware of the design characteristics of the ONTAP REST API before using it with a live deployment.

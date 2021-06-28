@@ -28,6 +28,7 @@ The HTTP methods supported by the ONTAP REST API are shown in the following tabl
 [NOTE]
 Not all the HTTP methods are available at each of the REST endpoints. Also, both PATCH and DELETE can be used on a collection. See _Object references and access_ for more information.
 
+[cols="20,80"*,options="header"]
 |===
 |HTTP method |Description
 
