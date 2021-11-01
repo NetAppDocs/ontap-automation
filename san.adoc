@@ -37,7 +37,7 @@ A Fibre Channel Protocol (FCP) service defines the properties of a Fibre Channel
 
 An initiator group (igroup) is a collection of Fibre Channel WWPNs (world wide port names), and iSCSI IQNs (qualified names), and iSCSI EUIs (extended unique identifiers) that identify host initiators. This resource type was originally introduced with ONTAP 9.6.
 
-Nested igroups is a new feature with ONTAP 9.9.1 and support has also been added to the REST API. This REST resource type was introduced with ONTAP 9.9.
+Nested igroups is a new feature with ONTAP 9.9 and support has also been added to the REST API. This REST resource type was introduced with ONTAP 9.9.
 
 // 9.9
 
