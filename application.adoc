@@ -28,3 +28,11 @@ The ONTAP applications are arranged based on type, including: templates, applica
 ==== Application snapshots
 
 Applications support snapshot copies, which can be created or restored at any time. This resource type was introduced with ONTAP 9.6.
+
+==== Consistency groups
+
+A consistency group is a set of volumes that are grouped together when performing certain operations such as a snapshot. This feature extends the same crash consistency and data integrity implicit with single-volume operations across a set of volumes. This resource type was introduced with ONTAP 9.10.
+
+==== Consistency groups snapshots
+
+You can use these endpoints to copy, create, inventory, and restore SnapShots for a consistency group. This resource type was introduced with ONTAP 9.10.
