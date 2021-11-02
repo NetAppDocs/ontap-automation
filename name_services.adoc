@@ -29,9 +29,17 @@ You can display the Dynamic DNS (DDNS) information and manage the DDNS subsystem
 
 DNS supports the integration of the ONTAP cluster in your network. This resource type was introduced with ONTAP 9.6.
 
+==== Host record
+
+Allows you to displays the IP address of the specified hostname as well as the hostname for an IP address. This resource type was introduced with ONTAP 9.10.
+
 ==== LDAP
 
 LDAP servers can be used to maintain user information. This resource type was introduced with ONTAP 9.6.
+
+==== Local hosts
+
+You can use these endpoints to display and manage the local mappings for hostnames. This resource type was introduced with ONTAP 9.10.
 
 ==== Name mappings
 

@@ -105,4 +105,6 @@ Schedules can be used to automate the perform of tasks. This resource type was i
 
 An ONTAP cluster includes the cluster software profile, software packages collection, and software history collection. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
 
+==== Web
 
+You can use this API to update web services configurations and to retrieve the current configuration. This resource type was introduced with ONTAP 9.10.
