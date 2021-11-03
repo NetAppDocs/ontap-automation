@@ -26,7 +26,11 @@ There are several additional resources you can access to get help and find more 
 // https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
 * https://docs.netapp.com/us-en/ontap/[ONTAP 9 Documentation^]
 +
-Provides all of the documentation for ONTAP 9.
+Provides the documentation for ONTAP 9 (except the CLI commands).
+
+* https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
++
+Provides documentation for the ONTAP 9 CLI commands.
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
 +
