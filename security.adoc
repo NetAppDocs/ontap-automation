@@ -21,10 +21,6 @@ summary:
 [.lead]
 These API calls can be used to manage the cluster and SVM security settings.
 
-==== Cluster security
-
-You can retrieve details of the cluster-wide security and update certain parameters. This resource type was introduced with ONTAP 9.7 and updated with ONTAP 9.8.
-
 ==== Accounts
 
 There is a collection of user accounts for the cluster and SVMs. This resource type was introduced with ONTAP 9.6.
@@ -48,6 +44,14 @@ You can retrieve the audit log messages. This resource type was introduced with 
 ==== Active Directory proxy
 
 You can administer the SVM account information at the Active Directory server. This resource type was introduced with ONTAP 9.7.
+
+==== Anti-ransomware
+
+ONTAP detects files potentially containing a ransomware threat. You can retrieve a list of these suspect files as well as remove them from a volume. This resource type was introduced with ONTAP 9.10.1.
+
+==== Cluster security
+
+You can retrieve details of the cluster-wide security and update certain parameters. This resource type was introduced with ONTAP 9.7 and updated with ONTAP 9.8.
 
 ==== LDAP authentication
 
