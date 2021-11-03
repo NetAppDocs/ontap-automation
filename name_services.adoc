@@ -31,7 +31,7 @@ DNS supports the integration of the ONTAP cluster in your network. This resource
 
 ==== Host record
 
-Allows you to displays the IP address of the specified hostname as well as the hostname for an IP address. This resource type was introduced with ONTAP 9.10.
+These endpoints allow you to displays the IP address of a specified hostname as well as the hostname for an IP address. This resource type was introduced with ONTAP 9.10.
 
 ==== LDAP
 

@@ -39,4 +39,4 @@ You can manage the SVMs that are bound to a cluster. This resource type was intr
 
 ==== Web
 
-You can use this API to update and retrieve the web services security configuration for each data SVM. This resource type was introduced with ONTAP 9.10.
+You can use these endpoints to update and retrieve the web services security configuration for each data SVM. This resource type was introduced with ONTAP 9.10.

@@ -107,4 +107,4 @@ An ONTAP cluster includes the cluster software profile, software packages collec
 
 ==== Web
 
-You can use this API to update web services configurations and to retrieve the current configuration. This resource type was introduced with ONTAP 9.10.
+You can use these endpoints to update the web services configurations and to retrieve the current configuration. This resource type was introduced with ONTAP 9.10.
