@@ -47,7 +47,7 @@ You can administer the SVM account information at the Active Directory server. T
 
 ==== Anti-ransomware
 
-ONTAP detects files potentially containing a ransomware threat. You can retrieve a list of these suspect files as well as remove them from a volume. This resource type was introduced with ONTAP 9.10.1.
+ONTAP detects files potentially containing a ransomware threat. There are several categories of endpoints. You can retrieve a list of these suspect files as well as remove them from a volume. This resource type was introduced with ONTAP 9.10.1.
 
 ==== Cluster security
 
@@ -88,8 +88,6 @@ The APIs calls can be used to install, display, and delete certificates used by 
 ==== GCP KMS
 
 This set of API calls allows you to use the Google Cloud Platform Key Management Service to store and manage the ONTAP encryption keys. This resource type was initially introduced with the ONTAP 9.8 REST API. However, this feature has been redesigned and so is considered to be new, with new resources types, in ONTAP 9.9.
-
-// 9.9
 
 ==== IPSec
 
