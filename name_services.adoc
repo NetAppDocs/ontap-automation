@@ -12,12 +12,6 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.784986
-//
-
 [.lead]
 You can use these API calls to manage the name services supported by ONTAP.
 
@@ -51,4 +45,4 @@ NIS servers can be used to authenticate users and client workstations. This reso
 
 ==== UNIX users and groups
 
-Local UNIX users and groups have been a part of previous ONTAP releases. However, support has now been added to the REST API allowing you to display and manage the users and groups. These REST resource types were introduced with ONTAP 9.9 and significantly updated with ONTAP 9.10.
+Local UNIX users and groups have been a part of previous ONTAP releases. However, support has now been added to the REST API allowing you to display and manage the users and groups. These REST resource types were introduced with ONTAP 9.9 and significantly enhanced with ONTAP 9.10.

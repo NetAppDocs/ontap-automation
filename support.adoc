@@ -12,12 +12,6 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:01.067128
-//
-
 [.lead]
 You can use these API calls to manage the ONTAP features used to support a cluster.
 
@@ -69,6 +63,10 @@ The EMS filters collectively identify the events that require additional process
 
 An EMS filter instance is a collection of rules that are applied to the events. This resource type was introduced with ONTAP 9.6.
 
+==== EMS messages
+
+Provides access to the EMS event catalog. This resource type was introduced with ONTAP 9.6.
+
 ==== EMS rules for filter instance
 
 A list of rules can be managed for a specific instance of an EMS filter. This resource type was introduced with ONTAP 9.6.
@@ -76,10 +74,6 @@ A list of rules can be managed for a specific instance of an EMS filter. This re
 ==== EMS rules instance for filter instance
 
 An individual rule for a specific instance of an EMS filter. This resource type was introduced with ONTAP 9.6.
-
-==== EMS messages
-
-Provides access to the EMS event catalog. This resource type was introduced with ONTAP 9.6.
 
 ==== SNMP
 
@@ -97,6 +91,6 @@ You can manage specific SNMP trap hosts. This resource type was introduced with 
 
 You can define and administer SNMP users. This resource type was introduced with ONTAP 9.7.
 
-==== SNMP user instance
+==== SNMP users instance
 
 You can administer a specific SNMP user where the engine ID is associated with the administrative SVM or a data SVM. This resource type was introduced with ONTAP 9.7.
