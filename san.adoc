@@ -47,7 +47,7 @@ An iSCSI session is one or more TCP connections that link an iSCSI initiator wit
 
 ==== LUN attributes
 
-LUN attributes are caller-defined name/value pairs that can be optionally stored with a LUN. Attributes are available to persist small amounts of application-specific metadata and are in no way interpreted by ONTAP. The endpoints allow you to create, update, delete, and discover attributes for a LUN. This resource type was introduced with ONTAP 9.10.
+LUN attributes are caller-defined name/value pairs that can be optionally stored with a LUN. Attributes are available to save small amounts of application-specific metadata and are not interpreted by ONTAP. The endpoints allow you to create, update, delete, and discover attributes for a LUN. This resource type was introduced with ONTAP 9.10.
 
 ==== LUN maps
 
@@ -55,7 +55,7 @@ A LUN map is an association between a LUN and an initiator group. This resource 
 
 ==== LUN maps reporting nodes
 
-The reporting nodes are the cluster nodes from which network paths to a mapped LUN are advertised using the SAN protocols as part of the selective LUN map (SLM) feature of ONTAP. The new endpoints allow you to add, remove and discover the reporting nodes of a LUN map. This resource type was introduced with ONTAP 9.10.
+The reporting nodes are the cluster nodes from which network paths to a mapped LUN are advertised using the SAN protocols as part of the selective LUN map (SLM) feature of ONTAP. The new endpoints allow you to add, remove, and discover the reporting nodes of a LUN map. This resource type was introduced with ONTAP 9.10.
 
 ==== LUNs
 
