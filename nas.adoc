@@ -12,22 +12,16 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.799850
-//
-
 [.lead]
 You can use these API calls to manage the CIFS and NFS settings for the cluster and SVMs.
-
-==== Audit log redirect
-
-You can redirect NAS auditing events to a specific SVM. This resource type is new with ONTAP 9.8.
 
 ==== Audit
 
 Certain CIFS and NFS events can be logged for the SVMs, which can help to improve security.  This resource type was introduced with ONTAP 9.6.
+
+==== Audit log redirect
+
+You can redirect NAS auditing events to a specific SVM. This resource type is new with ONTAP 9.8.
 
 ==== CIFS home directory search paths
 
@@ -40,8 +34,6 @@ The core configuration of the CIFS server. This resource type was introduced wit
 ==== CIFS sessions
 
 You can use this API to retrieve detailed information about a CIFS session. This resource type was introduced with the ONTAP 9.8 REST API and enhanced with ONTAP 9.9.
-
-// 9.9
 
 ==== CIFS shares
 
@@ -63,7 +55,6 @@ You can use these API calls to trace access to specific files. This resource typ
 
 You can use these API calls displays the effective permission granted to Windows or Unix user for a specific file or folder. You can also manage NTFS file security and audit policies. This resource type was introduced with the ONTAP 9.8 REST API and significantly enhanced with ONTAP 9.9.
 
-// 9.9
 
 ==== FPolicy
 
