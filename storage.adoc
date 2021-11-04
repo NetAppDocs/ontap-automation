@@ -15,17 +15,17 @@ summary:
 [.lead]
 You can use these API calls to manage the physical and logical storage.
 
-==== Aggregates
+==== Aggregate metrics
 
-An aggregate consists of one or more RAID groups. This resource type was introduced with ONTAP 9.6.
+You can retrieve historical metrics data for a specific aggregate. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
 
 ==== Aggregate plexes
 
 A physical copy of the WAFL storage within an aggregate. This resource type was introduced with ONTAP 9.6.
 
-==== Aggregate metrics
+==== Aggregates
 
-You can retrieve historical metrics data for a specific aggregate. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+An aggregate consists of one or more RAID groups. This resource type was introduced with ONTAP 9.6.
 
 ==== Bridges
 
