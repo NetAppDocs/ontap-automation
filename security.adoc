@@ -69,8 +69,7 @@ Internet Protocol Security (IPSec) is a suite of protocols providing security be
 
 ==== IPSec CA certificates
 
-xxx
-This resource type is new with ONTAP 9.8.
+You can add, remove, and retrieve IPSec CA certificates. This resource type is new with ONTAP 9.10.
 
 ==== IPSec policies
 
@@ -80,9 +79,17 @@ You can use this set of API calls to manage the policies in effect for an IPSec 
 
 You can use this set of API calls to manage the security associations in effect for an IPSec deployment. This resource type is new with ONTAP 9.8.
 
+==== Key manager configurations
+
+These endpoints allow you to retrieve and update the configurations for key managers. This resource type is new with ONTAP 9.10.
+
 ==== Key managers
 
 A key manager allows client modules within ONTAP to securely stored keys. This resource type was introduced with ONTAP 9.6 and updated for ONTAP 9.7.
+
+==== Key stores
+
+A key store describes the type of a key manager. This resource type is new with ONTAP 9.10.
 
 ==== LDAP authentication
 
@@ -123,3 +130,7 @@ You can display and manage the configuration for the SAML service provider. This
 ==== SSH
 
 These calls allow you to set the SSH configuration. This resource type was introduced with ONTAP 9.7.
+
+==== SSH SVMs
+
+These endpoints allow you to retrieve the SSH security configuration for all SVMs. This resource type was introduced with ONTAP 9.10.
