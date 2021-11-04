@@ -12,14 +12,12 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:01.104308
-//
-
 [.lead]
 You can use these API calls to manage storage virtual machines (SVMs).
+
+==== Migrations
+
+You can migrate an SVM from a source cluster to a destination cluster. The new endpoints provide complete control, including the ability to pause, resume, retrieve status, and abort a migration operation. This resource type was introduced with ONTAP 9.10.
 
 ==== Peer permissions
 
@@ -32,3 +30,7 @@ The peering relationships establish connectivity among the SVMs. This resource t
 ==== SVMs
 
 You can manage the SVMs that are bound to a cluster. This resource type was introduced with ONTAP 9.6.
+
+==== Web
+
+You can use these endpoints to update and retrieve the web services security configuration for each data SVM. This resource type was introduced with ONTAP 9.10.

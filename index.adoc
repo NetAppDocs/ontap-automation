@@ -16,7 +16,7 @@ You can automate the deployment and administration of your ONTAP storage systems
 
 == Discover what's new
 
-* link:new_ontap_automation.html[What's new with ONTAP 9.9.1 automation]
+* link:new_ontap_automation.html[What's new with ONTAP 9.10.1 automation]
 
 == Get more information and connect with peers
 
