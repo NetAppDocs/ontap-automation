@@ -12,46 +12,40 @@ summary:
 :linkattrs:
 :imagesdir: ./media/
 
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:01.030867
-//
-
 [.lead]
 You can use these API calls to manage the physical and logical storage.
-
-==== Aggregates
-
-An aggregate consists of one or more RAID groups. This resource type was introduced with ONTAP 9.6.
-
-==== Aggregate plexes
-
-A physical copy of the WAFL storage within an aggregate. This resource type was introduced with ONTAP 9.6.
 
 ==== Aggregate metrics
 
 You can retrieve historical metrics data for a specific aggregate. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
 
+==== Aggregate plexes
+
+A physical copy of the WAFL storage within an aggregate. This resource type was introduced with ONTAP 9.6.
+
+==== Aggregates
+
+An aggregate consists of one or more RAID groups. This resource type was introduced with ONTAP 9.6.
+
 ==== Bridges
 
 You can retrieve the bridges in a cluster. This resource type was introduced with ONTAP 9.9.
-
-// 9.9
 
 ==== Disks
 
 The physical disks in the cluster. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7 and 9.8.
 
-==== FlexCaches
+==== File clone
+
+You can use these endpoints to create file clones, retrieve split status, and manage split loads. The file cloning endpoint resources were first introduced with ONTAP 9.6 and expanded with ONTAP 9.8. They were significantly expanded again with ONTAP 9.10.
+
+==== FlexCache
 
 This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
 
 ==== FlexCache origins
 
 FlexCache is a persistent cache of an origin volume. This resource type was originally introduced with ONTAP 9.6. Support has been enhanced with the ONTAP 9.9 REST API to support modification through the HTTP PATCH method.
-
-// 9.9
 
 ==== Monitored files
 
@@ -64,6 +58,10 @@ Storage ports of the cluster. This resource type was introduced with ONTAP 9.6.
 ==== QOS policies
 
 Quality of service policy configuration. This resource type was introduced with ONTAP 9.6.
+
+==== QOS workloads
+
+A QOS workload represents a storage object tracked by QOS. You can retrieve the QOS workflows. This resource type was introduced with ONTAP 9.10.
 
 ==== Qtrees
 
@@ -97,6 +95,10 @@ You can retrieve the switches in a cluster. This resource type was introduced wi
 
 You can retrieve the tape devices in a cluster. This resource type was introduced with ONTAP 9.9.
 
+==== Top metrics
+
+The top metrics endpoints allow you to determine activity for a volume filtered by a specific metric. Filtering can be done based on clients, directories, files, and users. This resource type was introduced with ONTAP 9.10.
+
 ==== Volume efficiency policies
 
 You can use these API calls to configure the efficiencies applied to an entire volume. This resource type is new with ONTAP 9.8.
@@ -104,8 +106,6 @@ You can use these API calls to configure the efficiencies applied to an entire v
 ==== Volumes
 
 Logical containers are used to serve data to clients. This resource type was originally introduced with ONTAP 9.6 REST API. Many of the parameter values used with the API were significantly expanded with ONTAP 9.9 including those used with space management.
-
-// 9.9
 
 ==== Volume files
 

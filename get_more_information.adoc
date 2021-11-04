@@ -23,9 +23,14 @@ There are several additional resources you can access to get help and find more 
 
 === ONTAP 9 resources
 
+// https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
+* https://docs.netapp.com/us-en/ontap/[ONTAP 9 Documentation^]
++
+Provides the documentation for ONTAP 9 (except the CLI commands).
+
 * https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
 +
-Provides all of the documentation for ONTAP 9.
+Provides documentation for the ONTAP 9 CLI commands.
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
 +
@@ -33,11 +38,19 @@ Provides documentation and other helpful links needed to plan, administer, and s
 
 === ONTAP 9 developer resources
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895[ONTAPI to REST API mapping information^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAPI to REST API mapping information^]
 +
 Provides the key ONTAPI calls and the mapping to the equivalent REST API calls.
 
-* https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API]
+* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.10.1^]
++
+The NetApp Python Client Library package at PyPI.
+
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html[NetApp PCL documentation for 9.10.1^]
++
+Documentation for the NetApp Python Client Library.
+
+* https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]
 +
 Provides resources and documentation needed to use the ONTAP REST API, including the ONTAP Python client library.
 
@@ -49,7 +62,7 @@ Good introduction to the NetApp Python client library and how to get started wri
 
 === NetApp resources
 
-* https://mysupport.netapp.com/[NetApp Support]
+* https://mysupport.netapp.com/[NetApp Support^]
 +
 Access troubleshooting tools, documentation, and technical support assistance.
 
