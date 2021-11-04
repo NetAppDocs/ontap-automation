@@ -33,7 +33,7 @@ Home directories for SMB users on a CIFS server can be created without creating 
 
 ==== CIFS local groups
 
-The CIFS server can use local groups for authorization when determining share, file and directory access rights.
+The CIFS server can use local groups for authorization when determining share, file, and directory access rights.
 This resource type was introduced with ONTAP 9.9 and significantly expanded with ONTAP 9.10.
 
 ==== CIFS services
@@ -86,7 +86,7 @@ A container for elements of the FPolicy framework, including FPolicy engines and
 
 ==== Locks
 
-A lock is a synchronization mechanism for enforcing limits on concurrent access to files where many clients can be accessing the same file at the same time. You can use these endpoints to retrieve and delete locks. This resource type was introduced with ONTAP 9.10.
+A lock is a synchronization mechanism for enforcing limits on concurrent access to files where many clients are accessing the same file simultaneously. You can use these endpoints to retrieve and delete locks. This resource type was introduced with ONTAP 9.10.
 
 ==== NFS connected clients
 
