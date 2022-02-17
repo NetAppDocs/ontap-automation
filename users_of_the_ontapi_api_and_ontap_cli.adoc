@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: users_of_the_ontapi_api_and_ontap_cli.html
-keywords:
+keywords: snapdiff
 summary:
 ---
 
@@ -33,6 +33,18 @@ ONTAP supports several types of storage virtual machines (SVMs). However, only t
 === Migrating from ONTAPI to REST
 
 The REST API is the primary and strategic choice for automating ONTAP system administration. If you are currently using the ONTAPI API, you should consider migrating to the REST API. NetApp provides mapping documentation to assist with the migration from ONTAPI to REST.
+
+=== Changes to SnapDiff availability in ONTAPI
+
+Beginning with ONTAP 9.10.1, the SnapDiff v1 and v2 ONTAPI calls cannot be invoked. Any third-party application that invokes SnapDiff v1 or v2 ONTAPI calls will not function beginning with ONTAP 9.10.1. ONTAP users should verify that their backup application supports the SnapDiff v3 REST calls before upgrading to ONTAP 9.10.1.
+
+SnapDiff API availability across ONTAP releases is defined as follows:
+
+* ONTAP 9.7 and earlier releases:  v1 and v2 (ONTAPI only)
+* ONTAP 9.8 – 9.9.1:  v1, v2 and v3 (both ONTAPI and REST API)
+* ONTAP 9.10.1:  v3 only (REST API only)
+
+For more information, see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508 [ONTAP 9 Release Notes].
 
 .Related links
 
