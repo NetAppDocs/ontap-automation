@@ -1,11 +1,15 @@
 section: rest
 title: Understand the ONTAP REST API
 entries:
-  - title: REST implmentation details
+  - title: REST implmentation
     entries:
       - title: REST web services foundation
         url: /rest/rest_web_services_foundation.html
-  - title: Summary of REST resources
+  - title: Additional considerations
+    entries:
+      - title: Object references and access
+        url: /rest/object_references_and_access.html
+  - title: Summary of the REST resources
     entries:
       - title: Overview of the resource categories
         url: /resources/overview_categories.html

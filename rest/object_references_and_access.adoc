@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: object_references_and_access.html
+permalink: rest/object_references_and_access.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.603696
-//
+:imagesdir: ../media/
 
 [.lead]
 The resource instances or objects exposed through the ONTAP REST API can be referenced and accessed in several different ways.
