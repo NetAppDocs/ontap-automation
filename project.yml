@@ -12,6 +12,7 @@ sidebar:
       url: /index.html
     - section: intro
     - section: get-started
+    - section: rest
     - section: workflows
     - section: python
     - section: automate

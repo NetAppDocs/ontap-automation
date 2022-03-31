@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rest_web_services_foundation.html
+permalink: rest/rest_web_services_foundation.html
 keywords:
 summary:
 ---
@@ -11,12 +11,6 @@ summary:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.291496
-//
 
 [.lead]
 Representational State Transfer (REST) is a style for creating distributed web applications. When applied to the design of a web services API, it establishes a set of technologies and best practices for exposing server-based resources and managing their states. It uses mainstream protocols and standards to provide a flexible foundation for administering ONTAP clusters.
