@@ -12,8 +12,9 @@ sidebar:
       url: /index.html
     - section: intro
     - section: get-started
-    - section: resources
+    - section: python
     - section: reference
+    - section: resources
     - title: Legal notices
       url: /legal-notices.html
 

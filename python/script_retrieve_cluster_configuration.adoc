@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: script_to_retrieve_the_cluster_configuration.html
+permalink: python/script_retrieve_cluster_configuration.html
 keywords:
 summary:
 ---
@@ -11,12 +11,6 @@ summary:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-09 14:53:22.831514
-//
 
 [.lead]
 The following script provides a simple example of how to use the Python client library. You can run the script using Python 3 at the CLI to retrieve the ONTAP cluster configuration.

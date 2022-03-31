@@ -1,22 +1,16 @@
 ---
 sidebar: sidebar
-permalink: preparing_to_use_the_python_client_library.html
+permalink: python/prepare_pcl.html
 keywords:
 summary:
 ---
 
-= Preparing to use the Python client library
+= Prepare to use the Python client library
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-09 14:53:22.811594
-//
 
 [.lead]
 You should prepare the environment before using the Python client library.
