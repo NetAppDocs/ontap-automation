@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: resources/get_more_information.html
+permalink: additional/get_more_information.html
 keywords:
 summary:
 ---

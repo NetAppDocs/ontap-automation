@@ -1,22 +1,16 @@
 ---
 sidebar: sidebar
-permalink: summary_of_the_rest_resource_categories.html
+permalink: resources/overview_categories.html
 keywords:
 summary:
 ---
 
-= Summary of the REST resource categories
+= Overview of the REST resource categories
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.695900
-//
+:imagesdir: ../media/
 
 [.lead]
 The resources available through the ONTAP REST API are organized in categories, as displayed on the ONTAP API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.

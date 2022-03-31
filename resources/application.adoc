@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: application.html
+permalink: resources/application.html
 keywords:
 summary:
 ---
@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to manage the ONTAP application resources.
