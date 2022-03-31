@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can issue a simple curl command at the CLI to get started using the ONTAP REST API and confirm its availability.

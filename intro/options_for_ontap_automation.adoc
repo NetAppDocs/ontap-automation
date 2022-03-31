@@ -10,7 +10,7 @@ summary: There are several options for automating the deployment and administrat
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Beginning with ONTAP 9.6, ONTAP includes an expansive REST API that provides the foundation for automating the deployment and administration of your storage systems. You can access the REST API directly or through the NetApp Python client library. In addition, NetApp supports ONTAP automation using Ansible as well as other high-level software abstractions.

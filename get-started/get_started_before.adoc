@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 There are several steps you should take to prepare to use the ONTAP REST API.
@@ -29,4 +29,4 @@ It is helpful to have some experience with software development technologies and
 
 ===== Get more information
 
-You should be aware of the additional information resources as suggested in link:get_more_information.html[Get more information].
+You should be aware of the additional information resources as suggested in link:../resources/get_more_information.html[Get more information].
