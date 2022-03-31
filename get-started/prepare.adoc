@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: get-started/get_started_before.html
+permalink: get-started/prepare.html
 keywords:
 summary:
 ---
 
-= Before you begin
+= Prepare to get started
 :hardbreaks:
 :nofooter:
 :icons: font

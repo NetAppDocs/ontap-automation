@@ -10,6 +10,7 @@ sidebar:
   entries:
     - title: ONTAP Automation docs
       url: /index.html
+    - section: rn
     - section: intro
     - section: get-started
     - section: rest

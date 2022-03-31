@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: rn/whats_new.html
+keywords:
+summary:
+---
+
+= What's new with the ONTAP REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
+
+== 14 December 2021 (21.12)
+
+xxx

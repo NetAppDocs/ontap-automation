@@ -1,0 +1,7 @@
+section: rn
+title: Release notes
+entries:
+  - title: What's new
+    url: /rn/whats_new.html
+  - title: ONTAP release notes
+    url: /rn/ontap_rn.html
