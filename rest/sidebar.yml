@@ -4,4 +4,4 @@ entries:
   - title: REST implmentation details
     entries:
       title: REST web services foundation
-      url: /automate/ontap_ansible.html
+      url: /rest/rest_web_services_foundation.html
