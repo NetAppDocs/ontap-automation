@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: retrieving_the_cluster_software_version.html
+permalink: get-started/retrieve_cluster_software_version.html
 keywords:
 summary:
 ---
@@ -11,12 +11,6 @@ summary:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-09 12:46:18.613768
-//
 
 [.lead]
 Each API transaction consists of an HTTP request and the associated response.  This illustration shows how to retrieve the version of the ONTAP software used by the cluster.

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: hello_world.html
+permalink: get-started/hello_world.html
 keywords:
 summary:
 ---
@@ -11,12 +11,6 @@ summary:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-09 12:46:18.623932
-//
 
 [.lead]
 You can issue a simple curl command at the CLI to get started using the ONTAP REST API and confirm its availability.

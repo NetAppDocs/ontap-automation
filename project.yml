@@ -11,6 +11,17 @@ sidebar:
     - title: ONTAP Automation docs
       url: /index.html
     - section: intro
+    - section: get-started
 
 homepage:
   tiles:
+    - title: Get started
+      links:
+        - title: Summary of ONTAP automation options
+          url: /intro/options_for_ontap_automation.html
+        - title: Before you begin
+          url: /get-started/get_started_before.html
+        - title: Retrieve the cluster software version
+          url: /get-started/retrieve_cluster_software_version.html
+        - title: Hello world
+          url: /get-started/hello_world.html

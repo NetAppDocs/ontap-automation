@@ -1,0 +1,9 @@
+section: get-started
+title: Get started
+entries:
+  - title: Before you begin
+    url: /get-started/get_started_before.html
+  - title: Retrieve the cluster software version
+    url: /get-started/retrieve_cluster_software_version.html
+  - title: Hello world
+    url: /get-started/hello_world.html
