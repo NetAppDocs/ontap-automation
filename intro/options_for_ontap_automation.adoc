@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: options_for_ontap_automation.html
+permalink: intro/options_for_ontap_automation.html
 keywords: ontap, ontap automation, rest, ontap rest api, python client library, ontap ansible
 summary: There are several options for automating the deployment and administration of ONTAP storage systems.
 ---
@@ -11,12 +11,6 @@ summary: There are several options for automating the deployment and administrat
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.644064
-//
 
 [.lead]
 Beginning with ONTAP 9.6, ONTAP includes an expansive REST API that provides the foundation for automating the deployment and administration of your storage systems. You can access the REST API directly or through the NetApp Python client library. In addition, NetApp supports ONTAP automation using Ansible as well as other high-level software abstractions.
