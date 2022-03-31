@@ -1,22 +1,16 @@
 ---
 sidebar: sidebar
-permalink: preparing_to_use_the_workflow_processes.html
+permalink: workflows/prepare_workflows.html
 keywords:
 summary:
 ---
 
-= Preparing to use the workflow processes
+= Prepare to use the workflows
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-09 12:46:18.707587
-//
 
 [.lead]
 You should prepare before using the workflow processes.

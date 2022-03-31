@@ -1,22 +1,16 @@
 ---
 sidebar: sidebar
-permalink: workflow_1__updating_the_cluster_contact_and_checking_job_state.html
+permalink: workflows/wf_1_update_cluster_contact.html
 keywords:
 summary:
 ---
 
-= Workflow 1: Updating the cluster contact and checking job state
+= Workflow 1: Update the cluster contact and check job state
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-09 12:46:18.752627
-//
 
 [.lead]
 This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
