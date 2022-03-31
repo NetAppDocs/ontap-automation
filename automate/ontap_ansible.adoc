@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ontap_ansible.html
+permalink: automate/ontap_ansible.html
 keywords:
 summary:
 ---
@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 There are several resources available to help you understand how Ansible can be used to automate the deployment and administration of ONTAP storage resources.
