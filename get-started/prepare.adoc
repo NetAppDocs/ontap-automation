@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Prepare to get started
+= Prepare to use the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
