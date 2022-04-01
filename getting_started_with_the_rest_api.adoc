@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: get-started/getting_started_with_the_rest_api.html
+permalink: getting_started_with_the_rest_api.html
 keywords:
 summary:
 ---
