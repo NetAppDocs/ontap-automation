@@ -43,12 +43,20 @@ homepage:
           url: /resources/overview_categories.html
         - title: API reference
           url: /reference/api_reference.html
-    - title: Additional resources
+    - title: Automation
+      links:
+        - title: Python client library
+          url: /xxx/xxx.html
+        - title: ONTAP and Ansible
+          url: /xxx/xxx.html
+        - title: Automation blogs
+          url: /xxx/xxx.html
+    - title: More resources
       links:
         - title: Get more information
           url: /additional/get_more_information.html
-        - title: Legal notices
-          url: /legal-notices.html
+        - title: NetApp DevNet
+          url: https://devnet.netapp.com/restapi.php
         - title: ONTAP 9 docs
           url: https://docs.netapp.com/us-en/ontap/
         - title: ONTAP Select docs
