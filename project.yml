@@ -37,7 +37,7 @@ homepage:
       links:
         - title: REST implementation details
           url: /rest/rest_web_services_foundation.html
-        - title: Additional REST considerations
+        - title: Additional considerations
           url: /rest/object_references_and_access.html
-        - title: Summary of the resource categories
+        - title: Summary of the REST resources
           url: /resources/overview_categories.html

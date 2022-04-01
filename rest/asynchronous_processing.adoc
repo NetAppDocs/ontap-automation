@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: asynchronous_processing.html
+permalink: rest/asynchronous_processing.html
 keywords:
 summary:
 ---
