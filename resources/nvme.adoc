@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: nvme.html
+permalink: resources/nvme.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.904384
-//
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to manage resources supporting non-volatile memory express (NVMe).
@@ -48,5 +42,3 @@ An NVMe subsystem maintains configuration state and namespace access control for
 ==== Namespaces
 
 An NVMe namespace is a collection of addressable logical blocks presented to hosts connected to the SVM using the NVMe over Fabrics protocol. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
-
-

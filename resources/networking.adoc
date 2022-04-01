@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: networking.html
+permalink: resources/networking.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.868193
-//
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to manage the physical and logical networking resources used with the cluster.
@@ -68,5 +62,3 @@ The IP service polices define the services available at a specific LIF. Service 
 ==== IPspaces
 
 An IPspace creates a networking space to support one or more SVMs. The IPspaces can be isolated from each other, providing security and privacy. This resource type was introduced with ONTAP 9.6.
-
-

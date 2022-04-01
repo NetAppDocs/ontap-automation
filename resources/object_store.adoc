@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: object_store.html
+permalink: resources/object_store.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.919989
-//
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to access S3-based object storage.
@@ -44,5 +38,3 @@ You can create an S3 policy and associate it with a resource to define various p
 ==== Users
 
 The S3 user accounts are maintained at the S3 server. User accounts are based on a pair of keys and associated with the buckets they control. This resource type was introduced with ONTAP 9.7.
-
-

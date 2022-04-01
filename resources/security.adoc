@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: security.html
+permalink: resources/security.html
 keywords:
 summary:
 ---
@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 These API calls can be used to manage the cluster and SVM security settings.

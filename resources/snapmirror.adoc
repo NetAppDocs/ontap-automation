@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: snapmirror.html
+permalink: resources/snapmirror.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:01.016402
-//
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to manage the SnapMirror data protection technology.
@@ -32,5 +26,3 @@ Both asynchronous and synchronous relationships establish the connectivity neede
 ==== Relationships transfers
 
 You can manage the SnapMirror transfers over existing SnapMirror relationships. This resource type was introduced with ONTAP 9.6.
-
-

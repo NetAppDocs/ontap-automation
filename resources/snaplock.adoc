@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: snaplock.html
+permalink: resources/snaplock.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.998285
-//
+:imagesdir: ../media/
 
 [.lead]
 SnapLock is a storage-based implementation of the traditional WORM (write once, read many) optical solution and provides for the long-term retention of data. You can use these API calls to administer the SnapLock feature.
@@ -47,5 +41,3 @@ You can view and manage the core information describing files and volumes, such 
 ==== Legal hold
 
 You can use these API calls to manage files that are part of a litigation process. This resource type was introduced with ONTAP 9.7.
-
-

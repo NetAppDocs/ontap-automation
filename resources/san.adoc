@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: san.html
+permalink: resources/san.html
 keywords:
 summary:
 ---
@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to manage storage area networking (SAN) resources.

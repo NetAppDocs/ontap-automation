@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: cloud.html
+permalink: resources/cloud.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.727679
-//
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to manage connections to object storage resources in the cloud.
@@ -24,5 +18,3 @@ You can use these API calls to manage connections to object storage resources in
 ==== Targets
 
 A target represents an object storage resource in the cloud. Each target includes the configuration information needed to connect to the storage resource. This resource type was introduced with ONTAP 9.6.
-
-

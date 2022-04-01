@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: storage.html
+permalink: resources/storage.html
 keywords:
 summary:
 ---
@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use these API calls to manage the physical and logical storage.

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: ndmp.html
+permalink: resources/ndmp.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.845173
-//
+:imagesdir: ../media/
 
 [.lead]
 The Network Data Management Protocol provides a standard for backing up NAS devices. You can use these API calls to manage the NDMP services.
