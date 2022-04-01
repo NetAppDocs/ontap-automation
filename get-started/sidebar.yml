@@ -1,5 +1,6 @@
 section: get-started
 title: Get started
+url: /get-started/getting_started_with_the_rest_api.html
 entries:
   - title: Understand the automation options
     url: /get-started/ontap_automation_options.html

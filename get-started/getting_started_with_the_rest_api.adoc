@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: get-started/getting_started_with_the_rest_api.html
+keywords:
+summary:
+---
+
+= Getting started with the REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can quickly get started using the ONTAP REST API. After preparing and understanding the basic request-response flow, you can issue a simple call using curl. This provides the introduction and perspective needed before using it with more complex workflows on a live system.
