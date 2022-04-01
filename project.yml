@@ -26,10 +26,14 @@ homepage:
     - title: Get started
       links:
         - title: ONTAP automation options
-          url: /intro/options_for_ontap_automation.html
-        - title: Before you begin
-          url: /get-started/get_started_before.html
+          url: /get-started/ontap_automation_options.html
+        - title: Preapre to use REST API
+          url: /get-started/prepare.html
         - title: Retrieve cluster software version
           url: /get-started/retrieve_cluster_software_version.html
         - title: Hello world
           url: /get-started/hello_world.html
+    - title: ONTAP REST API
+      links:
+        - title: REST implementation
+          url: /rest/rest_web_services_foundation.html

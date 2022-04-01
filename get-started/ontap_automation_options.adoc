@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: intro/ontap_automation_options.html
+permalink: get-started/ontap_automation_options.html
 keywords: ontap, ontap automation, rest, ontap rest api, python client library, ontap ansible
 summary: There are several options for automating the deployment and administration of ONTAP storage systems.
 ---
