@@ -46,11 +46,11 @@ homepage:
     - title: Automation
       links:
         - title: Python client library
-          url: /xxx/xxx.html
+          url: /python/overview_pcl.html
         - title: ONTAP and Ansible
-          url: /xxx/xxx.html
+          url: /automate/ontap_ansible.html
         - title: Automation blogs
-          url: /xxx/xxx.html
+          url: /automate/blogs.html
     - title: More resources
       links:
         - title: Get more information

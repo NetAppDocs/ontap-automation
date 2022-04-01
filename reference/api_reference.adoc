@@ -18,7 +18,7 @@ You can access the details of all the ONTAP REST API calls, including the HTTP m
 [NOTE]
 You can access the API reference content at your local ONTAP system or at the NetApp Developer Network web site.
 
-== Accessing the ONTAP API documentation page
+== Access the ONTAP API documentation page
 
 [.lead]
 You can access the ONTAP API online documentation page at your local ONTAP system.
@@ -42,7 +42,7 @@ The ONTAP API documentation page is displayed with the API calls organized in ma
 +
 . As an example of an individual API call, scroll down to the *cluster* category and click *GET /cluster*.
 
-== Accessing the reference content at NetApp DevNet
+== Access the reference content at NetApp DevNet
 
 [.lead]
 You can access the ONTAP REST API reference documentation at the NetApp Developer Network web site.
