@@ -49,7 +49,7 @@ homepage:
           url: /additional/get_more_information.html
         - title: Legal notices
           url: /legal-notices.html
-        - title: ONTAP 9
+        - title: ONTAP 9 docs
           url: https://docs.netapp.com/us-en/ontap/
-        - title: ONTAP Select
+        - title: ONTAP Select docs
           url: https://docs.netapp.com/us-en/ontap-select/
