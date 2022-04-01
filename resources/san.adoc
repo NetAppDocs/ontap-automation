@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: resources/san.html
+keywords:
+summary:
+---
+
+= SAN
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can use these API calls to manage storage area networking (SAN) resources.
+
+==== Fibre Channel logins
+
+Fibre Channel logins represent connections formed by Fibre Channel initiators that have logged in to ONTAP. This resource type was introduced with ONTAP 9.6.
+
+==== Fibre Channel Protocol services
+
+A Fibre Channel Protocol (FCP) service defines the properties of a Fibre Channel target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+==== Fibre Channel WWPN aliases
+
+A world wide port name (WWPN) is a 64-bit value uniquely identifying a Fibre Channel port.  This resource type was introduced with ONTAP 9.6.
+
+==== igroups
+
+An initiator group (igroup) is a collection of Fibre Channel WWPNs (world wide port names), and iSCSI IQNs (qualified names), and iSCSI EUIs (extended unique identifiers) that identify host initiators. This resource type was originally introduced with ONTAP 9.6.
+
+Nested igroups is a new feature with ONTAP 9.9 and support has also been added to the REST API. This REST resource type was introduced with ONTAP 9.9.
+
+==== iSCSI credentials
+
+The iSCSI credentials object contains authentication credentials which are used by an initiator and ONTAP. This resource type was introduced with ONTAP 9.6.
+
+==== iSCSI services
+
+An iSCSI service defines the properties of the iSCSI target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+==== iSCSI sessions
+
+An iSCSI session is one or more TCP connections that link an iSCSI initiator with an iSCSI target.  This resource type was introduced with ONTAP 9.6.
+
+==== LUN attributes
+
+LUN attributes are caller-defined name/value pairs that can be optionally stored with a LUN. Attributes are available to save small amounts of application-specific metadata and are not interpreted by ONTAP. The endpoints allow you to create, update, delete, and discover attributes for a LUN. This resource type was introduced with ONTAP 9.10.
+
+==== LUN maps
+
+A LUN map is an association between a LUN and an initiator group. This resource type was introduced with ONTAP 9.6.
+
+==== LUN maps reporting nodes
+
+The reporting nodes are the cluster nodes from which network paths to a mapped LUN are advertised using the SAN protocols as part of the selective LUN map (SLM) feature of ONTAP. The new endpoints allow you to add, remove, and discover the reporting nodes of a LUN map. This resource type was introduced with ONTAP 9.10.
+
+==== LUNs
+
+A LUN is the logical representation of storage in a storage area network (SAN). This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+==== Port sets
+
+A port set is a collection of Fibre Channel or iSCSI network interfaces associated with the _portset_ Storage VM. While this feature has existed with previous releases of ONTAP, support has now been added to the REST API. This REST resource type was introduced with ONTAP 9.9.
+
+==== vVol bindings
+
+A VMware virtual volume (vVol) binding is an association between a LUN of class `protocol_endpoint` and a LUN of class `vvol`. The vVol binding REST API allows you to create, delete, and discover vVol bindings. This resource type was introduced with ONTAP 9.10.

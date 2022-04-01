@@ -1,0 +1,60 @@
+---
+sidebar: sidebar
+permalink: reference/api_reference.html
+keywords:
+summary:
+---
+
+= API reference
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can access the details of all the ONTAP REST API calls, including the HTTP methods, input parameters, and responses. This complete reference is helpful when developing automation applications using the REST API.
+
+[NOTE]
+You can access the API reference content at your local ONTAP system or at the NetApp Developer Network web site.
+
+== Access the ONTAP API documentation page
+
+[.lead]
+You can access the ONTAP API online documentation page at your local ONTAP system.
+
+.Before you begin
+
+You must have the following:
+
+* IP address or host name of the ONTAP cluster management LIF
+* User name and password for an account with authority to access the ONTAP REST API
+
+.Steps
+
+. Type the URL in your browser and press *Enter*:
++
+`https://<ip_address>/docs/api`
++
+. Sign in using the ONTAP account.
++
+The ONTAP API documentation page is displayed with the API calls organized in major resource categories at the bottom.
++
+. As an example of an individual API call, scroll down to the *cluster* category and click *GET /cluster*.
+
+== Access the reference content at NetApp DevNet
+
+[.lead]
+You can access the ONTAP REST API reference documentation at the NetApp Developer Network web site.
+
+.Steps
+
+. Navigate to the *ONTAP REST API* page at the NetApp Developer Network web site:
++
+https://devnet.netapp.com/restapi.php[NetApp DevNet: ONTAP REST APIs^]
+
+. Scroll down and under *Online REST APIs Reference* click the link for the appropriate ONTAP version.
++
+The ONTAP API documentation page is displayed with the API calls organized in major resource categories at the bottom.
+
+. As an example of an individual API call, scroll down to the *cluster* category and click *GET /cluster*.

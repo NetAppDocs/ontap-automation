@@ -1,0 +1,48 @@
+---
+sidebar: sidebar
+permalink: resources/name_services.html
+keywords:
+summary:
+---
+
+= Name services
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can use these API calls to manage the name services supported by ONTAP.
+
+==== DDNS
+
+You can display the Dynamic DNS (DDNS) information and manage the DDNS subsystem. This resource type is new with ONTAP 9.8.
+
+==== DNS
+
+DNS supports the integration of the ONTAP cluster in your network. This resource type was introduced with ONTAP 9.6.
+
+==== Host record
+
+These endpoints allow you to displays the IP address of a specified hostname as well as the hostname for an IP address. This resource type was introduced with ONTAP 9.10.
+
+==== LDAP
+
+LDAP servers can be used to maintain user information. This resource type was introduced with ONTAP 9.6.
+
+==== Local hosts
+
+You can use these endpoints to display and manage the local mappings for hostnames. This resource type was introduced with ONTAP 9.10.
+
+==== Name mappings
+
+Name mappings allow you to map identities from one name domain to another. For example, you can map identities from CIFS to UNIX, Kerberos to UNIX, and UNIX to CIFS. This resource type was introduced with ONTAP 9.6.
+
+==== NIS
+
+NIS servers can be used to authenticate users and client workstations. This resource type was introduced with ONTAP 9.6.
+
+==== UNIX users and groups
+
+Local UNIX users and groups have been a part of previous ONTAP releases. However, support has now been added to the REST API allowing you to display and manage the users and groups. These REST resource types were introduced with ONTAP 9.9 and significantly enhanced with ONTAP 9.10.

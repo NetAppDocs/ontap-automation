@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: resources/overview_categories.html
+keywords:
+summary:
+---
+
+= Overview of the resource categories
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The resources available through the ONTAP REST API are organized in categories, as displayed on the ONTAP API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
+
+This section describes the REST resources for the latest version of the product. If you need to understand the changes that were made from the previous version, see the _Release Notes_.
+
+[TIP]
+For many of the REST endpoints, you can include a UUID key as part of the path string to access a specific object instance. However, you can also access objects using a property value on a query parameter.
+
+.Related links
+
+* link:../rest/object_references_and_access.html[Additional REST considerations]
+* link:../reference/api_reference.html[API reference]
+* link:../rn/whats_new.html[ONTAP Release Notes]

@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: resources/cloud.html
+keywords:
+summary:
+---
+
+= Cloud
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can use these API calls to manage connections to object storage resources in the cloud.
+
+==== Targets
+
+A target represents an object storage resource in the cloud. Each target includes the configuration information needed to connect to the storage resource. This resource type was introduced with ONTAP 9.6.

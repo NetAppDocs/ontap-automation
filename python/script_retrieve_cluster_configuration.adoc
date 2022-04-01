@@ -1,0 +1,58 @@
+---
+sidebar: sidebar
+permalink: python/script_retrieve_cluster_configuration.html
+keywords:
+summary:
+---
+
+= Script to retrieve the cluster configuration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The following script provides a simple example of how to use the Python client library. You can run the script using Python 3 at the CLI to retrieve the ONTAP cluster configuration.
+
+[source,python,%autofill]
+##--------------------------------------------------------------------
+#
+# Description: Python script to retrieve the cluster configuration.
+#
+# Usage example:
+#
+# python3 get_cluster.py
+#
+#
+# (C) Copyright 2020 NetApp, Inc.
+#
+# This sample code is provided AS IS, with no support or warranties of
+# any kind, including but not limited for warranties of merchantability
+# or fitness of any kind, expressed or implied. Permission to use,
+# reproduce, modify and create derivatives of the sample code is granted
+# solely for the purpose of researching, designing, developing and
+# testing a software application product for use with NetApp products,
+# provided that the above copyright notice appears in all copies and
+# that the software application product is distributed pursuant to terms
+# no less restrictive than those set forth herein.
+#
+##--------------------------------------------------------------------
+# Global configuration for the library
+from netapp_ontap import config
+# Support for the connection to ONTAP
+from netapp_ontap import HostConnection
+# Specific API needed for this script
+from netapp_ontap.resources import Cluster
+# Create connection to the ONTAP management LIF
+conn = HostConnection("10.236.252.97", username="admin",
+password="mypassword", verify=False)
+# Set connection as the default for all API calls
+config.CONNECTION = conn
+# Create new cluster object
+clus = Cluster()
+# Issue REST API call
+clus.get()
+# Display the cluster configuration
+print(clus)
+....
