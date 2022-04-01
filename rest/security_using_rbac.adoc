@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: security_using_rbac.html
+permalink: rest/security_using_rbac.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.657463
-//
+:imagesdir: ../media/
 
 [.lead]
 The REST API expands the role-based access control (RBAC) capabilities when using ONTAP.  You can create user accounts with custom roles to restrict access to the REST endpoints.

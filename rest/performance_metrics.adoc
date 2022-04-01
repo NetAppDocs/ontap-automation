@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: performance_metrics_for_storage_resources.html
+permalink: rest/performance_metrics.html
 keywords:
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.676366
-//
+:imagesdir: ../media/
 
 [.lead]
 ONTAP collects performance metrics about selected SVM storage objects and protocols, and reports this information through the REST API. You can use this data to monitor the performance of an ONTAP system.

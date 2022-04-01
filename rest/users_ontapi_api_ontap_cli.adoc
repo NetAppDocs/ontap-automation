@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: users_of_the_ontapi_api_and_ontap_cli.html
+permalink: rest/users_ontapi_api_ontap_cli.html
 keywords: snapdiff
 summary:
 ---
@@ -10,13 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
-
-//
-// This file was created with NDAC Version 2.0 (August 17, 2020)
-//
-// 2020-12-10 15:58:00.631603
-//
+:imagesdir: ../media/
 
 [.lead]
 ONTAPI is a set of API calls provided through the Network Manageability SDK that can be used to administer ONTAP storage systems. There are differences between the REST API and the ONTAPI API calls, as well as between the REST API and ONTAP CLI. You should understand these differences before using the REST API in a production environment.
