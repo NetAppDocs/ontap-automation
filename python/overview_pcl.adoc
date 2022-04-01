@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Python client library overview
+= Overview of the Python client library
 :hardbreaks:
 :nofooter:
 :icons: font

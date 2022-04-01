@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Overview of the REST resource categories
+= Overview of the resource categories
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -22,6 +22,6 @@ For many of the REST endpoints, you can include a UUID key as part of the path s
 
 .Related links
 
-link:../rest/object_references_and_access.html[Additional REST considerations]
-link:../reference/api_reference.html[API reference]
-https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html[ONTAP 9 Release Notes^]
+* link:../rest/object_references_and_access.html[Additional REST considerations]
+* link:../reference/api_reference.html[API reference]
+* https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html[ONTAP 9 Release Notes^]

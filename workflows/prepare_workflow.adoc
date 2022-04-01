@@ -39,6 +39,5 @@ In addition to the ONTAP documentation page, you can also access the ONTAP REST 
 
 .Related links
 
-link:how_to_access_the_ontap_api.html[How to access the ONTAP API]
-
-link:summary_of_the_rest_resource_categories.html[Summary of the REST resource categories^]
+* link:../rest/how_to_access_the_ontap_api.html[How to access the ONTAP API]
+* link:..resources/overview_categories.html[Summary of the REST resources]

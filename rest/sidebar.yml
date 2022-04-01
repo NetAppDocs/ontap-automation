@@ -11,7 +11,7 @@ entries:
         url: /rest/object_references_and_access.html
   - title: Summary of the REST resources
     entries:
-      - title: Overview of the resource categories
+      - title: Overview
         url: /resources/overview_categories.html
       - title: Application
         url: /resources/application.html
