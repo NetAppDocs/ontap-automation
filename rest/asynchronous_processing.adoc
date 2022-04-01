@@ -15,7 +15,7 @@ summary:
 [.lead]
 After issuing an API request that is designed to run asynchronously, a job object is always created and returned to the caller. The job describes and anchors a background task that processes the request. Depending on the HTTP status code, you must retrieve the state of the job to determine if the request was successful.
 
-Refer to link:api_reference.html[API reference] to determine which API calls are designed to be performed asynchronously.
+Refer to link:../reference/api_reference.html[API reference] to determine which API calls are designed to be performed asynchronously.
 
 === Controlling how a request is processed
 
@@ -59,4 +59,4 @@ You can use the following high-level procedure to complete an asynchronous API c
 
 .Related links
 
-link:workflow_1__updating_the_cluster_contact_and_checking_job_state.html[Workflow 1: Updating the cluster contact and checking job state]
+link:../workflows/wf_1_update_cluster_contact.html[Workflow 1: Updating the cluster contact and checking job state]

@@ -23,4 +23,4 @@ Version 1
 
 .Related links
 
-https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html[ONTAP 9 Release Notes^]
+* link:../rn/whats_new.html[ONTAP Release Notes]

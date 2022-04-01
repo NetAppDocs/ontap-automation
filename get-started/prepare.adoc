@@ -21,7 +21,7 @@ You should have experience with ONTAP 9. This includes understanding the basic c
 
 ===== Review REST concepts and implementation
 
-Make sure to review link:understanding_rest.html[Understanding the ONTAP REST API] for information about REST concepts and details regarding how the ONTAP REST API is designed.
+Make sure to review link:..rest/rest_web_services_foundation.html[ONTAP REST API] for information about REST concepts and details regarding how the ONTAP REST API is designed.
 
 ===== Software development background
 
@@ -29,4 +29,4 @@ It is helpful to have some experience with software development technologies and
 
 ===== Get more information
 
-You should be aware of the additional information resources as suggested in link:../resources/get_more_information.html[Get more information].
+You should be aware of the additional information resources as suggested in link:../additional/get_more_information.html[Get more information].
