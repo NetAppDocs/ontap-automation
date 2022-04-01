@@ -31,8 +31,6 @@ homepage:
           url: /get-started/ontap_automation_options.html
         - title: Prepare to use the REST API
           url: /get-started/prepare.html
-        - title: Retrieve cluster software version
-          url: /get-started/retrieve_cluster_software_version.html
         - title: Hello world
           url: /get-started/hello_world.html
     - title: ONTAP REST API
@@ -50,6 +48,8 @@ homepage:
         - title: Get more information
           url: /additional/get_more_information.html
         - title: Legal notices
-          url: /legal_notices.html
+          url: /legal-notices.html
+        - title: ONTAP 9
+          url: https://docs.netapp.com/us-en/ontap/
         - title: ONTAP Select
           url: https://docs.netapp.com/us-en/ontap-select/
