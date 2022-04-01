@@ -22,8 +22,6 @@ For many of the REST endpoints, you can include a UUID key as part of the path s
 
 .Related links
 
-link:additional_considerations_when_using_the_rest_api.html[Additional considerations when using the REST API]
-
-link:api_reference.html[API reference]
-
+link:../rest/object_references_and_access.html[Additional REST considerations]
+link:../reference/api_reference.html[API reference]
 https://library.netapp.com/ecmdocs/ECMLP2492508/html/frameset.html[ONTAP 9 Release Notes^]

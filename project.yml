@@ -35,5 +35,9 @@ homepage:
           url: /get-started/hello_world.html
     - title: ONTAP REST API
       links:
-        - title: REST implementation
+        - title: REST implementation details
           url: /rest/rest_web_services_foundation.html
+        - title: Additional REST considerations
+          url: /rest/object_references_amd_access.html
+        - title: Summary of the resource categories
+          url: /resources/overview_categories.html
