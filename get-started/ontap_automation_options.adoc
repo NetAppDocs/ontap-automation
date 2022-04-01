@@ -20,7 +20,7 @@ The ONTAPI API, also known as the Network Manageability SDK or ZAPI, is the lega
 
 === Accessing the ONTAP REST API natively
 
-You can access the ONTAP REST API directly using any programming language that supports a REST client. Popular language choices include Python, PowerShell, and Java. You should begin by reviewing the documentation at this site, including link:getting_started_with_the_rest_api.html[Getting started with the REST API].
+You can access the ONTAP REST API directly using any programming language that supports a REST client. Popular language choices include Python, PowerShell, and Java. You should begin by reviewing all the documentation at this site.
 
 === Adapt legacy ONTAPI code to use REST
 
@@ -28,8 +28,8 @@ If you have existing code using the ONTAPI API, NetApp provides support for conv
 
 === Using the NetApp Python client library
 
-The Python client library is a package you can use when writing scripts to access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous request processing, and exception handling. By using the Python client library, you can quickly develop robust code to support your ONTAP automation goals. You should begin by reviewing the documentation at this site, including link:using_python.html[Using Python].
+The Python client library is a package you can use when writing scripts to access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous request processing, and exception handling. By using the Python client library, you can quickly develop robust code to support your ONTAP automation goals. You should begin by reviewing the documentation at this site, including link:../python/overview_pcl.html[Python client library].
 
 === Using Ansible
 
-Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems. You should begin by reviewing the documentation at this site, including link:ontap_ansible.html[ONTAP and Ansible automation].
+Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems. You should begin by reviewing the documentation at this site, including link:../automate/ontap_ansible.html[ONTAP and Ansible automation].

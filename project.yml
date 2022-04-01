@@ -25,6 +25,8 @@ homepage:
   tiles:
     - title: Get started
       links:
+        - title: Release Notes
+          url: /rn/whats_new.html
         - title: ONTAP automation options
           url: /get-started/ontap_automation_options.html
         - title: Prepare to use the REST API
