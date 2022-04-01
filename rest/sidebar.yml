@@ -1,10 +1,22 @@
 section: rest
 title: ONTAP REST API
 entries:
-  - title: REST implmentation details
+  - title: REST implementation details
     entries:
       - title: REST web services foundation
         url: /rest/rest_web_services_foundation.html
+      - title: ONTAP REST API versioning
+        url: /rest/rest_api_versioning.html
+      - title: How to access the REST API
+        url: /rest/access_rest_api.html
+      - title: Basic operational characteristics
+        url: /rest/operational_characteristics.html
+      - title: Input variables
+        url: /rest/input_variables.html
+      - title: Interpret an API response
+        url: /rest/interpret_api_response.html
+      - title: Asynchronous processing using the job object
+        url: /rest/asynchronous_processing.html
   - title: Additional considerations
     entries:
       - title: Object references and access
