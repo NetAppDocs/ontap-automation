@@ -1,0 +1,62 @@
+---
+sidebar: sidebar
+permalink: rest/asynchronous_processing.html
+keywords:
+summary:
+---
+
+= Asynchronous processing using the Job object
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+After issuing an API request that is designed to run asynchronously, a job object is always created and returned to the caller. The job describes and anchors a background task that processes the request. Depending on the HTTP status code, you must retrieve the state of the job to determine if the request was successful.
+
+Refer to link:../reference/api_reference.html[API reference] to determine which API calls are designed to be performed asynchronously.
+
+=== Controlling how a request is processed
+
+You can use the `return_timeout` query parameter to control how an asynchronous API call is processed. There are two possible outcomes when using this parameter.
+
+Timer expires before the request completes::
+For valid requests, ONTAP returns a 202 HTTP status code along with the job object. You must retrieve the state of the job to determine if the request completed successfully.
+
+Request is completed before the timer expires::
+If the request is valid and completes successfully before the time expires, ONTAP returns a 200 HTTP status code along with the job object. Because the request is completed synchronously, as indicated by the 200, you do not need to retrieve the job state.
++
+[NOTE]
+The default value for the `return_timeout` parameter is zero seconds. Therefore, if you don't include the parameter, the 202 HTTP status code is always returned for a valid request.
+
+=== Querying the Job object associated with an API request
+
+The Job object returned in the HTTP response contains several properties. You can query the state property in a subsequent API call to determine if the request completed successfully. A Job object is always in one of the following states:
+
+Non-terminal states::
++
+* Queued
+* Running
+* Paused
+
+Terminal states::
++
+* Success
+* Failure
+
+=== General procedure for issuing an asynchronous request
+
+You can use the following high-level procedure to complete an asynchronous API call. This example assumes the `return_timeout` parameter is not used, or that the time expires before the background job completes.
+
+. Issue an API call that is designed to be performed asynchronously.
+. Receive an HTTP response 202 indicating acceptance of a valid request.
+. Extract the identifier for the Job object from the response body.
+. Within a timed loop, perform the following in each cycle:
+.. Get the current state of the Job.
+.. If the Job is in a non-terminal state, perform loop again.
+. Stop when the Job reaches a terminal state (success, failure).
+
+.Related links
+
+link:../workflows/wf_1_update_cluster_contact.html[Workflow 1: Updating the cluster contact and checking job state]

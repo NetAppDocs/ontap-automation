@@ -1,0 +1,136 @@
+---
+sidebar: sidebar
+permalink: resources/security.html
+keywords:
+summary:
+---
+
+= Security
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+These API calls can be used to manage the cluster and SVM security settings.
+
+==== Accounts
+
+There is a collection of user accounts for the cluster and SVMs. This resource type was introduced with ONTAP 9.6.
+
+==== Accounts name
+
+The configuration for a scoped user account. This resource type was introduced with ONTAP 9.6.
+
+==== Active Directory proxy
+
+You can administer the SVM account information at the Active Directory server. This resource type was introduced with ONTAP 9.7.
+
+==== Anti-ransomware
+
+ONTAP detects files potentially containing a ransomware threat. There are several categories of endpoints. You can retrieve a list of these suspect files as well as remove them from a volume. This resource type was introduced with ONTAP 9.10.1.
+
+==== Audit
+
+The settings which determine what is logged to the audit log files. This resource type was introduced with ONTAP 9.6.
+
+==== Audit destinations
+
+These settings control how audit log information is forwarded to remote systems or splunk servers.  This resource type was introduced with ONTAP 9.6.
+
+==== Audit messages
+
+You can retrieve the audit log messages. This resource type was introduced with ONTAP 9.6.
+
+==== AWS KMS
+
+This set of API calls allows you to use the Amazon Web Services Key Management Service to store the ONTAP encryption keys. This resource type is new with ONTAP 9.8.
+
+==== Azure Key Vault
+
+This set of API calls allows you to use the Azure Key Vault to store the ONTAP encryption keys.  This resource type is new with ONTAP 9.8.
+
+==== Certificates
+
+The APIs calls can be used to install, display, and delete certificates used by ONTAP. This resource type was introduced with ONTAP 9.7.
+
+==== Cluster security
+
+You can retrieve details of the cluster-wide security and update certain parameters. This resource type was introduced with ONTAP 9.7 and updated with ONTAP 9.8.
+
+==== GCP KMS
+
+This set of API calls allows you to use the Google Cloud Platform Key Management Service to store and manage the ONTAP encryption keys. This resource type was initially introduced with the ONTAP 9.8 REST API. However, this feature has been redesigned and so is considered to be new, with new resources types, in ONTAP 9.9.
+
+==== IPSec
+
+Internet Protocol Security (IPSec) is a suite of protocols providing security between two endpoints over an underlying IP network. This resource type is new with ONTAP 9.8.
+
+==== IPSec CA certificates
+
+You can add, remove, and retrieve IPSec CA certificates. This resource type is new with ONTAP 9.10.
+
+==== IPSec policies
+
+You can use this set of API calls to manage the policies in effect for an IPSec deployment. This resource type is new with ONTAP 9.8.
+
+==== IPSec security associations
+
+You can use this set of API calls to manage the security associations in effect for an IPSec deployment. This resource type is new with ONTAP 9.8.
+
+==== Key manager configurations
+
+These endpoints allow you to retrieve and update the configurations for key managers. This resource type is new with ONTAP 9.10.
+
+==== Key managers
+
+A key manager allows client modules within ONTAP to securely stored keys. This resource type was introduced with ONTAP 9.6 and updated for ONTAP 9.7.
+
+==== Key stores
+
+A key store describes the type of a key manager. This resource type is new with ONTAP 9.10.
+
+==== LDAP authentication
+
+These API calls are used to retrieve and manage the cluster LDAP server configuration. This resource type was introduced with ONTAP 9.6.
+
+==== Login messages
+
+Used to display and manage the login messages used by ONTAP. This resource type was introduced with ONTAP 9.6.
+
+==== NIS authentication
+
+These settings are used to retrieve and manage the cluster NIS server configuration. This resource type was introduced with ONTAP 9.6.
+
+==== Password authentication
+
+This includes the API call used to change the password for a user account. This resource type was introduced with ONTAP 9.6.
+
+==== Privileges for a role instance
+
+Manage the privileges for a specific role. This resource type was introduced with ONTAP 9.6.
+
+==== Public key authentication
+
+You can use these API calls to configure the public keys for user accounts. This resource type was introduced with ONTAP 9.7.
+
+==== Roles
+
+The roles provide a way to assign privileges to user accounts. This resource type was introduced with ONTAP 9.6.
+
+==== Roles instance
+
+Specific instance of a role. This resource type was introduced with ONTAP 9.6.
+
+==== SAML service provider
+
+You can display and manage the configuration for the SAML service provider. This resource type was introduced with ONTAP 9.6.
+
+==== SSH
+
+These calls allow you to set the SSH configuration. This resource type was introduced with ONTAP 9.7.
+
+==== SSH SVMs
+
+These endpoints allow you to retrieve the SSH security configuration for all SVMs. This resource type was introduced with ONTAP 9.10.

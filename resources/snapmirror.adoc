@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: resources/snapmirror.html
+keywords:
+summary:
+---
+
+= SnapMirror
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can use these API calls to manage the SnapMirror data protection technology.
+
+==== Policies
+
+The SnapMirror policies are applied to relationships, and control the configuration attributes and behavior of each relationship. This resource type was introduced with ONTAP 9.6.
+
+==== Relationships
+
+Both asynchronous and synchronous relationships establish the connectivity needed transfer data.  This resource type was introduced with ONTAP 9.6.
+
+==== Relationships transfers
+
+You can manage the SnapMirror transfers over existing SnapMirror relationships. This resource type was introduced with ONTAP 9.6.

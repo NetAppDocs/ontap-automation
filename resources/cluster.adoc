@@ -1,0 +1,104 @@
+---
+sidebar: sidebar
+permalink: resources/cluster.html
+keywords:
+summary:
+---
+
+= Cluster
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can use these API calls to manage ONTAP clusters and the related resources.
+
+==== Capacity pools
+
+The capacity pools licensing model allows you to license storage capacity for each cluster node from a shared pool. This resource type is new with ONTAP 9.8.
+
+==== Chassis
+
+The chassis is the hardware framework supporting a cluster. This resource type was introduced with ONTAP 9.6.
+
+==== Clusters
+
+An ONTAP cluster contains one or more nodes and the related configuration settings which define the storage system. This resource type was introduced with ONTAP 9.6.
+
+==== Firmware
+
+You can retrieve a history of the firmware update requests. This resource type is new with ONTAP 9.8.
+
+==== Jobs
+
+Asynchronous REST API requests are performed using a background task anchored by a job. This resource type was introduced with ONTAP 9.6.
+
+==== License instance
+
+Each license can be managed as a separate package. This resource type was introduced with ONTAP 9.6.
+
+==== License managers
+
+You can manage configuration and other information related to each license manager instance associated with an ONTAP cluster. This resource type is new with ONTAP 9.8.
+
+==== Licenses
+
+The licenses allow you to implement specific ONTAP features and functionality. This resource type was introduced with ONTAP 9.6.
+
+==== Mediators
+
+You can manage the mediator associated with MetroCluster, including adding or removing the mediator instance. This resource type is new with ONTAP 9.8.
+
+==== MetroCluster
+
+You can create and manage a MetroCluster deployment, including executing switchover or switchback operations. This resource type is new with ONTAP 9.8.
+
+==== MetroCluster diagnostics
+
+You can perform a diagnostic operation on a MetroCluster deployment and retrieve the results.  This resource type is new with ONTAP 9.8.
+
+==== MetroCluster DR groups
+
+You can perform operations related to the MetroCluster DR groups. This resource type is new with ONTAP 9.8.
+
+==== MetroCluster interconnects
+
+You can retrieve the MetroCluster interconnect status. This resource type is new with ONTAP 9.8.
+
+==== MetroCluster nodes
+
+You can retrieve the status of the individual nodes in a MetroCluster deployment. This resource type is new with ONTAP 9.8.
+
+==== MetroCluster operations
+
+You can retrieve a list of the recently executed operations for a MetroCluster configuration. This resource type is new with ONTAP 9.8.
+
+==== Nodes
+
+ONTAP clusters are composed of one or more nodes. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== NTP keys
+
+The Network Time Protocol (NTP) can be configured to use shared private keys between ONTAP and trusted external NTP time servers. This resource type was introduced with ONTAP 9.7.
+
+==== NTP server
+
+You can use these API calls to configure the ONTAP Network Time Protocol settings, including the external NTP servers and keys. This resource type was introduced with ONTAP 9.7.
+
+==== Peers
+
+The peer objects represent endpoints and support the cluster peering relationships. This resource type was introduced with ONTAP 9.6.
+
+==== Schedules
+
+Schedules can be used to automate the perform of tasks. This resource type was introduced with ONTAP 9.6.
+
+==== Software
+
+An ONTAP cluster includes the cluster software profile, software packages collection, and software history collection. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== Web
+
+You can use these endpoints to update the web services configurations and to retrieve the current configuration. This resource type was introduced with ONTAP 9.10.

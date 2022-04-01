@@ -8,111 +8,56 @@ settings:
     harmony_enabled: true
 sidebar:
   entries:
-    - title: ONTAP Automation 9.10.1 docs
+    - title: ONTAP Automation docs
       url: /index.html
-    - title: Options for ONTAP automation
-      url: /options_for_ontap_automation.html
-    - title: Getting started with the REST API
-      url: /getting_started_with_the_rest_api.html
-      entries:
-        - title: Before you begin
-          url: /getting_started_before.html
-        - title: Retrieving the cluster software version
-          url: /retrieving_the_cluster_software_version.html
-        - title: Hello world
-          url: /hello_world.html
-    - title: Understanding the ONTAP REST API
-      url: /understanding_rest.html
-      entries:
-        - title: REST implementation details
-          url: /rest_implementation_details.html
-          entries:
-            - title: REST web services foundation
-              url: /rest_web_services_foundation.html
-            - title: ONTAP REST API versioning
-              url: /ontap_rest_api_versioning.html
-            - title: How to access the ONTAP API
-              url: /how_to_access_the_ontap_api.html
-            - title: Basic operational characteristics
-              url: /basic_operational_characteristics.html
-            - title: Input variables controlling an API request
-              url: /input_variables_controlling_an_api_request.html
-            - title: Interpreting an API response
-              url: /interpreting_an_api_response.html
-            - title: How asynchronous processing works using the Job object
-              url: /how_asynchronous_processing_works_using_the_job_object.html
-        - title: Additional considerations when using the REST API
-          url: /additional_considerations_when_using_the_rest_api.html
-          entries:
-            - title: Object references and access
-              url: /object_references_and_access.html
-            - title: Users of the ONTAPI API and ONTAP CLI
-              url: /users_of_the_ontapi_api_and_ontap_cli.html
-            - title: Accessing the ONTAP CLI through the REST API
-              url: /accessing_the_ontap_cli_through_the_rest_api.html
-            - title: Security using RBAC
-              url: /security_using_rbac.html
-            - title: Performance metrics for storage resources
-              url: /performance_metrics_for_storage_resources.html
-        - title: Summary of the REST resource categories
-          url: /summary_of_the_rest_resource_categories.html
-          entries:
-            - title: Application
-              url: /application.html
-            - title: Cloud
-              url: /cloud.html
-            - title: Cluster
-              url: /cluster.html
-            - title: Name services
-              url: /name_services.html
-            - title: NAS
-              url: /nas.html
-            - title: NDMP
-              url: /ndmp.html
-            - title: Networking
-              url: /networking.html
-            - title: NVMe
-              url: /nvme.html
-            - title: Object store
-              url: /object_store.html
-            - title: SAN
-              url: /san.html
-            - title: Security
-              url: /security.html
-            - title: SnapLock
-              url: /snaplock.html
-            - title: SnapMirror
-              url: /snapmirror.html
-            - title: Storage
-              url: /storage.html
-            - title: Support
-              url: /support.html
-            - title: SVM
-              url: /svm.html
-    - title: Workflows
-      url: /workflows.html
-      entries:
-        - title: Preparing to use the workflow processes
-          url: /preparing_to_use_the_workflow_processes.html
-        - title: Workflow 1  Updating the cluster contact and checking job state
-          url: /workflow_1__updating_the_cluster_contact_and_checking_job_state.html
-    - title: Using Python
-      url: /using_python.html
-      entries:
-        - title: NetApp ONTAP Python client library
-          url: /netapp_ontap_python_client_library.html
-          entries:
-            - title: Preparing to use the Python client library
-              url: /preparing_to_use_the_python_client_library.html
-            - title: Script to retrieve the cluster configuration
-              url: /script_to_retrieve_the_cluster_configuration.html
-    - title: API reference
-      url: /api_reference.html
-    - title: ONTAP and Ansible
-      url: /ontap_ansible.html
-    - title: Automation blogs
-      url: /blogs.html
-    - title: Get more information
-      url: /get_more_information.html
+    - section: rn
+    - section: get-started
+    - section: rest
+    - section: workflows
+    - section: python
+    - section: reference
+    - section: automate
+    - section: additional
     - title: Legal notices
       url: /legal-notices.html
+
+homepage:
+  tiles:
+    - title: Get started
+      links:
+        - title: Release Notes
+          url: /rn/whats_new.html
+        - title: ONTAP automation options
+          url: /get-started/ontap_automation_options.html
+        - title: Prepare to use the REST API
+          url: /get-started/prepare.html
+        - title: Hello world
+          url: /get-started/hello_world.html
+    - title: ONTAP REST API
+      links:
+        - title: REST implementation details
+          url: /rest/rest_web_services_foundation.html
+        - title: Additional considerations
+          url: /rest/object_references_and_access.html
+        - title: Summary of the REST resources
+          url: /resources/overview_categories.html
+        - title: API reference
+          url: /reference/api_reference.html
+    - title: Automation
+      links:
+        - title: Python client library
+          url: /python/overview_pcl.html
+        - title: ONTAP and Ansible
+          url: /automate/ontap_ansible.html
+        - title: Automation blogs
+          url: /automate/blogs.html
+    - title: More resources
+      links:
+        - title: Get more information
+          url: /additional/get_more_information.html
+        - title: NetApp DevNet
+          url: https://devnet.netapp.com/restapi.php
+        - title: ONTAP 9 docs
+          url: https://docs.netapp.com/us-en/ontap/
+        - title: ONTAP Select docs
+          url: https://docs.netapp.com/us-en/ontap-select/

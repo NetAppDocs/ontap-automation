@@ -1,0 +1,133 @@
+---
+sidebar: sidebar
+permalink: resources/nas.html
+keywords:
+summary:
+---
+
+= NAS
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can use these API calls to manage the CIFS and NFS settings for the cluster and SVMs.
+
+==== Audit
+
+Certain CIFS and NFS events can be logged for the SVMs, which can help to improve security.  This resource type was introduced with ONTAP 9.6.
+
+==== Audit log redirect
+
+You can redirect NAS auditing events to a specific SVM. This resource type is new with ONTAP 9.8.
+
+==== CIFS domains
+
+Support for CIFS domains has been added at the cluster and SVM level with several categories of endpoints. You can retrieve the domain configuration as well as create and remove preferred domain controllers. This resource type is new with ONTAP 9.10.
+
+==== CIFS home directory search paths
+
+Home directories for SMB users on a CIFS server can be created without creating an individual SMB share for each user. The home directory search path is a set of absolute paths from the root of an SVM. This resource type was introduced with ONTAP 9.6.
+
+==== CIFS local groups
+
+The CIFS server can use local groups for authorization when determining share, file, and directory access rights.
+This resource type was introduced with ONTAP 9.9 and significantly expanded with ONTAP 9.10.
+
+==== CIFS services
+
+The core configuration of the CIFS server. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+==== CIFS sessions
+
+You can use this API to retrieve detailed information about a CIFS session. This resource type was introduced with the ONTAP 9.8 REST API and enhanced with ONTAP 9.9.
+
+==== CIFS shares
+
+The SMB shares defined at a CIFS server. This resource type was introduced with ONTAP 9.6.
+
+==== CIFS shares ACLs
+
+The access control lists (ACLs) controlling access to folders and files on the CIFS shares. This resource type was introduced with ONTAP 9.6.
+
+==== CIFS UNIX symlink mapping
+
+Both CIFS and UNIX clients can access the same datastore. When UNIX clients create symbolic links, these mappings provide a reference to another file or folder to support the CIFS clients. This resource type was introduced with ONTAP 9.6.
+
+==== File access tracing
+
+You can use these API calls to trace access to specific files. This resource type is new with ONTAP 9.8.
+
+==== File security permissions
+
+You can use these API calls displays the effective permission granted to Windows or Unix user for a specific file or folder. You can also manage NTFS file security and audit policies. This resource type was introduced with the ONTAP 9.8 REST API and significantly enhanced with ONTAP 9.9.
+
+==== FPolicy
+
+FPolicy is a file access notification framework used to monitor and manage file access events on the SVMs. This resource type was introduced with ONTAP 9.6.
+
+==== FPolicy connections
+
+These endpoints allow you to display and update connection status information for external FPolicy servers. This resource type was introduced with ONTAP 9.10.
+
+==== FPolicy engines
+
+The FPolicy engines allow you to identify the external servers that receive the file access notifications. This resource type was introduced with ONTAP 9.6.
+
+==== FPolicy events
+
+The configuration identifying how file access is monitored and what events are generated. This resource type was introduced with ONTAP 9.6.
+
+==== FPolicy policies
+
+A container for elements of the FPolicy framework, including FPolicy engines and events. This resource type was introduced with ONTAP 9.6.
+
+==== Locks
+
+A lock is a synchronization mechanism for enforcing limits on concurrent access to files where many clients are accessing the same file simultaneously. You can use these endpoints to retrieve and delete locks. This resource type was introduced with ONTAP 9.10.
+
+==== NFS connected clients
+
+You can display a list of connected clients with the details of their connection. This resource type was introduced with ONTAP 9.7.
+
+==== NFS export policies
+
+The policies including rules that describe the NFS exports. This resource type was introduced with ONTAP 9.6.
+
+==== NFS Kerberos interfaces
+
+The configuration settings for an interface to Kerberos. This resource type was introduced with ONTAP 9.6.
+
+==== NFS Kerberos realms
+
+The configuration settings for Kerberos realms. This resource type was introduced with ONTAP 9.6.
+
+==== NFS services
+
+The core configuration of the NFS server. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+
+==== Object store
+
+Auditing of the S3 events is a security improvement allowing you to track and log certain S3 events. An S3 audit event selector can be set on a per SVM per bucket basis. This resource type was introduced with ONTAP 9.10.
+
+==== Vscan
+
+A security feature to protect your data from viruses and other malicious code. This resource type was introduced with ONTAP 9.6.
+
+==== Vscan on-access policies
+
+The Vscan policies allowing files objects to be actively scanned when accessed by a client. This resource type was introduced with ONTAP 9.6.
+
+==== Vscan on-demand policies
+
+The Vscan policies allowing files objects to be immediately scanned on demand or according to a set schedule. This resource type was introduced with ONTAP 9.6.
+
+==== Vscan scanner pools
+
+A set of attributes used to manage the connection between ONTAP and an external virus-scanning server. This resource type was introduced with ONTAP 9.6.
+
+==== Vscan server status
+
+The status of the external virus-scanning server. This resource type was introduced with ONTAP 9.6.
