@@ -128,7 +128,9 @@ ONTAP 9.7 also introduces one or more new REST endpoints in several of the exist
 
 == ONTAP 9.6
 
-ONTAP 9.6 greatly extends the REST API support originally introduced in ONTAP 9.4. The ONTAP 9.6 REST API supports most ONTAP configuration and administration tasks REST APIs in ONTAP 9.6 include the following key areas and many more:
+ONTAP 9.6 greatly extends the REST API support originally introduced in ONTAP 9.4. The ONTAP 9.6 REST API supports most ONTAP configuration and administration tasks.
+
+REST APIs in ONTAP 9.6 include the following key areas and many more:
 
 * Cluster setup
 * Protocol configuration
