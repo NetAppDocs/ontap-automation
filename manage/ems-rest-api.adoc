@@ -1,0 +1,190 @@
+---
+permalink: manage/ems-rest-api.html
+sidebar: sidebar
+keywords: ems, configuration, workflow
+summary: "Manage EMS configuration with the REST API."
+---
+= Manage EMS event notifications with the ONTAP REST API
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the ONTAP REST API to configure how important Event Management System (EMS) event notifications are sent to you, as well as retrieve all EMS messages or specific messages with certain attributes. You can use the REST API to help automate EMS-related tasks, saving time over other methods of working with EMS messages.
+
+The following examples show you how you can use the ONTAP REST API to work with EMS messages. In each example, be sure to provide information in brackets <> where indicated. You can also reference a sample https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[Python script^] that demonstrates how to automate a number of EMS-related activities.
+
+== View specific event logs
+Using the `GET /support/ems/events` API call, you can retrieve specific event messages, such as the latest message, messages that contain specific text, or messages with a specific severity.
+
+.Example request: Retrieve the latest message
+
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/support/ems/events?fields=message.name&max_records=1'
+----
+
+.Example response
+[source,json]
+----
+"records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 6260,
+      "message": {
+        "name": "netinet6.rtr.high.mtu"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/6260"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/support/ems/events?fields=message.name&max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-22T10%3A28%3A29-04%3A00&start.node.name=malha-vsim1&start.index=6260&fields=message.name&max_records=1"
+    }
+  }
+}
+----
+
+.Example request: Retrieve a message containing specific text and severity
+
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/support/ems/events?log_message=*disk*&message.severity=alert'
+----
+
+.Example response
+[source,json]
+----
+"records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 4602,
+      "time": "2022-03-18T06:37:46-04:00",
+      "message": {
+        "severity": "alert",
+        "name": "raid.autoPart.disabled"
+      },
+      "log_message": "raid.autoPart.disabled: Disk auto-partitioning is disabled on this system: the system needs a minimum of 4 usable internal hard disks.",
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/4602"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/support/ems/events?log_message=*disk*&message.severity=alert&max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-18T06%3A37%3A46-04%3A00&start.node.name=malha-vsim1&start.index=4602&log_message=*disk*&message.severity=alert"
+    }
+  }
+}
+----
+
+== View the existing EMS configuration
+Using the `GET /support/ems/` API call, you can retrieve information about the existing EMS notification configuration.
+
+//DONE
+.Example request
+
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/support/ems/'
+----
+.Example response
+[source,json]
+----
+{
+  "proxy_url": "https://proxyserver.mycompany.com",
+  "proxy_user": "proxy_user",
+  "mail_server": "mail@mycompany.com",
+  "_links": {
+    "self": {
+      "href": "/api/resourcelink"
+    }
+  },
+  "pubsub_enabled": "1",
+  "mail_from": "administrator@mycompany.com"
+}
+----
+
+== Create a new EMS notification configuration
+You can use several API calls together to create a new EMS configuration to customize how and when you receive messages.
+
+.Steps
+
+. Configure the system-wide email settings. For example:
++
+[source,curl]
+----
+curl -X PATCH -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/support/ems?mail_from=administrator@mycompany.com&mail_server=mail@mycompany.com'
+----
+
+. Define a filter that uses specific rules to match certain messages. For example:
++
+[source,curl]
+----
+curl -u admin:<PASSWORD> -X POST -d '{"name": "test-filter", "rules.type": ["include"], "rules.message_criteria.severities": ["emergency"]}' -k 'https://<IP_ADDRESS>/api/support/ems/filters/'
+----
+//DONE
+. Create a destination for the messages. For example:
++
+[source,curl]
+----
+curl -u admin:<PASSWORD> -X POST -d '{"name": "test-destination", "type": "email", "destination": "administrator@mycompany.com", "filters.name": ["important-events"]}' -k 'https://<IP_ADDRESS>/api/support/ems/destinations/'
+----
+
+== ONTAP REST API versus ONTAP CLI commands
+The ONTAP REST API enables you to automate workflows with fewer commands than the ONTAP CLI for many tasks. For example, you can use a single POST API method to create a filter, instead of using multiple CLI commands. The following table shows the CLI commands that you would need to complete common EMS tasks versus the corresponding REST API calls:
+
+|===
+|ONTAP REST API |ONTAP CLI
+
+|`GET /support/ems`
+|`event config show`
+
+|`POST /support/ems/destinations`
+a|
+
+. `event notification destination create`
+. `event notification create`
+
+|`GET /support/ems/events`
+|`event log show`
+
+|`POST /support/ems/filters`
+a|
+
+. `event filter create -filter-name <filtername>`
+. `event filter rule add -filter-name  <filtername>`
+|===
+
+== For more information
+
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[ONTAP REST API EMS example Python script^]
