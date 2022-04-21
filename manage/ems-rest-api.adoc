@@ -185,7 +185,7 @@ a|
 . `event filter rule add -filter-name  <filtername>`
 |===
 
-== For more information
+== Related information
 
 * https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[ONTAP REST API EMS example Python script^]
 * https://blog.netapp.com/ontap-rest-apis-automate-notification[ONTAP REST APIs: Automate Notification of High-Severity Events^]

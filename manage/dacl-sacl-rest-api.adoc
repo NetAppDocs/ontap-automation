@@ -264,7 +264,7 @@ a|
 . `vserver security file-directory ntfs sacl remove`
 |===
 
-== For more information
+== Related information
 
 * https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py[ONTAP REST API DACL/SACL permissions example Python script^]
 * https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/[Simplified management of file-security permissions with ONTAP REST APIs^]
