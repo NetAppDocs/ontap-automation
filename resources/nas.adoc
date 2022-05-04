@@ -23,6 +23,10 @@ Certain CIFS and NFS events can be logged for the SVMs, which can help to improv
 
 You can redirect NAS auditing events to a specific SVM. This resource type is new with ONTAP 9.8.
 
+==== CIFS connections
+
+You can retrieve a list of the established CIFS connections. This resource type was introduced with ONTAP 9.11.1.
+
 ==== CIFS domains
 
 Support for CIFS domains has been added at the cluster and SVM level with several categories of endpoints. You can retrieve the domain configuration as well as create and remove preferred domain controllers. This resource type is new with ONTAP 9.10.
@@ -33,16 +37,27 @@ Home directories for SMB users on a CIFS server can be created without creating 
 
 ==== CIFS local groups
 
-The CIFS server can use local groups for authorization when determining share, file, and directory access rights.
-This resource type was introduced with ONTAP 9.9 and significantly expanded with ONTAP 9.10.
+The CIFS server can use local groups for authorization when determining share, file, and directory access rights. This resource type was introduced with ONTAP 9.9 and significantly expanded with ONTAP 9.10.
+
+==== CIFS NetBIOS
+
+You can display information about the NetBIOS connections for the cluster. Details include the IP addresses and registered NetBIOS names. This information can help you to troubleshoot name resolution issues. This resource type was introduced with ONTAP 9.11.1.
 
 ==== CIFS services
 
 The core configuration of the CIFS server. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
 
+==== CIFS session files
+
+You can retrieve a list of open files for the CIFS sessions based on several filtering parameters. This resource type was introduced with ONTAP 9.11.1.
+
 ==== CIFS sessions
 
 You can use this API to retrieve detailed information about a CIFS session. This resource type was introduced with the ONTAP 9.8 REST API and enhanced with ONTAP 9.9.
+
+==== CIFS shadow copies
+
+Microsoft Remote Volume Shadow Copy Services is an extension of the existing Microsoft VSS functionality. It extends the VSS capability to support the shadow copying of SMB shares. This feature is now available through the ONTAP REST API. This resource type was introduced with ONTAP 9.11.1.
 
 ==== CIFS shares
 
@@ -55,6 +70,10 @@ The access control lists (ACLs) controlling access to folders and files on the C
 ==== CIFS UNIX symlink mapping
 
 Both CIFS and UNIX clients can access the same datastore. When UNIX clients create symbolic links, these mappings provide a reference to another file or folder to support the CIFS clients. This resource type was introduced with ONTAP 9.6.
+
+==== CIFS user and group bulk import
+
+You can use the new endpoints to perform a bulk import of the CIFS local users, groups, and group membership information as well as monitor the status of the request. This resource type was introduced with ONTAP 9.11.1.
 
 ==== File access tracing
 
@@ -87,6 +106,10 @@ A container for elements of the FPolicy framework, including FPolicy engines and
 ==== Locks
 
 A lock is a synchronization mechanism for enforcing limits on concurrent access to files where many clients are accessing the same file simultaneously. You can use these endpoints to retrieve and delete locks. This resource type was introduced with ONTAP 9.10.
+
+==== NFS connected client maps
+
+The NFS map information for the connected clients is available through the new endpoint. You can retrieve details about the node, SVM, and IP addresses. This resource type was introduced with ONTAP 9.11.1.
 
 ==== NFS connected clients
 
