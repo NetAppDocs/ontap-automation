@@ -99,6 +99,16 @@ These API calls are used to retrieve and manage the cluster LDAP server configur
 
 Used to display and manage the login messages used by ONTAP. This resource type was introduced with ONTAP 9.6.
 
+==== Multiple administrator verification
+
+The multiple administrator verification feature provides a flexible authorization framework for protecting access to ONTAP commands or operations. There are seventeen new endpoints that support defining, requesting, and approving access in the following areas:
+
+* Rules
+* Requests
+* Approval groups
+
+These resource types were introduced with ONTAP 9.11.1.
+
 ==== NIS authentication
 
 These settings are used to retrieve and manage the cluster NIS server configuration. This resource type was introduced with ONTAP 9.6.
