@@ -27,7 +27,7 @@ The ONTAP role-based access control (RBAC) capability has been enhanced to provi
 
 Performance counters::
 
-Previous ONTAP releases have maintained statistical information about the operational characteristics of the system. With the 9.11.1 release, this information is now available through the REST API. An administrator or automated process can access the data to determine system performance. This statistical information, as maintained by the counter manager subsystem, is presented in a database format using tables and rows. This enhancement brings the ONTAP REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI).
+Previous ONTAP releases have maintained statistical information about the operational characteristics of the system. With the 9.11.1 release, this information has been enhanced and is now available through the REST API. An administrator or automated process can access the data to determine system performance. This statistical information, as maintained by the counter manager subsystem, is presented in a database format using tables and rows. This enhancement brings the ONTAP REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI).
 
 Aggregate management::
 

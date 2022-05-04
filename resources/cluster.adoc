@@ -75,6 +75,10 @@ You can retrieve the status of the individual nodes in a MetroCluster deployment
 
 You can retrieve a list of the recently executed operations for a MetroCluster configuration. This resource type is new with ONTAP 9.8.
 
+==== MetroCluster SVMs
+
+You can retrieve information for all of the SVM pairs in the MetroCluster configuration. This resource type was introduced with ONTAP 9.11.1.
+
 ==== Nodes
 
 ONTAP clusters are composed of one or more nodes. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
@@ -91,9 +95,17 @@ You can use these API calls to configure the ONTAP Network Time Protocol setting
 
 The peer objects represent endpoints and support the cluster peering relationships. This resource type was introduced with ONTAP 9.6.
 
+==== Performance counters
+
+Previous ONTAP releases have maintained statistical information about the operational characteristics of the system. With the 9.11.1 release, this information has been enhanced and is now available through the REST API. The feature brings the ONTAP REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI). This resource type was introduced with ONTAP 9.11.1.
+
 ==== Schedules
 
 Schedules can be used to automate the perform of tasks. This resource type was introduced with ONTAP 9.6.
+
+==== Sensors
+
+You can use these endpoints to retrieve the details of all the platform environment sensors. This resource type was introduced with ONTAP 9.11.1.
 
 ==== Software
 
