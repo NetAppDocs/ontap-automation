@@ -15,6 +15,10 @@ summary:
 [.lead]
 You can use these API calls to manage the ONTAP features used to support a cluster.
 
+==== Application log
+
+A standalone application can issue a POST request to an ONTAP system to record EMS events and optionally generated AutoSupport packages. This resource type was introduced with ONTAP 9.11.1.
+
 ==== Automatic update
 
 The automatic update feature keeps your ONTAP systems current by downloading and applying the latest software updates. There are several endpoint categories to support the feature, including status, configurations, and updates. These resource types were introduced with ONTAP 9.10.
