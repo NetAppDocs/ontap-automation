@@ -77,7 +77,7 @@ You can retrieve a list of the recently executed operations for a MetroCluster c
 
 ==== MetroCluster SVMs
 
-You can retrieve information for all of the SVM pairs in the MetroCluster configuration. This resource type was introduced with ONTAP 9.11.1.
+You can retrieve information about all of the SVM pairs in the MetroCluster configuration. This resource type was introduced with ONTAP 9.11.1.
 
 ==== Nodes
 
@@ -105,7 +105,7 @@ Schedules can be used to automate the perform of tasks. This resource type was i
 
 ==== Sensors
 
-You can use these endpoints to retrieve the details of all the platform environment sensors. This resource type was introduced with ONTAP 9.11.1.
+You can use these endpoints to retrieve the details about all the platform environment sensors. This resource type was introduced with ONTAP 9.11.1.
 
 ==== Software
 

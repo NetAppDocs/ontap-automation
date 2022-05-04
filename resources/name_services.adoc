@@ -15,6 +15,10 @@ summary:
 [.lead]
 You can use these API calls to manage the name services supported by ONTAP.
 
+==== Cache
+
+ONTAP name services subsystem supports caching, which improves performance and resiliency. Configuration of the name services cache can now be access through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups. This resource type was introduced with ONTAP 9.11.1.
+
 ==== DDNS
 
 You can display the Dynamic DNS (DDNS) information and manage the DDNS subsystem. This resource type is new with ONTAP 9.8.
@@ -31,6 +35,10 @@ These endpoints allow you to displays the IP address of a specified hostname as 
 
 LDAP servers can be used to maintain user information. This resource type was introduced with ONTAP 9.6.
 
+==== LDAP schemas
+
+You can create, modify, and list the LDAP schemas used by ONTAP. There are four default schemas included. This resource type was introduced with ONTAP 9.11.1.
+
 ==== Local hosts
 
 You can use these endpoints to display and manage the local mappings for hostnames. This resource type was introduced with ONTAP 9.10.
@@ -38,6 +46,10 @@ You can use these endpoints to display and manage the local mappings for hostnam
 ==== Name mappings
 
 Name mappings allow you to map identities from one name domain to another. For example, you can map identities from CIFS to UNIX, Kerberos to UNIX, and UNIX to CIFS. This resource type was introduced with ONTAP 9.6.
+
+==== Netgroup files
+
+You can retrieve netgroup file details and delete a file for an SVM. This resource type was introduced with ONTAP 9.11.1.
 
 ==== NIS
 
