@@ -17,7 +17,41 @@ NetApp periodically updates the ONTAP REST API to bring you new features, enhanc
 
 == ONTAP 9.11.1
 
-*MUST UPDATE*
+// url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+
+ONTAP 9.11.1 continues to expand the capabilities of the ONTAP REST API with nearly a hundred new API calls. These endpoints support the new ONTAP features as well as the enhancements to existing features. This release focuses on customer migration to the ONTAP REST API from the Data ONTAP API (ONTAPI or ZAPI).
+
+Aggregate management::
+
+The management of ONTAP storage aggregates has been enhanced. This includes support for moving aggregates online and offline as well as improved management of the spares.
+
+IP subnet capability::
+
+The ONTAP networking capability has been expanded to include support for IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster.
+
+Granular RBAC::
+
+>> ADD MAHA
+
+The ONTAP role-based access control (RBAC) capability has been enhanced to provide additional granularity. Every role can now include one or more access definitions, each of which identifies a command or REST API call along with the desire access level. This enhancement provides parity with the Data ONTAP API (ONTAPI or ZAPI) and supports customer migration to the REST API.
+
+Performance counters::
+
+Statistical information is maintained about many of the operational characteristics of an ONTAP system. This information can be accessed by an administrator or an automated process to determine the current system performance. The data is maintained by the ONTAP counter manager subsystem and is presented in a database format using tables and rows. This feature brings the REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI).
+
+SnapMirror enhancements::
+
+>> ADD MAHA
+
+The SnapMirror capability has been enhanced in several areas including scheduling. Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI
+
+Name services cache support::
+
+ONTAP name services has been enhanced to support caching, which improves performance and resiliency. The name services cache can be access through the REST API and is highly configurable. Settings can be applied at multiple levels, including: hosts, unix-users, unix-groups, and netgroups.
+
+Multiple administrator verification::
+
+The multiple administrator verification feature provides a flexible authorization framework for protecting access to ONTAP commands or operations. You can define rules that identify the restricted commands. After a user requests access to a specific command, approval can be granted by one or more ONTAP administrators as appropriate.
 
 == ONTAP 9.10.1
 
