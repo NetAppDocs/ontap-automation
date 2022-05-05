@@ -17,13 +17,11 @@ NetApp periodically updates the ONTAP REST API to bring you new features, enhanc
 
 == ONTAP 9.11.1
 
-// url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-
 ONTAP 9.11.1 continues to expand the capabilities of the ONTAP REST API with nearly a hundred new API calls. These endpoints support the new ONTAP features as well as enhancements to existing features. This release focuses on supporting customer migration to the ONTAP REST API from the Data ONTAP API (ONTAPI or ZAPI).
 
 Granular RBAC::
 
-The ONTAP role-based access control (RBAC) capability has been enhanced to provide additional granularity. You can use the traditional roles or create new roles as needed. Every role can be associated with one or more access definitions, each of which identifies a command or REST API call along with the desire access level. And new access permissions are now available, such as `read_create` and `read_modify`. This enhancement provides parity with the Data ONTAP API (ONTAPI or ZAPI) and supports customer migration to the REST API.
+The ONTAP role-based access control (RBAC) capability has been enhanced to provide additional granularity. You can use the traditional roles or create new roles as needed. Every role can be associated with one or more access definitions, each of which identifies a command or REST API call along with the desire access level. New access permissions are also available, such as `read_create` and `read_modify`. This enhancement provides parity with the Data ONTAP API (ONTAPI or ZAPI) and supports customer migration to the REST API.
 
 Performance counters::
 
@@ -39,7 +37,7 @@ The ONTAP networking capability has been expanded to include support for IP subn
 
 Multiple administrator verification::
 
-The multiple administrator verification feature provides a flexible authorization framework for protecting access to ONTAP commands or operations. You can define rules that identify the restricted commands. When a user requests access to a specific command, approval can be granted by one or more ONTAP administrators as appropriate.
+The multiple administrator verification feature provides a flexible authorization framework for protecting access to ONTAP commands or operations. You can define rules that identify the restricted commands. When a user requests access to a specific command, approval can be granted by multiple ONTAP administrators as appropriate.
 
 SnapMirror enhancements::
 
@@ -47,7 +45,7 @@ The SnapMirror capability has been enhanced in several areas including schedulin
 
 Name services cache support::
 
-ONTAP name services subsystem has been enhanced to support caching, which improves performance and resiliency. Configuration of the name services cache can now be access through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups.
+ONTAP name services has been enhanced to support caching which improves performance and resiliency. Configuration of the name services cache can now be accessed through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups.
 
 == ONTAP 9.10.1
 
