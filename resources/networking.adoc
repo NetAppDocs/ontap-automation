@@ -31,6 +31,10 @@ You can retrieve the port information for an Ethernet switch. This resource type
 
 You can retrieve or modify the configuration for Ethernet switches used for the ONTAP cluster or storage network. This resource type is new with ONTAP 9.8.
 
+==== Fibre Channel fabrics
+
+You can use the Fibre Channel (FC) fabric REST API endpoints to retrieve information about the FC network. This includes the connections between the ONTAP cluster and the FC fabric, the switches comprising the fabric, and the zones of the active zoneset. This resource type was introduced with ONTAP 9.11.1.
+
 ==== Fibre Channel interfaces
 
 A Fibre Channel interface is a logical endpoint associated with an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
@@ -58,6 +62,10 @@ A routing table is a collection of IP routes used to forward traffic to its dest
 ==== IP service policies
 
 The IP service polices define the services available at a specific LIF. Service policies can be configured within the context of an SVM or IPspace. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+
+==== IP subnets
+
+The ONTAP networking capability has been expanded to support IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster. This resource type was introduced with ONTAP 9.11.1.
 
 ==== IPspaces
 

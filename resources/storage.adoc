@@ -39,6 +39,10 @@ The physical disks in the cluster. This resource type was introduced with ONTAP 
 
 You can use these endpoints to create file clones, retrieve split status, and manage split loads. The file cloning endpoint resources were first introduced with ONTAP 9.6 and expanded with ONTAP 9.8. They were significantly expanded again with ONTAP 9.10.
 
+==== File moves
+
+You can use these REST API endpoints to move a file between two FlexVol volumes or within a FlexGroup volume. After the request is accepted you can monitor the progress and status. This resource type was introduced with ONTAP 9.11.1.
+
 ==== FlexCache
 
 This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
@@ -51,9 +55,13 @@ FlexCache is a persistent cache of an origin volume. This resource type was orig
 
 You can designate specific files for additional monitoring. This resource type is new with ONTAP 9.8.
 
+==== Pools
+
+You can create a shared storage pool as well as retrieve the storage pools in a cluster. This resource type was introduced with ONTAP 9.11.1.
+
 ==== Ports
 
-Storage ports of the cluster. This resource type was introduced with ONTAP 9.6.
+Storage ports of the cluster. This resource type was introduced with ONTAP 9.6 and enhanced with ONTAP 9.11.1.
 
 ==== QOS policies
 

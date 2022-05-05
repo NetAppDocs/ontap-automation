@@ -15,6 +15,38 @@ summary:
 [.lead]
 NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 
+== ONTAP 9.11.1
+
+ONTAP 9.11.1 continues to expand the capabilities of the ONTAP REST API with nearly a hundred new API calls. These endpoints support the new ONTAP features as well as enhancements to existing features. This release focuses on supporting customer migration to the ONTAP REST API from the Data ONTAP API (ONTAPI or ZAPI).
+
+Granular RBAC::
+
+The ONTAP role-based access control (RBAC) capability has been enhanced to provide additional granularity. You can use the traditional roles or create new roles as needed. Every role can be associated with one or more access definitions, each of which identifies a command or REST API call along with the desire access level. New access permissions are also available, such as `read_create` and `read_modify`. This enhancement provides parity with the Data ONTAP API (ONTAPI or ZAPI) and supports customer migration to the REST API.
+
+Performance counters::
+
+Previous ONTAP releases have maintained statistical information about the operational characteristics of the system. With the 9.11.1 release, this information has been enhanced and is now available through the REST API. An administrator or automated process can access the data to determine system performance. The statistical information, as maintained by the counter manager subsystem, is presented in a database format using tables and rows. This enhancement brings the ONTAP REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI).
+
+Aggregate management::
+
+The management of ONTAP storage aggregates has been enhanced. You can use the updated REST endpoints to move aggregates online and offline as well as manage the spares.
+
+IP subnet capability::
+
+The ONTAP networking capability has been expanded to include support for IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster.
+
+Multiple administrator verification::
+
+The multiple administrator verification feature provides a flexible authorization framework for protecting access to ONTAP commands or operations. You can define rules that identify the restricted commands. When a user requests access to a specific command, approval can be granted by multiple ONTAP administrators as appropriate.
+
+SnapMirror enhancements::
+
+The SnapMirror capability has been enhanced in several areas including scheduling. The SnapVault relationship parity has been added in a DP relationship with ONTAP 9.11.1 Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI).
+
+Name services cache support::
+
+ONTAP name services has been enhanced to support caching which improves performance and resiliency. Configuration of the name services cache can now be accessed through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups.
+
 == ONTAP 9.10.1
 
 ONTAP 9.10.1 continues to expand the capabilities of the ONTAP REST API. Over a hundred new endpoints have been added to support new ONTAP features as well as enhancements to existing features. A summary of the REST API enhancements is presented below.
