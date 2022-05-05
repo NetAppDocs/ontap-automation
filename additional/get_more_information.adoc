@@ -24,11 +24,15 @@ Provides the documentation for ONTAP 9 (except the CLI commands).
 
 * https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
 +
-Provides documentation for the ONTAP 9 CLI commands.
+Provides the documentation for the ONTAP 9 CLI commands.
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
 +
-Provides documentation and other helpful links needed to plan, administer, and support ONTAP 9.
+Includes documentation and other helpful links you need to plan, administer, and support ONTAP 9.
+
+* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[ONTAP 9 Product Library^]
++
+Access the release notes and other documentation for previous ONTAP releases.
 
 === ONTAP 9 developer resources
 

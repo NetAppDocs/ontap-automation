@@ -31,6 +31,17 @@ The peering relationships establish connectivity among the SVMs. This resource t
 
 You can manage the SVMs that are bound to a cluster. This resource type was introduced with ONTAP 9.6.
 
+==== Top metrics
+
+You can access additional performance metrics data for a specific SVM instance. There are four lists available and each provides the top I/O activity for ONTAP FlexVol and FlexGroup volumes. The lists include:
+
+* Clients
+* Directories
+* Files
+* Users
+
+These resource types were introduced with ONTAP 9.11.1.
+
 ==== Web
 
 You can use these endpoints to update and retrieve the web services security configuration for each data SVM. This resource type was introduced with ONTAP 9.10.
