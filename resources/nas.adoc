@@ -49,7 +49,7 @@ The core configuration of the CIFS server. This resource type was introduced wit
 
 ==== CIFS session files
 
-You can retrieve a list of open files for the CIFS sessions based on several filtering parameters. This resource type was introduced with ONTAP 9.11.1.
+You can retrieve a list of open files for the CIFS sessions based on several filtering options. This resource type was introduced with ONTAP 9.11.1.
 
 ==== CIFS sessions
 
@@ -57,7 +57,7 @@ You can use this API to retrieve detailed information about a CIFS session. This
 
 ==== CIFS shadow copies
 
-Microsoft Remote Volume Shadow Copy Services is an extension of the existing Microsoft VSS functionality. It extends the VSS capability to support the shadow copying of SMB shares. This feature is now available through the ONTAP REST API. This resource type was introduced with ONTAP 9.11.1.
+Microsoft Remote Volume Shadow Copy Services is an extension of the existing Microsoft VSS functionality. It extends the VSS capability to support shadow copying of SMB shares. This feature is now available through the ONTAP REST API. This resource type was introduced with ONTAP 9.11.1.
 
 ==== CIFS shares
 
@@ -73,7 +73,7 @@ Both CIFS and UNIX clients can access the same datastore. When UNIX clients crea
 
 ==== CIFS user and group bulk import
 
-You can use the new endpoints to perform a bulk import of the CIFS local users, groups, and group membership information as well as monitor the status of the request. This resource type was introduced with ONTAP 9.11.1.
+You can use the new REST API endpoints to perform a bulk import of the CIFS local users, groups, and group membership information as well as monitor the status of the request. This resource type was introduced with ONTAP 9.11.1.
 
 ==== File access tracing
 

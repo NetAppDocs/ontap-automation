@@ -41,7 +41,7 @@ You can use these endpoints to create file clones, retrieve split status, and ma
 
 ==== File moves
 
-You can use these endpoints to initiate a file move operation between two FlexVol volumes or within a FlexGroup volume. After the request is accepted you can monitor the progress and status. This resource type was introduced with ONTAP 9.11.1.
+You can use these REST API endpoints to move a file between two FlexVol volumes or within a FlexGroup volume. After the request is accepted you can monitor the progress and status. This resource type was introduced with ONTAP 9.11.1.
 
 ==== FlexCache
 
@@ -57,7 +57,7 @@ You can designate specific files for additional monitoring. This resource type i
 
 ==== Pools
 
-You can create a shared storage pool and retrieve the storage pools in a cluster. This resource type was introduced with ONTAP 9.11.1.
+You can create a shared storage pool as well as retrieve the storage pools in a cluster. This resource type was introduced with ONTAP 9.11.1.
 
 ==== Ports
 

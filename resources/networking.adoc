@@ -33,7 +33,7 @@ You can retrieve or modify the configuration for Ethernet switches used for the 
 
 ==== Fibre Channel fabrics
 
-You can use the Fibre Channel (FC) fabric REST endpoints to retrieve information about the FC network. This includes the connections between the ONTAP cluster and the FC fabric, the switches comprising the fabric, and the zones of the active zoneset. This resource type was introduced with ONTAP 9.11.1.
+You can use the Fibre Channel (FC) fabric REST API endpoints to retrieve information about the FC network. This includes the connections between the ONTAP cluster and the FC fabric, the switches comprising the fabric, and the zones of the active zoneset. This resource type was introduced with ONTAP 9.11.1.
 
 ==== Fibre Channel interfaces
 

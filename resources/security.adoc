@@ -107,7 +107,7 @@ The multiple administrator verification feature provides a flexible authorizatio
 * Requests
 * Approval groups
 
-These resource types were introduced with ONTAP 9.11.1.
+Providing the option for multiple administrators to approve access improves the security of your ONTAP and IT environments. These resource types were introduced with ONTAP 9.11.1.
 
 ==== NIS authentication
 

@@ -17,7 +17,7 @@ You can use these API calls to manage the name services supported by ONTAP.
 
 ==== Cache
 
-ONTAP name services subsystem supports caching, which improves performance and resiliency. Configuration of the name services cache can now be access through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups. This resource type was introduced with ONTAP 9.11.1.
+ONTAP name services supports caching which improves performance and resiliency. Configuration of the name services cache can now be access through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups. This resource type was introduced with ONTAP 9.11.1.
 
 ==== DDNS
 

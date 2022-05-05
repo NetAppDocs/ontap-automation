@@ -33,7 +33,7 @@ You can manage the SVMs that are bound to a cluster. This resource type was intr
 
 ==== Top metrics
 
-You can access additional performance metrics data for a specific SVM instance. There are four lists are provided each with the  available most I/O activity for FlexVol and FlexGroup volumes. The lists include:
+You can access additional performance metrics data for a specific SVM instance. There are four lists available and each provides the top I/O activity for ONTAP FlexVol and FlexGroup volumes. The lists include:
 
 * Clients
 * Directories
