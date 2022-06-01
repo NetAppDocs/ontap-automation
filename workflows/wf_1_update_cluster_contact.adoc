@@ -15,7 +15,7 @@ summary:
 [.lead]
 This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
 
-===== 1. Update the contact information for the cluster
+=== 1. Update the contact information for the cluster
 
 You can issue an API call to update the contact information. Because the request runs asynchronously, you must confirm success of the associated job.
 
@@ -52,7 +52,7 @@ A job object with the associated identifier is returned.
   }
 }
 
-===== 2. Retrieve the status of the job
+=== 2. Retrieve the status of the job
 
 You must retrieve the state of the job to determine if the asynchronous request has completed successfully.
 
