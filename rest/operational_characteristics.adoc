@@ -15,11 +15,11 @@ summary:
 [.lead]
 While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices.
 
-=== Request and response API transaction
+== Request and response API transaction
 
 Every REST API call is performed as an HTTP request to the ONTAP system which generates an associated response to the client. This request/response pair is considered an API transaction. Before using the API, you should be familiar with the input variables available to control a request and the contents of the response output.
 
-=== Support for CRUD operations
+== Support for CRUD operations
 
 Each of the resources available through the ONTAP REST API is accessed based on the CRUD model:
 
@@ -30,18 +30,18 @@ Each of the resources available through the ONTAP REST API is accessed based on 
 
 For some of the resources, only a subset of the operations is supported. You should review the ONTAP API documentation page at your ONTAP cluster for more information about each resource.
 
-=== Object identifiers
+== Object identifiers
 
 Each resource instance or object is assigned a unique identifier when it is created. In most cases, the identifier is a 128-bit UUID. These identifiers are globally unique within a specific ONTAP cluster.  After issuing an API call that creates a new object instance, a URL with the associated id value is returned to the caller in the location header of the HTTP response. You can extract the identifier and use it on subsequent calls when referring to the resource instance.
 
 [NOTE]
 The content and internal structure of the object identifiers can change at any time. You should only use the identifiers on the applicable API calls as needed when referring to the associated objects.
 
-=== Object instances and collections
+== Object instances and collections
 
 Depending on the resource path and HTTP method, an API call can apply to a specific object instance or a collection of objects.
 
-=== Synchronous and asynchronous operations
+== Synchronous and asynchronous operations
 
 There are two ways that ONTAP performs an HTTP request received from a client.
 
@@ -58,7 +58,7 @@ Requests that use the methods POST, PATCH, and DELETE are designed to run asynch
 [NOTE]
 The `return_timeout` query parameter is available with asynchronous API calls and can convert an asynchronous call to complete synchronously. Refer to `How asynchronous processing works using the Job object` for more information.
 
-=== Security
+== Security
 
 The security provided with the REST API is based primarily on the existing security features available with ONTAP. The following security is used by the API:
 
@@ -78,6 +78,6 @@ At an HTTP level, basic authentication is used for the API transactions. An HTTP
 +
 ONTAP implements a role-based authorization model. The account you use when accessing the ONTAP REST API or API documentation page should have the proper authority.
 
-.Related links
+.Related information
 
-link:security_using_rbac.html[Security using RBAC]
+* link:security_using_rbac.html[Security using RBAC]

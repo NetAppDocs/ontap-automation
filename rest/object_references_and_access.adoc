@@ -15,7 +15,7 @@ summary:
 [.lead]
 The resource instances or objects exposed through the ONTAP REST API can be referenced and accessed in several different ways.
 
-=== Object access paths
+== Object access paths
 
 At a high level, there are two path types when accessing an object:
 
@@ -33,7 +33,7 @@ Every object is assigned a unique identifier when it is created, which in most c
 
 For many of the resource types, a UUID value can be provided as part of the path key in the URL to access a specific object. For example, you can use the following to access a node instance: ``/cluster/nodes/{uuid}`
 
-=== Accessing an object using an object property
+== Accessing an object using an object property
 
 In addition to a UUID, you can also access an object using an object property. In most cases, it is convenient to use the name property. For example, you can use the following query parameter in the URL string to access a node instance by its name: `/cluster/nodes?name=node_one`. In addition to a query parameter, a foreign object can be accessed through a property in the primary object.
 
@@ -52,14 +52,14 @@ In particular, a performance degradation is possible when one or more of the fol
 * A large collection of objects is accessed
 * A complex or elaborate query is used
 
-=== Cluster versus SVM context
+== Cluster versus SVM context
 
 There are several REST endpoints that support both a cluster and SVM. When using one of these endpoints, you can indicate the context of the API call through the `scope=[svm|cluster]` value. Examples of endpoints supporting a dual context include IP interfaces and security roles.
 
 [NOTE]
 The scope value has a default value base on the properties provided for each API call.
 
-=== Using PATCH and DELETE on a collection of objects
+== Using PATCH and DELETE on a collection of objects
 
 Every REST endpoint supporting PATCH or DELETE on a resource instance also supports the same method on a collection of objects. The only requirement is that at least one field must be provided through a query parameter in the URL string. When issuing a PATCH or DELETE over a collection, this is equivalent to doing the following internally:
 

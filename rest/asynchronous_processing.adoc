@@ -17,7 +17,7 @@ After issuing an API request that is designed to run asynchronously, a job objec
 
 Refer to link:../reference/api_reference.html[API reference] to determine which API calls are designed to be performed asynchronously.
 
-=== Controlling how a request is processed
+== Controlling how a request is processed
 
 You can use the `return_timeout` query parameter to control how an asynchronous API call is processed. There are two possible outcomes when using this parameter.
 
@@ -30,7 +30,7 @@ If the request is valid and completes successfully before the time expires, ONTA
 [NOTE]
 The default value for the `return_timeout` parameter is zero seconds. Therefore, if you don't include the parameter, the 202 HTTP status code is always returned for a valid request.
 
-=== Querying the Job object associated with an API request
+== Querying the Job object associated with an API request
 
 The Job object returned in the HTTP response contains several properties. You can query the state property in a subsequent API call to determine if the request completed successfully. A Job object is always in one of the following states:
 
@@ -45,7 +45,7 @@ Terminal states::
 * Success
 * Failure
 
-=== General procedure for issuing an asynchronous request
+== General procedure for issuing an asynchronous request
 
 You can use the following high-level procedure to complete an asynchronous API call. This example assumes the `return_timeout` parameter is not used, or that the time expires before the background job completes.
 
@@ -57,6 +57,6 @@ You can use the following high-level procedure to complete an asynchronous API c
 .. If the Job is in a non-terminal state, perform loop again.
 . Stop when the Job reaches a terminal state (success, failure).
 
-.Related links
+.Related information
 
-link:../workflows/wf_1_update_cluster_contact.html[Workflow 1: Updating the cluster contact and checking job state]
+* link:../workflows/wf_1_update_cluster_contact.html[Workflow 1: Updating the cluster contact and checking job state]
