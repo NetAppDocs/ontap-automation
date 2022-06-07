@@ -15,7 +15,7 @@ summary:
 [.lead]
 You can access the ONTAP REST API in several different ways.
 
-=== Network considerations
+== Network considerations
 
 You can connect to the REST API through the following interfaces:
 
@@ -28,7 +28,7 @@ The LIF you choose to use must be configured to support the HTTPS management pro
 [TIP]
 You should always use the cluster management LIF. This will load balance the API requests across all nodes and avoid nodes that are offline or experiencing connectivity issues.
 
-=== ONTAP API online documentation page
+== ONTAP API online documentation page
 
 The ONTAP API online documentation page provides an access point when using a web browser. In addition to providing a way to execute individual API calls directly, the page includes a detailed description of the API, including input parameters and other options for each call. The API calls are organized into functional categories. See link:../resources/overview_categories.html[Summary of the REST resources] for more information.
 
@@ -36,7 +36,7 @@ The format of the URL used to access the documentation page for the most recent 
 
 `https://<cluster_mgmt_ip_address>/docs/api`
 
-=== Custom software and tools
+== Custom software and tools
 
 You can access the ONTAP API using any of several different programming languages and tools.  Popular choices include Python, Java, Curl, and PowerShell. A program, script, or tool that uses the API acts as a REST web services client. Using a programming language enables a deeper understanding of the API and provides an opportunity to automate the ONTAP administration.
 

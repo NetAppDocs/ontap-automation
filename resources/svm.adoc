@@ -15,23 +15,23 @@ summary:
 [.lead]
 You can use these API calls to manage storage virtual machines (SVMs).
 
-==== Migrations
+.Migrations
 
 You can migrate an SVM from a source cluster to a destination cluster. The new endpoints provide complete control, including the ability to pause, resume, retrieve status, and abort a migration operation. This resource type was introduced with ONTAP 9.10.
 
-==== Peer permissions
+.Peer permissions
 
 Peer permissions can be assigned which enable the SVM peering relationships. This resource type was introduced with ONTAP 9.6.
 
-==== Peers
+.Peers
 
 The peering relationships establish connectivity among the SVMs. This resource type was introduced with ONTAP 9.6.
 
-==== SVMs
+.SVMs
 
 You can manage the SVMs that are bound to a cluster. This resource type was introduced with ONTAP 9.6.
 
-==== Top metrics
+.Top metrics
 
 You can access additional performance metrics data for a specific SVM instance. There are four lists available and each provides the top I/O activity for ONTAP FlexVol and FlexGroup volumes. The lists include:
 
@@ -42,6 +42,6 @@ You can access additional performance metrics data for a specific SVM instance. 
 
 These resource types were introduced with ONTAP 9.11.1.
 
-==== Web
+.Web
 
 You can use these endpoints to update and retrieve the web services security configuration for each data SVM. This resource type was introduced with ONTAP 9.10.

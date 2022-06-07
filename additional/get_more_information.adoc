@@ -15,7 +15,7 @@ summary:
 [.lead]
 There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 
-=== ONTAP 9 resources
+== ONTAP 9 resources
 
 // https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
 * https://docs.netapp.com/us-en/ontap/[ONTAP 9 Documentation^]
@@ -34,7 +34,7 @@ Includes documentation and other helpful links you need to plan, administer, and
 +
 Access the release notes and other documentation for previous ONTAP releases.
 
-=== ONTAP 9 developer resources
+== ONTAP 9 developer resources
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAPI to REST API mapping information^]
 +
@@ -52,13 +52,13 @@ Documentation for the NetApp Python Client Library.
 +
 Provides resources and documentation needed to use the ONTAP REST API, including the ONTAP Python client library.
 
-=== Videos
+== Videos
 
 * https://www.youtube.com/watch?v=Wws3SB5d9Ss[Getting started with the NetApp ONTAP Python client library^]
 +
 Good introduction to the NetApp Python client library and how to get started writing code using the library.
 
-=== NetApp resources
+== NetApp resources
 
 * https://mysupport.netapp.com/[NetApp Support^]
 +

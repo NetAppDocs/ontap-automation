@@ -15,24 +15,22 @@ summary:
 [.lead]
 The Network Data Management Protocol provides a standard for backing up NAS devices. You can use these API calls to manage the NDMP services.
 
-==== NDMP mode
+.NDMP mode
 
 The NDMP operational mode can be SVM scope or node scope. This resource type was introduced with ONTAP 9.7.
 
-==== NDMP nodes
+.NDMP nodes
 
 You can manage the NDMP configuration of the nodes. This resource type was introduced with ONTAP 9.7.
 
-==== NDMP sessions
+.NDMP sessions
 
 You can retrieve and delete NDMP session details for a specific SVM or node. This resource type was introduced with ONTAP 9.7.
 
-==== NDMP SVMs
+.NDMP SVMs
 
 You can manage the NDMP configuration of the SVMs. This resource type was introduced with ONTAP 9.7.
 
-==== NDMP SVM user passwords
+.NDMP SVM user passwords
 
 You can generate and retrieve passwords for a specific NDMP user within the SVM content. This resource type was introduced with the ONTAP 9.8 REST API and enhanced with ONTAP 9.9.
-
-// 9.9
