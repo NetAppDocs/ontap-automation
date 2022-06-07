@@ -15,19 +15,19 @@ summary:
 [.lead]
 ONTAPI is a set of API calls provided through the Network Manageability SDK that can be used to administer ONTAP storage systems. There are differences between the REST API and the ONTAPI API calls, as well as between the REST API and ONTAP CLI. You should understand these differences before using the REST API in a production environment.
 
-=== General design differences
+== General design differences
 
 The ONTAP REST API and command line interface have a fundamentally different designs. The CLI commands and parameters do not map directly to the REST API calls. And even where there might be a similarity, the details of the input parameters can be different. For example, numeric units might be specified in bytes or using a suffix (such as KB). You should review link:input_variables.html[Input variables controlling an API request] as well as the link:../reference/api_reference.html[API reference] for more information.
 
-=== Data SVMs exposed through the REST API
+== Data SVMs exposed through the REST API
 
 ONTAP supports several types of storage virtual machines (SVMs). However, only the data SVMs are directly exposed through the ONTAP REST API. The configuration information describing the cluster and nodes is available through the REST API, however the cluster and nodes are not treated as separate SVMs.
 
-=== Migrating from ONTAPI to REST
+== Migrating from ONTAPI to REST
 
 The REST API is the primary and strategic choice for automating ONTAP system administration. If you are currently using the ONTAPI API, you should consider migrating to the REST API. NetApp provides mapping documentation to assist with the migration from ONTAPI to REST.
 
-=== Changes to SnapDiff availability in ONTAPI
+== Changes to SnapDiff availability in ONTAPI
 
 Beginning with ONTAP 9.10.1, the SnapDiff v1 and v2 ONTAPI calls cannot be invoked. Any third-party application that invokes SnapDiff v1 or v2 ONTAPI calls will not function beginning with ONTAP 9.10.1. ONTAP users should verify that their backup application supports the SnapDiff v3 REST calls before upgrading to ONTAP 9.10.1.
 
@@ -39,8 +39,7 @@ SnapDiff API availability across ONTAP releases is defined as follows:
 
 For more information, see the link:../rn/whats_new.html[ONTAP Release Notes].
 
-.Related links
+.Related information
 
-link:../rest/input_variables.html[Input variables controlling an API request]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAPI to REST API mapping information^]
+* link:../rest/input_variables.html[Input variables controlling an API request]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAPI to REST API mapping information^]

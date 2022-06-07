@@ -15,7 +15,7 @@ summary:
 [.lead]
 You can control how an API call is processed through parameters and variables set in the HTTP request.
 
-=== HTTP methods
+== HTTP methods
 
 The HTTP methods supported by the ONTAP REST API are shown in the following table.
 
@@ -40,7 +40,7 @@ Not all the HTTP methods are available at each of the REST endpoints. Also, both
 |Determine what HTTP methods are supported at a specific endpoint.
 |===
 
-=== Request headers
+== Request headers
 
 You must include several headers in the HTTP request.
 
@@ -53,14 +53,14 @@ This header should be set to `application/hal+json`. If it is instead set to `ap
 Authorization::
 Basic authentication must be set with the user name and password encoded as a base64 string.
 
-=== Request body
+== Request body
 
 The content of the request body varies depending on the specific call. The HTTP request body consists of one of the following:
 
 * JSON object with input variables
 * Empty JSON object
 
-=== Filtering objects
+== Filtering objects
 
 When issuing an API call that uses GET, you can limit or filter the returned objects based on any attribute. For example, you can specify an exact value to match:
 
@@ -94,7 +94,7 @@ You can also return a collection of objects based on whether a specific field is
 [NOTE]
 Any fields that are not set are generally excluded from matching queries.
 
-=== Requesting specific object fields
+== Requesting specific object fields
 
 By default, issuing an API call using GET returns only the attributes that uniquely identify the object or objects, along with a HAL self link. This minimum set of fields acts as a key for each object and varies based on the object type. You can select additional object properties using the `fields` query parameter in the following ways:
 
@@ -113,7 +113,7 @@ Use `fields=<field_name>` to specify the exact field you want. When requesting m
 [TIP]
 As a best practice, you should always identify the specific fields you want. You should only retrieve the set of common fields or all fields when needed. Which fields are classified as common, and returned using `fields=*`, is determined by NetApp based on internal performance analysis. The classification of a field might change in future releases.
 
-=== Sorting objects in the output set
+== Sorting objects in the output set
 
 The records in a resource collection are returned in the default order defined by the object. You can change the order using the `order_by` query parameter with the field name and sort direction as follows:
 
@@ -128,7 +128,7 @@ Note the following:
 * If you specify a sort field but don’t provide a direction, the values are sorted in ascending order.
 * When including multiple parameters, you must separate the fields with a comma.
 
-=== Pagination when retrieving objects in a collection
+== Pagination when retrieving objects in a collection
 
 When issuing an API call using GET to access a collection of objects of the same type, ONTAP attempts to return as many objects as possible based on two constraints. You can control each of these constraints using additional query parameters on the request. The first constraint reached for a specific GET request terminates the request and therefore limits the number of records returned.
 
@@ -156,7 +156,7 @@ If needed, you can combine these two parameters with additional query parameters
 +
 You can issue multiple requests to page through the objects. Each subsequent API call should use a new time value based on the latest event in the last result set.
 
-=== Size properties
+== Size properties
 
 The input values used with some API calls as well as certain query parameters are numeric. Rather than provide an integer in bytes, you can optionally use a suffix as shown in the following table.
 
@@ -176,6 +176,6 @@ The input values used with some API calls as well as certain query parameters ar
 |PB Petabytes (TB x 1024 bytes) or pebibytes
 |===
 
-.Related links
+.Related information
 
-link:object_references_and_access.html[Object references and access]
+* link:object_references_and_access.html[Object references and access]

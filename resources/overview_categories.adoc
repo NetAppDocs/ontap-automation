@@ -20,7 +20,7 @@ This section describes the REST resources for the latest version of the product.
 [TIP]
 For many of the REST endpoints, you can include a UUID key as part of the path string to access a specific object instance. However, you can also access objects using a property value on a query parameter.
 
-.Related links
+.Related information
 
 * link:../rest/object_references_and_access.html[Additional REST considerations]
 * link:../reference/api_reference.html[API reference]

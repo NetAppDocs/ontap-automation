@@ -15,7 +15,7 @@ summary:
 [.lead]
 The REST API expands the role-based access control (RBAC) capabilities when using ONTAP.  You can create user accounts with custom roles to restrict access to the REST endpoints.
 
-=== Creating roles for the REST endpoints
+== Creating roles for the REST endpoints
 
 A REST role is defined through a set of one or more privileges. Each privilege consists of a path to a REST endpoint and the associated access level. Access to each endpoint is provided in one of three levels and determines the HTTP methods that can be used against the resource. The access levels include:
 
@@ -36,7 +36,7 @@ Here is an example of two privileges that can be assigned to a REST role:
 * `access="readonly", path="/api/storage/volumes"`
 * `access="none", path="/api/snapmirror/policies"`
 
-=== Creating a user account with a custom role
+== Creating a user account with a custom role
 
 At a high level, you can create an account with a custom REST role as follows:
 
