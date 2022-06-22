@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: migrate/overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+NetApp first introduced the ONTAP REST API with the 9.6 release. Since then the API has continued to expand and mature. It now provides the preferred and strategic alternative to the earlier ONTAPI API.
+
+If you are using ONTAPI, you are encouraged to begin migrating to the REST API to automate the administration of your ONTAP deployments. NetApp provides several resources to support your migration to REST. This section describes the available resources and highlights other helpful features and tools.
