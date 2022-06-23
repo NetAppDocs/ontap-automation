@@ -13,7 +13,9 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP REST API provides functionality that is equivalent to ONTAPI in most areas. NetApp provides documentation that describes the mapping from the ONTAPI API calls to the equivalent REST API calls. The documentation is dependent on the ONTAP release.
+The ONTAP REST API provides functionality that is equivalent to ONTAPI in most areas. NetApp provides documentation that describes the mapping from the ONTAPI API calls to the equivalent REST API calls.
+
+The API mapping documentation is dependent on the ONTAP release:
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAP 9.8^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895[ONTAP 9.9.1^]

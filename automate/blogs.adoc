@@ -26,4 +26,4 @@ https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[netapp.io/2
 
 If you're new to using Ansible for ONTAP automation, this is a good place to start.
 
-https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible]
+https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible^]
