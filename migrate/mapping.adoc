@@ -1,0 +1,23 @@
+---
+sidebar: sidebar
+permalink: migrate/mapping.html
+keywords:
+summary:
+---
+
+= ONTAPI to REST API mapping
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP REST API includes functionality that is equivalent to ONTAPI in most areas. NetApp provides documentation that describes the mapping from the ONTAPI calls to the equivalent REST API calls.
+
+The API mapping documentation is dependent on the ONTAP release:
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAP 9.8^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895[ONTAP 9.9.1^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAP 9.10.1^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAP 9.11.1^]

@@ -1,0 +1,9 @@
+section: migrate
+title: Migrate to the REST API
+entries:
+  - title: Overview
+    url: /migrate/overview.html
+  - title: ONTAPI to REST mapping
+    url: /migrate/mapping.html
+  - title: Blogs
+    url: /migrate/blogs.html

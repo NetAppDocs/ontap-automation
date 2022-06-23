@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: migrate/blogs.html
+keywords:
+summary:
+---
+
+= Blogs about migrating to the ONTAP REST API
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+
+[.lead]
+There are several blog articles available to help you better understand how to migrate from ONTAPI to the ONTAP REST API.
+
+.ONTAPI to REST Mapping
+
+NetApp provides support for moving from the proprietary ONTAPI API to the ONTAP REST API through mapping documentation.
+
+https://netapp.io/2020/12/17/ontapi-to-rest-mapping/[netapp.io/2020/12/17/ontapi-to-rest-mapping^]
+
+.Transform your Automation to ONTAP REST API from ONTAPI
+
+There are several technologies available to help you transform your ONTAP automation environment based on the REST API.
+
+https://www.netapp.com/blog/transform-automation-ontap-rest-api/[www.netapp.com/blog/transform-automation-ontap-rest-api^]
+
+.Transitioning from ONTAPI using ONTAPI Usage Reporting Tool
+
+NetApp provides a tool to help customers and partners transition to the ONTAP REST API.
+
+https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/[netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool^]
