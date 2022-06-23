@@ -28,7 +28,7 @@ There are several technologies available to help you transform your ONTAP automa
 
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/[www.netapp.com/blog/transform-automation-ontap-rest-api^]
 
-.Transitioning from ONTAPI(ZAPI) using ONTAPI Usage Reporting Tool
+.Transitioning from ONTAPI using ONTAPI Usage Reporting Tool
 
 NetApp provides a tool to help customers and partners transition to the ONTAP REST API.
 
