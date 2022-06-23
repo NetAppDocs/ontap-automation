@@ -5,3 +5,5 @@ entries:
     url: /migrate/overview.html
   - title: ONTAPI to REST mapping
     url: /migrate/mapping.html
+  - title: Blogs
+    url: /migrate/blogs.html

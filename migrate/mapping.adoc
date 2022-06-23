@@ -15,12 +15,12 @@ summary:
 [.lead]
 The REST API provides functionality that is equivalent to ONTAP in many areas. NetApp provides documentation for each ONTAP release describing the mapping from an ONTAPI API call to the equivalent REST API call.
 
-[cols="20,80"*,options="header"]
+[cols="25,75"*,options="header"]
 |===
-|ONTAP release
+|Release
 |Mapping documentation
 
-|9.8
-|https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAP 9.8]
+|ONTAP 9.8
+|https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[library.netapp.com/ecm/ecm_download_file/ECMLP2874886^]
 
 |===
