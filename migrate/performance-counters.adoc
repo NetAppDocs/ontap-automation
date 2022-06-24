@@ -26,7 +26,7 @@ With ONTAPI, you accessed performance counter data as objects. With the ONTAP RE
 .ONTAP REST API
 In the following example, the `host_adapter` performance counter is represented in table format, to illustrate how you would access each counter using the ONTAP REST API. For example, to access the `bytes_read` metric for host_adapter_2, you would use the following format: `host_adapter_2.bytes_read`.
 
-.Host adapter performance counter table
+//.Host adapter performance counter table
 |===
 |Instance name 6+|REST counters
 
