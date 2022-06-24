@@ -15,16 +15,16 @@ summary:
 [.lead]
 The ONTAP counter management system provides metrics on behavior of the ONTAP system. You can export counter information from the system to gain insight in to how ONTAP is performing, and help troubleshoot performance bottlenecks or get a baseline for system performance.
 
-== Accessing performance counters with ONTAPI
-Using the ONTAP API (ONTAPI), you can access performance counter information and export more than 600 performance counter objects. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with the ONTAP REST API. NetApp recommends transitioning your performance counter scripts and code to the ONTAP REST API as soon as possible.
+== Accessing performance counters using ONTAP APIs
+Using the ONTAP API (ONTAPI), you can access performance counter information and export many different performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with the ONTAP REST API. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
 
-With ONTAPI, you accessed performance counter data objects. With the ONTAP REST API, you now access performance counter data as tables. This means that each performance counter object is represented as its own table. An instance of that object becomes a row in the table, and an individual attribute from that instance (such as a single performance counter) becomes a field in that row. For example:
+With ONTAPI, you accessed performance counter data as objects. With the ONTAP REST API, you now access performance counter data as tables. This means that each performance counter is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row. For example:
 
 <show an ONTAPI performance counter object represented with ONTAPI>
 then
 <show a REST performance counter table with that performance counter emphasized>
 
-== Examples
+== REST API examples
 
 <show three examples of using REST to get certain perf ctr info>
 
@@ -32,17 +32,26 @@ then
 so, then:
 `GET /api/cluster/counter/tables/disk/rows` would retrieve all instances of the "disk" performance counter object (would this list all available REST perf counters for all disks?)
 
-How do you get the name of an individual disk?
+What call would you use to get the name of an individual disk?
 
-How do you get the raid group of all disks?
+What call would you use to get the raid group of all disks?
+
+.Example request:
 
 [source,curl]
 ----
 curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/cluster/counter/tables/disk/rows/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent'
 ----
 
+.Example response:
+----
 
 
-== Migrate from ONTAPI to the ONTAP REST API
+----
 
-<show all the ways they can migrate all their stuff - what resources are available to them?>
+
+== ONTAPI to REST API migration resources
+
+NetApp has several resources available that can help you migrate from NetApp ONTAPI to REST API in your environment:
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAPI to ONTAP REST API mapping^]
