@@ -28,6 +28,21 @@ then
 
 <show three examples of using REST to get certain perf ctr info>
 
+/api/cluster/counter/tables/{counter_table.name}/rows
+so, then:
+`GET /api/cluster/counter/tables/disk/rows` would retrieve all instances of the "disk" performance counter object (would this list all available REST perf counters for all disks?)
+
+How do you get the name of an individual disk?
+
+How do you get the raid group of all disks?
+
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/cluster/counter/tables/disk/rows/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent'
+----
+
+
+
 == Migrate from ONTAPI to the ONTAP REST API
 
 <show all the ways they can migrate all their stuff - what resources are available to them?>
