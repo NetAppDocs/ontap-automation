@@ -18,19 +18,19 @@ The ONTAP counter management system provides metrics on behavior of the ONTAP sy
 == Accessing performance counters using ONTAP APIs
 Using the ONTAP API (ONTAPI), you can access performance counter information and export many different performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with the ONTAP REST API. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
 
-With ONTAPI, you accessed performance counter data as objects. With the ONTAP REST API, you now access performance counter data as tables. This means that each performance counter is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row. For example:
+With ONTAPI, you accessed performance counter data as objects. With the ONTAP REST API, you now access performance counter data as tables. This means that each performance counter is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row.
 
 .ONTAPI
 <show an ONTAPI performance counter object represented with ONTAPI>
 
 .ONTAP REST API
-<show a REST performance counter table>
+In the following example, the `host_adapter` performance counter is represented in table format, to illustrate how you would access each counter using the ONTAP REST API. For example, to access the `bytes_read` metric for host_adapter_2, you would use the following format: `host_adapter_2.bytes_read`.
 
 .Host adapter performance counter table
 |===
-|Instance name |REST counter |REST counter |REST counter |REST counter |REST counter |REST counter
+|Instance name 6+|REST counters
 
-|host-adapter-1
+|host_adapter_1
 |total_read_ops
 |total_write_ops
 |bytes_read
@@ -38,7 +38,7 @@ With ONTAPI, you accessed performance counter data as objects. With the ONTAP RE
 |max_link_data_rate
 |rscn_count
 
-|host-adapter-2
+|host_adapter_2
 |total_read_ops
 |total_write_ops
 |bytes_read
@@ -46,7 +46,7 @@ With ONTAPI, you accessed performance counter data as objects. With the ONTAP RE
 |max_link_data_rate
 |rscn_count
 
-|host-adapter-3
+|host_adapter_3
 |total_read_ops
 |total_write_ops
 |bytes_read
