@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: migrate/performance-counters.html
 keywords:
-summary:
+summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP performance counters.
 ---
 
-= Migrate to REST API for performance counters
+= Performance counters
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,18 +13,15 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP counter management system provides metrics on behavior of the ONTAP system. You can export counter information from the system to gain insight in to how ONTAP is performing, and help troubleshoot performance bottlenecks or get a baseline for system performance.
+Using the ONTAP API (ONTAPI), you can access performance counter information and export many different ONTAP performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with the ONTAP REST API. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
 
-== Accessing performance counters using ONTAP APIs
-Using the ONTAP API (ONTAPI), you can access performance counter information and export many different performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with the ONTAP REST API. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
+== Accessing performance counters using ONTAPI
+Until now, performance counter data was represented as objects. For example, a node with four disks would have four individual instances of the disk performance counter entity, and you could use ONTAPI to access individual performance counter objects within each entity instance.
 
-With ONTAPI, you accessed performance counter data as objects. With the ONTAP REST API, you now access performance counter data as tables. This means that each performance counter is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row.
+== Accessing performance counters using the ONTAP REST API
+With the ONTAP REST API, you now access performance counter data as tables. This means that each performance counter object is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row.
 
-.ONTAPI
-<show an ONTAPI performance counter object represented with ONTAPI>
-
-.ONTAP REST API
-In the following example, the `host_adapter` performance counter is represented in table format, to illustrate how you would access each counter using the ONTAP REST API. For example, to access the `bytes_read` metric for host_adapter_2, you would use the following format: `host_adapter_2.bytes_read`.
+In the following example, the `host_adapter` performance counter is represented in table format to illustrate how you would access each counter using the ONTAP REST API. For example, to access the `bytes_read` metric for host_adapter_2, you would use the following format: `host_adapter_2.bytes_read`.
 
 //.Host adapter performance counter table
 |===
@@ -87,3 +84,4 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/cluster/counter/tab
 NetApp has several resources available that can help you migrate from NetApp ONTAPI to REST API in your environment:
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAPI to ONTAP REST API mapping^]
+* https://netapp-my.sharepoint.com/:u:/p/bmah/EQ8OiNnCNGpEhZKKbY3LkAQBsv-u5vteEKoEmq1Gm0QK1A?e=cM2noj[Performance counter REST API reference documentation]
