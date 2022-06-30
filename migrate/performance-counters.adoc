@@ -16,10 +16,10 @@ summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP pe
 Using the ONTAP API (ONTAPI), you can access performance counter information and export many different ONTAP performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with the ONTAP REST API. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
 
 == Accessing performance counters using ONTAPI
-Until now, performance counter data was represented as objects. For example, a node with four disks would have four individual instances of the disk performance counter entity, and you could use ONTAPI to access individual performance counter objects within each entity instance.
+Previously, performance counter data was grouped in objects. For example, in a node with four disks, disk performance counter data would be grouped as an object. Each disk object would be an instance of that object, and you could use ONTAPI to access individual performance counters disk instance.
 
 == Accessing performance counters using the ONTAP REST API
-With the ONTAP REST API, you now access performance counter data as tables. This means that each performance counter object is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row.
+With the ONTAP REST API, you now access each performance counter object as a table. This means that each performance counter object is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row.
 
 In the following example, the `host_adapter` performance counter is represented in table format to illustrate how you would access each counter using the ONTAP REST API. For example, to access the `bytes_read` metric for host_adapter_2, you would use the following format: `host_adapter_2.bytes_read`.
 
@@ -53,7 +53,72 @@ In the following example, the `host_adapter` performance counter is represented 
 
 |===
 
-== REST API examples
+== Understanding the structure with REST API examples
+Use the following REST API examples to help understand the structure of a performance counter table. These examples also show you how you can use the REST API to discover what endpoints are available, and use them to gain insight into the performance of your system.
+
+=== Discover the available performance counter tables
+You can use this REST API call to discover all of the performance counter tables that you can query:
+
+.Example request:
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
+----
+
+.Example response:
+[source,json]
+----
+
+
+----
+
+=== Query an individual performance counter table
+You can use this REST API call to view the description and metadata for one specific table. The output describes the purpose of the table and also describes what type of information each performance counter in the table records. In this example, we query the `host_adapter` table:
+
+.Example request:
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
+----
+
+.Example response:
+[source,json]
+----
+
+
+----
+
+=== View the rows in a performance counter table
+You can use this REST API call to view the rows in a table, which tells you what instances of the performance counter object exist:
+
+.Example request:
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
+----
+
+.Example response:
+[source,json]
+----
+
+
+----
+
+=== Query a specific table instance
+You can use this REST API call to view performance counter values about a specific instance in the table. In this example, we request performance counter information for one of the power supplies in the system:
+
+.Example request:
+[source,curl]
+----
+curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/power-01:0b'
+----
+
+.Example response:
+[source,json]
+----
+
+
+----
 
 <show three examples of using REST to get certain perf ctr info>
 
@@ -73,6 +138,7 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<IP_ADDRESS>/api/cluster/counter/tab
 ----
 
 .Example response:
+[source,json]
 ----
 
 
