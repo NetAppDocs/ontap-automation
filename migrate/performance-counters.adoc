@@ -55,7 +55,7 @@ In the following example, the `host_adapter` counter manager object is represent
 |===
 
 == Understanding the structure with REST API examples
-Use the following REST API examples to help understand the structure of a performance counter table. These examples also show you how you can use the REST API to discover what endpoints are available, and use them to gain insight into the performance of your system. These examples explore the `host_adapter` object, showing progressively more detailed information about the object and the counter values it contains. If you try these examples on your system, be sure to provide your values for information in brackets <> where indicated.
+Use the following REST API examples to help understand the structure of a performance counter table. These examples also show you how you can use the REST API to discover what endpoints are available, and use them to gain insight into the performance of your system. These examples explore the `host_adapter` counter manager object, showing progressively more detailed information about the object and the counter values it contains. If you try these examples on your system, be sure to provide your values for information in brackets <> where indicated.
 
 === Discover the available performance counter tables
 You can use this REST API call to discover all of the performance counter tables that you can query:
