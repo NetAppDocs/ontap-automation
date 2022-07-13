@@ -13,15 +13,15 @@ summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP pe
 :imagesdir: ../media/
 
 [.lead]
-Using the ONTAP API (ONTAPI), you can access performance counter information and export many different ONTAP performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with the ONTAP REST API. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
+Using the ONTAP API (ONTAPI), you can access counter manager performance counter information and export many different ONTAP performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with ONTAP REST API methods. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
 
 == Accessing performance counters using ONTAPI
 Previously, performance counter data was grouped in objects. For example, in a node with four disks, disk performance counter data was grouped as an object. Each physical disk in the system represented an instance of that object, and you could use ONTAPI to access individual performance counters for a single disk instance.
 
 == Accessing performance counters using the ONTAP REST API
-With the ONTAP REST API, you now access each performance counter object as a table. This means that each performance counter object is represented as its own table, while instances of that performance counter each become accessible as a row in that table. You can access individual attributes of a single instance (such as the name of a disk) as a field in that instance row.
+With the ONTAP REST API, you now access each counter manager object as a table. This means that each counter manager object is represented as its own table, while instances of that counter manager object each become accessible as a row in that table. Each row contains a number of individual performance counters for that instance. You can access a single performance counter for an instance as a field in that table row.
 
-In the following example, the `host_adapter` performance counter is represented in table format to illustrate how you can access each counter using the ONTAP REST API.
+In the following example, the `host_adapter` counter manager object is represented in table format to illustrate how you can access each performance counter using the ONTAP REST API.
 //For example, to access the `bytes_read` metric for host_adapter_2, you would use the following format: `host_adapter_2.bytes_read`.
 
 //.Host adapter performance counter table
