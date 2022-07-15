@@ -23,7 +23,7 @@ See https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449[ONTAP 9.11.1 O
 
 
 == Accessing performance counters using ONTAPI
-As consumed by ONTAPI, performance counter data is grouped in objects. For example, in a node with four disks, disk performance counter data was grouped as an object. Each physical disk in the system represented an instance of that object, and you could use ONTAPI to access individual performance counters for a single disk instance.
+As consumed by ONTAPI, performance counter data is grouped in objects. For example, in a node with four disks, disk performance counter data is grouped as an object. Each physical disk in the system represents an instance of that object, and you can use ONTAPI to access individual performance counters for a single disk instance.
 
 == Accessing performance counters using the ONTAP REST API
 With the ONTAP REST API, you access counter manager objects as a table (for example, `disk`). This means that each counter manager object is represented as its own table, while instances of that counter manager object (such as individual disks in the system) each become accessible as a row in that table. Each row contains a number of individual performance counters for that instance. You can access a single performance counter for an instance as a field in that table row.
