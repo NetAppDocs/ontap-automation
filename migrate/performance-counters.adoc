@@ -13,13 +13,20 @@ summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP pe
 :imagesdir: ../media/
 
 [.lead]
-Using the ONTAP API (ONTAPI), you can access counter manager performance counter information and export many different ONTAP performance counter metrics. ONTAPI access to performance counter information will soon be deprecated in ONTAP and replaced with ONTAP REST API methods. NetApp recommends transitioning your scripts and code that access performance counters to the ONTAP REST API as soon as possible.
+The ONTAP Counter Manager enables ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
+
+Prior to ONTAP 9.11.1, access to the full set of ONTAP Counter Manager objects is limited to the ONTAP CLI and ONTAPI interfaces.
+
+Beginning with ONTAP 9.11.1, ONTAP users can access a segment of Counter Manager objects with the ONTAP REST API. Users migrating their automation scripts from ONTAPI to the ONTAP REST API need to understand the differences between how performance counter data is presented to the ONTAPI and how that data is presented to the REST API.
+
+See https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449[ONTAP 9.11.1 ONTAPI-to-REST Counter Manager Mapping^] for documentation on the set of ONTAP counters available to the REST API in ONTAP 9.11.1, as well as information about how the counters differ between ONTAPI and REST API consumption.
+
 
 == Accessing performance counters using ONTAPI
-Previously, performance counter data was grouped in objects. For example, in a node with four disks, disk performance counter data was grouped as an object. Each physical disk in the system represented an instance of that object, and you could use ONTAPI to access individual performance counters for a single disk instance.
+As consumed by ONTAPI, performance counter data is grouped in objects. For example, in a node with four disks, disk performance counter data was grouped as an object. Each physical disk in the system represented an instance of that object, and you could use ONTAPI to access individual performance counters for a single disk instance.
 
 == Accessing performance counters using the ONTAP REST API
-With the ONTAP REST API, you now access each counter manager object as a table (for example, `disk`). This means that each counter manager object is represented as its own table, while instances of that counter manager object (such as individual disks in the system) each become accessible as a row in that table. Each row contains a number of individual performance counters for that instance. You can access a single performance counter for an instance as a field in that table row.
+With the ONTAP REST API, you access counter manager objects as a table (for example, `disk`). This means that each counter manager object is represented as its own table, while instances of that counter manager object (such as individual disks in the system) each become accessible as a row in that table. Each row contains a number of individual performance counters for that instance. You can access a single performance counter for an instance as a field in that table row.
 
 In the following example, the `host_adapter` counter manager object is represented in table format to illustrate how you can access each performance counter using the ONTAP REST API. There are several host adapters in the system, and each host adapter has its own performance counters:
 //For example, to access the `bytes_read` metric for host_adapter_2, you would use the following format: `host_adapter_2.bytes_read`.
@@ -293,23 +300,3 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
   }
 }
 ----
-////
-<show three examples of using REST to get certain perf ctr info>
-
-//api/cluster/counter/tables/{counter_table.name}/rows
-//so, then:
-//`GET /api/cluster/counter/tables/disk/rows` would retrieve all instances of the "disk" performance counter object (would this list all available REST perf counters for all disks?)
-
-What call would you use to get the name of an individual disk?
-
-What call would you use to get the raid group of all disks?
-
-////
-
-
-== ONTAPI to REST API migration resources
-
-NetApp has several resources available that can help you migrate from NetApp ONTAPI to REST API in your environment:
-
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAPI to ONTAP REST API mapping^]
-* https://netapp-my.sharepoint.com/:u:/p/bmah/EQ8OiNnCNGpEhZKKbY3LkAQBsv-u5vteEKoEmq1Gm0QK1A?e=cM2noj[Performance counter REST API reference documentation]
