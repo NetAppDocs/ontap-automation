@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: rn/known_limitations.html
+keywords:
+summary:
+---
+
+= Known limitations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP REST API has certain limitations or restrictions that might affect your use of the API and development of automation code. These restrictions are described below. Unless otherwise indicated, each applies to all supported ONTAP releases where the REST API is available.
+
+[NOTE]
+The REST API first became available with ONTAP 9.6.
+
+.REST API requests rejected when input queue is full
+
+Each REST API client request is received by ONTAP and initially placed in an input queue before being processed. At times of extremely high request arrival rates, the input wait queue holding these API requests can temporarily fill up. When this occurs, the additional overflow requests are rejected. In these situations:
+
+* ONTAP recognizes the incoming connection exceeds the wait queue depth and logs a message that it is failing the connection.
+* The client observes a failed connection and the exact behavior depended on the client. For example, with a NMSDK client the message "Failed to connect to SSL" is presented.
+
+The API input wait queue filling up with the subsequent client API requests rejected  is a rare event. The ONTAP REST API has been designed this way to protect against DOS attacks.
