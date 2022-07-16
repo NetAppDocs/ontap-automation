@@ -22,9 +22,9 @@ The REST API first became available with ONTAP 9.6.
 
 _ONTAP releases: All supported_
 
-Each of the REST API client requests is received by ONTAP and initially placed in an input queue before being processed. At times of extremely high arrival rates, the input wait queue holding these API requests can temporarily fill up. When this occurs, each additional overflow request is rejected. In these situations:
+Every REST API client request is received by ONTAP and initially placed in an input queue before being processed. At times of extremely high arrival rates, the input wait queue holding these API requests can temporarily fill up. When this occurs, each additional overflow request is rejected. In these situations:
 
 * ONTAP recognizes the incoming connection exceeds the wait queue depth and logs a message that it is failing the connection.
-* The REST client observes the failed connection although the exact behavior depends on the client. For example, with an NMSDK client the message "Failed to connect to SSL" is presented.
+* The REST client observes the failed connection, although the exact behavior can depend on the client. For example, with an NMSDK client the message "Failed to connect to SSL" is presented.
 
-The API input wait queue filling up is a rare event. Rejecting the excess requests is designed to protect against DOS attacks.
+The REST API input wait queue filling up is a rare event. Rejecting the excess requests provides protection against DOS attacks.
