@@ -13,16 +13,18 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP REST API has certain limitations or restrictions that might affect your use of the API and development of automation code. These restrictions are described below. Unless otherwise indicated, each applies to all supported ONTAP releases where the REST API is available.
+The ONTAP REST API has certain limitations or restrictions that might affect your use of the API and development of automation code. These restrictions are described below. In general, each applies to all supported ONTAP releases where the REST API is available. See the _ONTAP releases_ field for each limitation.
 
 [NOTE]
 The REST API first became available with ONTAP 9.6.
 
 .REST API requests rejected when input queue is full
 
-Each REST API client request is received by ONTAP and initially placed in an input queue before being processed. At times of extremely high request arrival rates, the input wait queue holding these API requests can temporarily fill up. When this occurs, the additional overflow requests are rejected. In these situations:
+_ONTAP releases: All supported_
+
+Each of the REST API client requests is received by ONTAP and initially placed in an input queue before being processed. At times of extremely high arrival rates, the input wait queue holding these API requests can temporarily fill up. When this occurs, each additional overflow request is rejected. In these situations:
 
 * ONTAP recognizes the incoming connection exceeds the wait queue depth and logs a message that it is failing the connection.
-* The client observes a failed connection and the exact behavior depends on the client. For example, with a NMSDK client the message "Failed to connect to SSL" is presented.
+* The REST client observes the failed connection although the exact behavior depends on the client. For example, with an NMSDK client the message "Failed to connect to SSL" is presented.
 
-The API input wait queue filling up, with the subsequent client API requests rejected, is a rare event. This design provides protection against DOS attacks.
+The API input wait queue filling up is a rare event. Rejecting the excess requests is designed to protect against DOS attacks.
