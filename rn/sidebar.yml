@@ -3,5 +3,7 @@ title: Release Notes
 entries:
   - title: What's new
     url: /rn/whats_new.html
+  - title: Known limitations
+    url: /rn/known_limitations.html
   - title: ONTAP Release Notes
     url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
