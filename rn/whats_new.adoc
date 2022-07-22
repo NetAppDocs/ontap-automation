@@ -41,7 +41,7 @@ The multiple administrator verification feature provides a flexible authorizatio
 
 SnapMirror enhancements::
 
-The SnapMirror capability has been enhanced in several areas including scheduling. The SnapVault relationship parity has been added in a DP relationship with ONTAP 9.11.1 Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI). Related to this, support is now available to create and manage bulk snapshot copies.
+The SnapMirror capability has been enhanced in several areas including scheduling. The SnapVault relationship parity has been added in a DP relationship with ONTAP 9.11.1 Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI). Related to this, support is available to create and manage bulk snapshot copies.
 
 Name services cache support::
 
