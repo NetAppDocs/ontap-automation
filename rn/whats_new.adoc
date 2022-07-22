@@ -33,7 +33,7 @@ The management of ONTAP storage aggregates has been enhanced. You can use the up
 
 IP subnet capability::
 
-The ONTAP networking capability has been expanded to include support for IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster.
+The ONTAP networking capability has been expanded to include support for IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster with a focus on SnapVault policy.
 
 Multiple administrator verification::
 
@@ -41,11 +41,15 @@ The multiple administrator verification feature provides a flexible authorizatio
 
 SnapMirror enhancements::
 
-The SnapMirror capability has been enhanced in several areas including scheduling. The SnapVault relationship parity has been added in a DP relationship with ONTAP 9.11.1 Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI).
+The SnapMirror capability has been enhanced in several areas including scheduling. The SnapVault relationship parity has been added in a DP relationship with ONTAP 9.11.1 Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI). Related to this, support is available to create and manage bulk snapshot copies.
 
 Name services cache support::
 
 ONTAP name services has been enhanced to support caching which improves performance and resiliency. Configuration of the name services cache can now be accessed through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups.
+
+ONTAPI reporting tool::
+
+The ONTAPI reporting tool helps customers and partners identify the ONTAPI usage in their environment. In addition to the Python software, there is also a video and evolving support in the NetApp Lab on Demand. This tool provides another resource when migrating from ONTAPI to the ONTAP REST API.
 
 == ONTAP 9.10.1
 
