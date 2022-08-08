@@ -33,7 +33,7 @@ The management of ONTAP storage aggregates has been enhanced. You can use the up
 
 IP subnet capability::
 
-The ONTAP networking capability has been expanded to include support for IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster with a focus on SnapVault policy.
+The ONTAP networking capability has been expanded to include support for IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster.
 
 Multiple administrator verification::
 
