@@ -78,6 +78,4 @@ At an HTTP level, basic authentication is used for the API transactions. An HTTP
 +
 ONTAP implements a role-based authorization model. The account you use when accessing the ONTAP REST API or API documentation page should have the proper authority.
 
-.Related information
-
-* link:security_using_rbac.html[Security using RBAC]
+// .Related information
