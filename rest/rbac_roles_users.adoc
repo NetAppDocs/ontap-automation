@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rest/work_roles_users.html
+permalink: rest/rbac_roles_users.html
 keywords:
 summary:
 ---

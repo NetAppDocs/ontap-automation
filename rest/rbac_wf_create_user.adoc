@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rest/wf_create_user_role.html
+permalink: rest/rbac_wf_create_user.html
 keywords:
 summary:
 ---
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can use the multi-step workflow described below to create a user with an associated REST role. Before using the workflow, you should review the general process used to prepare for creating a role and user.
+You can use the multi-step workflow described below to create a user with an associated REST role for a data SVM. Before using the workflow, you should review the general process to prepare.
 
 == Prepare to create an ONTAP user with an assigned role
 
@@ -41,7 +41,7 @@ It is more convenient to use an existing built-in role but you can create a new 
 
 .What type of role is needed?
 
-Based on the security requirements and ONTAP, should you choose a REST or traditional role?
+Based on the security requirements and ONTAP, you need to choose a REST or traditional role.
 
 == Create a user with a custom role
 
@@ -52,7 +52,7 @@ The workflow is meant to illustrate the entire end-to-end process. However, seve
 
 === 1. List the data SVMs in the cluster
 
-Perform the following REST API call to list the data SVMs in the cluster. The UUID and name of each SVM is provided. You need to select the SVM where you want to define the user and role from the list.
+Perform the following REST API call to list the data SVMs in the cluster. The UUID and name of each SVM is provided in the output.
 
 [cols="25,75"*,options="header"]
 |===
@@ -65,59 +65,103 @@ Perform the following REST API call to list the data SVMs in the cluster. The UU
 
 .curl example
 [source,curl]
-curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
+curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=name' -u admin:password -k --header 'Accept: */*'
+
+.After you finish
+
+You need to select the SVM where you will define the user and role.
 
 === 2. List the users defined to the SVM
 
-Perform the following REST API call to list the users defined in a specific SVM. Based on this you will be able to select a unique name for the new user and avoid duplication.
+Perform the following REST API call to list the users defined in the SVM you selected.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/security/accounts
+|===
 
 .curl example
 [source,curl]
-curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
+curl --location -i --request GET 'https://10.222.81.101/api/security/accounts/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
+
+.After you finish
+
+Based on the users already defined in the SVM, choose a unique name for the new user.
 
 === 3. List the REST roles defined to the SVM
 
-Perform the following REST API call to list the roles defined in a specific SVM. Based on this you will be able to select a unique name for the new role and avoid duplication.
+Perform the following REST API call to list the roles defined in a specific SVM.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/security/roles
+|===
 
 .curl example
 [source,curl]
-curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
+curl --location -i --request GET 'https://10.222.81.101/api/security/roles/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
+
+.After you finish
+
+Based on the roles already defined in the SVM, choose a unique name for the new role.
 
 === 4. Create a custom REST role
 
-Perform the following REST API call to a create a custom REST role.
+Perform the following REST API call to a create a custom REST role. The role initially has one privilege defined which establishes the default that all access is denied.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/api/security/roles
+|===
 
 .curl example
 [source,curl]
-curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
+curl --location -i --request GET 'https://10.222.81.101/api/security/roles' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 
 .JSON input example
 [source,json]
 {
-
+  "name": "dprole1",
+  "owner": {
+    "name": "dmp",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api", "access": "none"},
+  ]
 }
 
-=== 5. Update the role by adding privileges
-
-Perform the following REST API call to modify the role by adding the needed privileges.
-
-[TIP]
-Locate Vijay's email. All operations not explicitly allowed are denied.
-
-.curl example
-[source,curl]
-curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
-
-.JSON input example
-[source,json]
-{
-
-}
-
-=== 6. Optionally display the associated mapped role
+=== 5. Optionally display the associated mapped role
 
 xxx
 >> mapped traditional
+
+=== 6. Update the role by adding privileges
+
+Perform the following REST API call to modify the role by adding privileges.
+
+.curl example
+[source,curl]
+curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
+
+.JSON input example
+[source,json]
+{
+
+}
+
+.After you finish
+
+xxx
 
 === 7. Create a user
 
@@ -152,9 +196,6 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:p
 
 }
 
-=== 9. Sign in to the SVM with the new user credentials
+.After you finish
 
 You can sign in to the SVM management interface using the credentials for the new user.
-
->> TEST
->> Issue REST call?

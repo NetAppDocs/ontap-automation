@@ -32,9 +32,9 @@ entries:
       - title: Overview
         url: /rest/rbac_overview.html
       - title: Work with roles and users
-        url: /rest/work_roles_users.html
+        url: /rest/rbac_roles_users.html
       - title: Sample role definitions
         url: /rest/rbac_sample_roles.html
       - title: Create user with a role
-        url: /rest/wf_create_user_role.html
+        url: /rest/wf_rbac_create_user.html
   - section: resources
