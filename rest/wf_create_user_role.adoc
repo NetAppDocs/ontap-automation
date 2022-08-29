@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rest/create_user_role.html
+permalink: rest/wf_create_user_role.html
 keywords:
 summary:
 ---
@@ -13,9 +13,9 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Creating a user with an associated role is a multi-step process.
+You can use the multi-step workflow described below to create a user with an associated REST role. Before using the workflow, you should review the general process used to prepare for creating a role and user.
 
-== Prepare to create an ONTAP user and role
+== Prepare to create an ONTAP user with an assigned role
 
 Before creating role and assigning it to an ONTAP user account, you should first prepare by reviewing the security requirements and options as described below.
 
@@ -45,7 +45,7 @@ Based on the security requirements and ONTAP, should you choose a REST or tradit
 
 == Create a user with a custom role
 
-The workflow described below provides one example of creating a role and user. It includes the typical steps needed to create a custom REST role and associate it with a new user. Both the user and role have an SVM scope and are associated with a specific data SVM.
+The workflow described below provides one example for creating a role and user. It includes the typical steps needed to create a custom REST role and associate it with a new user account. Both the user and role have an SVM scope and are associated with a specific data SVM.
 
 [NOTE]
 The workflow is meant to illustrate the entire end-to-end process. However, several of the steps may be optional and unnecessary depending on your environment. For example, you can create a user and assign a role in one API call rather than the two steps as shown.
@@ -53,6 +53,15 @@ The workflow is meant to illustrate the entire end-to-end process. However, seve
 === 1. List the data SVMs in the cluster
 
 Perform the following REST API call to list the data SVMs in the cluster. The UUID and name of each SVM is provided. You need to select the SVM where you want to define the user and role from the list.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/svm/svms
+|===
+//|/accounts/{account_id}/k8s/v1/managedApps/{managedApp_id}/appSnaps
 
 .curl example
 [source,curl]
