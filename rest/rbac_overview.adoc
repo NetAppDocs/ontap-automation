@@ -1,0 +1,94 @@
+---
+sidebar: sidebar
+permalink: rest/rbac_overview.html
+keywords:
+summary:
+---
+
+= Overview of RBAC security
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+ONTAP includes a robust and extensible role-based access control (RBAC) capability. You can assign each account a different role to control the user's access to the resources exposed through the REST API and CLI. The roles define different levels of administrative access for the various ONTAP users.
+
+[NOTE]
+The ONTAP RBAC capability has continued to expand and was significantly enhanced with ONTAP 9.11.1. See link:../rest/rbac_overview.html#summary-of-rbac-evolution[Summary of RBAC evolution] and link:../rn/whats_new.html[What’s new with the ONTAP REST API and automation] for more information.
+
+== ONTAP roles
+
+A role is a set of privileges that collectively define what actions the user can take. Each privilege identifies a specific access path and associated access level. Roles are assigned to user accounts and applied by ONTAP when making access decisions.
+
+=== Types of roles
+
+There are two types of roles. They were introduced and tailored to different environments as ONTAP evolved.
+
+[NOTE]
+There are advantages and disadvantages when using each type of role. See link:../rest/work_roles_users.html#comparing-the-role-types[Comparing the role types] for more information.
+
+[cols="20,80"*,options="header"]
+|===
+|Type
+|Description
+|REST
+|The REST roles were introduced with ONTAP 9.6 and are generally applied to users accessing ONTAP through the REST API. They have evolved to support CLI access.
+|Traditional
+|These are the legacy roles included prior to ONTAP 9.6. They were introduced for the ONTAP CLI environment and continue to be fundamental to RBAC security.
+|===
+
+=== Scope
+
+Every role has a scope or context within which it is defined and applied. The scope determines where and how a specific role is used.
+
+[NOTE]
+ONTAP user accounts also have a scope which determines where a user is defined and used.
+
+[cols="20,80"*,options="header"]
+|===
+|Scope
+|Description
+|Cluster
+|Roles with a cluster scope are defined at the ONTAP cluster level. They are associated with cluster-level user accounts.
+|SVM
+|Roles with an SVM scope are defined for a specific data SVM. They are associated with user accounts in the same SVM.
+|===
+
+=== Source of the role definitions
+
+There are two ways an ONTAP role can be defined.
+
+[cols="20,80"*,options="header"]
+|===
+|Role source
+|Description
+|Custom
+|The ONTAP administrator can create custom roles. These roles can be better tailored to a specific environment and security requirement.
+|Built-in
+|While custom roles provide more flexibility, there is also a set of built-in roles available. These roles are pre-defined and can be used for many common administrative tasks.
+|===
+
+== Role mapping and ONTAP processing
+
+Depending on the ONTAP release, all or nearly all the REST API calls map to one or more CLI commands. Beginning with ONTAP 9.11.1, when you create a REST role at the endpoint `/api/security/roles` a traditional role is also created based on the corresponding CLI commands. This *mapped* traditional role cannot be manipulated or changed using either the REST API or CLI.
+
+[NOTE]
+Reverse role mapping is not supported. That is, creating a traditional role does not create a corresponding REST role.
+
+== Summary of RBAC evolution
+
+The traditional roles are included with all ONTAP 9 releases. The REST roles were introduced later and have evolved as described below.
+
+.ONTAP 9.6
+
+The REST API was introduced with ONTAP 9.6. The REST roles were also included with this release.
+
+.ONTAP 9.7 through 9.10.1
+
+Each ONTAP release from 9.7 through 9.10.1 includes enhancements to the REST API. For example, additional REST endpoints have been added with each release. However, the creation and application of the two roles types (REST, traditional) has remained separate.
+
+.ONTAP 9.11.1
+
+The ability to create REST custom roles was added with this release. Also, the REST API and CLI evolved to use a shared security domain. For example, when you create a REST role a corresponding traditional role is also created. Additional access levels for the REST roles were also added.

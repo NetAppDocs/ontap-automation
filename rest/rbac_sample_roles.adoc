@@ -1,0 +1,126 @@
+---
+sidebar: sidebar
+permalink: rest/rbac_sample_roles.html
+keywords:
+summary:
+---
+
+= Sample role definitions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP RBAC capability can be used in different ways based on your environment. Several common usage scenarios are presented below. In each case the focus is on a specific security and administrative goal with an example of the corresponding role definition.
+
+[NOTE]
+All the examples create roles using the `/security/roles` and derived endpoints.
+
+== Limit access to SVM volume operations
+
+You might want to restrict storage volume administration within a data SVM. The example below illustrates this using two roles. User one has a role that doesn't allow cloning operations while user two has a different role that allows cloning.
+
+=== User one
+
+The first user is assigned a traditional role which provides access to the major volume administration functions except cloning.
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "name": "role1",
+  "owner": {
+    "name": "rvijaycluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+
+=== User two
+
+The second user is assigned a traditional role providing access to the volume clone operation.
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles/852d96be-f17c-11ec-9d19-005056bbad91/role1/privileges' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "path": "volume clone",
+  "access": "all"
+}
+
+== Data protection administration
+
+In certain situations you might want to provide a user with limited data protection capabilities. The role presented below is defined with the following characteristics:
+
+* Able to create and delete snapshots as well as update SnapMirror relationships
+* Cannot create or modify higher level objects (such as volumes or SVMs)
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "name": "role1",
+  "owner": {
+    "name": "rvijaycluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "volume snapshot create", "access": "all"},
+      {"path": "volume snapshot delete", "access": "all"},
+      {"path": "volume show", "access": "readonly"},
+      {"path": "vserver show", "access": "readonly"},
+      {"path": "snapmirror show", "access": "readonly"},
+      {"path": "snapmirror update", "access": "all"}
+  ]
+}
+
+== Generating ONTAP reports
+
+You can provide a user with the ability to generate ONTAP reports. The role presented below is defined with the following characteristics:
+
+* Able to retrieve all storage object information related to capacity and performance
+* Cannot create or modify higher level objects (such as volumes or SVMs)
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "name": "rest_role1",
+  "owner": {
+    "name": "rvijaycluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api/storage/volumes", "access": "readonly"},
+      {"path": "/api/storage/qtrees", "access": "readonly"},
+      {"path": "/api/storage/luns", "access": "readonly"},
+      {"path": "/api/storage/aggregates", "access": "readonly"},
+      {"path": "/api/cluster/nodes", "access": "readonly"},
+      {"path": "/api/snapmirror/relationships", "access": "readonly"}
+  ]
+}
