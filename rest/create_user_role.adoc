@@ -39,7 +39,7 @@ Will the user access ONTAP through the REST API or CLI? Or both?
 
 It is more convenient to use an existing built-in role but you can create a new custom role if needed.
 
-.Type of role
+.What type of role is needed?
 
 Based on the security requirements and ONTAP, should you choose a REST or traditional role?
 
@@ -76,13 +76,25 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:p
 
 === 4. Create a custom REST role
 
-Perform the following REST API call to a create a custom REST role. This role xxx
+Perform the following REST API call to a create a custom REST role.
+
+.curl example
+[source,curl]
+curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
+
+.JSON input example
+[source,json]
+{
+
+}
+
+=== 5. Update the role to add privileges
+
+Perform the following REST API call to modify the role by adding the needed privileges.
 
 [TIP]
 Locate Vijay's email. All operations not explicitly allowed are denied.
 
->> Review curl sample
-
 .curl example
 [source,curl]
 curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
@@ -93,35 +105,19 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:p
 
 }
 
-=== 5. Optionally use the CLI to display the mapped role
+=== 6. Optionally display the associated mapped role
 
 xxx
 >> mapped traditional
 
-=== 6. Create a user
+=== 7. Create a user
 
-xxx
->> TIP: Can include role, if not default for SVM is vsadmin which is taken in this example
->> HTTP management protocol
+Perform the following REST API call to a create a user account. A role is not specified and so the user is role `vsadmin` by default.
 
->> Review curl sample
+>> management protocol (HTTP)?
 
-.curl example
-[source,curl]
-curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
-
-.JSON input example
-[source,json]
-{
-
-}
-
-=== 7. Add the role to the user
-
-xxx
->> modify
-
->> Review curl sample
+[TIP]
+You can include the custom role as part of creating the user. In this case, you can skip the next stop.
 
 .curl example
 [source,curl]
@@ -133,7 +129,24 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:p
 
 }
 
-=== 8. Sign in to the SVM with the new user credentials
+=== 8. Update the user by adding the role
 
-xxx
->> Test access to the REST operation
+Perform the following REST API call to modify the user by adding the REST role.
+
+.curl example
+[source,curl]
+curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:password -k --header 'Accept: */*'
+
+.JSON input example
+[source,json]
+{
+
+}
+
+=== 9. Sign in to the SVM with the new user credentials
+
+You can sign in to the management interface of the SVM using the credentials for the new user.
+
+>> TEST
+
+>> Issue REST call?
