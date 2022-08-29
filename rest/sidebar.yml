@@ -36,5 +36,5 @@ entries:
       - title: Sample role definitions
         url: /rest/rbac_sample_roles.html
       - title: Create user with a role
-        url: /rest/wf_rbac_create_user.html
+        url: /rest/rbac_wf_create_user.html
   - section: resources
