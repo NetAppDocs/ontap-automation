@@ -88,7 +88,7 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:p
 
 }
 
-=== 5. Update the role to add privileges
+=== 5. Update the role by adding privileges
 
 Perform the following REST API call to modify the role by adding the needed privileges.
 
@@ -129,7 +129,7 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:p
 
 }
 
-=== 8. Update the user by adding the role
+=== 8. Update the user by adding a role
 
 Perform the following REST API call to modify the user by adding the REST role.
 
@@ -145,8 +145,7 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms' -u admin:p
 
 === 9. Sign in to the SVM with the new user credentials
 
-You can sign in to the management interface of the SVM using the credentials for the new user.
+You can sign in to the SVM management interface using the credentials for the new user.
 
 >> TEST
-
 >> Issue REST call?

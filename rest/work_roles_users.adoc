@@ -41,7 +41,7 @@ See the ONTAP online link:../reference/api_reference.html[API reference] documen
 |This endpoint allows you to configure the privileges for a specific role. The built-in roles can be retrieved but not updated. See the API reference documentation for your ONTAP release for more information.
 
 |`/security/roles/{owner.UUID}/{name}/privileges/[path]`
-|xxx
+|You can retrieve, modify, and delete the access level and optional query value for a specific privilege. See the API reference documentation for your ONTAP release for more information.
 
 |`/security/accounts`
 |This endpoint allows you to create a new cluster or SVM scoped user account. Several types of information must be included or subsequently added before the account is operational. You can also retrieve a list of the defined user accounts.
