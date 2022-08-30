@@ -51,7 +51,7 @@ curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u a
 
 === Update the role
 
-The same role can be modified to allow the user to create a volume clone.
+The same role can be modified to allow the user to also create a volume clone.
 
 .curl example
 

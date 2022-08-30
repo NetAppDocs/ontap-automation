@@ -21,7 +21,7 @@ You can create and manage the ONTAP roles through the REST API or command line i
 
 === REST API
 
-There are several endpoints that can be used when working with RBAC roles and user accounts as described below. The first four are used to create and manage the roles. The last two are used to create and manage users.
+There are several endpoints that can be used when working with RBAC roles and user accounts. The first four in the table are used to create and manage the roles. The last two are used to create and manage user accounts.
 
 [TIP]
 See the ONTAP online link:../reference/api_reference.html[API reference] documentation for more details.
@@ -32,10 +32,10 @@ See the ONTAP online link:../reference/api_reference.html[API reference] documen
 |Description
 
 |`/security/roles`
-|This endpoint allows you to create a new REST role. Beginning with ONTAP 9.11.1 you can also create a traditional role. In this case, ONTAP determines the type based on the input parameters. You can also retrieve a list of the defined roles.
+|This endpoint allows you to create a new REST role. And beginning with ONTAP 9.11.1 you can also create a traditional role. In this case, ONTAP determines the role type based on the input parameters. You can also retrieve a list of the defined roles.
 
 |`/security/roles/{owner.UUID}/{name}`
-|You can retrieve or delete a specific cluster or SVM scoped role. The UUID value identifies the SVM where the role is defined. The name value is the name of the role.
+|You can retrieve or delete a specific cluster or SVM scoped role. The UUID value identifies the SVM where the role is defined (cluster or data SVM). The name value is the name of the role.
 
 |`/security/roles/{owner.UUID}/{name}/privileges`
 |This endpoint allows you to configure the privileges for a specific role. The built-in roles can be retrieved but not updated. See the API reference documentation for your ONTAP release for more information.
@@ -47,7 +47,7 @@ See the ONTAP online link:../reference/api_reference.html[API reference] documen
 |This endpoint allows you to create a new cluster or SVM scoped user account. Several types of information must be included or subsequently added before the account is operational. You can also retrieve a list of the defined user accounts.
 
 |`/security/accounts/{owner.UUID}/{name}`
-|You can retrieve, modify, and delete a specific cluster or SVM scoped user account. The UUID value identifies the SVM where the user is defined. The name value is the name of the account.
+|You can retrieve, modify, and delete a specific cluster or SVM scoped user account. The UUID value identifies the SVM where the user is defined (cluster or data SVM). The name value is the name of the account.
 
 |===
 
@@ -62,9 +62,9 @@ The relevant ONTAP CLI commands are described below. All commands are accessed a
 |`security login`
 |This is the directory containing the commands needed to create and manage a user login.
 |`security login rest-role`
-|This is the directory containing the commands needed to create and manage a REST associated with a user login.
+|This is the directory containing the commands needed to create and manage a REST role associated with a user login.
 |`security login role`
-|This is the directory containing the commands needed to create and manage a REST associated with a user login.
+|This is the directory containing the commands needed to create and manage a traditional role associated with a user login.
 |===
 
 == Role definitions
@@ -77,34 +77,34 @@ A role can be owned by the ONTAP cluster or a specific data SVM within the clust
 
 .Unique name
 
-Every role has a unique name within its scope. The names of cluster roles must be unique at the ONTAP cluster level while SVM roles must be unique within the specific SVM.
+Every role has a unique name within its scope. The name of a cluster role must be unique at the ONTAP cluster level while SVM roles must be unique within the specific SVM.
 
 [NOTE]
-Beginning with ONTAP 9.11.1, the name of a new REST role must be unique among the REST roles as well as the traditional roles. This is because creating a REST role results in a new traditional _mapping_ role.
+Beginning with ONTAP 9.11.1, the name of a new REST role must be unique among the REST roles as well as the traditional roles. This is because creating a REST role also results in a new traditional _mapping_ role.
 
 .Set of privileges
 
-Each role contains a set of one or more privileges. Each privilege identifies a specific resource or command and the associated access level.
+Every role contains a set of one or more privileges. Each privilege identifies a specific resource or command and the associated access level.
 
 == Privileges
 
 A role can contain one or more privileges. Each privilege definition is a tuple and establishes the level of access to a specific resource or operation.
 
-=== Resource
+=== Resource path
 
-The resource is identified as either a REST endpoint or CLI command/command directory path.
+The resource path is identified as either a REST endpoint or CLI command/command directory path.
 
 .REST endpoint
 
-An API endpoint is used to identify the target resource for a REST role.
+An API endpoint identified the target resource for a REST role.
 
 .CLI command
 
-A specific CLI command identifies the target for a traditional role. A command directory can also be specified, which then includes all the downstream commands in the ONTAP CLI hierarchy.
+A CLI command identifies the target for a traditional role. A command directory can also be specified, which will then include all the downstream commands in the ONTAP CLI hierarchy.
 
 === Access level
 
-The access level defines the type of access the role has to the specific resource or path. The access levels are identified through a set of pre-defined keywords. Three access levels were introduced with ONTAP 9.6. They can be used for both traditional and REST roles. In addition, three new access levels were added with ONTAP 9.11.1. These new access levels can only be used with REST roles.
+The access level defines the type of access the role has to the specific resource path or command. The access levels are identified through a set of pre-defined keywords. Three access levels were introduced with ONTAP 9.6. They can be used for both traditional and REST roles. In addition, three new access levels were added with ONTAP 9.11.1. These new access levels can only be used with REST roles.
 
 [NOTE]
 The access levels follow the CRUD model. With REST, this is based on the primary HTTP methods (POST, GET, PATCH, DELETE). The corresponding CLI operations generally map to the REST operations (create, show, modify, delete).
@@ -116,32 +116,32 @@ The access levels follow the CRUD model. With REST, this is based on the primary
 |Added
 |REST role only
 
-|None
+|none
 |n/a
 |9.6
 |No
 
-|Readonly
+|readonly
 |GET
 |9.6
 |No
 
-|All
+|all
 |GET, POST, PATCH, DELETE
 |9.6
 |No
 
-|Read_create
+|read_create
 |GET, POST
 |9.11.1
 |Yes
 
-|Read_modify
+|read_modify
 |GET, PATCH
 |9.11.1
 |Yes
 
-|Read_create_modify
+|read_create_modify
 |GET, POST, PATCH
 |9.11.1
 |Yes
@@ -195,19 +195,19 @@ There are five built-in roles available at the SVM level.
 |Description
 
 |Vsadmin
-|xxx
+|
 
 |Vsadmin-protocol
-|xxx
+|
 
 |Vsadmin-volume
-|xxx
+|
 
 |Vsadmin-snaplock
-|xxx
+|
 
 |Vsadmin-readonly
-|xxx
+|
 
 |===
 
@@ -217,7 +217,7 @@ Before selecting a *REST* role or *traditional* role, you should be aware of the
 
 === How the user accesses ONTAP
 
-After a role is created, it is important to know how the user will access the ONTAP system. Based on this, a role type can be suggested.
+Before creating a role, it is important to know how the user will access the ONTAP system. Based on this a role type can be determined.
 
 [cols="2,7"*,options="header"]
 |===
@@ -233,4 +233,4 @@ After a role is created, it is important to know how the user will access the ON
 
 === Resolution of access path
 
-The defined access path for a REST role is based on a REST endpoint. The defined access path for a traditional role is based on a CLI command or command directory.
+The defined access path for a REST role is based on a REST endpoint. The defined access path for a traditional role is based on a CLI command or command directory. In addition, an optional query parameter can be included with a traditional role which further restricts access based on the command parameter values.

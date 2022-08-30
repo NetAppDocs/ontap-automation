@@ -65,7 +65,7 @@ There are two ways an ONTAP role can be defined.
 |Role source
 |Description
 |Custom
-|The ONTAP administrator can create custom roles. These roles can be tailored to a specific environment and security requirement.
+|The ONTAP administrator can create custom roles. These roles can be tailored to a specific environment and security requirements.
 |Built-in
 |While custom roles provide more flexibility, there is also a set of built-in roles available at both the cluster and SVM level. These roles are pre-defined and can be used for many common administrative tasks.
 |===
