@@ -17,7 +17,7 @@ You can use the workflow described below to create a user with an associated RES
 
 == Prepare to create an ONTAP user with an assigned role
 
-Before creating a role and assigning it to an ONTAP user account, you should first prepare by reviewing the security requirements and options as described below.
+Before creating a role and assigning it to an ONTAP user account, you should first prepare by reviewing the major security requirements and options.
 
 .What ONTAP release are you using?
 
@@ -33,7 +33,7 @@ After identifying the resources and scope, you need to determine the access leve
 
 .How will the users access ONTAP?
 
-Will the user access ONTAP through the REST API or CLI? Or both?
+The user can access ONTAP through the REST API or CLI or both.
 
 .Is one of the built-in roles sufficient or is a custom role needed?
 
@@ -41,18 +41,18 @@ It is more convenient to use an existing built-in role but you can create a new 
 
 .What type of role is needed?
 
-Based on the security requirements and ONTAP, you need to choose a REST or traditional role.
+Based on the security requirements and the ONTAP access, you need to choose whether to create a REST or traditional role.
 
 == Create a user with a custom role
 
-The workflow described below provides one example for creating a role and user. It includes the typical steps needed to create a custom REST role and associate it with a new user account. Both the user and role have an SVM scope and are associated with a specific data SVM.
+The workflow described below includes the typical steps needed to create a custom REST role and associate it with a new user account. Both the user and role have an SVM scope and are associated with a specific data SVM.
 
 [NOTE]
-The workflow is meant to illustrate the complete process. Some of the steps may be optional and unnecessary depending on your environment.
+The workflow is meant to illustrate the complete process. Some of the steps may be optional or need to change based on your environment.
 
 === 1. List the data SVMs in the cluster
 
-Perform the following REST API call to list the data SVMs in the cluster. The UUID and name of each SVM is provided in the output.
+Perform the following REST API call to list the SVMs in the cluster. The UUID and name of each SVM is provided in the output.
 
 [cols="25,75"*,options="header"]
 |===
@@ -68,11 +68,11 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=na
 
 .After you finish
 
-Select the desired SVM from the list where you will define the user and role.
+Select the desired SVM from the list where you will create the new user and role.
 
 === 2. List the users defined to the SVM
 
-Perform the following REST API call to list the users defined in the SVM you selected.
+Perform the following REST API call to list the users defined in the SVM you selected. You need to provide the owner to identify the SVM.
 
 [cols="25,75"*,options="header"]
 |===
@@ -92,7 +92,7 @@ Based on the users already defined in the SVM, choose a unique name for the new 
 
 === 3. List the REST roles defined to the SVM
 
-Perform the following REST API call to list the roles defined in the SVM you selected.
+Perform the following REST API call to list the roles defined in the SVM you selected. You need to provide the owner to identify the SVM.
 
 [cols="25,75"*,options="header"]
 |===
@@ -112,7 +112,7 @@ Based on the roles already defined in the SVM, choose a unique name for the new 
 
 === 4. Create a custom REST role
 
-Perform the following REST API call to a create a custom REST role. The role has one privilege which establishes the default access of *none* so that initially all access is denied.
+Perform the following REST API call to a create a custom REST role in the SVM. The role initially has one privilege which establishes the default access of *none* so that all access is denied.
 
 [cols="25,75"*,options="header"]
 |===
@@ -163,7 +163,7 @@ Perform the following REST API call to modify the role by adding privileges as n
 
 .curl example
 [source,curl]
-curl --location -i --request GET 'https://10.222.81.101/api/security/roles/752d96be-f17c-11ec-9d19-005056bbad91/dprole1/privileges' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+curl --location -i --request POST 'https://10.222.81.101/api/security/roles/752d96be-f17c-11ec-9d19-005056bbad91/dprole1/privileges' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 
 .After you finish
 
@@ -171,20 +171,36 @@ Optionally perform step 3 again to display the new role.
 
 === 6. Create a user
 
-Perform the following REST API call to a create a user account. The role `dprole1` created above is specified.
+Perform the following REST API call to a create a user account. The role `dprole1` created above is associated with the user.
 
 [TIP]
-You can include the user without an assigned role. In this case, the role `vsadmin` is assigned by default. You can modify the user in the future to assign a different role.
+You can include the user without a role. In this case, the role `vsadmin` is assigned by default. You can later modify the user to assign a different role.
 
-.curl example
-[source,curl]
-curl --location -i --request POST 'https://10.222.81.101/api/security/accounts' --data @JSONinput -u admin:password -k --header 'Accept: */*'
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/api/security/accounts
+|===
 
 .JSON input example
 [source,json]
 {
-
+  "owner": {"uuid":"daf84055-248f-11ed-a23d-005056ac4fe6"},
+  "name": "david",
+  "applications": [
+      {"application":"ssh",
+       "authentication_methods":["password"],
+       "second_authentication_method":"none"}
+  ],
+  "role":"dprole1",
+  "password":"netapp123"
 }
+
+.curl example
+[source,curl]
+curl --location -i --request POST 'https://10.222.81.101/api/security/accounts' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 
 .After you finish
 

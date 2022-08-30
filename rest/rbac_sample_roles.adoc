@@ -13,18 +13,18 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP RBAC capability can be used in different ways depending on your environment. A few common use scenarios are presented below. In each case the focus is on a specific security and administrative goal with an example of the corresponding role definition.
+The ONTAP RBAC capability can be used in different ways depending on your environment. A few common scenarios are presented below. In each case the focus is on a specific security and administrative goal with an example of the corresponding role definition.
 
 [NOTE]
-All the examples create and modify roles using `/security/roles` and the derived REST endpoints. In each case, the curl command refers to a separate JSON input file for clarity.
+All the examples create and modify roles using `/api/security/roles` and the derived REST endpoints. In each case, the curl command refers to a separate JSON input file for clarity.
 
 == Limit access to SVM volume operations
 
-You might want to restrict storage volume administration within a data SVM. The example below illustrates this with a role that is first created and then optionally modified.
+You might want to restrict storage volume administration within an SVM. The example below illustrates this with a role that is first created and then optionally updated.
 
 === Create the initial role
 
-The traditional role is created initially to allow access to all the major volume administration functions except cloning. More specifically, the role presented below is defined with the following characteristics:
+A traditional role is created to initially allow access to all the major volume administration functions except cloning. The role presented below is defined with the following specific characteristics:
 
 * Able to perform all CRUD volume operations including get, create, modify, and delete
 * Cannot create a volume clone
@@ -51,7 +51,7 @@ curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u a
 
 === Update the role
 
-The same role can be subsequently updated to allow the user to create a volume clone.
+The same role can be modified to allow the user to create a volume clone.
 
 .curl example
 
@@ -68,7 +68,7 @@ curl --location -i --request POST 'https://10.63.56.136/api/security/roles/852d9
 
 == Data protection administration
 
-In certain situations you might want to provide a user with limited data protection capabilities. The traditional role presented below is defined with the following characteristics:
+In certain situations you may want to provide a user with limited data protection capabilities. The traditional role presented below is defined with the following characteristics:
 
 * Able to create and delete snapshots as well as update SnapMirror relationships
 * Cannot create or modify higher level objects such as volumes or SVMs

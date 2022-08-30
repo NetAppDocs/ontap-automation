@@ -34,7 +34,7 @@ There are advantages and disadvantages when using each type of role. See link:..
 |Type
 |Description
 |REST
-|The REST roles were introduced with ONTAP 9.6 and are generally applied to users accessing ONTAP through the REST API. They evolved to also support CLI access.
+|The REST roles were introduced with ONTAP 9.6 and are generally applied to users accessing ONTAP through the REST API. They subsequently evolved to support CLI access as well.
 |Traditional
 |These are the legacy roles included prior to ONTAP 9.6. They were introduced for the ONTAP CLI environment and continue to be fundamental to RBAC security.
 |===
@@ -53,7 +53,7 @@ ONTAP user accounts also have a similar scope that determines how a user is defi
 |Cluster
 |Roles with a cluster scope are defined at the ONTAP cluster level. They are associated with cluster-level user accounts.
 |SVM
-|Roles with an SVM scope are defined for a specific data SVM. They can be associated with user accounts in the same SVM.
+|Roles with an SVM scope are defined for a specific data SVM. They are assigned to user accounts in the same SVM.
 |===
 
 === Source of the role definitions
@@ -65,7 +65,7 @@ There are two ways an ONTAP role can be defined.
 |Role source
 |Description
 |Custom
-|The ONTAP administrator can create custom roles. These roles can be better tailored to a specific environment and security requirement.
+|The ONTAP administrator can create custom roles. These roles can be tailored to a specific environment and security requirement.
 |Built-in
 |While custom roles provide more flexibility, there is also a set of built-in roles available at both the cluster and SVM level. These roles are pre-defined and can be used for many common administrative tasks.
 |===
