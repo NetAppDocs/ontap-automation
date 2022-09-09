@@ -229,7 +229,7 @@ Before creating a role, it is important to know how the user will access the ONT
 |REST API only
 |The REST role is designed to be used with the REST API.
 |REST API and CLI
-|You can create a REST role which also creates the traditional mapping role.
+|You can create a REST role which also creates the corresponding traditional role.
 |CLI only
 |You can create a traditional role.
 |===
