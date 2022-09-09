@@ -77,7 +77,7 @@ A role can be owned by the ONTAP cluster or a specific data SVM within the clust
 
 .Unique name
 
-Every role has a unique name within its scope. The name of a cluster role must be unique at the ONTAP cluster level while SVM roles must be unique within the specific SVM.
+Every role must have a unique name within its scope. The name of a cluster role must be unique at the ONTAP cluster level while SVM roles must be unique within the specific SVM.
 
 [NOTE]
 The name of a new REST role must be unique among the REST roles as well as the traditional roles. This is because creating a REST role also results in a new traditional _mapping_ role.
@@ -182,7 +182,7 @@ See https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-cluster-
 
 === SVM scoped roles
 
-There are several built-in roles available at the SVM scope. The *vsadmin* provides access to the most general and powerful administrative capabilities. There are several other roles tailored to specific tasks.
+There are several built-in roles available at the SVM scope. The *vsadmin* provides access to the most general and powerful capabilities. There are several additional roles tailored to specific administrative tasks.
 
 * vsadmin-volume
 * vsadmin-protocol
@@ -197,7 +197,7 @@ See https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-svm-admi
 Before selecting a *REST* role or *traditional* role, you should be aware of the differences. Some of the ways the two role types can be compared are described below.
 
 [NOTE]
-For more advanced or complex use cases, you should consider using a traditional role.
+For more advanced or complex RBAC use cases, you should normally use a traditional role.
 
 === How the user accesses ONTAP
 
@@ -210,11 +210,11 @@ Before creating a role, it is important to know how the user will access the ONT
 |REST API only
 |The REST role is designed to be used with the REST API.
 |REST API and CLI
-|You can create a REST role which also creates the corresponding traditional role.
+|You can define a REST role which also creates the corresponding traditional role.
 |CLI only
 |You can create a traditional role.
 |===
 
 === Precision of the access path
 
-The access path defined for a REST role is based on a REST endpoint. The access path for a traditional role is based on a CLI command or command directory. In addition, you can include an optional query parameter with a traditional role to further restrict access based on command parameter values.
+The access path defined for a REST role is based on a REST endpoint. The access path for a traditional role is based on a CLI command or command directory. In addition, you can include an optional query parameter with a traditional role to further restrict access based on the command parameter values.

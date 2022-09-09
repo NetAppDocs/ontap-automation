@@ -72,7 +72,7 @@ Select the desired SVM from the list where you will create the new user and role
 
 === 2. List the users defined to the SVM
 
-Perform the following REST API call to list the users defined in the SVM you selected. You need to identify the SVM through the owner parameter.
+Perform the following REST API call to list the users defined in the SVM you selected. You can identify the SVM through the owner parameter.
 
 [cols="25,75"*,options="header"]
 |===
@@ -92,7 +92,7 @@ Based on the users already defined in the SVM, choose a unique name for the new 
 
 === 3. List the REST roles defined to the SVM
 
-Perform the following REST API call to list the roles defined in the SVM you selected. You need to identify the SVM through the owner parameter.
+Perform the following REST API call to list the roles defined in the SVM you selected. You can identify the SVM through the owner parameter.
 
 [cols="25,75"*,options="header"]
 |===
@@ -112,7 +112,7 @@ Based on the roles already defined in the SVM, choose a unique name for the new 
 
 === 4. Create a custom REST role
 
-Perform the following REST API call to a create a custom REST role in the SVM. The role initially has only one privilege which establishes an access of *none* so that all access is denied by default.
+Perform the following REST API call to a create a custom REST role in the SVM. The role initially has only one privilege which establishes a default access of *none* so that all access is denied.
 
 [cols="25,75"*,options="header"]
 |===
@@ -141,7 +141,7 @@ curl --location -i --request POST 'https://10.222.81.101/api/security/roles' --d
 
 .After you finish
 
-Optionally perform step 3 again to display the new role.
+Optionally perform step 3 again to display the new role. You can also display the roles at the ONTAP CLI.
 
 === 5. Update the role by adding more privileges
 
@@ -167,14 +167,14 @@ curl --location -i --request POST 'https://10.222.81.101/api/security/roles/752d
 
 .After you finish
 
-Optionally perform step 3 again to display the new role.
+Optionally perform step 3 again to display the new role. You can also display the roles at the ONTAP CLI.
 
 === 6. Create a user
 
 Perform the following REST API call to a create a user account. The role `dprole1` created above is associated with the new user.
 
 [TIP]
-You can include the user without a role. In this case, the role `vsadmin` is assigned by default. You can later modify the user to assign a different role.
+You can include the user without a role. In this case you'll need to modify the user to assign a role.
 
 [cols="25,75"*,options="header"]
 |===
