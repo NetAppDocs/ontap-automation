@@ -158,58 +158,39 @@ There are several pre-defined roles included with ONTAP that you can use at eith
 
 === Cluster scoped roles
 
-There are six built-in roles available at the cluster level.
+There are several built-in roles available at the cluster scope.
+
+See https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-cluster-administrators-concept.html[Predefined roles for cluster administrators^] for more information.
 
 [cols="20,80"*,options="header"]
 |===
 |Role
 |Description
-
 |admin
 |Administrators with this role have unrestricted rights and can do anything in the ONTAP system. They can configure all cluster-level and SVM-level resources.
-
 |autosupport
 |This is a special role tailored for the AutoSupport account.
-
 |backup
 |This Special role for backup software that needs to back up the system.
-
 |snaplock
 |This is a special role tailored for the SnapLock account.
-
 |readonly
 |Administrators with this role can view everything at the cluster level but can't make any changes.
-
 |none
 |No administrative capabilities are provided.
-
 |===
 
 === SVM scoped roles
 
-There are five built-in roles available at the SVM level.
+There are several built-in roles available at the SVM scope. The *vsadmin* provides access to the most general and powerful administrative capabilities. There are several other roles tailored to specific tasks.
 
-[cols="20,80"*,options="header"]
-|===
-|Role
-|Description
+* vsadmin-volume
+* vsadmin-protocol
+* vsadmin-backup
+* vsadmin-snaplock
+* vsadmin-readonly
 
-|Vsadmin
-|
-
-|Vsadmin-protocol
-|
-
-|Vsadmin-volume
-|
-
-|Vsadmin-snaplock
-|
-
-|Vsadmin-readonly
-|
-
-|===
+See https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-svm-administrators-concept.html[Predefined roles for SVM administrators^] for more information.
 
 == Comparing the role types
 
