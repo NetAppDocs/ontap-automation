@@ -215,6 +215,9 @@ There are five built-in roles available at the SVM level.
 
 Before selecting a *REST* role or *traditional* role, you should be aware of the differences. Some of the ways the two role types can be compared are described below.
 
+[NOTE]
+For more advanced or complex use cases, you should consider using a traditional role.
+
 === How the user accesses ONTAP
 
 Before creating a role, it is important to know how the user will access the ONTAP system. Based on this a role type can be determined.
@@ -226,11 +229,11 @@ Before creating a role, it is important to know how the user will access the ONT
 |REST API only
 |The REST role is designed to be used with the REST API.
 |REST API and CLI
-|With ONTAP 9.11.1 and later, you can create a REST role which also creates the traditional mapping role. For earlier ONTAP release, you will need to create the REST role and traditional role separately.
+|You can create a REST role which also creates the traditional mapping role.
 |CLI only
 |You can create a traditional role.
 |===
 
-=== Resolution of access path
+=== Precision of the access path
 
-The defined access path for a REST role is based on a REST endpoint. The defined access path for a traditional role is based on a CLI command or command directory. In addition, an optional query parameter can be included with a traditional role which further restricts access based on the command parameter values.
+The access path defined for a REST role is based on a REST endpoint. The access path for a traditional role is based on a CLI command or command directory. In addition, you can include an optional query parameter with a traditional role to further restrict access based on command parameter values.
