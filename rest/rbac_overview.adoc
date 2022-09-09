@@ -83,11 +83,11 @@ The traditional roles are included with all ONTAP 9 releases. The REST roles wer
 
 .ONTAP 9.6
 
-The REST API was introduced with ONTAP 9.6. The REST roles were included with this release. Also, the REST API and CLI use a shared security domain. When you create a REST role, a corresponding traditional role is also created.
+The REST API was introduced with ONTAP 9.6. The REST roles were included with this release. Also, the REST API and CLI started using a shared security domain. When you create a REST role, a corresponding traditional role is also created.
 
 .ONTAP 9.7 through 9.10.1
 
-Each ONTAP release from 9.7 through 9.10.1 includes enhancements to the REST API. For example, additional REST endpoints have been added with each release. However, the creation and application of the two roles types has remained separate. ONTAP 9.10.1 added REST RBAC support for the snapshots endpoint `/api/storage/volumes/{vol.uuid}/snapshots` which is a resource-qualified REST endpoint.
+Each ONTAP release from 9.7 through 9.10.1 includes enhancements to the REST API. For example, additional REST endpoints have been added with each release. However, the creation and management of the two roles types remained separate. Also, ONTAP 9.10.1 added REST RBAC support for the snapshots REST endpoint (`/api/storage/volumes/{vol.uuid}/snapshots`) which is a resource-qualified endpoint.
 
 .ONTAP 9.11.1
 

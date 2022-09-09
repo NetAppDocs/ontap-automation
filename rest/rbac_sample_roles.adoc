@@ -40,7 +40,7 @@ curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u a
 {
   "name": "role1",
   "owner": {
-    "name": "rvijaycluster-1",
+    "name": "cluster-1",
     "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
   },
   "privileges": [
@@ -84,7 +84,7 @@ curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u a
 {
   "name": "role1",
   "owner": {
-    "name": "rvijaycluster-1",
+    "name": "cluster-1",
     "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
   },
   "privileges": [
@@ -115,7 +115,7 @@ curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u a
 {
   "name": "rest_role1",
   "owner": {
-    "name": "rvijaycluster-1",
+    "name": "cluster-1",
     "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
   },
   "privileges": [
@@ -124,6 +124,7 @@ curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u a
       {"path": "/api/storage/luns", "access": "readonly"},
       {"path": "/api/storage/aggregates", "access": "readonly"},
       {"path": "/api/cluster/nodes", "access": "readonly"},
-      {"path": "/api/snapmirror/relationships", "access": "readonly"}
+      {"path": "/api/snapmirror/relationships", "access": "readonly"},
+      {"path": "/api/svm/svms", "access": "readonly"}
   ]
 }
