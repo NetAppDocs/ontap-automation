@@ -1,0 +1,130 @@
+---
+sidebar: sidebar
+permalink: rest/rbac_sample_roles.html
+keywords:
+summary:
+---
+
+= Sample role definitions
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The ONTAP RBAC capability can be used in different ways depending on your environment. A few common scenarios are presented below. In each case the focus is on a specific security and administrative goal with an example of the corresponding role definition.
+
+[NOTE]
+All the examples create and modify roles using `/api/security/roles` and the derived REST endpoints. For clarity, each of the curl commands refers to a separate JSON input file.
+
+== Limit access to SVM volume operations
+
+You might want to restrict storage volume administration within an SVM. The example below illustrates this with a role that is first created and then optionally updated.
+
+=== Create the initial role
+
+A traditional role is created to initially allow access to all the major volume administration functions except cloning. The role presented below is defined with the following specific characteristics:
+
+* Able to perform all CRUD volume operations including get, create, modify, and delete
+* Cannot create a volume clone
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+
+=== Update the role
+
+The same role can be modified to allow the user to also create a volume clone.
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles/852d96be-f17c-11ec-9d19-005056bbad91/role1/privileges' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "path": "volume clone",
+  "access": "all"
+}
+
+== Data protection administration
+
+In certain situations you may want to provide a user with limited data protection capabilities. The traditional role presented below is defined with the following characteristics:
+
+* Able to create and delete snapshots as well as update SnapMirror relationships
+* Cannot create or modify higher level objects such as volumes or SVMs
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "volume snapshot create", "access": "all"},
+      {"path": "volume snapshot delete", "access": "all"},
+      {"path": "volume show", "access": "readonly"},
+      {"path": "vserver show", "access": "readonly"},
+      {"path": "snapmirror show", "access": "readonly"},
+      {"path": "snapmirror update", "access": "all"}
+  ]
+}
+
+== Generating ONTAP reports
+
+You can create a REST role to provide users with the ability to generate ONTAP reports. The role presented below is defined with the following characteristics:
+
+* Able to retrieve all storage object information related to capacity and performance (such as volume, qtree, LUN, aggregates, node, and SnapMirror relationships)
+* Cannot create or modify higher level objects (such as volumes or SVMs)
+
+.curl example
+
+[source,curl]
+curl --location -i --request POST 'https://10.63.56.136/api/security/roles' -u admin:password -k --header 'Accept: */*' --data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "name": "rest_role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api/storage/volumes", "access": "readonly"},
+      {"path": "/api/storage/qtrees", "access": "readonly"},
+      {"path": "/api/storage/luns", "access": "readonly"},
+      {"path": "/api/storage/aggregates", "access": "readonly"},
+      {"path": "/api/cluster/nodes", "access": "readonly"},
+      {"path": "/api/snapmirror/relationships", "access": "readonly"},
+      {"path": "/api/svm/svms", "access": "readonly"}
+  ]
+}
