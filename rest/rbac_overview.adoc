@@ -83,7 +83,7 @@ The traditional roles are included with all ONTAP 9 releases. The REST roles wer
 
 .ONTAP 9.6
 
-The REST API was introduced with ONTAP 9.6. The REST roles were included with this release. Also, when you create a REST role a corresponding traditional role is also created.
+The REST API was introduced with ONTAP 9.6. The REST roles were included with this release as well. Also, when you create a REST role, a corresponding traditional role is also created.
 
 .ONTAP 9.7 through 9.10.1
 

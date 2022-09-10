@@ -16,7 +16,7 @@ summary:
 The ONTAP RBAC capability can be used in different ways depending on your environment. A few common scenarios are presented below. In each case the focus is on a specific security and administrative goal with an example of the corresponding role definition.
 
 [NOTE]
-All the examples create and modify roles using `/api/security/roles` and the derived REST endpoints. In each case, the curl command refers to a separate JSON input file for clarity.
+All the examples create and modify roles using `/api/security/roles` and the derived REST endpoints. For clarity, each of the curl commands refers to a separate JSON input file.
 
 == Limit access to SVM volume operations
 

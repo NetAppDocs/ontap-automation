@@ -80,7 +80,7 @@ A role can be owned by the ONTAP cluster or a specific data SVM within the clust
 Every role must have a unique name within its scope. The name of a cluster role must be unique at the ONTAP cluster level while SVM roles must be unique within the specific SVM.
 
 [NOTE]
-The name of a new REST role must be unique among the REST roles as well as the traditional roles. This is because creating a REST role also results in a new traditional _mapping_ role.
+The name of a new REST role must be unique among the REST roles as well as the traditional roles. This is because creating a REST role also results in a new traditional _mapping_ role with the same name.
 
 .Set of privileges
 
@@ -182,7 +182,7 @@ See https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-cluster-
 
 === SVM scoped roles
 
-There are several built-in roles available at the SVM scope. The *vsadmin* provides access to the most general and powerful capabilities. There are several additional roles tailored to specific administrative tasks.
+There are several built-in roles available at the SVM scope. The *vsadmin* provides access to the most general and powerful capabilities. There are several additional roles tailored to specific administrative tasks, including:
 
 * vsadmin-volume
 * vsadmin-protocol
@@ -210,7 +210,7 @@ Before creating a role, it is important to know how the user will access the ONT
 |REST API only
 |The REST role is designed to be used with the REST API.
 |REST API and CLI
-|You can define a REST role which also creates the corresponding traditional role.
+|You can define a REST role which also creates a corresponding traditional role.
 |CLI only
 |You can create a traditional role.
 |===
