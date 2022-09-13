@@ -42,10 +42,10 @@ The ONTAP API documentation page is displayed with the API calls organized in ma
 +
 . As an example of an individual API call, scroll down to the *cluster* category and click *GET /cluster*.
 
-== Access the reference content at NetApp DevNet
+== Access a copy of the ONTAP REST API reference documentation
 
 [.lead]
-You can access a copy of the ONTAP REST API reference documentation through the links provided below. The API reference content for each ONTAP release is available in a separate document.
+You can access a copy of the ONTAP REST API reference documentation through the links provided below. The API reference documentation is maintained by ONTAP release.
 
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/[ONTAP 9.11.1^]
 * https://library.netapp.com/ecmdocs/ECMLP2879871/html/[ONTAP 9.10.1^]
