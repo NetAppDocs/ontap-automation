@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rest/rbac_sample_roles.html
 keywords:
-summary:
+summary: The ONTAP RBAC capability can be used in different ways depending on your environment. A few common scenarios are presented below. In each case the focus is on a specific security and administrative goal with an example of the corresponding role definition.
 ---
 
 = Sample role definitions
