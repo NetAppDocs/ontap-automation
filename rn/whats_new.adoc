@@ -21,7 +21,7 @@ ONTAP 9.11.1 continues to expand the capabilities of the ONTAP REST API with nea
 
 Granular RBAC::
 
-The ONTAP role-based access control (RBAC) capability has been enhanced to provide additional granularity. You can use the traditional roles or create new custom roles as needed through the REST API. Every role is associated with one or more privileges, each of which identifies a REST API call or CLI command along with the access level. New access levels are available for REST roles, such as `read_create` and `read_modify`. This enhancement provides parity with the Data ONTAP API (ONTAPI or ZAPI) and supports customer migration to the REST API. See link:../rest/rbac_overview.html[Overview of RBAC security] for more information.
+The ONTAP role-based access control (RBAC) capability has been enhanced to provide additional granularity. You can use the traditional roles or create new custom roles as needed through the REST API. Every role is associated with one or more privileges, each of which identifies a REST API call or CLI command along with the access level. New access levels are available for REST roles, such as `read_create` and `read_modify`. This enhancement provides parity with the Data ONTAP API (ONTAPI or ZAPI) and supports customer migration to the REST API. See link:../rest/rbac_overview.html[RBAC security] for more information.
 
 Performance counters::
 

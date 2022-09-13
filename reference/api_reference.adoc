@@ -45,6 +45,21 @@ The ONTAP API documentation page is displayed with the API calls organized in ma
 == Access the reference content at NetApp DevNet
 
 [.lead]
+You can access a copy of the ONTAP REST API reference documentation through the links provided below. The reference content for each ONTAP release is available in a separate document.
+
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/[ONTAP 9.11.1^]
+* https://library.netapp.com/ecmdocs/ECMLP2879871/html/[ONTAP 9.10.1^]
+* https://library.netapp.com/ecmdocs/ECMLP2876964/html/[ONTAP 9.9.1^]
+* https://library.netapp.com/ecmdocs/ECMLP2874708/html/[ONTAP 9.8^]
+* https://library.netapp.com/ecmdocs/ECMLP2862544/html/[ONTAP 9.7^]
+* https://library.netapp.com/ecmdocs/ECMLP2856304/html/[ONTAP 9.6^]
+
+.Related information
+
+https://devnet.netapp.com/restapi.php[NetApp DevNet: ONTAP REST APIs^]
+
+>>>
+
 You can access the ONTAP REST API reference documentation at the NetApp Developer Network web site.
 
 .Steps
