@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rest/rbac_overview.html
 keywords:
-summary:
+summary: ONTAP includes a robust and extensible role-based access control (RBAC) capability. You can assign each account a different role to control the user's access to the resources exposed through the REST API and CLI. The roles define different levels of administrative access for the various ONTAP users.
 ---
 
 = Overview of RBAC security
@@ -34,7 +34,7 @@ There are advantages and disadvantages when using each type of role. See link:..
 |Type
 |Description
 |REST
-|The REST roles were introduced with ONTAP 9.6 and are generally applied to users accessing ONTAP through the REST API. They subsequently evolved to support CLI access as well.
+|The REST roles were introduced with ONTAP 9.6 and are generally applied to users accessing ONTAP through the REST API. Creating a REST role automatically creates a traditional _mapping_ role.
 |Traditional
 |These are the legacy roles included prior to ONTAP 9.6. They were introduced for the ONTAP CLI environment and continue to be fundamental to RBAC security.
 |===
