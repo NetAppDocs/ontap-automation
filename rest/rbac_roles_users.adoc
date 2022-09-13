@@ -24,7 +24,7 @@ You can create and manage the ONTAP roles through the REST API or command line i
 There are several endpoints that can be used when working with RBAC roles and user accounts. The first four in the table are used to create and manage the roles. The last two are used to create and manage user accounts.
 
 [TIP]
-You can access the ONTAP online link:../reference/api_reference.html[API reference] documentation for more information including additional curl examples.
+You can access the ONTAP online link:../reference/api_reference.html[API reference] documentation for more information including examples of how to use the API.
 
 [cols="35,65"*,options="header"]
 |===

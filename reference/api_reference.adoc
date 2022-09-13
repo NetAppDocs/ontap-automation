@@ -16,7 +16,7 @@ summary:
 You can access the details of all the ONTAP REST API calls, including the HTTP methods, input parameters, and responses. This complete reference is helpful when developing automation applications using the REST API.
 
 [NOTE]
-You can access the API reference content at your local ONTAP system or at the NetApp Developer Network web site.
+You can access the online API reference content at your local ONTAP system or a static copy of the documentation maintained by NetApp.
 
 == Access the ONTAP API documentation page
 
@@ -45,7 +45,7 @@ The ONTAP API documentation page is displayed with the API calls organized in ma
 == Access the reference content at NetApp DevNet
 
 [.lead]
-You can access a copy of the ONTAP REST API reference documentation through the links provided below. The reference content for each ONTAP release is available in a separate document.
+You can access a copy of the ONTAP REST API reference documentation through the links provided below. The API reference content for each ONTAP release is available in a separate document.
 
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/[ONTAP 9.11.1^]
 * https://library.netapp.com/ecmdocs/ECMLP2879871/html/[ONTAP 9.10.1^]
@@ -57,19 +57,3 @@ You can access a copy of the ONTAP REST API reference documentation through the 
 .Related information
 
 https://devnet.netapp.com/restapi.php[NetApp DevNet: ONTAP REST APIs^]
-
->>>
-
-You can access the ONTAP REST API reference documentation at the NetApp Developer Network web site.
-
-.Steps
-
-. Navigate to the *ONTAP REST API* page at the NetApp Developer Network web site:
-+
-https://devnet.netapp.com/restapi.php[NetApp DevNet: ONTAP REST APIs^]
-
-. Scroll down and under *Online REST APIs Reference* click the link for the appropriate ONTAP version.
-+
-The ONTAP API documentation page is displayed with the API calls organized in major resource categories at the bottom.
-
-. As an example of an individual API call, scroll down to the *cluster* category and click *GET /cluster*.
