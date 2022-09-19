@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rest/rbac_roles_users.html
-keywords:
+keywords: rbac, roles, users, rest endpoints, cli, privileges, access level, cluster, svm
 summary: After understanding the basic RBAC capabilities, you can get started working with the ONTAP roles and users.
 ---
 
