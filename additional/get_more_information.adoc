@@ -36,7 +36,7 @@ Access the release notes and other documentation for previous ONTAP releases.
 
 == ONTAP 9 developer resources
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAPI to REST API mapping information^]
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html[ONTAPI to REST API mapping information^]
 +
 Provides the key ONTAPI calls and the mapping to the equivalent REST API calls.
 
