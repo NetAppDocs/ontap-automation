@@ -17,14 +17,9 @@ There are several additional resources you can access to get help and find more 
 
 == ONTAP 9 resources
 
-// https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
-* https://docs.netapp.com/us-en/ontap/[ONTAP 9 Documentation^]
+* https://docs.netapp.com/us-en/ontap-family/[ONTAP 9 product documentation^]
 +
-Provides the documentation for ONTAP 9 (except the CLI commands).
-
-* https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center^]
-+
-Provides the documentation for the ONTAP 9 CLI commands.
+Provides documentation for the ONTAP 9 product family.
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
 +
@@ -36,7 +31,7 @@ Access the release notes and other documentation for previous ONTAP releases.
 
 == ONTAP 9 developer resources
 
-* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html[ONTAPI to REST API mapping information^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAPI to REST API mapping information^]
 +
 Provides the key ONTAPI calls and the mapping to the equivalent REST API calls.
 
