@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rest/rbac_wf_create_user.html
-keywords:
+keywords: rbac, workflow, create role, create user
 summary: You can use the workflow described below to create a user with an associated REST role. Before reviewing the workflow, you should be familiar with the general preparation steps.
 ---
 
