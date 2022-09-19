@@ -36,15 +36,15 @@ Access the release notes and other documentation for previous ONTAP releases.
 
 == ONTAP 9 developer resources
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAPI to REST API mapping information^]
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html[ONTAPI to REST API mapping information^]
 +
 Provides the key ONTAPI calls and the mapping to the equivalent REST API calls.
 
-* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.10.1^]
+* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.11.1^]
 +
 The NetApp Python Client Library package at PyPI.
 
-* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html[NetApp PCL documentation for 9.10.1^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html[NetApp PCL documentation for 9.11.1^]
 +
 Documentation for the NetApp Python Client Library.
 
