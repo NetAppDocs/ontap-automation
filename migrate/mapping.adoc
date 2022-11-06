@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: migrate/mapping.html
-keywords:
-summary:
+keywords: ONTAPI, REST API, mapping, mapping documentation
+summary: NetApp provides documentation that describes the mapping from the ONTAPI calls to the equivalent REST API calls.
 ---
 
 = ONTAPI to REST API mapping

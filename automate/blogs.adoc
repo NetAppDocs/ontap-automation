@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: automate/blogs.html
-keywords:
-summary:
+keywords: automation, automation blogs
+summary: There are several blog articles available to help you better understand the different technologies and approaches when automating an ONTAP deployment.
 ---
 
 = Blogs about ONTAP automation
@@ -14,7 +14,7 @@ summary:
 
 
 [.lead]
-There are several blog articles available to help you better understand the different technologies and approaches to ONTAP automation.
+There are several blog articles available to help you better understand the different technologies and approaches when automating an ONTAP deployment.
 
 .Using the private CLI passthrough with the ONTAP REST API
 

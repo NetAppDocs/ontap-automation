@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: migrate/performance-counters.html
-keywords:
-summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP performance counters.
+keywords: performance, performance counters
+summary: The ONTAP Counter Manager allows ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
 ---
 
 = Performance counters
@@ -13,7 +13,7 @@ summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP pe
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP Counter Manager enables ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
+The ONTAP Counter Manager allows ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
 
 Prior to ONTAP 9.11.1, access to the full set of ONTAP Counter Manager objects is limited to the ONTAP CLI and ONTAPI interfaces.
 
