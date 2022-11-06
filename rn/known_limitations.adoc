@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rn/known_limitations.html
-keywords:
-summary:
+keywords: limitations, known limitations
+summary: The ONTAP REST API has certain limitations or restrictions that might affect your use of the API and development of automation code.
 ---
 
 = Known limitations

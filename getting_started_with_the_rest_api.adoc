@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: getting_started_with_the_rest_api.html
-keywords:
-summary:
+keywords: get started, getting started
+summary: You can quickly get started using the ONTAP REST API and other automation technologies. After preparing and understanding a basic request-response flow, you can issue a simple API call using curl.
 ---
 
 = Getting started with the REST API

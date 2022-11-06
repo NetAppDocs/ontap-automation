@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: get-started/hello_world.html
-keywords:
-summary:
+keywords: simple API call
+summary: You can issue a simple curl command at the CLI to get started using the ONTAP REST API and confirm its availability.
 ---
 
 = Hello world

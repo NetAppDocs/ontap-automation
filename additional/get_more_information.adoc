@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: additional/get_more_information.html
-keywords:
-summary:
+keywords: more information, additional resources
+summary: There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 ---
 
 = Get more information
