@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rest/access_ontap_cli.html
-keywords: cli, ontap cli, passthrough
+keywords: cli, ontap cli, cli passthrough
 summary: To assist CLI and ONTAPI API users in their transition to the ONTAP REST API, ONTAP provides a REST endpoint to access the CLI. You can use this passthrough feature to execute any CLI command.
 ---
 

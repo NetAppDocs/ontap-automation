@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rest/object_references_and_access.html
-keywords: objects, access paths, uuid, collections, object collection
+keywords: objects, access paths, uuid, uuidv4, collections, object collection
 summary: The resource instances or objects exposed through the ONTAP REST API can be referenced and accessed in several different ways.
 ---
 
