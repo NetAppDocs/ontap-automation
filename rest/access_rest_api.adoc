@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: rest/access_rest_api.html
-keywords:
-summary:
+keywords: accessing the rest api, lif
+summary: You can access the ONTAP REST API in several different ways.
 ---
 
-= How to access the ONTAP API
+= How to access the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

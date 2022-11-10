@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/asynchronous_processing.html
-keywords:
-summary:
+keywords: asynchronous, asynchronous processing, job, job object
+summary: After issuing an API request that is designed to run asynchronously, a job object is always created and returned to the caller. The job describes and anchors a background task that processes the request.
 ---
 
 = Asynchronous processing using the Job object

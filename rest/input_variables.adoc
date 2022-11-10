@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/input_variables.html
-keywords:
-summary:
+keywords: variables, input, input variabls
+summary: You can control how an API call is processed through parameters and variables set in the HTTP request.
 ---
 
 = Input variables controlling an API request
