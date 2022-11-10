@@ -23,10 +23,6 @@ Security enhancements::
 
 Amazon Web Services includes a key management service that provides secure storage for keys and other secrets. You can access this service through the REST API to allow ONTAP to securely store its encryption keys in the cloud. In addition, you can create and list the authentication keys used with NetApp Storage Encryption.
 
-Storage pools::
-
-Several endpoints have been added to provide access to the ONTAP storage pools. Support is included for creating and listing the storage pools in a cluster as well as updating and deleting specific pools by ID.
-
 Active Directory::
 
 You can manage the Active Directory accounts defined for an ONTAP cluster. This includes creating new accounts as well as displaying, updating, and deleting accounts.
@@ -62,6 +58,10 @@ The multiple administrator verification feature provides a flexible authorizatio
 SnapMirror enhancements::
 
 The SnapMirror capability has been enhanced in several areas including scheduling. The SnapVault relationship parity has been added in a DP relationship with ONTAP 9.11.1 Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI). Related to this, support is available to create and manage bulk snapshot copies.
+
+Storage pools::
+
+Several endpoints have been added to provide access to the ONTAP storage pools. Support is included for creating and listing the storage pools in a cluster as well as updating and deleting specific pools by ID.
 
 Name services cache support::
 

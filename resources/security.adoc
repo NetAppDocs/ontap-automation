@@ -45,11 +45,13 @@ You can retrieve the audit log messages. This resource type was introduced with 
 
 .AWS KMS
 
-This set of API calls allows you to use the Amazon Web Services Key Management Service to store the ONTAP encryption keys. This resource type is new with ONTAP 9.8.
+Amazon Web Services includes a key management service that provides secure storage for keys and other secrets. You can access this service through the REST API to allow ONTAP to securely store its encryption keys in the cloud. In addition, you can create and list the authentication keys used with NetApp Storage Encryption. This support is new with ONTAP 9.12.
+
+//This set of API calls allows you to use the Amazon Web Services Key Management Service to store the ONTAP encryption keys. This resource type is new with ONTAP 9.8.
 
 .Azure Key Vault
 
-This set of API calls allows you to use the Azure Key Vault to store the ONTAP encryption keys.  This resource type is new with ONTAP 9.8.
+This set of API calls allows you to use the Azure Key Vault to store the ONTAP encryption keys. This resource type is new with ONTAP 9.8.
 
 .Certificates
 
@@ -85,7 +87,7 @@ These endpoints allow you to retrieve and update the configurations for key mana
 
 .Key managers
 
-A key manager allows client modules within ONTAP to securely stored keys. This resource type was introduced with ONTAP 9.6 and updated for ONTAP 9.7.
+A key manager allows client modules within ONTAP to securely stored keys. This resource type was introduced with ONTAP 9.6 and updated for ONTAP 9.7. There was another update with ONTAP 9.12 to support authentication keys.
 
 .Key stores
 
@@ -107,7 +109,7 @@ The multiple administrator verification feature provides a flexible authorizatio
 * Requests
 * Approval groups
 
-Providing the option for multiple administrators to approve access improves the security of your ONTAP and IT environments. These resource types were introduced with ONTAP 9.11.1.
+Providing the option for multiple administrators to approve access improves the security of your ONTAP and IT environments. These resource types were introduced with ONTAP 9.11.
 
 .NIS authentication
 
