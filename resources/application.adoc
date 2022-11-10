@@ -25,7 +25,7 @@ The ONTAP applications are arranged based on type, including: templates, applica
 
 .Consistency groups
 
-A consistency group is a set of volumes that are grouped together when performing certain operations such as a snapshot. This feature extends the same crash consistency and data integrity implicit with single-volume operations across a set of volumes. This resource type was introduced with ONTAP 9.10 and updated with 9.11.
+A consistency group is a set of volumes that are grouped together when performing certain operations such as a snapshot. This feature extends the same crash consistency and data integrity implicit with single-volume operations across a set of volumes. This resource type was introduced with ONTAP 9.10 and updated with 9.12.
 
 .Consistency groups snapshots
 

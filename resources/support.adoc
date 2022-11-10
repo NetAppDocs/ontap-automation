@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: resources/support.html
-keywords:
-summary:
+keywords: support resources
+summary: You can use these API calls to manage the ONTAP features used to support a cluster.
 ---
 
 = Support
@@ -17,7 +17,7 @@ You can use these API calls to manage the ONTAP features used to support a clust
 
 .Application log
 
-A standalone application can record EMS events and optionally generated AutoSupport packages at an ONTAP system by issuing a POST request. This resource type was introduced with ONTAP 9.11.1.
+A standalone application can record EMS events and optionally generated AutoSupport packages at an ONTAP system by issuing a POST request. This resource type was introduced with ONTAP 9.11.1
 
 .Automatic update
 
