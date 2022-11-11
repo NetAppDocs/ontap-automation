@@ -2,7 +2,7 @@
 permalink: manage/ems-rest-api.html
 sidebar: sidebar
 keywords: ems, configuration, workflow
-summary: "Manage EMS configuration with the REST API."
+summary: You can manage the ONTAP EMS configuration using the REST API.
 ---
 = Manage EMS event notifications with the ONTAP REST API
 :icons: font

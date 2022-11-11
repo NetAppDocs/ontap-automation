@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: migrate/blogs.html
-keywords:
-summary:
+keywords: blogs, blog articles
+summary: There are several blog articles available to help you better understand how to migrate from ONTAPI to the ONTAP REST API.
 ---
 
 = Blogs about migrating to the ONTAP REST API

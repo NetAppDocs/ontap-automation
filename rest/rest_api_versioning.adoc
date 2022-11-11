@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/rest_api_versioning.html
-keywords:
-summary:
+keywords: versioning, REST API versioning
+summary: The REST API included with ONTAP 9 is assigned a version number which is independent of the ONTAP release number. You should be aware of the API version included with your release of ONTAP and how this might affect your use of the API.
 ---
 
 = ONTAP REST API versioning

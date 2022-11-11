@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: resources/networking.html
-keywords:
-summary:
+keywords: networking resources
+summary: You can use these API calls to manage the physical and logical networking resources used with the cluster.
 ---
 
 = Networking
@@ -33,11 +33,11 @@ You can retrieve the port information for an Ethernet switch. This resource type
 
 .Ethernet switches
 
-You can retrieve or modify the configuration for Ethernet switches used for the ONTAP cluster or storage network. This resource type is new with ONTAP 9.8.
+You can retrieve or modify the configuration for Ethernet switches used for the ONTAP cluster or storage network. This resource type is new with ONTAP 9.8 and updated with 9.11.
 
 .Fibre Channel fabrics
 
-You can use the Fibre Channel (FC) fabric REST API endpoints to retrieve information about the FC network. This includes the connections between the ONTAP cluster and the FC fabric, the switches comprising the fabric, and the zones of the active zoneset. This resource type was introduced with ONTAP 9.11.1.
+You can use the Fibre Channel (FC) fabric REST API endpoints to retrieve information about the FC network. This includes the connections between the ONTAP cluster and the FC fabric, the switches comprising the fabric, and the zones of the active zoneset. This resource type was introduced with ONTAP 9.11.
 
 .Fibre Channel interfaces
 
@@ -65,7 +65,7 @@ The IP service polices define the services available at a specific LIF. Service 
 
 .IP subnets
 
-The ONTAP networking capability has been expanded to support IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster. This resource type was introduced with ONTAP 9.11.1.
+The ONTAP networking capability has been expanded to support IP subnets. The REST API provides access to the configuration and management of the IP subnets within an ONTAP cluster. This resource type was introduced with ONTAP 9.11.
 
 .IPspaces
 

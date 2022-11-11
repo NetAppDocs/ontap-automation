@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/rest_web_services_foundation.html
-keywords:
-summary:
+keywords: REST, web services
+summary: Representational State Transfer (REST) is a style for creating distributed web applications. It uses mainstream protocols and standards to provide a flexible foundation for administering ONTAP clusters.
 ---
 
 = REST web services foundation

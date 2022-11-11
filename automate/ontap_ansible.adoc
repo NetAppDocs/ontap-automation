@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: automate/ontap_ansible.html
-keywords:
-summary:
+keywords: ansible, automation resources
+summary: There are several resources available to help you understand how Ansible can be used to automate the deployment and administration of ONTAP storage resources.
 ---
 
 = ONTAP and Ansible automation

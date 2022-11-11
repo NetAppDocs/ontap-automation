@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: resources/cluster.html
-keywords:
-summary:
+keywords: cluster resources
+summary: You can use these API calls to manage ONTAP clusters and the related resources.
 ---
 
 = Cluster
@@ -26,6 +26,10 @@ The chassis is the hardware framework supporting a cluster. This resource type w
 .Clusters
 
 An ONTAP cluster contains one or more nodes and the related configuration settings which define the storage system. This resource type was introduced with ONTAP 9.6.
+
+.Counter tables
+
+Various statistical information about ONTAP is captured by the Counter Manager subsystem. You can access this information to assess system performance. This resource type was introduced with ONTAP 9.11.
 
 .Firmware
 
@@ -53,7 +57,7 @@ You can manage the mediator associated with MetroCluster, including adding or re
 
 .MetroCluster
 
-You can create and manage a MetroCluster deployment, including executing switchover or switchback operations. This resource type is new with ONTAP 9.8.
+You can create and manage a MetroCluster deployment, including executing switchover or switchback operations. This resource type is new with ONTAP 9.8 and updated with 9.11.
 
 .MetroCluster diagnostics
 
@@ -105,7 +109,7 @@ Schedules can be used to automate the perform of tasks. This resource type was i
 
 .Sensors
 
-You can use these endpoints to retrieve details about all the platform environment sensors. This resource type was introduced with ONTAP 9.11.1.
+You can use these endpoints to retrieve details about all the platform environment sensors. This resource type was introduced with ONTAP 9.11.
 
 .Software
 

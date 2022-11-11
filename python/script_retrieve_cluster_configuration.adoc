@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: python/script_retrieve_cluster_configuration.html
-keywords:
-summary:
+keywords: Python, sample script, Python example
+summary: You can run the script using Python 3 at the CLI to retrieve the ONTAP cluster configuration.
 ---
 
 = Script to retrieve the cluster configuration
