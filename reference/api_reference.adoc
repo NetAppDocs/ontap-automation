@@ -47,6 +47,7 @@ The ONTAP API documentation page is displayed with the API calls organized in ma
 [.lead]
 You can access a copy of the ONTAP REST API reference documentation through the links provided below. The API reference documentation is maintained by ONTAP release.
 
+* https://library.netapp.com/ecmdocs/ECMLP2884821/html/[ONTAP 9.12.1^]
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/[ONTAP 9.11.1^]
 * https://library.netapp.com/ecmdocs/ECMLP2879871/html/[ONTAP 9.10.1^]
 * https://library.netapp.com/ecmdocs/ECMLP2876964/html/[ONTAP 9.9.1^]
