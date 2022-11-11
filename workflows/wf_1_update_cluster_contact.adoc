@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_1_update_cluster_contact.html
-keywords:
-summary:
+keywords: workflow
+summary: This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
 ---
 
 = Workflow 1: Update the cluster contact and check job state

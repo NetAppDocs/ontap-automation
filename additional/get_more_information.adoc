@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: additional/get_more_information.html
-keywords:
-summary:
+keywords: more information, additional resources
+summary: There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 ---
 
 = Get more information
@@ -31,15 +31,17 @@ Access the release notes and other documentation for previous ONTAP releases.
 
 == ONTAP 9 developer resources
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAPI to REST API mapping information^]
-+
-Provides the key ONTAPI calls and the mapping to the equivalent REST API calls.
+//* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAPI to REST API mapping information^]
 
-* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.11.1^]
+* link:../migrate/mapping.html[ONTAPI to REST API mapping]
++
+Provides the key ONTAPI calls and a mapping to the equivalent REST API calls. Select the appropriate ONTAP release.
+
+* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP^]
 +
 The NetApp Python Client Library package at PyPI.
 
-* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html[NetApp PCL documentation for 9.11.1^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html[NetApp PCL documentation for 9.12.1^]
 +
 Documentation for the NetApp Python Client Library.
 

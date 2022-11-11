@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: python/prepare_pcl.html
-keywords:
-summary:
+keywords: python client library, prepare, pcl
+summary: You should prepare the local runtime environment before using the Python client library.
 ---
 
 = Prepare to use the Python client library
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You should prepare the environment before using the Python client library.
+You should prepare the local runtime environment before using the Python client library.
 
 .Basic requirements
 

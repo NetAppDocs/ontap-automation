@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: resources/nas.html
-keywords:
-summary:
+keywords: nas resources
+summary: You can use these API calls to manage the CIFS and NFS settings for the cluster and SVMs.
 ---
 
 = NAS
@@ -15,9 +15,13 @@ summary:
 [.lead]
 You can use these API calls to manage the CIFS and NFS settings for the cluster and SVMs.
 
+.Active Directory
+
+You can manage the Active Directory accounts defined for an ONTAP cluster. This includes creating new accounts as well as displaying, updating, and deleting accounts. This support was added with ONTAP 9.12.
+
 .Audit
 
-Certain CIFS and NFS events can be logged for the SVMs, which can help to improve security.  This resource type was introduced with ONTAP 9.6.
+Certain CIFS and NFS events can be logged for the SVMs, which can help to improve security. This resource type was introduced with ONTAP 9.6.
 
 .Audit log redirect
 
@@ -30,6 +34,10 @@ You can retrieve a list of the established CIFS connections. This resource type 
 .CIFS domains
 
 Support for CIFS domains has been added at the cluster and SVM level with several categories of endpoints. You can retrieve the domain configuration as well as create and remove preferred domain controllers. This resource type is new with ONTAP 9.10.
+
+.CIFS group policies
+
+Endpoints has been added to support the creation and management of CIFS group policies. The configuration information is available and administered through group policy objects that are applied to all or specific SVMs. This support was added with ONTAP 9.12.
 
 .CIFS home directory search paths
 

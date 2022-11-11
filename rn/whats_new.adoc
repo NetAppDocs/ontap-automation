@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rn/whats_new.html
-keywords:
-summary:
+keywords: new features, new in release
+summary: NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 ---
 
 = What's new with the ONTAP REST API and automation
@@ -14,6 +14,22 @@ summary:
 
 [.lead]
 NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
+
+== ONTAP 9.12.1
+
+ONTAP 9.12.1 continues to expand the capabilities of the ONTAP REST API with over forty new API calls. These endpoints support new ONTAP features as well as enhancements to existing features. This release focuses on improvements to security and NAS capabilities.
+
+Security enhancements::
+
+Amazon Web Services includes a key management service that provides secure storage for keys and other secrets. You can access this service through the REST API to allow ONTAP to securely store its encryption keys in the cloud. In addition, you can create and list the authentication keys used with NetApp Storage Encryption.
+
+Active Directory::
+
+You can manage the Active Directory accounts defined for an ONTAP cluster. This includes creating new accounts as well as displaying, updating, and deleting accounts.
+
+CIFS group policies::
+
+The REST API has been enhanced to support the creation and management of CIFS group policies. The configuration information is available and administered through group policy objects that are applied to all or specific SVMs.
 
 == ONTAP 9.11.1
 
@@ -42,6 +58,10 @@ The multiple administrator verification feature provides a flexible authorizatio
 SnapMirror enhancements::
 
 The SnapMirror capability has been enhanced in several areas including scheduling. The SnapVault relationship parity has been added in a DP relationship with ONTAP 9.11.1 Also, the throttle feature available with the REST API has reached parity with the Data ONTAP API (ONTAPI or ZAPI). Related to this, support is available to create and manage bulk snapshot copies.
+
+Storage pools::
+
+Several endpoints have been added to provide access to the ONTAP storage pools. Support is included for creating and listing the storage pools in a cluster as well as updating and deleting specific pools by ID.
 
 Name services cache support::
 

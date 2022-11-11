@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: migrate/performance-counters.html
-keywords:
-summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP performance counters.
+keywords: performance, performance counters
+summary: The ONTAP Counter Manager allows ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
 ---
 
 = Performance counters
@@ -13,14 +13,13 @@ summary: Transition from the ONTAPI to the ONTAP REST API for access to ONTAP pe
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP Counter Manager enables ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
+The ONTAP Counter Manager allows ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
 
 Prior to ONTAP 9.11.1, access to the full set of ONTAP Counter Manager objects is limited to the ONTAP CLI and ONTAPI interfaces.
 
 Beginning with ONTAP 9.11.1, ONTAP users can access a segment of Counter Manager objects with the ONTAP REST API. Users migrating their automation scripts from ONTAPI to the ONTAP REST API need to understand the differences between how performance counter data is presented to the ONTAPI and how that data is presented to the REST API.
 
-See https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449[ONTAP 9.11.1 ONTAPI-to-REST Counter Manager Mapping^] for documentation on the set of ONTAP counters available to the REST API in ONTAP 9.11.1, as well as information about how the counters differ between ONTAPI and REST API consumption.
-
+See https://library.netapp.com/ecm/ecm_download_file/ECMLP2885053[ONTAP 9.12.1 ONTAPI-to-REST Counter Manager Mapping^] for documentation on the set of ONTAP counters available to the REST API in ONTAP 9.11.1, as well as information about how the counters differ between ONTAPI and REST API consumption.
 
 == Accessing performance counters using ONTAPI
 As consumed by ONTAPI, performance counter data is grouped in objects. For example, in a node with four disks, disk performance counter data is grouped as an object. Each physical disk in the system represents an instance of that object, and you can use ONTAPI to access individual performance counters for a single disk instance.

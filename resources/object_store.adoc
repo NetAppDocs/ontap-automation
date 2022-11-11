@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: resources/object_store.html
-keywords:
-summary:
+keywords: object store resources
+summary: You can use these API calls to access S3-based object storage.
 ---
 
 = Object store

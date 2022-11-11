@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: resources/name_services.html
-keywords:
-summary:
+keywords: name services resources
+summary: You can use these API calls to manage the name services supported by ONTAP.
 ---
 
 = Name services
@@ -17,7 +17,7 @@ You can use these API calls to manage the name services supported by ONTAP.
 
 .Cache
 
-ONTAP name services supports caching which improves performance and resiliency. Configuration of the name services cache can now be access through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups. This resource type was introduced with ONTAP 9.11.1.
+ONTAP name services supports caching which improves performance and resiliency. Configuration of the name services cache can now be access through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups. This resource type was introduced with ONTAP 9.11.
 
 .DDNS
 
@@ -37,7 +37,7 @@ LDAP servers can be used to maintain user information. This resource type was in
 
 .LDAP schemas
 
-You can create, modify, and list the LDAP schemas used by ONTAP. There are four default schemas included. This resource type was introduced with ONTAP 9.11.1.
+You can create, modify, and list the LDAP schemas used by ONTAP. There are four default schemas included. This resource type was introduced with ONTAP 9.11.
 
 .Local hosts
 
@@ -49,7 +49,7 @@ Name mappings allow you to map identities from one name domain to another. For e
 
 .Netgroup files
 
-You can retrieve netgroup file details and delete a file for an SVM. This resource type was introduced with ONTAP 9.11.1.
+You can retrieve netgroup file details and delete a file for an SVM. This resource type was introduced with ONTAP 9.11.
 
 .NIS
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: resources/storage.html
-keywords:
-summary:
+keywords: storage resources
+summary: You can use these API calls to manage the physical and logical storage.
 ---
 
 = Storage

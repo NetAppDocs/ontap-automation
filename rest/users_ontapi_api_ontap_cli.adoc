@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rest/users_ontapi_api_ontap_cli.html
-keywords: snapdiff
-summary:
+keywords: snapdiff, migrating to rest
+summary: ONTAPI is a set of API calls provided through the Network Manageability SDK that can be used to administer ONTAP storage systems. There are differences between the REST API and the ONTAPI API calls, as well as between the REST API and ONTAP CLI.
 ---
 
 = Users of the ONTAPI API and ONTAP CLI
@@ -25,7 +25,8 @@ ONTAP supports several types of storage virtual machines (SVMs). However, only t
 
 == Migrating from ONTAPI to REST
 
-The REST API is the primary and strategic choice for automating ONTAP system administration. If you are currently using the ONTAPI API, you should consider migrating to the REST API. NetApp provides mapping documentation to assist with the migration from ONTAPI to REST.
+The REST API is the primary and strategic choice for automating ONTAP system administration. If you are currently using the ONTAPI API, you should consider migrating to the REST API. NetApp provides mapping documentation to assist with the migration from ONTAPI to REST. See link:../migrate/mapping.html[ONTAPI to REST API mapping] for more information.
+
 
 == Changes to SnapDiff availability in ONTAPI
 

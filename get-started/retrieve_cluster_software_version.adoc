@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: get-started/retrieve_cluster_software_version.html
-keywords:
-summary:
+keywords: transaction, API transaction, request, response
+summary: Every API transaction consists of an HTTP request and the associated response.
 ---
 
 = Retrieving the cluster software version
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Each API transaction consists of an HTTP request and the associated response.  This illustration shows how to retrieve the version of the ONTAP software used by the cluster.
+Every API transaction consists of an HTTP request and the associated response. This illustration shows how to retrieve the version of the ONTAP software used by the cluster.
 
 image:rest_call_01.png[Illustration of a simple REST API call]
 
