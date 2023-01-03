@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: get-started/hello_world.html
+permalink: get-started/first_call.html
 keywords: simple API call
 summary: You can issue a simple curl command at the CLI to get started using the ONTAP REST API and confirm its availability.
 ---
 
-= Hello world
+= Your first API call
 :hardbreaks:
 :nofooter:
 :icons: font

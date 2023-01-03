@@ -8,5 +8,5 @@ entries:
     url: /get-started/prepare.html
   - title: Retrieve the cluster software version
     url: /get-started/retrieve_cluster_software_version.html
-  - title: Hello world
-    url: /get-started/hello_world.html
+  - title: Your first API call
+    url: /get-started/first_call.html
