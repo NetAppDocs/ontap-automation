@@ -13,7 +13,7 @@ summary: If you are using the ONTAPI API, you are encouraged to begin migrating 
 :imagesdir: ../media/
 
 [.lead]
-If you are using the ONTAPI API, you are encouraged to begin migrating to the ONTAP REST API. This section describes the available resources and highlights helpful features and tools to support your migration.
+If you are using the ONTAPI API, you are encouraged to begin migrating to the ONTAP REST API. There are many helpful resources and tools available to support your migration.
 
 [NOTE]
 NetApp first introduced the REST API with ONTAP 9.6. Since then the API has continued to expand and mature. It now provides the preferred and strategic alternative to ONTAPI when automating the administration of your ONTAP deployments.
