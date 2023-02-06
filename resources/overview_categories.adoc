@@ -13,9 +13,9 @@ summary: The resources available through the ONTAP REST API are organized in cat
 :imagesdir: ../media/
 
 [.lead]
-The resources available through the ONTAP REST API are organized in categories, as displayed on the ONTAP API documentation page. A brief description of each of the resources with the base resource paths is presented below, along with additional usage considerations where appropriate.
+The resources available through the ONTAP REST API are organized in categories, as displayed in the ONTAP API online documentation page. A brief description of each of the resources with the base resource paths is presented below along with additional usage considerations where appropriate.
 
-This section describes the REST resources for the latest version of the product. If you need to understand the changes that were made from the previous version, see the _Release Notes_.
+The REST resources described in this summary are based on the latest version of the product. If you need to understand the changes made from previous releases, see link:../rn/whats_new.html[What's new with the ONTAP REST API] and the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^].
 
 [TIP]
 For many of the REST endpoints, you can include a UUID key as part of the path string to access a specific object instance. However, you can also access objects using a property value on a query parameter.
