@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping
-summary: The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as performance counters which you can use to assess the performance of your ONTAP system and help meet your performance goals.
+summary: The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as performance counters you can use to assess the performance of your ONTAP system and help meet your performance goals.
 ---
 
 = Performance counters
@@ -13,24 +13,24 @@ summary: The ONTAP Counter Manager maintains extensive information about the per
 :imagesdir: ../media/
 
 [.lead]
-The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as _performance counters_ which you can use to assess the performance of your ONTAP system and help meet your performance goals.
+The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as a set of _performance counters_ you can use to assess the performance of your ONTAP system and help meet your performance goals.
 
 == Access the ONTAP performance counters
 
-You can access the ONTAP performance counters using two different APIs.
+You can access the ONTAP performance counters using two different APIs as well as through the ONTAP command line interface.
 
 [NOTE]
-The ONTAP REST API provides the preferred and strategic option when automating the administration of your ONTAP deployments.
+The ONTAP REST API is the preferred and strategic option when automating the administration of your ONTAP deployments.
 
 .ONTAPI API
-The ONTAPI API is available through the NetApp Network Manageability SDK. With ONTAPI, the performance counters are defined as objects. Each object can have one or more instances depending on the system configuration.
+The ONTAPI API is available with the NetApp Network Manageability SDK. When using ONTAPI, the performance counters are defined within a collection of objects. Each object corresponds to a physical or virtual component of the system. There can be one or more instances of each object based on the system configuration.
 
-For example, if your ONTAP system has four physical disks, there are four instances of the `disk` object, each with its own set of performance counters. You can use ONTAPI to access the individual counters for each disk instance. Access to the full set of ONTAP Counter Manager objects is also provided through the ONTAP CLI interface.
+For example, if your ONTAP system has four physical disks, there will be four instances of the `disk` object, each with its own set of performance counters. You can use ONTAPI to access the individual counters for each disk instance.
 
-.REST API
-Beginning with ONTAP 9.11.1, you can access the same data through the ONTAP REST API. With the REST API, the performance counters are organized into tables which are roughly equivalent to the ONTAPI objects. Each table row is equivalent to an instance of an object when using ONTAPI.
+.ONTAP REST API
+Beginning with ONTAP 9.11.1, you can also access the same performance data through the REST API. With the REST API, the performance counters are organized in tables which are roughly equivalent to the ONTAPI objects. Each table row is equivalent to an instance of an ONTAPI object.
 
-For example, if your ONTAP system has four physical disks, the `disk` table contains four rows. Each of the rows can be accessed individually and contains its own set of performance counters available as fields or columns in the row.
+For example, if your ONTAP system has four physical disks, the `disk` table will contain four rows. Each of the rows can be accessed individually and includes its own set of performance counters available as fields or columns in the row.
 
 == Prepare to use the REST API
 
@@ -38,13 +38,8 @@ You should prepare before using the ONTAP REST API to access the performance cou
 
 === Performance counters organized in tables
 
-A subset of the ONTAPI objects is available as tables through the ONTAP REST API. A simple example is presented below to illustrate this organization.
+A subset of the ONTAPI objects is available through the ONTAP REST API and presented as tables. For example, the ONTAPI *hostadapter* object is available through the REST API as the *host_adpater* table. If there are several host adapters in the system, each is a table row with its own set of performance counters.
 
-The ONTAPI *hostadapter* object is now available as the *host_adpater* table through the REST API. There are several host adapters in the system and each host adapter has its own performance counters.
-
-//|Instance name 6+|REST counters
-//[cols="25,75"*,options="header"]
-//[cols="1,6",options="header"]
 |===
 |Instance name 6+|Performance counters
 
@@ -75,27 +70,30 @@ The ONTAPI *hostadapter* object is now available as the *host_adpater* table thr
 
 === Summary of the REST endpoints
 
-xxx
+There are four major endpoints available to access the performance counters and related tables.
+
+[NOTE]
+Each of the REST endpoints provides read-only access and supports only the *GET* HTTP method.
 
 * /cluster/counter/tables
 +
-xxx
+Returns a collection of counter tables and their schema definitions.
 
 * /cluster/counter/tables/{name}
 +
-xxx
+Returns information about a single named counter table.
 
 * /cluster/counter/tables/{counter_name}/rows
 +
-xxx
+Returns a collection of rows from a named counter table.
 
 * /cluster/counter/tables/{counter_name}/rows/{id}
 +
-xxx
+Returns a specific row from a named counter table.
 
 === ONTAPI objects to REST tables
 
-NetApp provides extensive support for migrating your automation code from ONTAPI to the ONTAP REST API. This includes mapping documentation to identity the equivalent performance counter table in the REST API for a given ONTAPI object.
+NetApp provides extensive support for migrating your automation code from ONTAPI to the ONTAP REST API. This includes mapping documentation to identity the equivalent performance counter table available in the REST API for a given ONTAPI object.
 
 See the appropriate documentation based on the ONTAP release you are using:
 
@@ -104,88 +102,60 @@ See the appropriate documentation based on the ONTAP release you are using:
 
 == Get started with the ONTAP REST API
 
-xxx
+You can review the following examples to better understand how to use REST API to access the ONTAP performance counters. This includes retrieving a list of the available tables as well as exploring the table structure.
 
 === Before you begin
 
-xxx
->> Need ONTAP credentials
->> All GET
->> Make titles of four sections below consistent
->> Review curl and use of abbreviations (use for string)
+Review the following information before using the examples.
 
-== Understanding the structure with REST API examples
-Use the following REST API examples to help understand the structure of a counter manager table. These examples also show you how you can use the REST API to discover what endpoints are available, and use them to gain insight into the performance of your system. These examples explore the `host_adapter` counter manager object, showing progressively more detailed information about the object and the counter values it contains. If you try these examples on your system, be sure to provide your values for information in brackets <> where indicated.
+.ONTAP credentials
+You'll need an ONTAP administrator account including the password.
 
-=== Discover the available performance counter tables
-You can use this REST API call to discover all of the counter manager tables that you can query:
+.Cluster management IP
+You'll need the cluster management IP address configured for your ONTAP system.
 
+.All API calls use the GET method
+All of the examples can be used to retrieve information using the HTTP GET method.
+
+.Variable substitution
+Each curl example includes one or more variables as indicated with capitals and bracketed text. Make sure to replace these variables with actual values as appropriate for your environment.
+
+.Examples match endpoints
+The sequence of examples parallels the summary of the endpoints.
+*<LINK>*
+
+=== Available tables containing performance counters
+
+You can use this REST API call to discover all of the counter manager tables available to query.
+
+// --location --include
 .Curl example
 [%collapsible%open]
 ====
 [source,curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
 ----
 ====
 
-.Example response (truncated for brevity):
+.JSON output example
+[%collapsible%open]
+====
 [source,json]
 ----
-{
-  "records": [
-    {
-      "name": "copy_manager",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/copy_manager"
-        }
-      }
-    },
-    {
-      "name": "copy_manager:constituent",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/copy_manager%3Aconstituent"
-        }
-      }
-    },
-    {
-      "name": "disk",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/disk"
-        }
-      }
-    },
-    {
-      "name": "host_adapter",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/host_adapter"
-        }
-      }
-    }
-    ...
-  ],
-  "num_records": 68,
-  "_links": {
-    "self": {
-      "href": "/api/cluster/counter/tables"
-    }
-  }
-}
+{}
 ----
 
-=== Query an individual performance counter table
-You can use this REST API call to view the description and metadata for one specific table (counter manager object). The output describes the purpose of the table and also describes what type of information each performance counter in the table records. In this example, we query the `host_adapter` table:
+=== Description and metadata for a specific performance counter table
+
+You can use this REST API call to display the description and metadata for a specific table. The output includes the purpose of the table and what type of data each performance counter contains. The *host_adapter* table is used in this example.
 
 .Curl example
 [%collapsible%open]
 ====
 [source,curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
 ----
 ====
 
@@ -194,71 +164,20 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
 ====
 [source,json]
 ----
-{
-  "name": "host_adapter",
-  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI Host Adapters the storage system uses to connect to disks and tape drives.",
-  "counter_schemas": [
-    {
-      "name": "bytes_read",
-      "description": "Bytes read via Host Adapter",
-      "type": "rate",
-      "unit": "per_sec"
-    },
-    {
-      "name": "bytes_written",
-      "description": "Bytes written via Host Adapter",
-      "type": "rate",
-      "unit": "per_sec"
-    },
-    {
-      "name": "max_link_data_rate",
-      "description": "Max link data rate in Kilobytes per second for Host Adapter",
-      "type": "raw",
-      "unit": "kb_per_sec"
-    },
-    {
-      "name": "node.name",
-      "description": "System node name",
-      "type": "string",
-      "unit": "none"
-    },
-    {
-      "name": "rscn_count",
-      "description": "Number of RSCN(s) received by the FC HBA",
-      "type": "raw",
-      "unit": "none"
-    },
-    {
-      "name": "total_read_ops",
-      "description": "Total number of reads on Host Adapter",
-      "type": "rate",
-      "unit": "per_sec"
-    },
-    {
-      "name": "total_write_ops",
-      "description": "Total number of writes on Host Adapter",
-      "type": "rate",
-      "unit": "per_sec"
-    }
-  ],
-  "_links": {
-    "self": {
-      "href": "/api/cluster/counter/tables/host_adapter"
-    }
-  }
-}
+{}
 ----
 ====
 
 === View the rows in a performance counter table
-You can use this REST API call to view the rows in a table, which tells you what instances of the counter manager object exist:
+
+You can use this REST API call to view the rows in a table, which tells you what instances of the counter manager objects exist.
 
 .Curl example
 [%collapsible%open]
 ====
 [source,curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
 ----
 ====
 
@@ -267,60 +186,20 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
 ====
 [source,json]
 ----
-{
-  "records": [
-    {
-      "id": "power-01:0b",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0b"
-        }
-      }
-    },
-    {
-      "id": "power-01:0c",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0c"
-        }
-      }
-    },
-    {
-      "id": "power-01:0d",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0d"
-        }
-      }
-    },
-    {
-      "id": "power-01:0e",
-      "_links": {
-        "self": {
-          "href": "/api/cluster/counter/tables/host_adapter/rows/power-01%3A0e"
-        }
-      }
-    }
-  ],
-  "num_records": 4,
-  "_links": {
-    "self": {
-      "href": "/api/cluster/counter/tables/host_adapter/rows"
-    }
-  }
-}
+{}
 ----
 ====
 
 === Query a specific counter manager instance
-You can use this REST API call to view performance counter values for a specific counter manager instance in the table. In this example, we request performance counter information for one of the power supplies in the system:
+
+You can use this REST API call to view performance counter values for a specific counter manager instance in the table. In this example, the performance counter information for one of the power supplies in the system is requested.
 
 .Curl example
 [%collapsible%open]
 ====
 [source,curl]
 ----
-curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/power-01:0b'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/power-01:0b'
 ----
 ====
 
@@ -329,48 +208,6 @@ curl -X GET -u admin:<PASSWORD> -k 'https://<ONTAP_IP_ADDRESS>/api/cluster/count
 ====
 [source,json]
 ----
-{
-  "counter_table": {
-    "name": "host_adapter"
-  },
-  "id": "power-01:0b",
-  "properties": [
-    {
-      "name": "node.name",
-      "value": "power-01"
-    }
-  ],
-  "counters": [
-    {
-      "name": "total_read_ops",
-      "value": 3600516
-    },
-    {
-      "name": "total_write_ops",
-      "value": 3591536
-    },
-    {
-      "name": "bytes_read",
-      "value": 86354320000
-    },
-    {
-      "name": "bytes_written",
-      "value": 480863081920
-    },
-    {
-      "name": "max_link_data_rate",
-      "value": 375000
-    },
-    {
-      "name": "rscn_count",
-      "value": 0
-    }
-  ],
-  "_links": {
-    "self": {
-      "href": "/api/cluster/counter/tables/host_adapter/rows/power-01:0b"
-    }
-  }
-}
+{}
 ----
 ====
