@@ -92,6 +92,10 @@ Returns a collection of rows from a named counter table.
 +
 Returns a specific row from a named counter table.
 
+.Related information
+
+* link:../reference/api_reference.html[API reference]
+
 === ONTAPI objects to REST tables
 
 NetApp provides extensive support for migrating your automation code from ONTAPI to the ONTAP REST API. This includes mapping documentation to identity the equivalent performance counter table available in the REST API for a given ONTAPI object.
@@ -139,7 +143,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ====
 
 .JSON output example
-[%collapsible%open]
+[%collapsible%closed]
 ====
 [source,json]
 ----
