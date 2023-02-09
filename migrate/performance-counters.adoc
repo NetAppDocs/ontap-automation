@@ -36,9 +36,9 @@ For example, if your ONTAP system has four physical disks, the `disk` table will
 
 You should prepare before using the ONTAP REST API to access the performance counters.
 
-=== Example of terformance counters organized in tables
+=== Example of performance counters organized in tables
 
-A subset of the ONTAPI objects is available through the ONTAP REST API and presented as tables. For example, the ONTAPI *hostadapter* object is available through the REST API as the *host_adpater* table. Each host adapter in the system is represented as a row in the table with its own set of performance counters.
+A subset of the ONTAPI objects is available through the ONTAP REST API and presented as tables. For example, the ONTAPI *hostadapter* object is presented through the REST API as the *host_adpater* table. Each host adapter in the system is a row with its own set of performance counters.
 
 |===
 |Instance name 6+|Performance counters
@@ -128,9 +128,9 @@ Each curl example includes one or more variables as indicated with capitals and 
 .Examples match endpoints
 The sequence of examples parallels the summary of the endpoints. See <<eps,Summary of the REST endpoints>> for more information.
 
-=== Available tables containing performance counters
+=== All performance counter tables
 
-You can use this REST API call to discover all of the counter manager tables available to query.
+You can use this REST API call to discover all the counter manager tables available to query.
 
 // --location --include
 .Curl example
@@ -151,7 +151,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ----
 ====
 
-=== Description and metadata for a specific performance counter table
+=== High-level information about a specific table
 
 You can use this REST API call to display the description and metadata for a specific table. The output includes the purpose of the table and what type of data each performance counter contains. The *host_adapter* table is used in this example.
 
@@ -173,7 +173,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ----
 ====
 
-=== Rows or instances in a specific performance counter table
+=== All rows in a specific table
 
 You can use this REST API call to view the rows in a table, which tells you what instances of the Counter Manager objects exist.
 
@@ -195,7 +195,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ----
 ====
 
-=== REORG: Query a specific counter manager instance
+=== A single row or instance in a specific table
 
 You can use this REST API call to view performance counter values for a specific counter manager instance in the table. In this example, the performance counter information for one of the power supplies in the system is requested.
 
