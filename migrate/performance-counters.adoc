@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping
-summary: xxx
+summary: The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as performance counters which you can use to assess the performance of your ONTAP system and help meet your performance goals.
 ---
 
 = Performance counters
@@ -20,13 +20,17 @@ The ONTAP Counter Manager maintains extensive information about the performance 
 You can access the ONTAP performance counters through two different APIs.
 
 [NOTE]
-The ONTAP REST API provides the preferred and strategic option when automating the administration of your ONTAP deployments. NetApp provides mapping documentation to support migration from ONTAPI to the REST API.
+The ONTAP REST API provides the preferred and strategic option when automating the administration of your ONTAP deployments.
 
 .ONTAPI API
-The ONTAPI API (also referred to as the Zephyr API or ZAPI) is available through the NetApp Network Manageability SDK. With ONTAPI the performance counters are defined as objects, each with one or more instances depending on the system configuration. For example, if your ONTAP system has four physical disks, there are four instances of the `disk` object, each with its own set of performance counters. You can use ONTAPI to access the individual counters for each disk instance. Prior to ONTAP 9.11.1, access to the full set of ONTAP Counter Manager objects is limited to the ONTAPI and ONTAP CLI interfaces.
+The ONTAPI API is available through the NetApp Network Manageability SDK. With ONTAPI, the performance counters are defined as objects. Each object can have one or more instances depending on the system configuration.
+
+For example, if your ONTAP system has four physical disks, there are four instances of the `disk` object, each with its own set of performance counters. You can use ONTAPI to access the individual counters for each disk instance. Access to the full set of ONTAP Counter Manager objects is also provided through the ONTAP CLI interface.
 
 .REST API
-Beginning with ONTAP 9.11.1, you can access the same data through the ONTAP REST API. With REST, the performance counters are organized as tables which are roughly equivalent to the ONTAPI objects. Each table row is equivalent to an object instances. For example, if your ONTAP system has four physical disks, the `disk` table contains four rows. Each of the rows can be individually accessed and contains its own set of performance counters available as fields or columns in the row.
+Beginning with ONTAP 9.11.1, you can access the same data through the ONTAP REST API. With the REST API, the performance counters are organized into tables which are roughly equivalent to the ONTAPI objects. Each table row is equivalent to an instance of an object when using ONTAPI.
+
+For example, if your ONTAP system has four physical disks, the `disk` table contains four rows. Each of the rows can be accessed individually and contains its own set of performance counters available as fields or columns in the row.
 
 == Preparing to use the REST API
 
@@ -34,14 +38,14 @@ You should prepare before using the ONTAP REST API to access the performance cou
 
 === Performance counters organized in tables
 
-A subset of the ONTAPI objects are available as tables through the ONTAP REST API. A simple example is presented below to illustrate this organization.
+A subset of the ONTAPI objects is available as tables through the ONTAP REST API. A simple example is presented below to illustrate this organization.
 
 The ONTAPI *hostadapter* object is now available as the *host_adpater* table through the REST API. There are several host adapters in the system and each host adapter has its own performance counters.
 
 //|Instance name 6+|REST counters
 //[cols="25,75"*,options="header"]
 //[cols="1,6",options="header"]
-[cols="20,80"*,options="header"]
+|Instance name 6+|Performance counters
 |===
 |Instance name
 |Performance counters
@@ -50,21 +54,37 @@ The ONTAPI *hostadapter* object is now available as the *host_adpater* table thr
 |total_read_ops_1
 |total_write_ops_1
 |bytes_read_1
-|bytes_written
+|bytes_written_1
 |max_link_data_rate_1
 |rscn_count_1
 
+|host_adapter_2
+|total_read_ops_2
+|total_write_ops_2
+|bytes_read_2
+|bytes_written_2
+|max_link_data_rate_2
+|rscn_count_2
 |===
 
 === Summary of the REST endpoints
 
 xxx
 
-=== ONTAPI objects to REST tables
-
+/cluster/counter/tables::
 xxx
 
+/cluster/counter/tables/{name}::
+xxx
 
+=== ONTAPI objects to REST tables
+
+NetApp provides extensive support for migrating your automation code from ONTAPI to the ONTAP REST API. This includes mapping documentation to identity the equivalent performance counter table in the REST API for a given ONTAPI object.
+
+See the appropriate documentation based on the ONTAP release you are using:
+
+* https://docs.netapp.com/us-en/ontap-pcmap-9121/[ONTAP 9.12.1 performance counter mapping^]
+* https://docs.netapp.com/us-en/ontap-pcmap-9111/[ONTAP 9.11.1 performance counter mapping^]
 
 >>>
 The ONTAP Counter Manager allows ONTAP users to access performance counter information and export many different ONTAP performance counter metrics.
