@@ -136,7 +136,7 @@ You can use this REST API call to discover all the available counter manager tab
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables'
 ----
 ====
 
@@ -735,7 +735,7 @@ You can use this REST API call to display the description and metadata for a spe
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
 ----
 ====
 
@@ -809,7 +809,7 @@ You can use this REST API call to view all the rows in a table. This indicates w
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
 ----
 ====
 
@@ -856,7 +856,7 @@ You can use this REST API call to view performance counter values for a specific
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01'
+curl --request GET --user admin:<PASSWORD> 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01'
 ----
 ====
 
