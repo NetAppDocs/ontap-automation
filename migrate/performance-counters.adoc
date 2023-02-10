@@ -849,9 +849,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 
 === Example 4: Single row in a specific table
 
-You can use this REST API call to view performance counter values for a specific counter manager instance in the table.
-
-XXX: In this example, the performance counter information for one of the power supplies in the system is requested.
+You can use this REST API call to view performance counter values for a specific counter manager instance in the table. In this example, the performance data for one of the host adapters is requested.
 
 .Curl example
 [%collapsible%open]
