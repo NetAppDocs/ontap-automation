@@ -124,7 +124,7 @@ All of the examples included below can only be used to retrieve information with
 Each curl example includes one or more variables as indicated with capitals and bracketed text. Make sure to replace these variables with actual values as appropriate for your environment.
 
 .Examples match endpoints
-The sequence of examples parallels the summary of the endpoints. See <<eps,Summary of the REST endpoints>> for more information.
+The sequence of examples below illustrates how to use the REST endpoints available for retrieving the performance counters. See <<eps,Summary of the REST endpoints>> for more information.
 
 === Example 1: All performance counter tables
 
@@ -802,7 +802,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 
 === Example 3: All rows in a specific table
 
-You can use this REST API call to view the rows in a table, which tells you what instances of the Counter Manager objects exist.
+You can use this REST API call to view all the rows in a table. This indicates what instances of the Counter Manager objects exist.
 
 .Curl example
 [%collapsible%open]
