@@ -94,7 +94,7 @@ Returns a collection of rows from a named counter table.
 +
 Returns a specific row from a named counter table.
 
-=== ONTAPI objects to REST tables
+=== Migrating ONTAPI objects to REST tables
 
 NetApp provides extensive support for migrating your automation code from ONTAPI to the ONTAP REST API. This includes mapping documentation to identity the equivalent performance counter table available in the REST API for a given ONTAPI object.
 
@@ -726,16 +726,16 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ----
 ====
 
-=== High-level information about a specific table
+=== Example 2: High-level information about a specific table
 
-You can use this REST API call to display the description and metadata for a specific table. The output includes the purpose of the table and what type of data each performance counter contains. The *host_adapter* table is used in this example.
+You can use this REST API call to display the description and metadata for a specific table. The output includes the purpose of the table and what type of data each performance counter contains. The *disk* table is used in this example.
 
 .Curl example
 [%collapsible%open]
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/disk'
 ----
 ====
 
@@ -748,7 +748,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ----
 ====
 
-=== All rows in a specific table
+=== Example 3: All rows in a specific table
 
 You can use this REST API call to view the rows in a table, which tells you what instances of the Counter Manager objects exist.
 
@@ -757,7 +757,7 @@ You can use this REST API call to view the rows in a table, which tells you what
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/disk/rows'
 ----
 ====
 
@@ -770,7 +770,7 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ----
 ====
 
-=== A single row or instance in a specific table
+=== Example 4: A single row or instance in a specific table
 
 You can use this REST API call to view performance counter values for a specific counter manager instance in the table. In this example, the performance counter information for one of the power supplies in the system is requested.
 
@@ -779,7 +779,7 @@ You can use this REST API call to view performance counter values for a specific
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/power-01:0b'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/disk/rows/disk-01'
 ----
 ====
 
