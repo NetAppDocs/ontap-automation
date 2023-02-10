@@ -38,7 +38,7 @@ For example, if your ONTAP system has four physical disks, the `disk` table will
 
 You should prepare before using the ONTAP REST API to access the performance counters.
 
-=== Example of performance counters organized in tables
+=== Performance counters organized in tables
 
 A subset of the ONTAPI objects is available through the ONTAP REST API and presented as tables. For example, the ONTAPI *hostadapter* object is presented through the REST API as the *host_adpater* table. Each host adapter in the system is a row with its own set of performance counters.
 
@@ -94,7 +94,7 @@ Returns a collection of rows from a named counter table.
 +
 Returns a specific row from a named counter table.
 
-=== Migrating ONTAPI objects to REST tables
+=== Migrating from ONTAPI to the REST API
 
 NetApp provides extensive support for migrating your automation code from ONTAPI to the ONTAP REST API. This includes mapping documentation to identity the equivalent performance counter table available in the REST API for a given ONTAPI object.
 
@@ -128,7 +128,7 @@ The sequence of examples parallels the summary of the endpoints. See <<eps,Summa
 
 === Example 1: All performance counter tables
 
-You can use this REST API call to discover all the counter manager tables available to query.
+You can use this REST API call to discover all the available counter manager tables.
 
 // --location --include
 .Curl example
@@ -728,14 +728,14 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 
 === Example 2: High-level information about a specific table
 
-You can use this REST API call to display the description and metadata for a specific table. The output includes the purpose of the table and what type of data each performance counter contains. The *disk* table is used in this example.
+You can use this REST API call to display the description and metadata for a specific table. The output includes the purpose of the table and what type of data each performance counter contains. The *host_adapter* table is used in this example.
 
 .Curl example
 [%collapsible%open]
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/disk'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter'
 ----
 ====
 
@@ -744,7 +744,59 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ====
 [source,json]
 ----
-{}
+{
+  "name": "host_adapter",
+  "description": "The host_adapter table reports activity on the Fibre Channel, Serial Attached SCSI, and parallel SCSI host adapters the storage system uses to connect to disks and tape drives.",
+  "counter_schemas": [
+    {
+      "name": "bytes_read",
+      "description": "Bytes read through a host adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "bytes_written",
+      "description": "Bytes written through a host adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "max_link_data_rate",
+      "description": "Max link data rate in Kilobytes per second for a host adapter",
+      "type": "raw",
+      "unit": "kb_per_sec"
+    },
+    {
+      "name": "node.name",
+      "description": "System node name",
+      "type": "string",
+      "unit": "none"
+    },
+    {
+      "name": "rscn_count",
+      "description": "Number of RSCN(s) received by the FC HBA",
+      "type": "raw",
+      "unit": "none"
+    },
+    {
+      "name": "total_read_ops",
+      "description": "Total number of reads on a host adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    },
+    {
+      "name": "total_write_ops",
+      "description": "Total number of writes on a host adapter",
+      "type": "rate",
+      "unit": "per_sec"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter"
+    }
+  }
+}
 ----
 ====
 
@@ -757,7 +809,7 @@ You can use this REST API call to view the rows in a table, which tells you what
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/disk/rows'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows'
 ----
 ====
 
@@ -766,20 +818,47 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ====
 [source,json]
 ----
-{}
+{
+  "records": [
+    {
+      "id": "dmp-adapter-01",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01"
+        }
+      }
+    },
+    {
+      "id": "dmp-adapter-02",
+      "_links": {
+        "self": {
+          "href": "/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-02"
+        }
+      }
+    }
+  ],
+  "num_records": 2,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows"
+    }
+  }
+}
 ----
 ====
 
-=== Example 4: A single row or instance in a specific table
+=== Example 4: Single row in a specific table
 
-You can use this REST API call to view performance counter values for a specific counter manager instance in the table. In this example, the performance counter information for one of the power supplies in the system is requested.
+You can use this REST API call to view performance counter values for a specific counter manager instance in the table.
+
+XXX: In this example, the performance counter information for one of the power supplies in the system is requested.
 
 .Curl example
 [%collapsible%open]
 ====
 [source,curl]
 ----
-curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/disk/rows/disk-01'
+curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS>/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01'
 ----
 ====
 
@@ -788,6 +867,48 @@ curl --request GET --user admin:<PASSWORD> --insecure 'https://<ONTAP_IP_ADDRESS
 ====
 [source,json]
 ----
-{}
+{
+  "counter_table": {
+    "name": "host_adapter"
+  },
+  "id": "dmp-adapter-01",
+  "properties": [
+    {
+      "name": "node.name",
+      "value": "dmp-node-01"
+    }
+  ],
+  "counters": [
+    {
+      "name": "total_read_ops",
+      "value": 25098
+    },
+    {
+      "name": "total_write_ops",
+      "value": 48925
+    },
+    {
+      "name": "bytes_read",
+      "value": 1003799680
+    },
+    {
+      "name": "bytes_written",
+      "value": 6900961600
+    },
+    {
+      "name": "max_link_data_rate",
+      "value": 0
+    },
+    {
+      "name": "rscn_count",
+      "value": 0
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/cluster/counter/tables/host_adapter/rows/dmp-adapter-01"
+    }
+  }
+}
 ----
 ====
