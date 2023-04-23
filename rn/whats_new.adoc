@@ -15,6 +15,10 @@ summary: NetApp periodically updates the ONTAP REST API to bring you new feature
 [.lead]
 NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 
+== ONTAP 9.13.1
+
+xxx
+
 == ONTAP 9.12.1
 
 ONTAP 9.12.1 continues to expand the capabilities of the ONTAP REST API with over forty new API calls. These endpoints support new ONTAP features as well as enhancements to existing features. This release focuses on improvements to security and NAS capabilities.
