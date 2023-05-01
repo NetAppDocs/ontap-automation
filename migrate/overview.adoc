@@ -5,7 +5,7 @@ keywords: ONTAPI, migrate, migrate to REST API
 summary: If you are using the ONTAPI API, you are encouraged to begin migrating to the ONTAP REST API.
 ---
 
-= Overview
+= ONTAPI disablement
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,11 @@ summary: If you are using the ONTAPI API, you are encouraged to begin migrating 
 :imagesdir: ../media/
 
 [.lead]
-If you are using the ONTAPI API, you are encouraged to begin migrating to the ONTAP REST API. There are many helpful resources and tools available to support your migration.
+The ONTAPI API (ZAPI) is the original set of proprietary calls included with the NetApp ONTAP software to support the automation of data storage administration and management tasks. The ONTAPI interface will be disabled in future versions of ONTAP. If you are using the ONTAPI API, you should plan your migration to the ONTAP REST API.
 
-[NOTE]
-NetApp first introduced the REST API with ONTAP 9.6. Since then the API has continued to expand and mature. It now provides the preferred and strategic alternative to ONTAPI when automating the administration of your ONTAP deployments.
+NetApp first introduced the REST API with ONTAP 9.6. Since then the API has continued to expand and mature. It now provides the preferred and strategic option when automating the administration of your ONTAP deployments. There are many helpful resources and tools available to support your migration.
+
+.Related information
+
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html[CPC-00410 End of availability: ONTAPI^]
+* https://devnet.netapp.com/restapi.php[NetApp DevNet: ONTAP REST API^]

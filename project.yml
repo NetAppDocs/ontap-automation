@@ -58,6 +58,16 @@ homepage:
           url: /automate/ontap_ansible.html
         - title: Automation blogs
           url: /automate/blogs.html
+    - title: Migrate to the REST API
+      links:
+        - title: ONTAPI disablement
+          url: /migrate/overview.html
+        - title: ONTAPI to REST mapping
+          url: /migrate/mapping.html
+        - title: Performance counters
+          url: /migrate/performance-counters.html
+        - title: Blog articles
+          url: /migrate/blogs.html
     - title: More resources
       links:
         - title: Get more information
@@ -68,7 +78,3 @@ homepage:
           url: https://docs.netapp.com/us-en/ontap/
         - title: ONTAP Select docs
           url: https://docs.netapp.com/us-en/ontap-select/
-    - title: Migrate to REST API
-      links:
-        - title: Overview
-          url: /migrate/overview.html
