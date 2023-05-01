@@ -68,3 +68,7 @@ homepage:
           url: https://docs.netapp.com/us-en/ontap/
         - title: ONTAP Select docs
           url: https://docs.netapp.com/us-en/ontap-select/
+    - title: Migrate to REST API
+      links:
+        - title: Overview
+          url: /migrate/overview.html
