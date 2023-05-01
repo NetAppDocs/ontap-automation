@@ -7,5 +7,7 @@ entries:
     url: /migrate/mapping.html
   - title: Performance counters
     url: /migrate/performance-counters.html
-  - title: Blogs
+  - title: Tools and software
+    url: /migrate/software.html
+  - title: Blog articles
     url: /migrate/blogs.html

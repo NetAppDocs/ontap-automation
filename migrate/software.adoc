@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: migrate/software.html
+keywords:
+summary:
+---
+
+= Tools and software
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+xxx
