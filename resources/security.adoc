@@ -87,7 +87,7 @@ These endpoints allow you to retrieve and update the configurations for key mana
 
 .Key managers
 
-A key manager allows client modules within ONTAP to securely stored keys. This resource type was introduced with ONTAP 9.6 and updated for ONTAP 9.7. There was another update with ONTAP 9.12 to support authentication keys.
+A key manager allows client modules within ONTAP to securely stored keys. This resource type was introduced with ONTAP 9.6 and updated for ONTAP 9.7. There was another update with ONTAP 9.12 to support authentication keys. A restore capability was added with ONTAP 9.13.
 
 .Key stores
 
@@ -146,3 +146,7 @@ These calls allow you to set the SSH configuration. This resource type was intro
 .SSH SVMs
 
 These endpoints allow you to retrieve the SSH security configuration for all SVMs. This resource type was introduced with ONTAP 9.10.
+
+.TOTPS
+
+You can use the REST API to configure time-based one-time password (TOTP) profiles for accounts that sign in and access ONTAP using SSH. This resource type was introduced with ONTAP 9.13.

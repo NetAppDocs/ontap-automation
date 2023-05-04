@@ -101,7 +101,11 @@ The peer objects represent endpoints and support the cluster peering relationshi
 
 .Performance counters
 
-Previous ONTAP releases have maintained statistical information about the operational characteristics of the system. With the 9.11.1 release, the information has been enhanced and is now available through the REST API. This feature brings the ONTAP REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI). This resource type was introduced with ONTAP 9.11.1.
+Previous ONTAP releases have maintained statistical information about the operational characteristics of the system. With the 9.11.1 release, the information has been enhanced and is now available through the REST API. This feature brings the ONTAP REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI). This resource type was introduced with ONTAP 9.11.
+
+.Resource tags
+
+You can use tags to group REST API resources. You might do this to associate related resources within a specific project or organizational group. Using tags can help to organize and track resources more effectively. This resource type was introduced with ONTAP 9.13.
 
 .Schedules
 

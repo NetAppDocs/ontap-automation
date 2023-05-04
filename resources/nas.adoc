@@ -33,7 +33,7 @@ You can retrieve a list of the established CIFS connections. This resource type 
 
 .CIFS domains
 
-Support for CIFS domains has been added at the cluster and SVM level with several categories of endpoints. You can retrieve the domain configuration as well as create and remove preferred domain controllers. This resource type is new with ONTAP 9.10.
+Support for CIFS domains has been added at the cluster and SVM level with several categories of endpoints. You can retrieve the domain configuration as well as create and remove preferred domain controllers. This resource type is new with ONTAP 9.10 and enhanced with ONTAP 9.13.
 
 .CIFS group policies
 
