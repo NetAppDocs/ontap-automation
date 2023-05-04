@@ -15,6 +15,38 @@ summary: NetApp periodically updates the ONTAP REST API to bring you new feature
 [.lead]
 NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 
+== ONTAP 9.13.1
+
+ONTAP 9.13.1 continues to expand the capabilities of the ONTAP REST API with over two dozen new API calls. These endpoints support new ONTAP features as well as enhancements to existing features. This release focuses on improvements to security, resource management, enhanced SVM configuration options, and performance metrics.
+
+Resource tagging::
+
+You can use tags to group REST API resources. You might do this to associate related resources within a specific project or organizational group. Using tags can help to organize and track resources more effectively.
+
+Consistency groups::
+
+ONTAP 9.13.1 continues to expand the availability of performance counter data. You can now access this type of statistical information to track historical performance and capacity for consistency groups. In addition, enhancements have been included that allow the parent-child relationships among consistency groups to be configured and managed.
+
+DNS configuration per SVM::
+
+The existing DNS endpoints have been expanded to allow DNS domain and server configuration to be performed for individual SVMs.
+
+EMS role configuration::
+
+The existing EMS support feature has been expanded to allow for the management of roles and the access control configuration assigned to the roles. This provides the ability to limit or filter the events and messages based on the role configuration.
+
+Security::
+
+You can use the REST API to configure the time-based one-time password (TOTP) profiles for accounts that sign in and access ONTAP using SSH. In addition, the key manager endpoints have been expanded to provide a restore operation from a specified key management server.
+
+CIFS configuration per SVM::
+
+The existing CIFS endpoints have been expanded to allow the configuration for a specific SVM to be updated.
+
+S3 bucket rules::
+
+The existing S3 bucket endpoints have been expanded to include a rule definition. Each rule is a list objects and defines the set of actions to be performed on an object within the bucket. Collectively these rules allow you to better manage the lifecycle of your S3 buckets.
+
 == ONTAP 9.12.1
 
 ONTAP 9.12.1 continues to expand the capabilities of the ONTAP REST API with over forty new API calls. These endpoints support new ONTAP features as well as enhancements to existing features. This release focuses on improvements to security and NAS capabilities.
