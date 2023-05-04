@@ -13,4 +13,37 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-xxx
+NetApp provides sample Python scripts and other related software to support your migration from ONTAPI to the ONTAP REST API. The most important of these samples are described below.
+
+[NOTE]
+All the Python code samples are available at the https://github.com/NetApp/ontap-rest-python[NetApp ONTAP REST Python^] GitHub repository.
+
+.ONTAPI reporting tool
+
+The ONTAPI reporting tool is designed to help NetApp professional services, customers, and partners identify the ONTAPI usage in their ONTAP environment. Scripts are provided for three different use cases as shown in the table below.
+
+[cols="20,80"*,options="header"]
+|===
+|Script |Description
+
+|apache_scraper.py
+|An Apache log scraper to find the ONTAPI calls issued against the ONTAP nodes
+|session_stats.py
+|A CLI script to retrieve session statistics data from ONTAP
+|zapi_to_rest.py
+|A script to extract the REST details of the ONTAPI calls and attributes passed
+|===
+
+See https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool[ONTAPI usage reporting tool^] for more information.
+
+.Private CLI passthrough
+
+The REST API provides broad coverage of the features and facilities available with ONTAP. However, there may be instances when direct access to the ONTAP CLI through the REST API can be useful.
+
+For an introduction to this feature, see link:../rest/access_ontap_cli.html[Access the ONTAP CLI through the REST API]. For the Python samples see https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples[REST CLI passthrough samples^].
+
+.Python client library
+
+The Python client library is a package you can install and use to access the ONTAP REST API. It allows you to quickly develop robust code for ONTAP automation.
+
+For an introduction to the Python client library, see link:../python/overview_pcl.html[Overview of the Python client library]. For the Python samples see https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library[PCL examples^].
