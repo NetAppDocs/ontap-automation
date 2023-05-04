@@ -27,7 +27,7 @@ A role is a set of privileges that collectively define what actions the user can
 There are two types of roles. They were introduced and tailored to different environments as ONTAP has evolved.
 
 [NOTE]
-There are advantages and disadvantages when using each type of role. See link:../rest/work_roles_users.html#comparing-the-role-types[Comparing the role types] for more information.
+There are advantages and disadvantages when using each type of role. See link:../rest/rbac_roles_users.html#comparing-the-role-types[Comparing the role types] for more information.
 
 [cols="20,80"*,options="header"]
 |===

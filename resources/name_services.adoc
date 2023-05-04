@@ -25,7 +25,7 @@ You can display the Dynamic DNS (DDNS) information and manage the DDNS subsystem
 
 .DNS
 
-DNS supports the integration of the ONTAP cluster in your network. This resource type was introduced with ONTAP 9.6.
+DNS supports the integration of the ONTAP cluster in your network. This resource type was introduced with ONTAP 9.6 and enhanced with ONTAP 9.13.
 
 .Host record
 

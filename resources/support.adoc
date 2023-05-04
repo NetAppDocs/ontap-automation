@@ -71,6 +71,10 @@ An EMS filter instance is a collection of rules that are applied to the events. 
 
 Provides access to the EMS event catalog. This resource type was introduced with ONTAP 9.6.
 
+.EMS role configuration
+
+The EMS support feature allows for the management of roles and the access control configuration assigned to the roles. This provides the ability to limit or filter the events and messages based on the role configuration. This resource type was introduced with ONTAP 9.13.
+
 .EMS rules for filter instance
 
 A list of rules can be managed for a specific instance of an EMS filter. This resource type was introduced with ONTAP 9.6.

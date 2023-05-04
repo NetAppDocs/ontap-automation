@@ -37,6 +37,6 @@ See the _NetApp Developer Network_ for links to documentation and other resource
 
 .Related information
 
-* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.10.1^]
-* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html[NetApp PCL documentation for 9.10.1^]
+* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.13.1^]
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html[NetApp PCL documentation for 9.13.1^]
 * https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]
