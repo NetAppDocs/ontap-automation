@@ -20,7 +20,7 @@ All the Python code samples are available at the https://github.com/NetApp/ontap
 
 .ONTAPI reporting tool
 
-The ONTAPI reporting tool is designed to help NetApp professional services, customers, and partners identify the ONTAPI usage in their ONTAP environment. Scripts are provided for three different use cases as shown in the table below.
+The ONTAPI reporting tool is designed to help NetApp professional services, customers, and partners identify the ONTAPI usage in their ONTAP environment. Scripts are provided for three different use cases as described in the table below.
 
 [cols="20,80"*,options="header"]
 |===
@@ -44,6 +44,6 @@ For an introduction to this feature, see link:../rest/access_ontap_cli.html[Acce
 
 .Python client library
 
-The Python client library is a package you can install and use to access the ONTAP REST API. It allows you to quickly develop robust code for ONTAP automation.
+The Python client library is a package you can install and use to access the ONTAP REST API. It allows you to quickly develop robust code for the automation of your ONTAP deployments.
 
-For an introduction to the Python client library, see link:../python/overview_pcl.html[Overview of the Python client library]. For the Python samples see https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library[PCL examples^].
+For an introduction to the Python client library, see link:../python/overview_pcl.html[Overview of the Python client library]. For the Python samples see https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library[Python client library examples^].
