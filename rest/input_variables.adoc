@@ -79,7 +79,7 @@ In addition to an exact match, other operators are available to return a set of 
 |Greater than
 |\<=
 |Less than or equal to
-|>=
+|\>=
 |Greater than or equal to
 |UPDATE
 |Or
@@ -152,7 +152,7 @@ The number of objects actually returned can be less than the maximum in effect, 
 Narrowing the result set::
 If needed, you can combine these two parameters with additional query parameters to narrow the result set. For example, the following returns up to 10 ems events generated after the specified time:
 +
-`time>= 2018-04-04T15:41:29.140265Z&max_records=10`
+`time\=> 2018-04-04T15:41:29.140265Z&max_records=10`
 +
 You can issue multiple requests to page through the objects. Each subsequent API call should use a new time value based on the latest event in the last result set.
 
