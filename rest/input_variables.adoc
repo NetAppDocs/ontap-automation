@@ -79,7 +79,7 @@ In addition to an exact match, other operators are available to return a set of 
 |Greater than
 |\<=
 |Less than or equal to
-|\>=
+|>=
 |Greater than or equal to
 |UPDATE
 |Or
