@@ -7,3 +7,7 @@ entries:
       url: /workflows/wf_get_cluster.html
     - title: Update cluster contact
       url: /workflows/wf_update_cluster_contact.html
+  - title: SVM
+    entries:
+    - title: List SVMs
+      url: /workflows/wf_list_svms.html

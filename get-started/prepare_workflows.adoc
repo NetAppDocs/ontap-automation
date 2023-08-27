@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: get-started/prepare_workflows.html
 keywords: workflows, preparation, prepare to use workflows
-summary: You should prepare before using the workflow processes.
+summary: You should be familiar with the organization and format of the ONTAP workflows before using them with a live deployment.
 ---
 
 = Prepare to use the workflows
@@ -13,27 +13,46 @@ summary: You should prepare before using the workflow processes.
 :imagesdir: ./media/
 
 [.lead]
-You should prepare before using the workflow processes.
+You should be familiar with the organization and format of the ONTAP workflows before using them with a live deployment.
 
-=== Understanding the API calls used in the workflows
+== Introduction
 
-The ONTAP API online documentation page includes the details of every REST API call. Rather than repeat those details here, each API call used in the workflow samples includes only the information you need to locate the call on the documentation page. After locating a specific API call, you can review the complete details of the call, including the input parameters, output formats, HTTP status codes, and request processing type.
+A _workflow_ is a sequence of one or more steps needed to accomplish a specific administrative task or goal. Each step in an ONTAP workflow is one of the following:
 
-The following information is included for each API call within a workflow to help locate the call on the documentation page:
+* REST API call (with details such as curl and JSON examples)
+* Invocation of another ONTAP workflow
+* Miscellaneous related task (such as making a required design decision)
 
-* Category
-+
-The API calls are organized on the documentation page into functionally related areas or categories. To locate a specific API call, scroll to the bottom of the page and click the applicable API category.
+The workflows include the core steps and parameters needed to accomplish each task. They provide a starting point for customizing your automation environment. See the link:../reference/api_reference.html[API reference] for more details about each of the REST API calls.
 
-* HTTP method
-+
-The HTTP method identifies the action performed on a resource. Each API call is executed through a single HTTP method.
+== Common input parameters
 
-* Path
-+
-The path determines the specific resource which the action applies to as part of performing a call. The path string is appended to the core URL to form the complete URL identifying the resource.
+The input parameters described below are common to all the curl samples used to illustrate a REST API call.
 
-=== Constructing a URL to directly access the REST API
+[NOTE]
+Because these input parameters are universally required, they are not described further in the individual workflows. If additional input parameters are used for a specific curl example, they are described in the section *Additional input parameters*.
+
+=== Path parameters
+
+The endpoint path used with every REST API call includes the following parameters. Also see link:../rest-core/url_format.html[URL format] for more information.
+
+Account ID::
+This is the UUIDv4 value identifying the Astra account where the API operation runs. See link:../get-started/get_api_token.html[Get an API token] for more information about locating your account ID.
+
+=== Request headers
+
+There are several request headers that you may need to include depending on the REST API call.
+
+Authorization::
+All the API calls in the workflows need an API token to identify the user. You must include the token in the `Authorization` request header. See link:../get-started/get_api_token.html[Get an API token] for more information about generating an API token.
+
+Content type::
+With the HTTP POST and PUT requests where JSON is included in the request body, you should declare the media type based on the Astra resource. For example, you can include the header `Content-Type: application/astra-appSnap+json` when creating a snapshot for a managed application.
+
+Accept::
+You can declare the specific media type of the content you expect in the response based on the Astra resource. For example, you can include the header `Accept: application/astra-appBackup+json` when listing the backups for a managed application. However, for simplicity the curl samples in the workflows accept all media types.
+
+== Constructing a URL to directly access the REST API
 
 In addition to the ONTAP documentation page, you can also access the ONTAP REST API directly through a programming language such as Python. In this case, the core URL is slightly different than the URL used when accessing the online documentation page. When accessing the API directly, you must append `/api` to the domain and port string. For example: `https://ontap.mycompany.com/api`
 
@@ -41,3 +60,32 @@ In addition to the ONTAP documentation page, you can also access the ONTAP REST 
 
 * link:../rest/access_rest_api.html[How to access the ONTAP API]
 * link:../resources/overview_categories.html[Summary of the REST resources]
+
+== Variable format and use with Bash
+//Presentation of tokens and identifiers
+
+>> REWRITE, ADD BASH
+
+The API token and other ID values used with the curl examples are opaque with no discernible meaning. And so to improve the readability of the samples, the actual token and ID values are not used. Rather, smaller reserved keywords are used which has several benefits:
+
+* The curl and JSON samples are clearer and easier to understand.
+* Because all the keywords use the same format with brackets and capital letters, you can quickly identify the location and content to insert or extract.
+* No value is lost because the original parameters cannot be copied and used with an actual deployment.
+
+Here are some of the common reserved keywords used in the curl examples. This list is not exhaustive and additional keywords are used as needed. Their meaning should be obvious based on the context.
+
+[cols="25,15,60"*,options="header"]
+|===
+|Keyword
+|Type
+|Description
+|$CLUSTER_ID
+|Path
+|The UUIDv4 value identifying the account where the API operation runs.
+|$SVM_ID
+|Path
+|The UUIDv4 value identifying the application for the API call.
+|$API_TOKEN
+|Header
+|The bearer token identifying and authorizing the caller.
+|===

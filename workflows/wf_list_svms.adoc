@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_list_svms.html
+keywords: workflow
+summary: 
+---
+
+= List the SVMs
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+MUST UPDATE

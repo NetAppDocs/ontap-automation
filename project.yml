@@ -37,7 +37,7 @@ homepage:
         - title: ONTAP automation options
           url: /get-started/ontap_automation_options.html
         - title: Prepare to use the REST API
-          url: /get-started/prepare.html
+          url: /get-started/prepare_rest.html
         - title: Your first API call
           url: /get-started/first_call.html
     - title: ONTAP REST API
