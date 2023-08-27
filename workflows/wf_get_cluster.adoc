@@ -5,7 +5,7 @@ keywords: workflow
 summary: 
 ---
 
-= Get cluster configuration
+= Get the cluster configuration
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,4 +13,57 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-MUST UPDATE
+You can retrieve the configuration for a specific ONTAP cluster. You might do this as part of assessing the state of the cluster or before updating the configuration.
+
+.HTTP method and endpoint
+
+This API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/account/{account_id}/k8s/v2/apps
+|===
+
+.Additional input parameters
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|include
+|Query
+|No
+|Optionally select the values you want returned in the response.
+|===
+
+.Curl example
+[source,curl]
+curl --location -i --request GET "https://$FQDN_IP/api/cluster" \
+--header "Accept: */*" \
+--header "Authorization: Basic YWRtaW46cGV0ZXJzb24=""
+
+.JSON output example
+----
+{
+    "items": [
+        [
+            "mysql",
+            "4ee2b8fa-3696-4f32-8879-399792f477c3",
+            "ready"
+        ],
+        [
+            "postgresql",
+            "3b984474-e5c9-4b64-97ee-cdeb9bcd212e",
+            "ready"
+        ],
+    ],
+    "metadata": {}
+}
+----

@@ -15,6 +15,9 @@ summary: You should be familiar with the organization and format of the ONTAP wo
 [.lead]
 You should be familiar with the organization and format of the ONTAP workflows before using them with a live deployment.
 
+>> Bash (see below)
+>> Authentication header or -u (if using basic auth)
+
 == Introduction
 
 A _workflow_ is a sequence of one or more steps needed to accomplish a specific administrative task or goal. Each step in an ONTAP workflow is one of the following:
@@ -79,6 +82,9 @@ Here are some of the common reserved keywords used in the curl examples. This li
 |Keyword
 |Type
 |Description
+|$FQDN_IP
+|URL
+|The fully qualified domain name or IP management address for the ONTAP cluster.
 |$CLUSTER_ID
 |Path
 |The UUIDv4 value identifying the account where the API operation runs.
