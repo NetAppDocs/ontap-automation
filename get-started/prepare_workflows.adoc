@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: workflows/prepare_workflows.html
+permalink: get-started/prepare_workflows.html
 keywords: workflows, preparation, prepare to use workflows
 summary: You should prepare before using the workflow processes.
 ---
