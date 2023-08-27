@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_1_update_cluster_contact.html
+permalink: workflows/wf_update_cluster_contact.html
 keywords: workflow
 summary: This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
 ---
 
-= Workflow 1: Update the cluster contact and check job state
+= Update the cluster contact and confirm job state
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,9 @@ summary: This workflow updates the cluster contact information. Because the requ
 :imagesdir: ./media/
 
 [.lead]
-This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
+This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job has completed successfully.
 
-=== 1. Update the contact information for the cluster
+== Step 1: Update the contact information for the cluster
 
 You can issue an API call to update the contact information. Because the request runs asynchronously, you must confirm success of the associated job.
 
@@ -52,9 +52,9 @@ A job object with the associated identifier is returned.
   }
 }
 
-=== 2. Retrieve the status of the job
+== Step 2: Retrieve the status of the job
 
-You must retrieve the state of the job to determine if the asynchronous request has completed successfully.
+You need to retrieve the state of the job to determine if the asynchronous request has completed successfully.
 
 |===
 |Category |HTTP method |Path
