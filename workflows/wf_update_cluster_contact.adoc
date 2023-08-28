@@ -19,10 +19,14 @@ This workflow updates the cluster contact information. Because the request is pr
 
 You can issue an API call to update the contact information. Because the request runs asynchronously, you must confirm success of the associated job.
 
-|===
-|Category |HTTP method |Path
+.HTTP method and endpoint
 
-|Cluster
+This API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
 |PATCH
 |/cluster
 |===
@@ -30,15 +34,23 @@ You can issue an API call to update the contact information. Because the request
 .Processing type
 Asynchronous
 
-.Curl
+.Curl example
 
 [source,curl,%autofill]
-curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01 'https://10.222.81.101/api/cluster'
+curl --location --include --request PATCH "https://$FQDN_IP/api/cluster" \
+--header "Content-Type: application/json" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,json]
 {
   "contact": "support@company-demo.com"
 }
 
-.JSON output
+.JSON output example
+
 A job object with the associated identifier is returned.
 
 [source,json,%autofill]
@@ -56,10 +68,14 @@ A job object with the associated identifier is returned.
 
 You need to retrieve the state of the job to determine if the asynchronous request has completed successfully.
 
-|===
-|Category |HTTP method |Path
+.HTTP method and endpoint
 
-|Cluster
+This API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
 |GET
 |/cluster/jobs/{uuid}
 |===
@@ -68,16 +84,17 @@ You need to retrieve the state of the job to determine if the asynchronous reque
 
 Synchronous
 
-.Curl
+.Curl example
 
 [source,curl,%autofill]
-curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'
+curl --location --include --request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+--header "Authorization: Basic $BASIC_AUTH"
 
-.Output
+.JSON output example
 
 A job object with the state and other fields is returned.
 
-[source,json,%autofill]
+----
 {
   "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
   "description": "PATCH /api/cluster",
@@ -90,3 +107,4 @@ A job object with the state and other fields is returned.
     }
   }
 }
+----

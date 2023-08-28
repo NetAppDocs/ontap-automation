@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_list_svms.html
-keywords: workflow
-summary: 
+keywords: workflow, SVM, list SVMs
+summary: You can list the Storage Virtual Machines (SVMs) defined within an ONTAP cluster. You might do this as part of finding the identifier for a specific SVM or to assure name uniqueness before creating a new SVM.
 ---
 
 = List the SVMs
@@ -13,4 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-MUST UPDATE
+You can list the Storage Virtual Machines (SVMs) defined within an ONTAP cluster. You might do this as part of finding the identifier for a specific SVM or to assure name uniqueness before creating a new SVM.

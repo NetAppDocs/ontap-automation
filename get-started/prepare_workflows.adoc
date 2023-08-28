@@ -68,6 +68,7 @@ In addition to the ONTAP documentation page, you can also access the ONTAP REST 
 //Presentation of tokens and identifiers
 
 >> REWRITE, ADD BASH
+>> Basic auth, show as header. But curl examples can also use user:pwd instead.
 
 The API token and other ID values used with the curl examples are opaque with no discernible meaning. And so to improve the readability of the samples, the actual token and ID values are not used. Rather, smaller reserved keywords are used which has several benefits:
 
@@ -91,7 +92,8 @@ Here are some of the common reserved keywords used in the curl examples. This li
 |$SVM_ID
 |Path
 |The UUIDv4 value identifying the application for the API call.
-|$API_TOKEN
+|$BASIC_AUTH
 |Header
-|The bearer token identifying and authorizing the caller.
+|The credentials string used for HTTP basic authentication. This user:password string is encoded using base64.
 |===
+//API_TOKEN
