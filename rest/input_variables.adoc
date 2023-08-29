@@ -40,6 +40,10 @@ Not all the HTTP methods are available at each of the REST endpoints. Also, both
 |Determine what HTTP methods are supported at a specific endpoint.
 |===
 
+== Path variables
+
+The endpoint path used with each REST API call can include various identifiers. Each ID corresponds to a specific resource instance. Examples include cluster ID and SVM ID.
+
 == Request headers
 
 You must include several headers in the HTTP request.
@@ -51,7 +55,9 @@ Accept::
 This header should be set to `application/hal+json`. If it is instead set to `application/json` none of the HAL links will be returned except a link needed to retrieve the next batch of records. If the header is anything else aside from these two values, the default value of the `content-type` header in the response will be `application/hal+json`.
 
 Authorization::
-Basic authentication must be set with the user name and password encoded as a base64 string.
+Basic authentication must be set with the user name and password encoded as a base64 string. For example:
++
+`Authorization: Basic YWRtaW46cGV0ZXJzb24=`.
 
 == Request body
 
