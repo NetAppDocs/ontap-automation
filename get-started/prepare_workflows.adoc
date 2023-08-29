@@ -29,11 +29,11 @@ Each step in an ONTAP workflow is one of the following types:
 
 .REST API call
 
-Most of the workflow steps are REST API calls. These API call steps are based on a common format. See the link:../reference/api_reference.html[API reference] for more details about the REST API calls.
+Most of the workflow steps are REST API calls. These API call steps are based on a common format. See the link:../reference/api_reference.html[API reference] for details about the REST API calls.
 
 .Single-step workflows
 
-A workflow can contain only one step. These *single-step workflows* are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The workflow action should be clear based on the workflow title.
+A workflow can contain only one step. These _single-step workflows_ are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The workflow action should be clear based on the workflow title.
 
 == Input variables and options when using Bash
 
@@ -42,14 +42,16 @@ The workflows are designed to be general so they can be used in any ONTAP enviro
 === URL format when directly accessing the REST API
 
 You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the core URL is slightly different than the URL used when accessing the ONTAP online documentation page. When accessing the API directly, you need to append `/api` to the domain (or IP address) and port string. For example:
-+
+
 `https://ontap.mycompany.com/api`
 
-See link:../rest/access_rest_api.html[How to access the ONTAP API] for more information.
+Also see link:../rest/access_rest_api.html[How to access the ONTAP API] for more information.
 
 === Common input parameters
 
-There are several input parameters that are used across most of the workflows. These common parameters are typically not described in the individual workflows. If additional parameters are needed for a specific curl example, they are described in the section *Additional input parameters for the curl example* in each workflow. See link:../rest/input_variables.html[Input variables controlling an API request] for more information.
+There are several input parameters that are used across most of the workflows. These common parameters are typically not described in the individual workflows.
+
+If additional parameters are needed for a specific curl example, they are described in the section *Additional input parameters for the curl example* in each workflow. See link:../rest/input_variables.html[Input variables controlling an API request] for more information.
 
 === Variable format
 
@@ -72,22 +74,18 @@ Here are some of the common reserved keywords used in the curl examples. This li
 |$CLUSTER_ID
 |Path
 |The UUIDv4 value identifying the account where the API operation runs.
-|$SVM_ID
-|Path
-|The UUIDv4 value identifying the application for the API call.
 |$BASIC_AUTH
 |Header
-|The credentials string used for HTTP basic authentication. This user:password string is encoded using base64.
+|The credentials string used for HTTP basic authentication. This string is encoded using base64.
 |===
 
 === Authentication options
 
-xxx
->> Basic auth, show as header. But curl examples can also use user:pwd instead.
+The primary authentication technique used for the REST API through ONTAP 9.13.1 is HTTP basic authentication. This involves encoding the user and password credentials in base 64 and sending the string with a Authorization request header with each request. When using HTTP basic authentication, the curl example includes an Authorization request with the *$BASIC_AUTH* variable.
 
-When using HTTP basic authentication, the curl example includes an Authorization request with the *$BASIC_AUTH* variable. But when using curl, you can remove this header and include the user parameter instead. For example, `--user username:password`
+When using curl, you can also remove this header and include the user parameter instead. For example, `--user username:password`. In this case, curl will generate and send the header for you.
 
-== Using the Bash shell
+== Using the curl examples with the Bash shell
 
 xxx
 >> Can review and adapt to your environment
@@ -95,8 +93,12 @@ xxx
 >> Tailored to be recognized
 >> Curl examples, variable format recognized by Bash, double quotes
 
-++ Open Bash shell such as Linux
-++ Set variables used in curl example
-++ Copy curl examples
-++ Paste into terminal
-++ Press ENTER key, will substitute variables
+.Steps
+
+. Open the Bash shell provided with Linux or similar operating system
+. Set the variable values used in curl example
++
+`CLUSTER_ID=xxx`
+. Copy the curl example from the workflow page
+. Paste the example into terminal
+. Press the _ENTER_ key which will substitute variable values and execute the command
