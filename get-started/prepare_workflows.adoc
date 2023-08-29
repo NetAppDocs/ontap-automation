@@ -35,7 +35,7 @@ Most of the workflow steps are REST API calls. These API call steps are based on
 
 A workflow can contain only one step. These _single-step workflows_ are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The workflow action should be clear based on the workflow title.
 
-== Input variables and options when using Bash
+== Input variables and authentication
 
 The workflows are designed to be general so they can be used in any ONTAP environment. The REST API calls use input variables which have been tailored for the Bash shell environment.
 
@@ -98,7 +98,7 @@ xxx
 . Open the Bash shell provided with Linux or similar operating system
 . Set the variable values used in curl example
 +
-`CLUSTER_ID=xxx`
+`CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
 . Copy the curl example from the workflow page
-. Paste the example into terminal
-. Press the _ENTER_ key which will substitute variable values and execute the command
+. Paste the example into CLI terminal
+. Press *ENTER* which will substitute variable values and execute the curl command
