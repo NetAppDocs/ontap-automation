@@ -27,13 +27,13 @@ Each step in an ONTAP workflow is one of the following types:
 * Invocation of another ONTAP workflow
 * Miscellaneous related task (such as making a configuration decision)
 
-.REST API call
+.REST API calls
 
-Most of the workflow steps are REST API calls. These API call steps are based on a common format. See the link:../reference/api_reference.html[API reference] for details about the REST API calls.
+Most of the workflow steps are REST API calls. These step types are based on a common format which includes curl examples and other information. See the link:../reference/api_reference.html[API reference] for details about the REST API calls.
 
 .Single-step workflows
 
-A workflow can contain only one step. These _single-step workflows_ are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The workflow action should be clear based on the workflow title.
+A workflow can contain only one step. These _single-step workflows_ are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The workflow action should be clear based on the title.
 
 == Input variables and authentication
 
@@ -41,17 +41,17 @@ The workflows are designed to be general so they can be used in any ONTAP enviro
 
 === URL format when directly accessing the REST API
 
-You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the core URL is slightly different than the URL used when accessing the ONTAP online documentation page. When accessing the API directly, you need to append `/api` to the domain (or IP address) and port string. For example:
+You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the core URL is different than the URL used when accessing the ONTAP online documentation or System Manager page. When accessing the API directly, you need to append `/api` to the domain (or IP address) and port string. For example:
 
 `https://ontap.mycompany.com/api`
 
-Also see link:../rest/access_rest_api.html[How to access the ONTAP API] for more information.
+See link:../rest/access_rest_api.html[How to access the ONTAP API] for more information about accessing the API.
 
 === Common input parameters
 
-There are several input parameters that are used across most of the workflows. These common parameters are typically not described in the individual workflows.
+There are several input parameters that are used across most of the workflows. These common parameters are typically not described in the individual workflows. See link:../rest/input_variables.html[Input variables controlling an API request] for more information.
 
-If additional parameters are needed for a specific curl example, they are described in the section *Additional input parameters for the curl example* in each workflow. See link:../rest/input_variables.html[Input variables controlling an API request] for more information.
+If additional parameters are needed for a specific curl example, they are described in the section *Additional input parameters for the curl example* for each workflow.
 
 === Variable format
 
@@ -81,24 +81,30 @@ Here are some of the common reserved keywords used in the curl examples. This li
 
 === Authentication options
 
-The primary authentication technique used for the REST API through ONTAP 9.13.1 is HTTP basic authentication. This involves encoding the user and password credentials in base 64 and sending the string with a Authorization request header with each request. When using HTTP basic authentication, the curl example includes an Authorization request with the *$BASIC_AUTH* variable.
+The primary authentication technique available for the use with the REST API through ONTAP 9.13.1 is basic authentication.
 
-When using curl, you can also remove this header and include the user parameter instead. For example, `--user username:password`. In this case, curl will generate and send the header for you.
+==== HTTP basic authentication
+
+When using basic authentication, the user credentials are included with every HTTP request. The user and password values are first concatenated with a colon and the entire string is encoded in base64. The string is then carried in an Authorization request header. The curl examples provided with the workflows include the header with the variable *$BASIC_AUTH*.
+
+[NOTE]
+When using a curl example to access the REST API, you can remove the Authorization header and add the user parameter instead. For example, you can specify `--user username:password` and curl will generate the header for you.
 
 == Using the curl examples with the Bash shell
 
-xxx
->> Can review and adapt to your environment
->> But can also use directly
->> Tailored to be recognized
->> Curl examples, variable format recognized by Bash, double quotes
+Each of the ONTAP workflows illustrates how to use the REST API to complete a specific task. You can review and adapt the curl examples to your automation development environment. You can also use the curl examples directly. This involves setting the variable values and then copying and pasting the curl command into the shell.
+
+[NOTE]
+The variables in the curl examples are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed, which makes them recognizable to Bash. Upper case is consistently used for the names allowing them to be easily located.
 
 .Steps
 
-. Open the Bash shell provided with Linux or similar operating system
-. Set the variable values used in curl example
+. Open the Bash shell provided with Linux or similar operating system.
+. Set the variable values used in curl example.
 +
 `CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
-. Copy the curl example from the workflow page
-. Paste the example into CLI terminal
-. Press *ENTER* which will substitute variable values and execute the curl command
+. Copy the curl example from the workflow page.
+. Paste the example into shell terminal.
+. Press *ENTER* which:
+.. Substitutes the variable values
+.. Executes the curl command
