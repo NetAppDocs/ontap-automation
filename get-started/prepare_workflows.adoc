@@ -39,7 +39,7 @@ A workflow can contain only one step. These _single-step workflows_ are formatte
 
 The workflows are designed to be general so they can be used in any ONTAP environment. The REST API calls use variables in the curl examples and other input which indicate how each needs to be tailored for your environment.
 
-=== URL format when directly accessing the REST API
+=== URL format
 
 You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the core URL is different than the URL used when accessing the ONTAP online documentation page or System Manager user interface. When accessing the API directly, you need to append *api* to the domain (or IP address) and port string. For example:
 
@@ -61,7 +61,9 @@ The ID values and other variables used with the curl examples are opaque and var
 * Because all the keywords use the same format, you can quickly identify them.
 * There is no security exposure because the original parameters cannot be copied and used.
 
-Here are some of the common keywords used in the curl examples. This list is not exhaustive and additional keywords are used as needed. Their meaning should be obvious based on the context.
+The variables are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed, which makes them recognizable to Bash. Upper case is consistently used for the names allowing them to be easily located.
+
+Here are some of the common variable keywords. This list is not exhaustive and additional keywords are used as needed. Their meaning should be obvious based on the context.
 
 [cols="25,15,60"*,options="header"]
 |===
@@ -85,17 +87,14 @@ The primary authentication technique available for the REST API through ONTAP 9.
 
 ==== HTTP basic authentication
 
-When using basic authentication, the user credentials must be included with every HTTP request. The user and password values are first concatenated with a colon and the entire string is then encoded in base64. The string is carried in the Authorization request header. The curl examples include this header with the variable *$BASIC_AUTH*.
+When using basic authentication, the user credentials must be included with every HTTP request. The user and password values are first concatenated with a colon and the entire string is encoded in base64. This string is carried in the Authorization request header. The curl examples include this header with the variable *$BASIC_AUTH*.
 
 [NOTE]
-When using a curl, you can remove the Authorization header and add the curl user parameter instead. In this case, you need to include the parameter `--user username:password` with the appropriate credentials. When executing the commands, curl will generate the request header for you.
+When using a curl with basic authentication, you can remove the Authorization header and add the curl *user* parameter instead, which is `--user username:password` (substitutning the appropriate credentials). When executing the curl command the request header is generated for you.
 
 == Using curl examples with the Bash shell
 
-You should review and adapt the curl examples to your automation development environment as needed. If you use the curl examples directly, you must change the variables to actual values for your environment. You can manually edit the examples or rely on the CLI shell in a Bash environment.
-
-[NOTE]
-The variables in the curl examples are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed, which makes them recognizable to Bash. Upper case is consistently used for the names allowing them to be easily located.
+You should review and adapt the curl examples to your automation development environment as needed. If you use the curl examples directly, you must update the variables to use values appropriate for your environment. You can manually edit the examples or rely on the Bash shell to do the substitution.
 
 .Steps
 
@@ -104,6 +103,6 @@ The variables in the curl examples are formatted to be used in a Bash shell envi
 +
 `CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
 . Copy the curl example from the workflow page and paste it into shell terminal.
-. Press *ENTER* which:
-.. Substitutes the variable values you have already set
+. Press *ENTER* which does the following:
+.. Substitutes the variable values you set
 .. Executes the curl command
