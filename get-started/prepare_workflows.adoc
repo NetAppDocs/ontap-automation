@@ -83,6 +83,18 @@ Here are some of the common variable keywords. This list is not exhaustive and a
 |The credentials string used for HTTP basic authentication.
 |===
 
+=== JSON input examples
+
+Some of the REST API calls, such as those using POST or PATCH, require JSON input for the body of the request. The JSON input examples are presented separately from the curl examples for clarity. You can use the JSON input examples with one of the techniques described below.
+
+.Save to local file
+
+You can copy the JSON example into a file and save it locally. The curl command refers to the file using the `--data` parameter with the value indicating the file name with a `@` prefix.
+
+.Paste into terminal after the curl example
+
+First you need to copy and paste the curl example into the terminal shell. Then edit the example to completely remove the `--data` parameter at the end and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command and the updated parameter.
+
 == Authentication options
 
 The primary authentication method available for the REST API through ONTAP 9.13.1 is basic authentication.
@@ -117,7 +129,7 @@ Another option when using curl is to remove the Authorization header and use the
 
 You need to substitute the appropriate credentials for your environment. When executing the curl command with this parameter, the Authorization header is generated for you.
 
-== Using curl examples with the Bash shell
+== Using the examples with Bash
 
 If you use the workflow curl examples directly, you must update the variables they contain with values appropriate for your environment. You can manually edit the examples or rely on the Bash shell to do the substitution for you as described below.
 

@@ -45,7 +45,7 @@ In addition to the parameters common with all REST API calls, the following para
 
 .Curl example: Retrieve the cluster contact information
 
-This example illustrates how to retrieve a single field. To get the entire cluster configuration, you need to remove the `fields` query parameter.
+This example illustrates how to retrieve a single field. To get the entire cluster object and configuration, you need to remove the `fields` query parameter.
 
 [source,curl]
 curl --location --include \
