@@ -54,16 +54,16 @@ curl --location --include \
 
 .JSON output example
 
-The identifier for the job object is returned. You should copy the ID to use it in the next step.
+The identifier for the job object is returned. You should save the ID value to use it in the next step as variable $JOB_ID.
 
 [source,json,%autofill]
 { "job": {
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-  "_links": {
-    "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      }
     }
-  }
   }
 }
 
