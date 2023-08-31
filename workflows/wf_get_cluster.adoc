@@ -43,7 +43,7 @@ In addition to the parameters common with all REST API calls, the following para
 |Select the values you want returned. Examples include `contact` and `version`.
 |===
 
-.Curl example: Retrieve the contact information
+.Curl example: Retrieve the cluster contact information
 
 This example illustrates how to retrieve a single field. To get the entire cluster configuration, you need to remove the `fields` query parameter.
 
@@ -56,6 +56,6 @@ curl --location --include \
 .JSON output example
 ----
 {
-    "contact": "support@company-demo.com"
+  "contact": "support@company-demo.com"
 }
 ----

@@ -17,7 +17,7 @@ This workflow updates the cluster contact information. Because the request is pr
 
 == Step 1: Update the cluster contact information
 
-You can issue an API call to update the contact information. Because the request runs asynchronously, you should confirm success of the associated job.
+You can issue an API call to update the contact information.
 
 .HTTP method and endpoint
 

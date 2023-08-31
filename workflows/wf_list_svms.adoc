@@ -39,22 +39,22 @@ curl --location --include \
 
 ----
 {
-    "records": [
-        {
-            "uuid": "81bd74f8-50dc-12ee-b51a-004056aee9fa",
-            "name": "vs0",
-            "_links": {
-                "self": {
-                    "href": "/api/svm/svms/81bd74f8-50dc-12ee-b51a-004056aee9fa"
-                }
-            }
-        }
-    ],
-    "num_records": 1,
-    "_links": {
-        "self": {
-            "href": "/api/svm/svms"
-        }
+  "records": [
+    {
+      "uuid": "71bd74f8-40dc-11ee-b51a-005056aee9fa",
+      "name": "vs0",
+      "_links": {
+          "self": {
+            "href": "/api/svm/svms/71bd74f8-40dc-11ee-b51a-005056aee9fa"
+          }
+      }
     }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/svm/svms"
+    }
+  }
 }
 ----
