@@ -1,0 +1,115 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_update_cluster_contact.html
+keywords: workflow, update cluster, cluster contact, job, job state
+summary: This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
+---
+
+= Update the cluster contact and confirm job state
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the associated background job completed successfully.
+
+== Step 1: Update the cluster contact information
+
+You can issue an API call to update the contact information.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|PATCH
+|/cluster
+|===
+
+.Processing type
+
+Asynchronous
+
+.Curl example
+
+[source,curl,%autofill]
+curl --location --include \
+--request PATCH "https://$FQDN_IP/api/cluster" \
+--header "Content-Type: application/json" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,json]
+{
+  "contact": "support@company-demo.com"
+}
+
+.JSON output example
+
+The identifier for the job object is returned. You should save the ID value to use it in the next step as variable $JOB_ID.
+
+[source,json,%autofill]
+{ "job": {
+    "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      }
+    }
+  }
+}
+
+== Step 2: Retrieve the status of the job
+
+You should retrieve the state of the job to determine if the asynchronous request completed successfully.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/cluster/jobs/{uuid}
+|===
+
+.Processing type
+
+Synchronous
+
+.Curl example
+
+[source,curl,%autofill]
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+
+The state value and other fields are included in the returned job object.
+
+----
+{
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+}
+----
