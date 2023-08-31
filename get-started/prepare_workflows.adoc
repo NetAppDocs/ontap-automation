@@ -41,7 +41,7 @@ The workflows are designed to be as general as possible so they can be used in a
 
 === Base URL format
 
-You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the base URL is different than the URL used when accessing the ONTAP online documentation page or System Manager user interface. When accessing the API directly, you need to append *api* to the domain (or IP address) and port string. For example:
+You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the base URL is different than the URL used when accessing the ONTAP online documentation page or System Manager user interface. When accessing the API directly, you need to append *api* to the domain or IP address. For example:
 
 `https://ontap.demo-example.com/api`
 
@@ -61,7 +61,7 @@ The ID values and other variables used with the curl examples are opaque and var
 * Because all the keywords use the same format, you can quickly identify them.
 * There is no security exposure because the original parameters cannot be copied and used.
 
-The variables are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed, which makes them recognizable to Bash. Upper case is consistently used for the names allowing them to be easily located.
+The variables are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed. This makes them recognizable to Bash. Upper case is consistently used for the names allowing them to be easily located.
 
 Here are some of the common variable keywords. This list is not exhaustive and additional keywords are used as needed. Their meaning should be obvious based on the context.
 
@@ -105,7 +105,7 @@ You can manually construct the Authorization header and include it with each HTT
 +
 `Authorization: Basic YWRtaW46ZGF2aWQxMjM=`
 
-The workflow curl examples include this header with the variable *$BASIC_AUTH* which you need to update.
+The workflow curl examples include this header with the variable *$BASIC_AUTH* which you need to update before using.
 
 .Use a curl parameter
 
@@ -113,7 +113,7 @@ Another option when using curl is to remove the Authorization header and use the
 
 `--user username:password`
 
-You need to substitute the appropriate credentials for your environment. When executing the curl command with this parameter, the Authorization header will be generated for you.
+You need to substitute the appropriate credentials for your environment. When executing the curl command with this parameter, the Authorization header is generated for you.
 
 == Using curl examples with the Bash shell
 

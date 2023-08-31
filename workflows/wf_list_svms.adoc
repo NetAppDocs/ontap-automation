@@ -14,3 +14,28 @@ summary: You can list the Storage Virtual Machines (SVMs) defined within an ONTA
 
 [.lead]
 You can list the Storage Virtual Machines (SVMs) defined within an ONTAP cluster. You might do this as part of finding the identifier for a specific SVM or to assure name uniqueness before creating a new SVM.
+
+.HTTP method and endpoint
+
+This API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|GET
+|GET
+|/svm/svms
+|===
+
+.Curl example
+[source,curl]
+curl --location -i --request GET "https://$FQDN_IP/api/svm/svms" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+----
+{
+    "contact": "support@company-demo.com"
+}
+----
