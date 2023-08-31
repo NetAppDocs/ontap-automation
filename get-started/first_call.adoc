@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: get-started/first_call.html
-keywords: simple API call
-summary: You can issue a simple curl command at the CLI to get started using the ONTAP REST API and confirm its availability.
+keywords: first REST API call, test REST API
+summary: You can issue a curl command to get started using the ONTAP REST API and confirm its availability.
 ---
 
 = Your first API call
@@ -13,27 +13,30 @@ summary: You can issue a simple curl command at the CLI to get started using the
 :imagesdir: ../media/
 
 [.lead]
-You can issue a simple curl command at the CLI to get started using the ONTAP REST API and confirm its availability.
+You can issue a curl command to get started using the ONTAP REST API and confirm its availability.
 
 .Before you begin
 
-The curl utility must be available on your workstation. In addition, you must have the following:
+In addition to having the curl utility available on your workstation, you need the following:
 
-* IP address or host name of the ONTAP cluster management LIF
-* User name and password for an account with authority to access the ONTAP REST API (cluster resource).
+* IP address or FQDN of the ONTAP cluster management LIF
+* ONTAP credentials for an account with authority to access the ONTAP REST API
 
 [NOTE]
-If your credentials include special characters, you need to format them in a way that is acceptable to Curl based on the shell you are using. For example, you can insert a backslash before each special character or wrap the entire `username:password` string in single quotes.
+If your credentials include special characters, you need to format them in a way that is acceptable to curl based on the shell you are using. For example, you can insert a backslash before each special character or wrap the entire credentials string in double quotes.
 
 .Steps
 
-. At the command line interface of your local workstation, retrieve the version of the ONTAP software:
+. At the command line interface of your local workstation, issue the following command:
 +
-`curl -X GET -u username:password -k "https://<ip_address>/api/cluster?fields=version"`
+[source,curl]
+curl --request GET \
+--user username:password \
+"https://$FQDN_IP/api/cluster?fields=version"
 +
 *Example*
 +
-`curl -X GET -u admin:password -k "https://10.222.81.101/api/cluster?fields=version"`
+`curl --request GET --user admin:david123 "https://10.222.81.101/api/cluster?fields=version"`
 
 .After you finish
 
