@@ -91,9 +91,9 @@ Some of the REST API calls, such as those using POST or PATCH, require JSON inpu
 
 You can copy the JSON example into a file and save it locally. The curl command refers to the file using the `--data` parameter with the value indicating the file name with a `@` prefix.
 
-.Paste into terminal along with curl example
+.Paste into terminal after the curl example
 
-After setting the variables, you can copy and paste the curl example into terminal shell. Next, remove the `--data` parameter and replace it with the `--data-raw` parameter. Then copy and paste in the JSON example.
+First, copy and paste the curl example into the terminal shell. Then completely remove the `--data` parameter and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command and updated parameter.
 
 == Authentication options
 
