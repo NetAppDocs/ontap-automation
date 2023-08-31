@@ -81,20 +81,43 @@ Here are some of the common variable keywords. This list is not exhaustive and a
 |The credentials string used for HTTP basic authentication. The string is encoded using base64.
 |===
 
-=== Authentication options
+== Authentication options
 
-The primary authentication technique available for the REST API through ONTAP 9.13.1 is basic authentication.
+The primary authentication method available for the REST API through ONTAP 9.13.1 is basic authentication.
 
-==== HTTP basic authentication
+=== HTTP basic authentication
 
-When using basic authentication, the user credentials must be included with every HTTP request. The user and password values are first concatenated with a colon and the entire string is encoded in base64. This string is carried in the Authorization request header. The curl examples include this header with the variable *$BASIC_AUTH*.
+When using basic authentication, the user credentials must be included with every HTTP request. There are two options for sending the credentials.
 
-[NOTE]
-When using a curl with basic authentication, you can remove the Authorization header and add the curl *user* parameter instead, which is `--user username:password` (substitutning the appropriate credentials). When executing the curl command the request header is generated for you.
+.Construct the HTTP request header
+
+You can manually construct the Authorization header and include it with each HTTP request. This can be done when using a curl command in the CLI environment or a programming language with your customer automation code. The steps at a high level include:
+
+. Concatenate the user and password values with a colon
++
+`admin:david123`
+
+. Convert the string to base64
++
+`YWRtaW46ZGF2aWQxMjM=`
+
+. Construct the header
++
+`Authorization: Basic YWRtaW46ZGF2aWQxMjM=`
+
+The curl examples include this header with the variable *$BASIC_AUTH*.
+
+.Use a curl parameter
+
+When using a curl example, you can remove the Authorization header and use the curl *user* parameter instead. For example:
++
+`--user username:password`
+
+You need to substitute the appropriate credentials for your environment. When executing the curl command, the request header will be generated for you.
 
 == Using curl examples with the Bash shell
 
-You should review and adapt the curl examples to your automation development environment as needed. If you use the curl examples directly, you must update the variables to use values appropriate for your environment. You can manually edit the examples or rely on the Bash shell to do the substitution.
+If you use the workflow curl examples directly, you must update the variables to use values appropriate for your environment. You can manually edit the examples or rely on the Bash shell to do the substitution as described below.
 
 .Steps
 
@@ -103,6 +126,6 @@ You should review and adapt the curl examples to your automation development env
 +
 `CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
 . Copy the curl example from the workflow page and paste it into shell terminal.
-. Press *ENTER* which does the following:
-.. Substitutes the variable values you set
-.. Executes the curl command
+. Press *ENTER* which will do the following:
+.. Substitute the variable values you set
+.. Execute the curl command
