@@ -21,7 +21,7 @@ You can issue an API call to update the contact information. Because the request
 
 .HTTP method and endpoint
 
-This API call uses the following method and endpoint.
+This REST API call uses the following method and endpoint.
 
 [cols="25,75"*,options="header"]
 |===
@@ -72,7 +72,7 @@ You should retrieve the state of the job to determine if the asynchronous reques
 
 .HTTP method and endpoint
 
-This API call uses the following method and endpoint.
+This REST API call uses the following method and endpoint.
 
 [cols="25,75"*,options="header"]
 |===

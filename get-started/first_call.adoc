@@ -17,7 +17,7 @@ You can issue a curl command to get started using the ONTAP REST API and confirm
 
 .Before you begin
 
-The curl utility must be available on your workstation. In addition, you must have the following:
+In addition to having the curl utility available on your workstation, you need the following:
 
 * IP address or FQDN for the ONTAP cluster management LIF
 * ONTAP credentials for an account with authority to access the ONTAP REST API
@@ -30,11 +30,13 @@ If your credentials include special characters, you need to format them in a way
 . At the command line interface of your local workstation, issue the following command:
 +
 [source,curl]
-curl --request GET --user username:password "https://$FQDN_IP/api/cluster?fields=version"
+curl --request GET \
+--user username:password \
+"https://$FQDN_IP/api/cluster?fields=version"
 +
 *Example*
 +
-curl --request GET --user admin:david123 "https://10.222.81.101/api/cluster?fields=version"
+`curl --request GET --user admin:david123 "https://10.222.81.101/api/cluster?fields=version"`
 
 .After you finish
 

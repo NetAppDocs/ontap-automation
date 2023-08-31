@@ -17,7 +17,7 @@ You can list the Storage Virtual Machines (SVMs) defined within an ONTAP cluster
 
 .HTTP method and endpoint
 
-This API call uses the following method and endpoint.
+This REST API call uses the following method and endpoint.
 
 [cols="25,75"*,options="header"]
 |===
@@ -39,6 +39,22 @@ curl --location --include \
 
 ----
 {
-    "contact": "support@company-demo.com"
+    "records": [
+        {
+            "uuid": "81bd74f8-50dc-12ee-b51a-004056aee9fa",
+            "name": "vs0",
+            "_links": {
+                "self": {
+                    "href": "/api/svm/svms/81bd74f8-50dc-12ee-b51a-004056aee9fa"
+                }
+            }
+        }
+    ],
+    "num_records": 1,
+    "_links": {
+        "self": {
+            "href": "/api/svm/svms"
+        }
+    }
 }
 ----

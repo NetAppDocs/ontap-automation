@@ -17,7 +17,7 @@ You can retrieve the configuration for an ONTAP cluster including specific field
 
 .HTTP method and endpoint
 
-This API call uses the following method and endpoint.
+This REST API call uses the following method and endpoint.
 
 [cols="25,75"*,options="header"]
 |===
@@ -29,7 +29,7 @@ This API call uses the following method and endpoint.
 
 .Additional input parameters for curl examples
 
-In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl example in this step.
 
 [cols="25,10,10,55"*,options="header"]
 |===
@@ -40,7 +40,7 @@ In addition to the parameters common with all REST API calls, the following para
 |fields
 |Query
 |No
-|Optionally select the values you want returned. Examples include `contact` and `version`.
+|Select the values you want returned. Examples include `contact` and `version`.
 |===
 
 .Curl example: Retrieve the contact information
@@ -48,7 +48,8 @@ In addition to the parameters common with all REST API calls, the following para
 This example illustrates how to retrieve a single field. To get the entire cluster configuration, you need to remove the `fields` query parameter.
 
 [source,curl]
-curl --location -i --request GET "https://$FQDN_IP/api/cluster?fields=contact" \
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster?fields=contact" \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
