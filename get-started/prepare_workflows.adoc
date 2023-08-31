@@ -24,24 +24,24 @@ A _workflow_ is a sequence of one or more steps needed to accomplish a specific 
 Each step in an ONTAP workflow is one of the following types:
 
 * REST API call (with details such as curl and JSON examples)
-* Invocation of another ONTAP workflow
+* Perform or invoke another ONTAP workflow
 * Miscellaneous related task (such as making a configuration decision)
 
 .REST API calls
 
-Most of the workflow steps are REST API calls. These step types are based on a common format which includes curl examples and other information. See the link:../reference/api_reference.html[API reference] for details about the REST API calls.
+Most of the workflow steps are REST API calls. These step types are based on a common format which includes a curl example and other information. See the link:../reference/api_reference.html[API reference] for details about the REST API calls.
 
 .Single-step workflows
 
 A workflow can contain only one step. These _single-step workflows_ are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The workflow action should be clear based on the title.
 
-== Input variables and authentication
+== Input variables
 
-The workflows are designed to be general so they can be used in any ONTAP environment. The REST API calls use variables in the curl examples and other input which indicate how each needs to be tailored for your environment.
+The workflows are designed to be as general as possible so they can be used in any ONTAP environment. With this in mind, the REST API calls use variables in the curl examples and other input. The REST API calls can then be easily adapted for your ONTAP environment.
 
-=== URL format
+=== Base URL format
 
-You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the core URL is different than the URL used when accessing the ONTAP online documentation page or System Manager user interface. When accessing the API directly, you need to append *api* to the domain (or IP address) and port string. For example:
+You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the base URL is different than the URL used when accessing the ONTAP online documentation page or System Manager user interface. When accessing the API directly, you need to append *api* to the domain (or IP address) and port string. For example:
 
 `https://ontap.demo-example.com/api`
 
@@ -118,6 +118,9 @@ You need to substitute the appropriate credentials for your environment. When ex
 == Using curl examples with the Bash shell
 
 If you use the workflow curl examples directly, you must update the variables to use values appropriate for your environment. You can manually edit the example commands or rely on the Bash shell to do the substitution as described below.
+
+[NOTE]
+One advantage of using Bash is that you can set the variables one time in a shell session instead of once per curl command.
 
 .Steps
 
