@@ -37,11 +37,11 @@ A workflow can contain only one step. These _single-step workflows_ are formatte
 
 == Input variables
 
-The workflows are designed to be as general as possible so they can be used in any ONTAP environment. With this in mind, the REST API calls use variables in the curl examples and other input. The REST API calls can then be easily adapted for your ONTAP environment.
+The workflows are designed to be as general as possible so they can be used in any ONTAP environment. With this in mind, the REST API calls use variables in the curl examples and other input. The REST API calls can then be easily adapted to different ONTAP environments.
 
 === Base URL format
 
-You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the base URL is different than the URL used when accessing the ONTAP online documentation page or System Manager user interface. When accessing the API directly, you need to append *api* to the domain or IP address. For example:
+You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the base URL is different than the URL you use when accessing the ONTAP online documentation or System Manager. When accessing the API directly, you need to append *api* to the domain or IP address. For example:
 
 `https://ontap.demo-example.com/api`
 
@@ -51,17 +51,17 @@ See link:../rest/access_rest_api.html[How to access the ONTAP API] for more info
 
 There are several input parameters that are used in most of the REST API calls. These common parameters are typically not described in the individual workflows. You should be familiar with these parameters. See link:../rest/input_variables.html[Input variables controlling an API request] for more information.
 
-If additional parameters are needed for a specific curl example, they are described in the section *Additional input parameters for the curl example* for each workflow.
+If additional parameters are needed for a specific curl example, they are included in the section *Additional input parameters for the curl example* for each workflow.
 
 === Variable format
 
-The ID values and other variables used with the curl examples are opaque and vary with each ONTAP cluster and runtime environment. To improve the readability of the samples, the actual values are not used. Rather, smaller reserved keywords are used instead. This approach has several benefits:
+The ID values and other variables used with the workflows examples are opaque and can vary with each ONTAP cluster. To improve the readability of the examples, the actual values are not used. Variables, based on a consistent format and reserved names, are used instead. This approach has several benefits:
 
 * The curl and JSON samples are more readable and easier to understand.
 * Because all the keywords use the same format, you can quickly identify them.
-* There is no security exposure because the original parameters cannot be copied and used.
+* There is no security exposure because the values cannot be copied and reused.
 
-The variables are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed. This makes them recognizable to Bash. Upper case is consistently used for the names allowing them to be easily located.
+The variables are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed which makes them recognizable to Bash. Upper case is consistently used for the names, allowing thm to be easily recognized.
 
 Here are some of the common variable keywords. This list is not exhaustive and additional keywords are used as needed. Their meaning should be obvious based on the context.
 
@@ -75,10 +75,10 @@ Here are some of the common variable keywords. This list is not exhaustive and a
 |The fully qualified domain name or IP management address for the ONTAP cluster.
 |$CLUSTER_ID
 |Path
-|The UUIDv4 value identifying the ONTAP cluster where the API operation runs.
+|The UUIDv4 value identifying the ONTAP cluster where the API operations run.
 |$BASIC_AUTH
 |Header
-|The credentials string used for HTTP basic authentication. The string is encoded using base64.
+|The credentials used for HTTP basic authentication. The string must be encoded using base64.
 |===
 
 == Authentication options
@@ -91,13 +91,13 @@ When using basic authentication, the user credentials must be included with ever
 
 .Construct the HTTP request header
 
-You can manually construct the Authorization header and include it with each HTTP request. This can be done when using a curl command in the CLI environment or a programming language with your customer automation code. The steps at a high level include:
+You can manually construct the Authorization header and include it with the HTTP requests. This can be done either when using a curl command in the CLI environment or a programming language with your automation code. The steps at a high level include:
 
 . Concatenate the user and password values with a colon:
 +
 `admin:david123`
 
-. Convert the string to base64:
+. Convert the entire string to base64:
 +
 `YWRtaW46ZGF2aWQxMjM=`
 
@@ -117,10 +117,10 @@ You need to substitute the appropriate credentials for your environment. When ex
 
 == Using curl examples with the Bash shell
 
-If you use the workflow curl examples directly, you must update the variables to use values appropriate for your environment. You can manually edit the example commands or rely on the Bash shell to do the substitution as described below.
+If you use the workflow curl examples directly, you must update the variables to use values that are appropriate for your environment. You can manually edit the example commands or rely on the Bash shell to do the substitution as described below.
 
 [NOTE]
-One advantage of using Bash is that you can set the variables one time in a shell session instead of once per curl command.
+One advantage of using Bash is that you can set the variable values one time in a shell session instead of once per curl command.
 
 .Steps
 
@@ -128,7 +128,7 @@ One advantage of using Bash is that you can set the variables one time in a shel
 . Set the variable values used in the curl command. For example:
 +
 `CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
-. Copy the curl example from the workflow page and paste it into shell terminal.
+. Copy the curl example from the workflow page and paste it into the shell terminal.
 . Press *ENTER* which will do the following:
 .. Substitute the variable values you set
 .. Execute the curl command

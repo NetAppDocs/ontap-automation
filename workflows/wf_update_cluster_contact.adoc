@@ -13,11 +13,11 @@ summary: This workflow updates the cluster contact information. Because the requ
 :imagesdir: ./media/
 
 [.lead]
-This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job has completed successfully.
+This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the associated background job completed successfully.
 
-== Step 1: Update the contact information for the cluster
+== Step 1: Update the cluster contact information
 
-You can issue an API call to update the contact information. Because the request runs asynchronously, you must confirm success of the associated job.
+You can issue an API call to update the contact information. Because the request runs asynchronously, you should confirm success of the associated job.
 
 .HTTP method and endpoint
 
@@ -32,12 +32,14 @@ This API call uses the following method and endpoint.
 |===
 
 .Processing type
+
 Asynchronous
 
 .Curl example
 
 [source,curl,%autofill]
-curl --location --include --request PATCH "https://$FQDN_IP/api/cluster" \
+curl --location --include \
+--request PATCH "https://$FQDN_IP/api/cluster" \
 --header "Content-Type: application/json" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -51,7 +53,7 @@ curl --location --include --request PATCH "https://$FQDN_IP/api/cluster" \
 
 .JSON output example
 
-A job object with the associated identifier is returned.
+The identifier for the job object is returned. You should copy the ID to use it in the next step.
 
 [source,json,%autofill]
 { "job": {
@@ -66,7 +68,7 @@ A job object with the associated identifier is returned.
 
 == Step 2: Retrieve the status of the job
 
-You need to retrieve the state of the job to determine if the asynchronous request has completed successfully.
+You should retrieve the state of the job to determine if the asynchronous request completed successfully.
 
 .HTTP method and endpoint
 
@@ -87,12 +89,13 @@ Synchronous
 .Curl example
 
 [source,curl,%autofill]
-curl --location --include --request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
 --header "Authorization: Basic $BASIC_AUTH"
 
 .JSON output example
 
-A job object with the state and other fields is returned.
+The state value and other fields are included in the returned job object.
 
 ----
 {

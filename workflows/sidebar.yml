@@ -3,8 +3,8 @@ title: Workflows
 entries:
   - title: Cluster
     entries:
-    - title: Get cluster fields
-      url: /workflows/wf_get_cluster_fields.html
+    - title: Get cluster configuration
+      url: /workflows/wf_get_cluster.html
     - title: Update cluster contact
       url: /workflows/wf_update_cluster_contact.html
   - title: SVM
