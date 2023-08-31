@@ -129,7 +129,7 @@ Another option when using curl is to remove the Authorization header and use the
 
 You need to substitute the appropriate credentials for your environment. When executing the curl command with this parameter, the Authorization header is generated for you.
 
-== Using curl examples with the Bash shell
+== Using the examples with Bash
 
 If you use the workflow curl examples directly, you must update the variables they contain with values appropriate for your environment. You can manually edit the examples or rely on the Bash shell to do the substitution for you as described below.
 
