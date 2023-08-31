@@ -83,9 +83,9 @@ Here are some of the common variable keywords. This list is not exhaustive and a
 |The credentials string used for HTTP basic authentication.
 |===
 
-=== Using the JSON input examples
+=== JSON input examples
 
-Some of the REST API calls, such as those using POST or PATCH, require JSON input for the body of the request. These JSON examples are presented separately from the curl examples for clarity. You can include the JSON input examples using one of the techniques described below.
+Some of the REST API calls, such as those using POST or PATCH, require JSON input for the body of the request. The JSON input examples are presented separately from the curl examples for clarity. You can use the JSON input examples with one of the techniques described below.
 
 .Save to local file
 
@@ -93,7 +93,7 @@ You can copy the JSON example into a file and save it locally. The curl command 
 
 .Paste into terminal after the curl example
 
-First, copy and paste the curl example into the terminal shell. Then completely remove the `--data` parameter and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command and updated parameter.
+First you need to copy and paste the curl example into the terminal shell. Then edit the example to completely remove the `--data` parameter at the end and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command and the updated parameter.
 
 == Authentication options
 
