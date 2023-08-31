@@ -41,6 +41,7 @@ Asynchronous
 curl --location --include \
 --request PATCH "https://$FQDN_IP/api/cluster" \
 --header "Content-Type: application/json" \
+--header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
 
@@ -91,6 +92,7 @@ Synchronous
 [source,curl,%autofill]
 curl --location --include \
 --request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+--header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
 .JSON output example

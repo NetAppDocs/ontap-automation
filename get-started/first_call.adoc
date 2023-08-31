@@ -19,7 +19,7 @@ You can issue a curl command to get started using the ONTAP REST API and confirm
 
 In addition to having the curl utility available on your workstation, you need the following:
 
-* IP address or FQDN for the ONTAP cluster management LIF
+* IP address or FQDN of the ONTAP cluster management LIF
 * ONTAP credentials for an account with authority to access the ONTAP REST API
 
 [NOTE]

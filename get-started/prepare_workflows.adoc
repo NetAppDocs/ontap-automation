@@ -57,7 +57,7 @@ If additional parameters are needed for a specific curl example, they are includ
 
 === Variable format
 
-The ID values and other variables used with the workflows examples are opaque and can vary with each ONTAP cluster. To improve the readability of the examples, actual values are not used. Variables are used instead. This approach, which is based on a consistent format and set of reserved names, has several benefits:
+The ID values and other variables used with the workflows examples are opaque and can vary with each ONTAP cluster. To improve the readability of the examples, actual values are not used. Variables are used instead. This approach, based on a consistent format and set of reserved names, has several benefits:
 
 * The curl and JSON samples are more readable and easier to understand.
 * Because all the keywords use the same format, you can quickly identify them.
@@ -74,7 +74,7 @@ Here are some of the common variable keywords. This list is not exhaustive and a
 |Description
 |$FQDN_IP
 |URL
-|The fully qualified domain name or IP management address for the ONTAP cluster.
+|The fully qualified domain name or IP address of the ONTAP cluster management LIF.
 |$CLUSTER_ID
 |Path
 |The UUIDv4 value identifying the ONTAP cluster where the API operations run.
@@ -119,7 +119,7 @@ You need to substitute the appropriate credentials for your environment. When ex
 
 == Using curl examples with the Bash shell
 
-If you use the workflow curl examples directly, you must update the variables they contain to use values appropriate for your environment. You can manually edit the examples or rely on the Bash shell to do the substitution for you as described below.
+If you use the workflow curl examples directly, you must update the variables they contain with values appropriate for your environment. You can manually edit the examples or rely on the Bash shell to do the substitution for you as described below.
 
 [NOTE]
 One advantage of using Bash is that you can set the variable values one time in a shell session instead of once per curl command.
@@ -127,7 +127,7 @@ One advantage of using Bash is that you can set the variable values one time in 
 .Steps
 
 . Open the Bash shell provided with Linux or similar operating system.
-. Set the variable values included in the curl command. For example:
+. Set the variable values included in the curl example you will run. For example:
 +
 `CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
 . Copy the curl example from the workflow page and paste it into the shell terminal.
