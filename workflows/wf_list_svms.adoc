@@ -30,8 +30,9 @@ This REST API call uses the following method and endpoint.
 .Curl example
 
 [source,curl]
-curl --location --include \
---request GET "https://$FQDN_IP/api/svm/svms" \
+curl --request GET \
+--location "https://$FQDN_IP/api/svm/svms" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
