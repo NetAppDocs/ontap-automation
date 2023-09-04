@@ -13,7 +13,7 @@ summary: You should be familiar with the structure and format of the ONTAP workf
 :imagesdir: ./media/
 
 [.lead]
-You should be familiar with the structure and format of the ONTAP workflows before using them with a live deployment.
+You should be familiar with the structure and format of the workflows before using them with a live ONTAP deployment.
 
 == Introduction
 
@@ -33,7 +33,7 @@ Most of the workflow steps are REST API calls. These steps use a common format w
 
 .Single-step workflows
 
-A workflow can contain only one step. These _single-step workflows_ are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The workflow action should be clear based on the title.
+A workflow can contain only one step. These _single-step workflows_ are formatted slightly differently than workflows containing multiple steps. For example, the explicit step name is removed. The action or operation should be clear based on the workflow title.
 
 == Input variables
 
@@ -41,23 +41,23 @@ The workflows are designed to be as general as possible so they can be used in a
 
 === Base URL format
 
-You can access the ONTAP REST API directly through curl or a programming language such as Python. In this case, the base URL is different than the URL you use when accessing the ONTAP online documentation or System Manager.
+You can access the ONTAP REST API directly through curl or a programming language. In this case, the base URL is different than the URL you use when accessing the ONTAP online documentation or System Manager.
 
 When accessing the API directly, you need to append *api* to the domain or IP address. For example:
 
 `https://ontap.demo-example.com/api`
 
-See link:../rest/access_rest_api.html[How to access the ONTAP API] for more information about accessing the ONTAP REST API.
+See link:../rest/access_rest_api.html[How to access the ONTAP REST API] for more information.
 
 === Common input parameters
 
 There are several input parameters commonly used with most of the REST API calls. These parameters are typically not described in the individual workflows. You should be familiar with the parameters. See link:../rest/input_variables.html[Input variables controlling an API request] for more information.
 
-If additional parameters are needed for a specific curl example, they are included in the section *Additional input parameters for the curl example* for each workflow.
+If additional parameters are needed for a specific REST API call, they are included in the section *Additional input parameters for the curl example* for each workflow.
 
 === Variable format
 
-The ID values and other variables used with the workflows examples are opaque and can vary with each ONTAP cluster. To improve the readability of the examples, actual values are not used. Variables are used instead. This approach, based on a consistent format and set of reserved names, has several benefits:
+The ID values and other variables used with the workflow examples are opaque and can vary with each ONTAP cluster. To improve the readability of the examples, actual values are not used. Variables are used instead. This approach, based on a consistent format and set of reserved names, has several benefits including:
 
 * The curl and JSON samples are more readable and easier to understand.
 * Because all the keywords use the same format, you can quickly identify them.
@@ -65,7 +65,7 @@ The ID values and other variables used with the workflows examples are opaque an
 
 The variables are formatted to be used in a Bash shell environment. Each variable begins with a dollar sign and is enclosed in double quotes as needed. This makes them recognizable to Bash. Upper case is consistently used for the names.
 
-Here are some of the common variable keywords. This list is not exhaustive and additional keywords are used as needed. Their meaning should be obvious based on the context.
+Here are some of the common variable keywords. This list is not exhaustive and additional variables are used as needed. Their meaning should be obvious based on the context.
 
 [cols="25,15,60"*,options="header"]
 |===
@@ -74,7 +74,7 @@ Here are some of the common variable keywords. This list is not exhaustive and a
 |Description
 |$FQDN_IP
 |URL
-|The fully qualified domain name or IP address of the ONTAP cluster management LIF.
+|The fully qualified domain name or IP address of the ONTAP management LIF.
 |$CLUSTER_ID
 |Path
 |The UUIDv4 value identifying the ONTAP cluster where the API operations run.
@@ -85,15 +85,15 @@ Here are some of the common variable keywords. This list is not exhaustive and a
 
 === JSON input examples
 
-Some of the REST API calls, such as those using POST or PATCH, require JSON input for the body of the request. The JSON input examples are presented separately from the curl examples for clarity. You can use the JSON input examples with one of the techniques described below.
+Some of the REST API calls, such as those using POST or PATCH, require JSON input in the body of the request. The JSON input examples are presented separately from the curl examples for clarity. You can use the JSON input examples with one of the techniques described below.
 
 .Save to local file
 
-You can copy the JSON example into a file and save it locally. The curl command refers to the file using the `--data` parameter with the value indicating the file name with a `@` prefix.
+You can copy the JSON input example to a file and save it locally. The curl command refers to the file using the `--data` parameter with the value indicating the file name with a `@` prefix.
 
 .Paste into terminal after the curl example
 
-First you need to copy and paste the curl example into the terminal shell. Then edit the example to completely remove the `--data` parameter at the end and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command and the updated parameter.
+First you need to copy and paste the curl example into a terminal shell. Then edit the example to completely remove the `--data` parameter at the end and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command with the updated parameter.
 
 == Authentication options
 
@@ -105,7 +105,7 @@ When using basic authentication, the user credentials must be included with ever
 
 .Construct the HTTP request header
 
-You can manually construct the Authorization header and include it with the HTTP requests. This can be done when using a curl command in the CLI or a programming language with your automation code. The steps at a high level include:
+You can manually construct the Authorization header and include it with the HTTP requests. This can be done when using a curl command in the CLI or a programming language with your automation code. The high-level steps include:
 
 . Concatenate the user and password values with a colon:
 +
@@ -127,7 +127,7 @@ Another option when using curl is to remove the Authorization header and use the
 
 `--user username:password`
 
-You need to substitute the appropriate credentials for your environment. When executing the curl command with this parameter, the Authorization header is generated for you.
+You need to substitute the appropriate credentials for your environment. The credentials are not encoded in base64. When executing the curl command with this parameter, the string is encoded and the Authorization header is generated for you.
 
 == Using the examples with Bash
 
@@ -139,7 +139,7 @@ One advantage of using Bash is that you can set the variable values one time in 
 .Steps
 
 . Open the Bash shell provided with Linux or similar operating system.
-. Set the variable values included in the curl example you will run. For example:
+. Set the variable values included in the curl example you want to run. For example:
 +
 `CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
 . Copy the curl example from the workflow page and paste it into the shell terminal.
