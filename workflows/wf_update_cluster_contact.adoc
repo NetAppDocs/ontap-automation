@@ -93,7 +93,7 @@ Synchronous
 
 [source,curl,%autofill]
 curl --request GET \
---location "https://$FQDN_IP/api/cluster/$JOB_ID" \
+--location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"

@@ -93,7 +93,7 @@ You can copy the JSON input example to a file and save it locally. The curl comm
 
 .Paste into terminal after the curl example
 
-First you need to copy and paste the curl example into a terminal shell. Then edit the example to completely remove the `--data` parameter at the end and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command with the updated parameter.
+First you need to copy and paste the curl example into a terminal shell. Then edit the example to completely remove the `--data` parameter at the end and replace it with the `--data-raw` parameter. Finally, copy and paste in the JSON example so that it follows the curl command with the updated parameter. You should use single quotes to wrap the JSON input example.
 
 == Authentication options
 
