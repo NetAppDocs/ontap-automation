@@ -36,7 +36,7 @@ curl --request GET \
 +
 *Example*
 +
-curl --request GET "https://$FQDN_IP/api/cluster?fields=version" --user username:password
+`curl --request GET "https://10.29.186.132/api/cluster?fields=version" --user admin:david123`
 
 .After you finish
 
