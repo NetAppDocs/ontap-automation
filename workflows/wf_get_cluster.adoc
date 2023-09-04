@@ -48,8 +48,9 @@ In addition to the parameters common with all REST API calls, the following para
 This example illustrates how to retrieve a single field. To get the entire cluster object and configuration, you need to remove the `fields` query parameter.
 
 [source,curl]
-curl --location --include \
---request GET "https://$FQDN_IP/api/cluster?fields=contact" \
+curl --request GET \
+--location "https://$FQDN_IP/api/cluster?fields=contact" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 

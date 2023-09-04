@@ -38,8 +38,9 @@ Asynchronous
 .Curl example
 
 [source,curl,%autofill]
-curl --location --include \
---request PATCH "https://$FQDN_IP/api/cluster" \
+curl --request PATCH \
+--location "https://$FQDN_IP/api/cluster" \
+--include \
 --header "Content-Type: application/json" \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
@@ -91,8 +92,9 @@ Synchronous
 .Curl example
 
 [source,curl,%autofill]
-curl --location --include \
---request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+curl --request GET \
+--location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
@@ -114,3 +116,7 @@ The state value and other fields are included in the returned job object.
   }
 }
 ----
+
+== Step 3: Confirm the cluster contact information
+
+Perform the workflow link:../workflows/wf_get_cluster.html[Get the cluster configuration]. You should set the `fields` query parameter to `contact`.
