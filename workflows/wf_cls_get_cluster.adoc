@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_get_cluster.html
+permalink: workflows/wf_cls_get_cluster.html
 keywords: workflow, get cluster, cluster configuration
 summary: You can retrieve the configuration for an ONTAP cluster including specific fields. You might do this as part of assessing the state of the cluster or before updating the configuration.
 ---
 
-= Get the cluster configuration
+= Get cluster configuration
 :hardbreaks:
 :nofooter:
 :icons: font

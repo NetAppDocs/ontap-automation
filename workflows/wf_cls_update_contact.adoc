@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_update_cluster_contact.html
+permalink: workflows/wf_cls_update_contact.html
 keywords: workflow, update cluster, cluster contact, job, job state
 summary: This workflow updates the cluster contact information. Because the request is processed asynchronously, it also illustrates how to determine if the background job completes successfully.
 ---
 
-= Update the cluster contact and confirm job state
+= Update cluster contact and confirm job state
 :hardbreaks:
 :nofooter:
 :icons: font
