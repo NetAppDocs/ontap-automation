@@ -2,7 +2,7 @@
 layout: landing-page
 sidebar: sidebar
 permalink: index.html
-lead: You can automate the deployment and administration of your ONTAP storage systems using one of several available options. The ONTAP REST API provides the foundation for the automation technologies.
+lead: You can automate the deployment and administration of your ONTAP storage systems using one of several available options. The ONTAP REST API provides the primary foundation for the automation technologies.
 summary: Welcome to the ONTAP Automation documentation portal.
 ---
 
