@@ -1,0 +1,4 @@
+---
+permalink: get-started/prepare_rest.html
+redirect: ontap-automation/index.html
+---
