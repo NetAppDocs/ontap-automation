@@ -119,4 +119,4 @@ The state value and other fields are included in the returned job object.
 
 == Step 3: Confirm the cluster contact information
 
-Perform the workflow link:../workflows/wf_get_cluster.html[Get the cluster configuration]. You should set the `fields` query parameter to `contact`.
+Perform the workflow link:../workflows/wf_cls_get_cluster.html[Get cluster configuration]. You should set the `fields` query parameter to `contact`.
