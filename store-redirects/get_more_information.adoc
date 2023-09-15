@@ -1,0 +1,4 @@
+---
+permalink: additional/get_more_information.html
+redirect: ontap-automation/additional/resources.html
+---

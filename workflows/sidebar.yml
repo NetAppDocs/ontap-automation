@@ -1,7 +1,7 @@
 section: workflows
 title: Workflows
 entries:
-  - title: Prepare
+  - title: Prepare to use the workflows
     url: /workflows/prepare_workflows.html
   - title: Cluster
     entries:

@@ -1,4 +1,4 @@
 ---
 permalink: get-started/prepare_workflows.html
-redirect: workflows/prepare_workflows.html
+redirect: ontap-automation/workflows/prepare_workflows.html
 ---
