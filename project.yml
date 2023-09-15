@@ -33,11 +33,9 @@ homepage:
     - title: Get started
       links:
         - title: Release Notes
-          url: /rn/whats_new.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
         - title: ONTAP automation options
           url: /get-started/ontap_automation_options.html
-        - title: Prepare to use the REST API
-          url: /get-started/prepare_rest.html
         - title: Your first API call
           url: /get-started/first_call.html
     - title: ONTAP REST API
