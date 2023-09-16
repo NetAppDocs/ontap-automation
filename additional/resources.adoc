@@ -23,7 +23,7 @@ Provides documentation for the ONTAP 9 product family.
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^]
 +
-ONTAP 9 Release Notes with information about the current release.
+ONTAP 9 release notes with information about the current release.
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
 +
