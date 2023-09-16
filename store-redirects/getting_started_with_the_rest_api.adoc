@@ -1,0 +1,4 @@
+---
+permalink: getting_started_with_the_rest_api.html
+redirect: ontap-automation/get-started/ontap_automation_options.html
+---

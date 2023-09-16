@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: additional/get_more_information.html
+permalink: additional/resources.html
 keywords: more information, additional resources
 summary: There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 ---
 
-= Get more information
+= Additional resources
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -20,6 +20,10 @@ There are several additional resources you can access to get help and find more 
 * https://docs.netapp.com/us-en/ontap-family/[ONTAP 9 product documentation^]
 +
 Provides documentation for the ONTAP 9 product family.
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^]
++
+ONTAP 9 release notes with information about the current release.
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
 +

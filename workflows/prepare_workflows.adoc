@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: get-started/prepare_workflows.html
+permalink: workflows/prepare_workflows.html
 keywords: workflows, preparation, prepare to use workflows
 summary: You should be familiar with the structure and format of the ONTAP workflows before using them with a live deployment.
 ---
