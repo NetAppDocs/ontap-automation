@@ -14,3 +14,6 @@ summary: xxx
 
 [.lead]
 xxx
+
+>> add link to:
+link:../workflows/prepare_workflows.html[Prepare to use the workflows]

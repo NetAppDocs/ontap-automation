@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: workflows/wf_rbac_limit_svm.html
 keywords: 
-summary: xxx
+summary: You can define a role to restrict storage volume administration within an SVM.
 ---
 
 = Limit SVM volume operations
@@ -13,4 +13,52 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-xxx
+You can define a role to restrict storage volume administration within an SVM.
+
+.About this workflow
+
+A traditional role is first created to initially allow access to all the major volume administration functions except cloning. The role is defined with the following specific characteristics:
+
+* Able to perform all CRUD volume operations including get, create, modify, and delete
+* Cannot create a volume clone
+
+You can optionally update the role as needed. In this workflow, the role is changed in the second step to allow the user to create a volume clone.
+
+== Step 1: Create the initial role
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/security/roles
+|===
+
+.Curl example
+
+[source,curl]
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,curl]
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
