@@ -5,10 +5,6 @@ entries:
     entries:
       - title: REST web services foundation
         url: /rest/rest_web_services_foundation.html
-      - title: ONTAP REST API versioning
-        url: /rest/rest_api_versioning.html
-      - title: How to access the REST API
-        url: /rest/access_rest_api.html
       - title: Basic operational characteristics
         url: /rest/operational_characteristics.html
       - title: Input variables

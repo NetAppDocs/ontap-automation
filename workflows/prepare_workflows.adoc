@@ -47,7 +47,7 @@ When accessing the API directly, you need to append *api* to the domain or IP ad
 
 `https://ontap.demo-example.com/api`
 
-See link:../rest/access_rest_api.html[How to access the ONTAP REST API] for more information.
+See link:../get-started/access_rest_api.html[How to access the ONTAP REST API] for more information.
 
 === Common input parameters
 

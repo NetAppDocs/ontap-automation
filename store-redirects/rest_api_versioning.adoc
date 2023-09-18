@@ -1,0 +1,4 @@
+---
+permalink: rest/rest_api_versioning.html
+redirect: ontap-automation/index.html
+---
