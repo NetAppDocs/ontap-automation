@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_rbac_ontap_reports.html
+keywords: 
+summary: xxx
+---
+
+= Allow generation of ONTAP reports
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

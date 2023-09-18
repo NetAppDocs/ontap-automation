@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_rbac_prepare.html
+keywords: 
+summary: xxx
+---
+
+= Prepare to use RBAC
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx

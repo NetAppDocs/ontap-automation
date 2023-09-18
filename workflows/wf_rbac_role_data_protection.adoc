@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_rbac_data_protection.html
+keywords: 
+summary: xxx
+---
+
+= Enable adminstration of data protection
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+xxx
