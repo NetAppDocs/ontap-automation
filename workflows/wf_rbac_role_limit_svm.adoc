@@ -26,6 +26,8 @@ You can optionally update the role as needed. In this workflow, the role is chan
 
 == Step 1: Create the initial role
 
+You can issue an API call to create the RBAC role.
+
 .HTTP method and endpoint
 
 This REST API call uses the following method and endpoint.
@@ -61,4 +63,58 @@ curl --request POST \
       { "path": "volume create", "access": "all" },
       { "path": "volume delete", "access": "all" }
     ]
+}
+
+== Step 2: Create the initial role
+
+You can issue an API call to update the existing role.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/security/roles
+|===
+
+.Additional input parameters for curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl example in this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|$SVM_ID
+|Path
+|No
+|xxx
+|$ROLE_NAME
+|Path
+|No
+|xxx
+|===
+
+.Curl example
+
+[source,curl]
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,curl]
+{
+  "path": "volume clone",
+  "access": "all"
 }

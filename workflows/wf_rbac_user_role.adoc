@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: workflows/wf_rbac_user_role.html
 keywords: 
-summary: xxx
+summary: You can use this workflow to create a user with an associated REST role.
 ---
 
 = Create a user with a role
@@ -13,4 +13,12 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-xxx
+You can use this workflow to create a user with an associated REST role.
+
+.About this workflow
+
+The workflow includes the typical steps needed to create a custom REST role and associate it with a new user account. Both the user and role have an SVM scope and are associated with a specific data SVM. Some of the steps may be optional or need to change based on your environment.
+
+== Step 1: List the data SVMs in the cluster
+
+Perform the following REST API call to list the SVMs in the cluster. The UUID and name of each SVM is provided in the output.
