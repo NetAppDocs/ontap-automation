@@ -3,6 +3,8 @@ title: Get started
 entries:
   - title: Understand the automation options
     url: /get-started/ontap_automation_options.html
+  - title: How to access the REST API
+    url: /get-started/access_rest_api.html
   - title: Retrieve the cluster software version
     url: /get-started/retrieve_cluster_software_version.html
   - title: Your first API call
