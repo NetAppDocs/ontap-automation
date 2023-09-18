@@ -1,0 +1,4 @@
+---
+permalink: rest/access_rest_api.html
+redirect: get-started/access_rest_api.html
+---

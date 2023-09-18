@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rest/access_rest_api.html
+permalink: get-started/access_rest_api.html
 keywords: accessing the rest api, lif
 summary: You can access the ONTAP REST API in several different ways.
 ---
