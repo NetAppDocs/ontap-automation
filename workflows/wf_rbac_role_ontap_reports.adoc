@@ -13,4 +13,7 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-xxx
+You can create a REST role to provide users with the ability to generate ONTAP reports. The role presented below is defined with the following characteristics:
+
+* Able to retrieve all storage object information related to capacity and performance (such as volume, qtree, LUN, aggregates, node, and SnapMirror relationships)
+* Cannot create or modify higher level objects (such as volumes or SVMs)

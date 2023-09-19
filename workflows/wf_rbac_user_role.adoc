@@ -17,8 +17,33 @@ You can use this workflow to create a user with an associated REST role.
 
 .About this workflow
 
-The workflow includes the typical steps needed to create a custom REST role and associate it with a new user account. Both the user and role have an SVM scope and are associated with a specific data SVM. Some of the steps may be optional or need to change based on your environment.
+This workflow includes the typical steps needed to create a custom REST role and associate it with a new user account. Both the user and role have an SVM scope and are associated with a specific data SVM. Some of the steps may be optional or need to change depending on your environment.
 
 == Step 1: List the data SVMs in the cluster
 
-Perform the following REST API call to list the SVMs in the cluster. The UUID and name of each SVM is provided in the output.
+Perform the following REST API call to list the SVMs in the cluster. The UUID and name of each SVM are provided in the output.
+
+
+== Step 2: List the users defined to the SVM
+
+Perform the following REST API call to list the users defined in the SVM you selected. You can identify the SVM through the owner parameter.
+
+
+== Step 3: List the REST roles defined to the SVM
+
+Perform the following REST API call to list the roles defined in the SVM you selected. You can identify the SVM through the owner parameter.
+
+
+== Step 4: Create a custom REST role
+
+Perform the following REST API call to a create a custom REST role in the SVM. The role initially has only one privilege which establishes a default access of none so that all access is denied.
+
+
+== Step 5: Update the role by adding more privileges
+
+Perform the following REST API call to modify the role by adding privileges as needed.
+
+
+== Step 6: Create a user
+
+Perform the following REST API call to a create a user account. The role *dprole1* created above is associated with the new user.

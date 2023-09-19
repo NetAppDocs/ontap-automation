@@ -13,4 +13,8 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-xxx
+In certain situations you may want to provide a user with limited data protection capabilities. The traditional role presented below is defined with the following characteristics:
+
+* Able to create and delete snapshots as well as update SnapMirror relationships
+Cannot create or modify higher level objects such as volumes or SVMs
+

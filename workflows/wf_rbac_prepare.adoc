@@ -18,7 +18,7 @@ The ONTAP RBAC capability can be used in several different ways depending on you
 Before creating a role and assigning it to an ONTAP user account, you should first prepare by reviewing the major security requirements and options.
 
 [NOTE]
-Make sure to first review the general workflows concepts in link:../workflows/prepare_workflows.html[Prepare to use the workflows].
+Also make sure to review the general workflows concepts in link:../workflows/prepare_workflows.html[Prepare to use the workflows].
 
 .What ONTAP release are you using?
 
