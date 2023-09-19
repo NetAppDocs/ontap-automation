@@ -1,0 +1,258 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_rbac_user_role.html
+keywords: 
+summary: You can use this workflow to create a user with an associated REST role.
+---
+
+= Create a user with a role
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can use this workflow to create a user with an associated REST role.
+
+.About this workflow
+
+This workflow includes the typical steps needed to create a custom REST role and associate it with a new user account. Both the user and role have an SVM scope and are associated with a specific data SVM. Some of the steps may be optional or need to change depending on your environment.
+
+== Step 1: List the data SVMs in the cluster
+
+Perform the following REST API call to list the SVMs in the cluster. The UUID and name of each SVM are provided in the output.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/svm/svms
+|===
+
+.Curl example
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/svm/svms?order_by=name" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.After you finish
+
+Select the desired SVM from the list where you will create the new user and role.
+
+== Step 2: List the users defined to the SVM
+
+Perform the following REST API call to list the users defined in the SVM you selected. You can identify the SVM through the owner parameter.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/security/accounts
+|===
+
+.Curl example
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/security/accounts?owner.name=dmp" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.After you finish
+
+Based on the users already defined in the SVM, choose a unique name for the new user.
+
+== Step 3: List the REST roles defined to the SVM
+
+Perform the following REST API call to list the roles defined in the SVM you selected. You can identify the SVM through the owner parameter.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/security/roles
+|===
+
+.Curl example
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/security/roles?owner.name=dmp" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.After you finish
+
+Based on the roles already defined in the SVM, choose a unique name for the new role.
+
+== Step 4: Create a custom REST role
+
+Perform the following REST API call to a create a custom REST role in the SVM. The role initially has only one privilege which establishes a default access of *none* so that all access is denied.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/api/security/roles
+|===
+
+.Curl example
+
+[source,curl]
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,curl]
+{
+  "name": "dprole1",
+  "owner": {
+    "name": "dmp",
+    "uuid": "752d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api", "access": "none"},
+  ]
+}
+
+.After you finish
+
+Optionally perform step 3 again to display the new role. You can also display the roles at the ONTAP CLI.
+
+== Step 5: Update the role by adding more privileges
+
+Perform the following REST API call to modify the role by adding privileges as needed.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/api/security/roles/{owner.uuid}/{name}/privileges
+|===
+
+.Additional input parameters for curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl example in this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|$SVM_ID
+|Path
+|Yes
+|The UUID of the SVM that contains the role definition.
+|$ROLE_NAME
+|Path
+|Yes
+|The name of the role within the SVM to be updated.
+|===
+
+.Curl example
+
+[source,curl]
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,curl]
+{
+  "path": "/api/storage/volumes",
+  "access": "readonly"
+}
+
+.After you finish
+
+Optionally perform step 3 again to display the new role. You can also display the roles at the ONTAP CLI.
+
+== Step 6: Create a user
+
+Perform the following REST API call to a create a user account. The role *dprole1* created above is associated with the new user.
+
+[TIP]
+You can include the user without a role. In this case you’ll need to modify the user to assign a role. 
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/api/security/accounts
+|===
+
+.Curl example
+
+[source,curl]
+curl --request POST \
+--location "https://$FQDN_IP/api/security/accounts" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,curl]
+{
+  "owner": {"uuid":"daf84055-248f-11ed-a23d-005056ac4fe6"},
+  "name": "david",
+  "applications": [
+      {"application":"ssh",
+       "authentication_methods":["password"],
+       "second_authentication_method":"none"}
+  ],
+  "role":"dprole1",
+  "password":"netapp123"
+}
+
+.After you finish
+
+You can sign in to the SVM management interface using the credentials for the new user.

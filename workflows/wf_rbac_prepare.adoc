@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_rbac_prepare.html
+keywords: 
+summary: xxx
+---
+
+= Prepare to use RBAC
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can use the ONTAP RBAC capability in several different ways depending on your environment. A few common scenarios are presented as workflows in this section. In each case the focus is on a specific security and administrative goal.
+
+Before creating any roles and assigning a role to an ONTAP user account, you should prepare by reviewing the major security requirements and options presented below. Also make sure to review the general workflow concepts at link:../workflows/prepare_workflows.html[Prepare to use the workflows].
+
+.What ONTAP release are you using?
+
+The ONTAP release determines what REST endpoints and RBAC features are available.
+
+.Identify the protected resources and scope
+
+You need to identify the resources or commands to be protected and the scope (cluster or SVM).
+
+.What access should the user have?
+
+After identifying the resources and scope, you need to determine the access level to be granted.
+
+.How will the users access ONTAP?
+
+The user can access ONTAP through the REST API or CLI or both.
+
+.Is one of the built-in roles sufficient or is a custom role needed?
+
+It is more convenient to use an existing built-in role but you can create a new custom role if needed.
+
+.What type of role is needed?
+
+Based on the security requirements and the ONTAP access, you need to choose whether to create a REST or traditional role.

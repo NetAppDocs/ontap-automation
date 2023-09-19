@@ -15,6 +15,9 @@ summary: After understanding the basic RBAC capabilities, you can get started wo
 [.lead]
 After understanding the basic RBAC capabilities, you can get started working with the ONTAP roles and users.
 
+[NOTE]
+See link:../workflows/wf_rbac_prepare.html[RBAC workflows] for examples of how to create and use roles with the ONTAP REST API.
+
 == Administrative access
 
 You can create and manage the ONTAP roles through the REST API or command line interface. The access details are described below.

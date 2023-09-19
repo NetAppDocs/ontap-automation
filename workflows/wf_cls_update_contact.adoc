@@ -28,7 +28,7 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |PATCH
-|/cluster
+|/api/cluster
 |===
 
 .Processing type
@@ -82,7 +82,7 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/cluster/jobs/{uuid}
+|/api/cluster/jobs/{uuid}
 |===
 
 .Processing type

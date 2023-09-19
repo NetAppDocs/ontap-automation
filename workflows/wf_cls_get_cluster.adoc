@@ -22,9 +22,9 @@ This REST API call uses the following method and endpoint.
 [cols="25,75"*,options="header"]
 |===
 |HTTP method
+|Path
 |GET
-|GET
-|/cluster
+|/api/cluster
 |===
 
 .Additional input parameters for curl examples
