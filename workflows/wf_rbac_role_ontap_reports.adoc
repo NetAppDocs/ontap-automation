@@ -31,7 +31,7 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |POST
-|/security/roles
+|/api/security/roles
 |===
 
 .Curl example

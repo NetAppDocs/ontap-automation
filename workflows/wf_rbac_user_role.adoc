@@ -180,11 +180,11 @@ In addition to the parameters common with all REST API calls, the following para
 |$SVM_ID
 |Path
 |Yes
-|This is the UUID of the SVM that contains the role definition.
+|The UUID of the SVM that contains the role definition.
 |$ROLE_NAME
 |Path
 |Yes
-|This is the name of the role within the SVM to be updated.
+|The name of the role within the SVM to be updated.
 |===
 
 .Curl example
@@ -213,6 +213,9 @@ Optionally perform step 3 again to display the new role. You can also display th
 
 Perform the following REST API call to a create a user account. The role *dprole1* created above is associated with the new user.
 
+[TIP]
+You can include the user without a role. In this case you’ll need to modify the user to assign a role. 
+
 .HTTP method and endpoint
 
 This REST API call uses the following method and endpoint.
@@ -225,31 +228,11 @@ This REST API call uses the following method and endpoint.
 |/api/security/accounts
 |===
 
-.Additional input parameters for curl examples
-
-In addition to the parameters common with all REST API calls, the following parameters are also used in the curl example in this step.
-
-[cols="25,10,10,55"*,options="header"]
-|===
-|Parameter
-|Type
-|Required
-|Description
-|$SVM_ID
-|Path
-|Yes
-|This is the UUID of the SVM that contains the role definition.
-|$ROLE_NAME
-|Path
-|Yes
-|This is the name of the role within the SVM to be updated.
-|===
-
 .Curl example
 
 [source,curl]
 curl --request POST \
---location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+--location "https://$FQDN_IP/api/security/accounts" \
 -- include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
