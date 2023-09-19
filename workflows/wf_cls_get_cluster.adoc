@@ -24,7 +24,7 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/cluster
+|/api/cluster
 |===
 
 .Additional input parameters for curl examples

@@ -1,0 +1,4 @@
+---
+permalink: rest/rbac_sample_roles.html
+redirect: ontap-automation/workflows/wf_rbac_prepare.html
+---

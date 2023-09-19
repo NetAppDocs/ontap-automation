@@ -65,7 +65,7 @@ curl --request POST \
     ]
 }
 
-== Step 2: Create the initial role
+== Step 2: Update the role
 
 You can issue an API call to update the existing role.
 

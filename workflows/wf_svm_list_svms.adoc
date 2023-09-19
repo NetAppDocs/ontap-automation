@@ -24,7 +24,7 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/svm/svms
+|/api/svm/svms
 |===
 
 .Curl example
