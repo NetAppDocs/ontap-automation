@@ -13,7 +13,53 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-You can create a REST role to provide users with the ability to generate ONTAP reports. The role presented below is defined with the following characteristics:
+You can create a REST role to provide users with the ability to generate ONTAP reports.
+
+.About this workflow
+
+The role created is defined with the following characteristics:
 
 * Able to retrieve all storage object information related to capacity and performance (such as volume, qtree, LUN, aggregates, node, and SnapMirror relationships)
 * Cannot create or modify higher level objects (such as volumes or SVMs)
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/security/roles
+|===
+
+.Curl example
+
+[source,curl]
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,curl]
+{
+  "name": "rest_role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api/storage/volumes", "access": "readonly"},
+      {"path": "/api/storage/qtrees", "access": "readonly"},
+      {"path": "/api/storage/luns", "access": "readonly"},
+      {"path": "/api/storage/aggregates", "access": "readonly"},
+      {"path": "/api/cluster/nodes", "access": "readonly"},
+      {"path": "/api/snapmirror/relationships", "access": "readonly"},
+      {"path": "/api/svm/svms", "access": "readonly"}
+  ]
+}

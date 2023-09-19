@@ -13,8 +13,52 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-In certain situations you may want to provide a user with limited data protection capabilities. The traditional role presented below is defined with the following characteristics:
+In certain situations you may want to provide a user with limited data protection capabilities.
+
+.About this workflow
+
+The traditional role created is defined with the following characteristics:
 
 * Able to create and delete snapshots as well as update SnapMirror relationships
-Cannot create or modify higher level objects such as volumes or SVMs
+* Cannot create or modify higher level objects such as volumes or SVMs
 
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|POST
+|/security/roles
+|===
+
+.Curl example
+
+[source,curl]
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+
+.JSON input example
+
+[source,curl]
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "volume snapshot create", "access": "all"},
+      {"path": "volume snapshot delete", "access": "all"},
+      {"path": "volume show", "access": "readonly"},
+      {"path": "vserver show", "access": "readonly"},
+      {"path": "snapmirror show", "access": "readonly"},
+      {"path": "snapmirror update", "access": "all"}
+  ]
+}

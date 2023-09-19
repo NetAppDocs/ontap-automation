@@ -22,7 +22,7 @@ A traditional role is first created to initially allow access to all the major v
 * Able to perform all CRUD volume operations including get, create, modify, and delete
 * Cannot create a volume clone
 
-You can optionally update the role as needed. In this workflow, the role is changed in the second step to allow the user to create a volume clone.
+You can then optionally update the role as needed. In this workflow, the role is changed in the second step to allow the user to create a volume clone.
 
 == Step 1: Create the initial role
 
@@ -93,12 +93,12 @@ In addition to the parameters common with all REST API calls, the following para
 |Description
 |$SVM_ID
 |Path
-|No
-|xxx
+|Yes
+|This is the UUID of the SVM that contains the role definition.
 |$ROLE_NAME
 |Path
-|No
-|xxx
+|Yes
+|This is the name of the role within the SVM to be updated.
 |===
 
 .Curl example
