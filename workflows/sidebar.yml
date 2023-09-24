@@ -3,6 +3,10 @@ title: Workflows
 entries:
   - title: Prepare to use the workflows
     url: /workflows/prepare_workflows.html
+  - title: Certificates
+    entries:
+    - title: List certificates
+      url: /workflows/wf_cert_list_certificates.html
   - title: Cluster
     entries:
     - title: Get cluster configuration
