@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: workflows/wf_cert_list_certificates.html
 keywords: workflow, list certificates
-summary: You can list the certificates installed in your ONTAP cluster. You might do this to see if a particular certificate is installed or to get the ID of a certificate to then retrieve the entire certificate.
+summary: You can list the certificates installed in your ONTAP cluster. You might do this to see if a particular certificate is available or to get the ID of a specific certificate to be able to retrieve the entire certificate.
 ---
 
 = List the certificates
@@ -13,7 +13,7 @@ summary: You can list the certificates installed in your ONTAP cluster. You migh
 :imagesdir: ./media/
 
 [.lead]
-You can list the certificates installed in your ONTAP cluster. You might do this to see if a particular certificate is installed or to get the ID of a certificate and then retrieve the entire certificate.
+You can list the certificates installed in your ONTAP cluster. You might do this to see if a particular certificate is available or to get the ID of a specific certificate to be able to retrieve the entire certificate.
 
 .HTTP method and endpoint
 
