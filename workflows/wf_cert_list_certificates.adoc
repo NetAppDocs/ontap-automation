@@ -39,7 +39,6 @@ curl --request GET \
 .JSON output example
 [%collapsible%closed]
 ====
-[source,json]
 ----
 {
   "records": [
