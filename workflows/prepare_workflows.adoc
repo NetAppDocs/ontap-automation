@@ -15,6 +15,9 @@ summary: You should be familiar with the structure and format of the ONTAP workf
 [.lead]
 You should be familiar with the structure and format of the workflows before using them with a live ONTAP deployment.
 
+[TIP]
+You should make sure that your ONTAP release supports all the API calls in the workflows you plan to use. See link:../reference/api_reference.html[API reference] for more information.
+
 == Introduction
 
 A _workflow_ is a sequence of one or more steps needed to accomplish a specific administrative task or goal. The ONTAP workflows include the core steps and parameters you need to accomplish each task. They provide a starting point for customizing your ONTAP automation environment.

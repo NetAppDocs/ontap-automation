@@ -40,7 +40,7 @@ This REST API call uses the following method and endpoint.
 [source,curl]
 curl --request GET \
 --location "https://$FQDN_IP/api/svm/svms?order_by=name" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
@@ -69,7 +69,7 @@ This REST API call uses the following method and endpoint.
 [source,curl]
 curl --request GET \
 --location "https://$FQDN_IP/api/security/accounts?owner.name=dmp" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
@@ -98,7 +98,7 @@ This REST API call uses the following method and endpoint.
 [source,curl]
 curl --request GET \
 --location "https://$FQDN_IP/api/security/roles?owner.name=dmp" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -128,7 +128,7 @@ This REST API call uses the following method and endpoint.
 [source,curl]
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -191,8 +191,8 @@ In addition to the parameters common with all REST API calls, the following para
 
 [source,curl]
 curl --request POST \
---location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
--- include \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/privileges" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -214,7 +214,7 @@ Optionally perform step 3 again to display the new role. You can also display th
 Perform the following REST API call to a create a user account. The role *dprole1* created above is associated with the new user.
 
 [TIP]
-You can include the user without a role. In this case you’ll need to modify the user to assign a role. 
+You can create the user without a role. In this case, the user is assigned a default role (either `admin` or `vsadmin`) depending on whether the user is defined with cluster or SVM scope. You’ll need to modify the user to assign a different role.
 
 .HTTP method and endpoint
 
@@ -233,7 +233,7 @@ This REST API call uses the following method and endpoint.
 [source,curl]
 curl --request POST \
 --location "https://$FQDN_IP/api/security/accounts" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput

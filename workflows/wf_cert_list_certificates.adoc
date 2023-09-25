@@ -1,0 +1,83 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_cert_list_certificates.html
+keywords: workflow, list certificates
+summary: You can list the certificates installed in your ONTAP cluster. You might do this to see if a particular certificate is available or to get the ID of a specific certificate to be able to retrieve the entire certificate.
+---
+
+= List the certificates
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can list the certificates installed in your ONTAP cluster. You might do this to see if a particular certificate is available or to get the ID of a specific certificate.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/security/certificates
+|===
+
+.Curl example: Return three certificates
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/security/certificates?max_records=3" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+
+----
+{
+  "records": [
+    {
+      "uuid": "dad822c2-573c-11ee-a310-005056aecc29",
+      "name": "vs0_17866DB5C933E2EA",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/dad822c2-573c-11ee-a310-005056aecc29"
+        }
+      }
+    },
+    {
+      "uuid": "7d8e5570-573c-11ee-a310-005056aecc29",
+      "name": "BuypassClass3RootCA",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/7d8e5570-573c-11ee-a310-005056aecc29"
+        }
+      }
+    },
+    {
+      "uuid": "7dbb2191-573c-11ee-a310-005056aecc29",
+      "name": "EntrustRootCertificationAuthority",
+      "_links": {
+        "self": {
+          "href": "/api/security/certificates/7dbb2191-573c-11ee-a310-005056aecc29"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
+  "_links": {
+    "self": {
+      "href": "/api/security/certificates?max_records=3"
+    },
+    "next": {
+      "href": "/api/security/certificates?start.svm_id=sti214nscluster-1&start.uuid=7dbb2191-573c-11ee-a310-005056aecc29&max_records=3"
+    }
+  }
+}
+
+----
