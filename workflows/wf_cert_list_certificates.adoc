@@ -27,6 +27,22 @@ This REST API call uses the following method and endpoint.
 |/api/security/certificates
 |===
 
+.Additional input parameters for curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl example in this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|max_records
+|Query
+|No
+|Specify the number of records you want returned.
+|===
+
 .Curl example: Return three certificates
 
 [source,curl]
