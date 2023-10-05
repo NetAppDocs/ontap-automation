@@ -17,9 +17,9 @@ You can install a signed X.509 certificate in your ONTAP cluster. You might do t
 
 .Before you begin
 
-You must have the certificate you want to install. If the certificate is not self-signed, you should make sure the root CA certificate and any intermediate certificates are also installed before using it.
+You must have the certificate you want to install. If the certificate is not self-signed, you should make sure the root CA certificate and any intermediate certificates are installed as well.
 
-Before using the JSON input example, make sure to update the variable `public_certificate` with the certificate for your environment.
+Before using the JSON input example included below, make sure to update the `public_certificate` value with the certificate for your environment.
 
 == Step 1: Install the certificate
 
