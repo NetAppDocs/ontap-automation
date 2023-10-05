@@ -7,6 +7,8 @@ entries:
     entries:
     - title: List certificates
       url: /workflows/wf_cert_list_certificates.html
+    - title: Install certificate
+      url: /workflows/wf_cert_install_certificate.html
   - title: Cluster
     entries:
     - title: Get cluster configuration
