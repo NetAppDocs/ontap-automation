@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: workflows/wf_cert_install_certificate.html
 keywords: workflow, install certificat
-summary: 
+summary: You can install a signed X.509 certificate in your ONTAP cluster. You might do this as part of configuring an ONTAP feature or protocol requiring strong authentication.
 ---
 
 = Install a certificate
@@ -13,13 +13,13 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can install a signed X.509 certificate in your ONTAP cluster. You might do this as part of configuring an ONTAP feature or protocol that requires strong authentication.
+You can install a signed X.509 certificate in your ONTAP cluster. You might do this as part of configuring an ONTAP feature or protocol requiring strong authentication.
 
 .Before you begin
 
-You must have the certificate you want to install. XXX
+You must have the certificate you want to install. If the certificate is not self-signed, you should make sure the root CA certificate and any intermediate certificates are also installed before using it.
 
-If the certificate is not self-signed, you also need to make sure the root CA certificate and any intermediate CA certificates are install in ONTAP before using it.
+Before using the JSON input example, make sure to update the variable `public_certificate` with the certificate for your environment.
 
 == Step 1: Install the certificate
 
