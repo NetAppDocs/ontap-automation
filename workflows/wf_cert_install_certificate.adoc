@@ -13,11 +13,17 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can install a certificate in your ONTAP cluster. There are several reasons you might do this, such as to configure a web server or implement OAuth 2.0 client authentication and authorization.
+You can install a signed X.509 certificate in your ONTAP cluster. You might do this as part of configuring an ONTAP feature or protocol that requires strong authentication.
 
 .Before you begin
 
-You must have the certificate or certificates you want to install. If a certificate is signed by a root CA (that is, not self-signed), you need to make sure the root CA certificate and any intermediary certificates are install in ONTAP before using it.
+You must have the certificate you want to install. XXX
+
+If the certificate is not self-signed, you also need to make sure the root CA certificate and any intermediate CA certificates are install in ONTAP before using it.
+
+== Step 1: Install the certificate
+
+You can issue an API call to install the certificate.
 
 .HTTP method and endpoint
 
@@ -74,3 +80,7 @@ IpYuBcuKXLwAarhDEacXttVjC+Bq
 -----END CERTIFICATE-----"
 }
 ----
+
+== Step 2: Confirm the certificate has been installed
+
+Perform the workflow link:../workflows/wf_cert_list_certificates.html[List the installed certificates] and confirm the certificate is available.
