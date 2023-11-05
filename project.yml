@@ -16,9 +16,9 @@ sidebar:
     - section: workflows
     - section: manage
     - section: python
+    - section: migrate
     - section: reference
     - section: automate
-    - section: migrate
     - section: additional
     - title: Legal notices
       url: /legal-notices.html
