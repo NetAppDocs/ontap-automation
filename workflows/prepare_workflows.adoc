@@ -100,11 +100,11 @@ First you need to copy and paste the curl example into a terminal shell. Then ed
 
 == Authentication options
 
-The primary authentication method available for the REST API through ONTAP 9.13.1 is basic authentication.
+The primary authentication method available for the REST API is HTTP basic authentication. Beginning with ONTAP 9.14, you also have the option of using the Open Authorization (OAuth 2.0) framework with token-based authentication and authorization.
 
 === HTTP basic authentication
 
-When using basic authentication, the user credentials must be included with every HTTP request. There are two options for sending the credentials.
+When using basic authentication, the user credentials must be included with each HTTP request. There are two options for sending the credentials.
 
 .Construct the HTTP request header
 
@@ -131,6 +131,32 @@ Another option when using curl is to remove the Authorization header and use the
 `--user username:password`
 
 You need to substitute the appropriate credentials for your environment. The credentials are not encoded in base64. When executing the curl command with this parameter, the string is encoded and the Authorization header is generated for you.
+
+=== OAuth 2.0
+
+When using OAuth 2.0, you must request an access token from an external authorization server and include it with each HTTP request. The basic high-level steps are described below. Also see https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^] for more details about OAuth 2.0 and how it is implemented in ONTAP.
+
+.Prepare your ONTAP environment
+
+xxx
+
+. Plan xxx (assess env)
+. Install cert, etc.
+. Ddefine the authorization server to ONTAP
+. Gloablly enable OAuth 2.0 in the ONTAP cluster
+
+.Request an access token
+
+xxx
+>> Outside of ONTAP
+>> Different techniques, such as issuing curl
+
+.Issue the REST API call
+
+xxx
+>> bearer token
+
+`Authorization: Bearer YWRtaW46ZGF2aWQxMjM= ...`
 
 == Using the examples with Bash
 
