@@ -1,0 +1,4 @@
+---
+permalink: rn/known_limitations.html
+redirect: ontap-automation/known_limitations.html
+---
