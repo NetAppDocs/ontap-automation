@@ -38,7 +38,7 @@ SnapDiff API availability across ONTAP releases is defined as follows:
 * ONTAP 9.8 – 9.9.1:  v1, v2 and v3 (both ONTAPI and REST API)
 * ONTAP 9.10.1:  v3 only (REST API only)
 
-For more information, see the link:../rn/whats_new.html[ONTAP Release Notes].
+For more information, see the link:../whats_new.html[ONTAP Release Notes].
 
 .Related information
 
