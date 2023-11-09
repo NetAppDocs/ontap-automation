@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rn/whats_new.html
+permalink: whats_new.html
 keywords: new features, new in release
 summary: NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 ---
@@ -14,6 +14,9 @@ summary: NetApp periodically updates the ONTAP REST API to bring you new feature
 
 [.lead]
 NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
+
+[TIP]
+You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues.
 
 == ONTAP 9.13.1
 
