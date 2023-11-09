@@ -1,4 +1,4 @@
 ---
 permalink: rn/known_limitations.html
-redirect: ontap-automation/index.html
+redirect: ontap-automation/whats_new.html
 ---

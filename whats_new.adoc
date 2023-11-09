@@ -15,6 +15,9 @@ summary: NetApp periodically updates the ONTAP REST API to bring you new feature
 [.lead]
 NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 
+[TIP]
+You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues.
+
 == ONTAP 9.13.1
 
 ONTAP 9.13.1 continues to expand the capabilities of the ONTAP REST API with over two dozen new API calls. These endpoints support new ONTAP features as well as enhancements to existing features. This release focuses on improvements to security, resource management, enhanced SVM configuration options, and performance metrics.
