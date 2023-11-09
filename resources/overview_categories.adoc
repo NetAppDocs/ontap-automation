@@ -15,7 +15,7 @@ summary: The resources available through the ONTAP REST API are organized in cat
 [.lead]
 The resources available through the ONTAP REST API are organized in categories, as displayed in the ONTAP API online documentation. A brief description of each of the resources is presented below along with additional usage considerations where appropriate.
 
-The REST resources described in this summary are based on the latest version of the product. If you need to understand the changes made from previous releases, see link:../rn/whats_new.html[What's new with the ONTAP REST API] as well as the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^].
+The REST resources described in this summary are based on the latest version of the product. If you need to understand the changes made from previous releases, see link:../whats_new.html[What's new with the ONTAP REST API] as well as the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^].
 
 [TIP]
 For many of the REST endpoints, you can include a UUID key as part of the path string to access a specific object instance. However, you can also access objects using a property value on a query parameter.
