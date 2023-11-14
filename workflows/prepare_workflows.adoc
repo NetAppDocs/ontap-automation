@@ -134,31 +134,27 @@ You need to substitute the appropriate credentials for your environment. The cre
 
 === OAuth 2.0
 
-When using OAuth 2.0, you need to request an access token from an external authorization server and include it with each HTTP request. The basic high-level steps are described below.
-
-See https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^] for more details about OAuth 2.0 and how it is implemented in ONTAP.
+When using OAuth 2.0, you need to request an access token from an external authorization server and include it with each HTTP request. The basic high-level steps are described below. See https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^] for more details about OAuth 2.0 and how to use it with ONTAP.
 
 .Prepare your ONTAP environment
 
-xxx
+You first need to prepare and configure your ONTAP environment. At a high level, the steps include:
 
-. Plan xxx (assess env)
-. Install cert, etc.
-. Define the authorization server to ONTAP
-. Gloablly enable OAuth 2.0 in the ONTAP cluster
+* Identify ONTAP protected resources and clients
+* Review existing ONTAP REST roles and users
+* Install and configure the authorization server
+* Design and configure the client authorization
+* Configure ONTAP and enable OAuth 2.0
 
 .Request an access token
 
-xxx
->> Outside of ONTAP
->> Different techniques, such as issuing curl
+After ONTAP and the supporting services are defined and active, you can make a REST API call using an OAuth 2.0 token. The first step is to request an access token from the authorization server. This is done outside of ONTAP using one of several different techniques, such as issuing a curl call to the server. ONTAP does not issue access tokens or perform redirection of any kind.
 
-.Issue the REST API call
+.Construct the HTTP request header
 
-xxx
->> bearer token
+After obtaining an access token, you can manually construct an Authorization header and include it with the HTTP requests. Regardless of whether you use curl or a programming language supporting REST, you must include the header with every client request. You can construct the header as follows:
 
-`Authorization: Bearer YWRtaW46ZGF2aWQxMjM= ...`
+`Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSld ...`
 
 == Using the examples with Bash
 

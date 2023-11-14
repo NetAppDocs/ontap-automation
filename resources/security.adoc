@@ -57,6 +57,10 @@ This set of API calls allows you to use the Azure Key Vault to store the ONTAP e
 
 The APIs calls can be used to install, display, and delete certificates used by ONTAP. This resource type was introduced with ONTAP 9.7.
 
+.Cisco Duo
+
+Duo provides two-factor authentication for SSH logins. You can configure Duo to operate at the ONTAP cluster or SVM level. This resource type was introduced with ONTAP 9.14.
+
 .Cluster security
 
 You can retrieve details of the cluster-wide security and update certain parameters. This resource type was introduced with ONTAP 9.7 and updated with ONTAP 9.8.
@@ -91,7 +95,7 @@ A key manager allows client modules within ONTAP to securely stored keys. This r
 
 .Key stores
 
-A key store describes the type of a key manager. This resource type is new with ONTAP 9.10.
+A key store describes the type of a key manager. This resource type is new with ONTAP 9.10. Additional endpoints supporting enhanced control were added with ONTAP 9.14.
 
 .LDAP authentication
 
@@ -114,6 +118,10 @@ Providing the option for multiple administrators to approve access improves the 
 .NIS authentication
 
 These settings are used to retrieve and manage the cluster NIS server configuration. This resource type was introduced with ONTAP 9.6.
+
+.OAuth 2.0
+
+Open Authorization (OAuth 2.0) is a token-based framework that can be used to restrict access to your ONTAP storage resources. You can use it with clients that access ONTAP through the REST API. Configuration can be performed with any of the ONTAP administrative interfaces including the REST API. This resource type was introduced with ONTAP 9.14.
 
 .Password authentication
 
