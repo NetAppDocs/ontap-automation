@@ -69,16 +69,16 @@ Client authentication::
 The same authentication options available with ONTAP System Manager and the Network Manageability SDK can also be used with the ONTAP REST API.
 
 HTTP authentication::
-At an HTTP level, for example when accessing the ONTAP REST API directly, there are two authentication options as described below. In each case, you need to create an HTTP authorization header and include it to each request.
+At an HTTP level, for example when accessing the ONTAP REST API directly, there are two authentication options as described below. In each case, you need to create an HTTP authorization header and include it with each request.
 +
 [cols="25,75"*,options="header"]
 |===
 |Option
 |Description
 |HTTP basic authentication
-|The ONTAP username and password are concatenated with a colon and converted to a base64 string which is included in the request header.
+|The ONTAP username and password are concatenated with a colon. The string is converted to base64 and included in the request header.
 |OAuth 2.0
-|Beginning with ONTAP 9.14, you can request an access token from an external authorization server defined to the ONTAP cluster. The token is included as a bearer token in the request header.
+|Beginning with ONTAP 9.14, you can request an access token from an external authorization server and include it as a bearer token in the request header.
 |===
 +
 For more details about OAuth 2.0 and how it is implemented in ONTAP, see https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]. Also see link:../workflows/prepare_workflows.html[Prepare to use the workflows] below at this site.
