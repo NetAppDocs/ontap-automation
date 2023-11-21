@@ -62,20 +62,26 @@ The `return_timeout` query parameter is available with asynchronous API calls an
 
 The security provided with the REST API is based primarily on the existing security features available with ONTAP. The following security is used by the API:
 
-* Transport Layer Security
-+
-All traffic sent over the network between the ONTAP LIF and client is typically encrypted using TLS, based on the ONTAP configuration settings.
+Transport Layer Security::
+All traffic sent over the network between the client and ONTAP LIF is typically encrypted using TLS, based on the ONTAP configuration settings.
 
-* Client authentication
-+
+Client authentication::
 The same authentication options available with ONTAP System Manager and the Network Manageability SDK can also be used with the ONTAP REST API.
 
-* HTTP authentication
+HTTP authentication::
+At an HTTP level, for example when accessing the ONTAP REST API directly, there are two authentication options as described below. In each case, you need to create an HTTP authorization header and include it with each request.
 +
-At an HTTP level, basic authentication is used for the API transactions. An HTTP header with the user name and password in a base64 string is added to each request.
+[cols="25,75"*,options="header"]
+|===
+|Option
+|Description
+|HTTP basic authentication
+|The ONTAP username and password are concatenated with a colon. The string is converted to base64 and included in the request header.
+|OAuth 2.0
+|Beginning with ONTAP 9.14, you can request an access token from an external authorization server and include it as a bearer token in the request header.
+|===
++
+For more details about OAuth 2.0 and how it is implemented in ONTAP, see https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html[Overview of the ONTAP OAuth 2.0 implementation^]. Also see link:../workflows/prepare_workflows.html[Prepare to use the workflows] below at this site.
 
-* ONTAP authorization
-+
+ONTAP authorization::
 ONTAP implements a role-based authorization model. The account you use when accessing the ONTAP REST API or API documentation page should have the proper authority.
-
-// .Related information

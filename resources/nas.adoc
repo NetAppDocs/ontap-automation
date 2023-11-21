@@ -107,6 +107,10 @@ The FPolicy engines allow you to identify the external servers that receive the 
 
 The configuration identifying how file access is monitored and what events are generated. This resource type was introduced with ONTAP 9.6.
 
+.FPolicy persistent store
+
+You can configure and administer a persistent store for the ONTAP FPolicy configuration and events. Each SVM can have one persistent store which is shared for the multiple policies within the SVM. This resource type was introduced with ONTAP 9.14.
+
 .FPolicy policies
 
 A container for elements of the FPolicy framework, including FPolicy engines and events. This resource type was introduced with ONTAP 9.6.

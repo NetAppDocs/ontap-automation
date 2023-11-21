@@ -55,4 +55,3 @@ clus = Cluster()
 clus.get()
 # Display the cluster configuration
 print(clus)
-....

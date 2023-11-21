@@ -21,7 +21,7 @@ Fibre Channel logins represent connections formed by Fibre Channel initiators lo
 
 .Namespaces
 
-An NVMe namespace is a collection of addressable logical blocks presented to hosts connected to the SVM using the NVMe over Fabrics protocol. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+An NVMe namespace is a collection of addressable logical blocks presented to hosts connected to the SVM using the NVMe over Fabrics protocol. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8. Support for retrieving performance metrics data was added with ONTAP 9.14.
 
 .NVMe interfaces
 
@@ -29,7 +29,7 @@ NVMe interfaces are the network interfaces configured to support the NVMe over F
 
 .NVMe services
 
-An NVMe service defines the properties of the NVMe controller target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+An NVMe service defines the properties of the NVMe controller target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7. Support for retrieving performance metrics data was added with ONTAP 9.14.
 
 .NVMe subsystem controllers
 
