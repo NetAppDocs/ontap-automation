@@ -67,6 +67,10 @@ Storage ports of the cluster. This resource type was introduced with ONTAP 9.6 a
 
 Quality of service policy configuration. This resource type was introduced with ONTAP 9.6.
 
+.QOS options
+
+Endpoints have been introduced to allow you to retrieve and set QOS options for the cluster. For example, you can reserve a percentage of available system processing resources for background tasks. This resource type was introduced with ONTAP 9.14.
+
 .QOS workloads
 
 A QOS workload represents a storage object tracked by QOS. You can retrieve the QOS workflows. This resource type was introduced with ONTAP 9.10.

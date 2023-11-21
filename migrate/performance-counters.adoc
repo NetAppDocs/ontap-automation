@@ -100,6 +100,7 @@ NetApp provides extensive support for migrating your automation code from ONTAPI
 
 See the appropriate mapping documentation based on the ONTAP release you are using:
 
+* https://docs.netapp.com/us-en/ontap-pcmap-9141/[ONTAP 9.14.1 performance counter mapping^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9131/[ONTAP 9.13.1 performance counter mapping^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9121/[ONTAP 9.12.1 performance counter mapping^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9111/[ONTAP 9.11.1 performance counter mapping^]

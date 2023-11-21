@@ -41,11 +41,11 @@ You can use the Fibre Channel (FC) fabric REST API endpoints to retrieve informa
 
 .Fibre Channel interfaces
 
-A Fibre Channel interface is a logical endpoint associated with an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+A Fibre Channel interface is a logical endpoint associated with an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8. Support for retrieving performance metrics data was added with ONTAP 9.14.
 
 .Fibre Channel ports
 
-A Fibre Channel port is a physical adapter on an ONTAP node used to connect to the Fibre Channel network. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
+A Fibre Channel port is a physical adapter on an ONTAP node used to connect to the Fibre Channel network. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8. Support for retrieving performance metrics data was added with ONTAP 9.14.
 
 .HTTP proxy
 

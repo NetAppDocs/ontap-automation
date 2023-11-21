@@ -18,6 +18,30 @@ NetApp periodically updates the ONTAP REST API to bring you new features, enhanc
 [TIP]
 You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues.
 
+== ONTAP 9.14.1
+
+The ONTAP 9.14.1 release includes over three dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These endpoints support several new ONTAP features as well as updates to existing features. This release focuses primarily on security enhancements but also includes improvements to NAS, QOS, and performance metrics.
+
+Security::
+
+There are two major security features that have been introduced with ONTAP 9.14.1. Open Authorization (OAuth 2.0) is a token-based framework that can be used to restrict access to your ONTAP storage resources. You can use it with clients that access ONTAP through the REST API. Configuration can be performed with any of the ONTAP administrative interfaces including the REST API. The ONTAP 9.14.1 release also includes support for Cisco Duo which provides two-factor authentication for SSH logins. You can configure Duo to operate at the ONTAP cluster or SVM level. In addition to these two new features, several endpoints have been added to improve control over your key stores.
+
+FPolicy persistent storage::
+
+FPolicy provides a platform for ONTAP policy management. It provides a container for the various components or elements, such as events and the policy engine. You can now use the REST API to configure and administer a persistent store for the ONTAP FPolicy configuration and events. Each SVM can have one persistent store which is shared for the multiple policies within the SVM.
+
+QOS options::
+
+Two endpoints have been introduced to allow you to retrieve and set QOS options for the cluster. For example, you can reserve a percentage of available system processing resources for background tasks.
+
+Performance metrics::
+
+ONTAP maintains statistical information about the operational characteristics of the system. This information is presented in a database format consisting of tables and rows. With ONTAP 9.14.1, additional metrics data is added in several resources categories, including Fibre Channel, iSCSI, LUNs, and NVME. This additional metrics data continues to bring the ONTAP REST API closer to parity with the Data ONTAP API (ONTAPI or ZAPI).
+
+Miscellaneous enhancements::
+
+There are several additional enhancements which can be helpful depending on your environment. These new endpoints improve access to the SAN initiators and control of the host cache settings as well as enable access to individual AutoSupport messages.
+
 == ONTAP 9.13.1
 
 ONTAP 9.13.1 continues to expand the capabilities of the ONTAP REST API with over two dozen new API calls. These endpoints support new ONTAP features as well as enhancements to existing features. This release focuses on improvements to security, resource management, enhanced SVM configuration options, and performance metrics.

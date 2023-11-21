@@ -21,7 +21,7 @@ Fibre Channel logins represent connections formed by Fibre Channel initiators th
 
 .Fibre Channel Protocol services
 
-A Fibre Channel Protocol (FCP) service defines the properties of a Fibre Channel target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+A Fibre Channel Protocol (FCP) service defines the properties of a Fibre Channel target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7. Support for retrieving performance metrics data was added with ONTAP 9.14.
 
 .Fibre Channel WWPN aliases
 
@@ -33,13 +33,17 @@ An initiator group (igroup) is a collection of Fibre Channel WWPNs (world wide p
 
 Nested igroups is a new feature with ONTAP 9.9 and support has also been added to the REST API. This REST resource type was introduced with ONTAP 9.9.
 
+.Initiators
+
+An initiator is a Fibre Channel (FC) world wide port name (WWPN), an iSCSI Qualified Name (IQN), or an iSCSI EUI (Extended Unique Identifier) that identifies a host endpoint. You can retrieve initiators for the cluster or a specific SVM. This resource type was introduced with ONTAP 9.14.
+
 .iSCSI credentials
 
 The iSCSI credentials object contains authentication credentials which are used by an initiator and ONTAP. This resource type was introduced with ONTAP 9.6.
 
 .iSCSI services
 
-An iSCSI service defines the properties of the iSCSI target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+An iSCSI service defines the properties of the iSCSI target for an SVM. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7. Support for retrieving performance metrics data was added with ONTAP 9.14.
 
 .iSCSI sessions
 
@@ -59,7 +63,7 @@ The reporting nodes are the cluster nodes from which network paths to a mapped L
 
 .LUNs
 
-A LUN is the logical representation of storage in a storage area network (SAN). This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+A LUN is the logical representation of storage in a storage area network (SAN). This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7. Support for retrieving performance metrics data was added with ONTAP 9.14.
 
 .Port sets
 
