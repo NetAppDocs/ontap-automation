@@ -16,7 +16,7 @@ summary: You can retrieve the instance of a specific ONTAP job. You would typica
 You can retrieve the instance of a specific ONTAP job. You would typically do this to determine if the job and associated operation completed successfully.
 
 [NOTE]
-You should review link:../rest/asynchronous_processing.html[Asynchronous processing using the Job object] before working with ONTAP internal jobs.
+You need the UUID of the job object, which is typically provided after issuing an asynchronous request. Also review link:../rest/asynchronous_processing.html[Asynchronous processing using the Job object] before working with ONTAP internal jobs.
 
 .HTTP method and endpoint
 
