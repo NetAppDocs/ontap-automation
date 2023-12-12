@@ -15,6 +15,8 @@ entries:
       url: /workflows/wf_cls_get_cluster.html
     - title: Update cluster contact
       url: /workflows/wf_cls_update_contact.html
+    - title: Get job instance
+      url: /workflows/wf_jobs_get_job.html
   - title: RBAC
     entries:
     - title: Prepare to use RBAC
