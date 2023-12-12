@@ -5,7 +5,7 @@ keywords: workflow, update cluster, cluster contact
 summary: You can update the contact information for a cluster. Because the request is processed asynchronously, you also need to determine if the associated background job completed successfully.
 ---
 
-= Update cluster contact value
+= Update cluster contact
 :hardbreaks:
 :nofooter:
 :icons: font
