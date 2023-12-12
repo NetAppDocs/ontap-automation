@@ -31,6 +31,10 @@ entries:
         url: /workflows/wf_rbac_ontap_reports.html
     - title: Create user with a role
       url: /workflows/wf_rbac_user_role.html
+  - title: Storage
+    entries:
+    - title: List disks
+      url: /workflows/wf_stor_list_disks.html
   - title: SVM
     entries:
     - title: List SVMs
