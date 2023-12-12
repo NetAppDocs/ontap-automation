@@ -56,7 +56,7 @@ If an asynchronous request is valid, ONTAP creates a background task to process 
 Requests that use the methods POST, PATCH, and DELETE are designed to run asynchronously if they are expected to take more than two seconds to complete.
 +
 [NOTE]
-The `return_timeout` query parameter is available with asynchronous API calls and can convert an asynchronous call to complete synchronously. Refer to `How asynchronous processing works using the Job object` for more information.
+The `return_timeout` query parameter is available with asynchronous API calls and can convert an asynchronous call to complete synchronously. Refer to link:../rest/asynchronous_processing.html[Asynchronous processing using the Job object] for more information.
 
 == Security
 
