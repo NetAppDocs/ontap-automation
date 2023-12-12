@@ -1,0 +1,62 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_net_list_ip_lifs.html
+keywords: workflow, job, job state
+summary: 
+---
+
+= List IP interfaces
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+XXX
+
+You can retrieve the instance of a specific ONTAP job. You would typically do this to determine if the job and associated operation completed successfully.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/cluster/jobs/{uuid}
+|===
+
+.Processing type
+
+Synchronous
+
+.Curl example
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+
+The state value and other fields are included in the returned job object. The job in this example was run as part of updating an ONTAP cluster.
+
+----
+{
+  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+  "description": "PATCH /api/cluster",
+  "state": "success",
+  "message": "success",
+  "code": 0,
+  "_links": {
+    "self": {
+      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+    }
+  }
+}
+----

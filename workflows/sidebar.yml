@@ -17,6 +17,10 @@ entries:
       url: /workflows/wf_cls_update_contact.html
     - title: Get job instance
       url: /workflows/wf_jobs_get_job.html
+  - title: Networking
+    entries:
+    - title: List IP interfaces
+      url: /workflows/wf_net_list_ip_lifs.html
   - title: RBAC
     entries:
     - title: Prepare to use RBAC
@@ -31,6 +35,10 @@ entries:
         url: /workflows/wf_rbac_ontap_reports.html
     - title: Create user with a role
       url: /workflows/wf_rbac_user_role.html
+  - title: Security
+    entries:
+    - title: List accounts
+      url: /workflows/wf_sec_list_accounts.html
   - title: Storage
     entries:
     - title: List disks
