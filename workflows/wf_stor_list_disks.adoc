@@ -68,7 +68,6 @@ curl --request GET \
 .JSON output example
 [%collapsible%closed]
 ====
-[source,json]
 ----
 {
   "records": [
@@ -98,126 +97,9 @@ curl --request GET \
           "href": "/api/storage/disks/NET-1.7"
         }
       }
-    },
-    {
-      "name": "NET-1.5",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.5"
-        }
-      }
-    },
-    {
-      "name": "NET-1.8",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.8"
-        }
-      }
-    },
-    {
-      "name": "NET-1.6",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.6"
-        }
-      }
-    },
-    {
-      "name": "NET-1.1",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.1"
-        }
-      }
-    },
-    {
-      "name": "NET-1.9",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.9"
-        }
-      }
-    },
-    {
-      "name": "NET-1.18",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.18"
-        }
-      }
-    },
-    {
-      "name": "NET-1.4",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.4"
-        }
-      }
-    },
-    {
-      "name": "NET-1.13",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.13"
-        }
-      }
-    },
-    {
-      "name": "NET-1.3",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.3"
-        }
-      }
-    },
-    {
-      "name": "NET-1.10",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.10"
-        }
-      }
-    },
-    {
-      "name": "NET-1.2",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.2"
-        }
-      }
-    },
-    {
-      "name": "NET-1.11",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.11"
-        }
-      }
-    },
-    {
-      "name": "NET-1.19",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.19"
-        }
-      }
     }
   ],
-  "num_records": 16,
+  "num_records": 3,
   "_links": {
     "self": {
       "href": "/api/storage/disks?state=spare"
