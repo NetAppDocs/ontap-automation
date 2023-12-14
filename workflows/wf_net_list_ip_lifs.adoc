@@ -13,9 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-XXX
-
-You can retrieve the instance of a specific ONTAP job. You would typically do this to determine if the job and associated operation completed successfully.
+You can retrieve the IP LIFs assigned to the nodes in the cluster. You might do this to confirm your network configuration or when planning to add another LIF.
 
 .HTTP method and endpoint
 
@@ -33,13 +31,36 @@ This REST API call uses the following method and endpoint.
 
 Synchronous
 
->> fields = name, scope, svm.name, ip.address
+.Additional input parameters for the Curl examples
 
-.Curl example
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|fields
+|Query
+|No
+|Return a limited and salient list of configuration values.
+|===
+
+.Curl example: Return all LIFs with the default configuration values
 
 [source,curl,%autofill]
 curl --request GET \
---location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--location "https://$FQDN_IP/api/network/ip/interfaces" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.Curl example: Return all LIFs with the four specific configuration values
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/network/ip/interfaces?fields=name,scope,svm.name,ip.address" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"

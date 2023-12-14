@@ -87,8 +87,8 @@ In addition to an exact match, other operators are available to return a set of 
 |Less than or equal to
 |>=
 |Greater than or equal to
-|UPDATE
-|Or
+//UPDATE --- Must add the OR operator
+//Or
 |!
 |Not equal to
 |*

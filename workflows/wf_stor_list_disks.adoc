@@ -31,7 +31,9 @@ This REST API call uses the following method and endpoint.
 
 Synchronous
 
-.Additional input parameters for the Curl example
+.Additional input parameters for the Curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
 
 [cols="25,10,10,55"*,options="header"]
 |===
