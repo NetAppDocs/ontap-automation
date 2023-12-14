@@ -26,12 +26,14 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/api/cluster/jobs/{uuid}
+|/api/network/ip/interfaces
 |===
 
 .Processing type
 
 Synchronous
+
+>> fields = name, scope, svm.name, ip.address
 
 .Curl example
 
@@ -58,5 +60,261 @@ The state value and other fields are included in the returned job object. The jo
       "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
     }
   }
+}
+
+>>
+{
+    "records": [
+        {
+            "uuid": "5ded9e38-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_mgmt1",
+            "ip": {
+                "address": "172.29.151.116"
+            },
+            "scope": "cluster",
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/5ded9e38-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "bb03c162-999e-11ee-acad-005056ae6bd8",
+            "name": "cluster_mgmt",
+            "ip": {
+                "address": "172.29.186.156"
+            },
+            "scope": "cluster",
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/bb03c162-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "c5ffbd03-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data1",
+            "ip": {
+                "address": "172.29.186.150"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/c5ffbd03-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "c6612abe-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data2",
+            "ip": {
+                "address": "172.29.186.151"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/c6612abe-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "c6b21b94-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data3",
+            "ip": {
+                "address": "172.29.186.152"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/c6b21b94-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "c7025322-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data4",
+            "ip": {
+                "address": "172.29.186.153"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/c7025322-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "c752cc66-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data5",
+            "ip": {
+                "address": "172.29.186.154"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/c752cc66-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "c7a03719-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data6",
+            "ip": {
+                "address": "172.29.186.155"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/c7a03719-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "ccd4c59c-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data4_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:300f::ac5"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/ccd4c59c-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "d9144c30-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data6_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:300f::ac7"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/d9144c30-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "d961c13b-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data1_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:300f::ac2"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/d961c13b-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "d9ac8d6a-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data5_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:300f::ac6"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/d9ac8d6a-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "d9fce1a3-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data2_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:300f::ac3"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/d9fce1a3-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "da4995a0-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_data3_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:300f::ac4"
+            },
+            "scope": "svm",
+            "svm": {
+                "name": "vs0"
+            },
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/da4995a0-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "da9e7afd-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_cluster_mgmt_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:300f::ac8"
+            },
+            "scope": "cluster",
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/da9e7afd-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        },
+        {
+            "uuid": "e6db58b4-999e-11ee-acad-005056ae6bd8",
+            "name": "sti214-vsim-sr027o_mgmt1_inet6",
+            "ip": {
+                "address": "fd20:8b1e:b255:3008::1a0"
+            },
+            "scope": "cluster",
+            "_links": {
+                "self": {
+                    "href": "/api/network/ip/interfaces/e6db58b4-999e-11ee-acad-005056ae6bd8"
+                }
+            }
+        }
+    ],
+    "num_records": 16,
+    "_links": {
+        "self": {
+            "href": "/api/network/ip/interfaces?fields=name,scope,svm.name,ip.address"
+        }
+    }
 }
 ----

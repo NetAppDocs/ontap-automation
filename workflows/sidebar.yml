@@ -3,12 +3,6 @@ title: Workflows
 entries:
   - title: Prepare to use the workflows
     url: /workflows/prepare_workflows.html
-  - title: Certificates and keys
-    entries:
-    - title: List certificates
-      url: /workflows/wf_cert_list_certificates.html
-    - title: Install certificate
-      url: /workflows/wf_cert_install_certificate.html
   - title: Cluster
     entries:
     - title: Get cluster configuration
@@ -37,8 +31,12 @@ entries:
       url: /workflows/wf_rbac_user_role.html
   - title: Security
     entries:
-    - title: List accounts
-      url: /workflows/wf_sec_list_accounts.html
+    - title: Certificates and keys
+      entries:
+      - title: List certificates
+        url: /workflows/wf_cert_list_certificates.html
+      - title: Install certificate
+        url: /workflows/wf_cert_install_certificate.html
   - title: Storage
     entries:
     - title: List disks

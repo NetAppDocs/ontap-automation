@@ -13,9 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-XXX
-
-You can retrieve the instance of a specific ONTAP job. You would typically do this to determine if the job and associated operation completed successfully.
+You can retrieve a list of disks in the cluster. You might do this to locate one or more spares to use as part of creating an aggregate.
 
 .HTTP method and endpoint
 
@@ -33,11 +31,34 @@ This REST API call uses the following method and endpoint.
 
 Synchronous
 
-.Curl example
+.Additional input parameters for the Curl example
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|state
+|Query
+|No
+|Can be used to identify the spare disks available for new aggregates.
+|===
+
+.Curl example: return all the disks
 
 [source,curl,%autofill]
 curl --request GET \
---location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--location "https://$FQDN_IP/api/storage/disks" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.Curl example: return spare disks
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/disks?state=spare" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
@@ -59,4 +80,160 @@ The state value and other fields are included in the returned job object. The jo
     }
   }
 }
+>>>
+{
+    "records": [
+        {
+            "name": "NET-1.20",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.20"
+                }
+            }
+        },
+        {
+            "name": "NET-1.12",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.12"
+                }
+            }
+        },
+        {
+            "name": "NET-1.7",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.7"
+                }
+            }
+        },
+        {
+            "name": "NET-1.5",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.5"
+                }
+            }
+        },
+        {
+            "name": "NET-1.8",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.8"
+                }
+            }
+        },
+        {
+            "name": "NET-1.6",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.6"
+                }
+            }
+        },
+        {
+            "name": "NET-1.1",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.1"
+                }
+            }
+        },
+        {
+            "name": "NET-1.9",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.9"
+                }
+            }
+        },
+        {
+            "name": "NET-1.18",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.18"
+                }
+            }
+        },
+        {
+            "name": "NET-1.4",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.4"
+                }
+            }
+        },
+        {
+            "name": "NET-1.13",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.13"
+                }
+            }
+        },
+        {
+            "name": "NET-1.3",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.3"
+                }
+            }
+        },
+        {
+            "name": "NET-1.10",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.10"
+                }
+            }
+        },
+        {
+            "name": "NET-1.2",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.2"
+                }
+            }
+        },
+        {
+            "name": "NET-1.11",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.11"
+                }
+            }
+        },
+        {
+            "name": "NET-1.19",
+            "state": "spare",
+            "_links": {
+                "self": {
+                    "href": "/api/storage/disks/NET-1.19"
+                }
+            }
+        }
+    ],
+    "num_records": 16,
+    "_links": {
+        "self": {
+            "href": "/api/storage/disks?state=spare"
+        }
+    }
+}
+
 ----
