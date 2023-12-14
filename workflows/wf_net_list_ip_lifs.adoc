@@ -56,7 +56,7 @@ curl --request GET \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
-.Curl example: Return all LIFs with the four specific configuration values
+.Curl example: Return all LIFs with four specific configuration values
 
 [source,curl,%autofill]
 curl --request GET \
