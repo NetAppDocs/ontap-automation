@@ -3,12 +3,6 @@ title: Workflows
 entries:
   - title: Prepare to use the workflows
     url: /workflows/prepare_workflows.html
-  - title: Certificates and keys
-    entries:
-    - title: List certificates
-      url: /workflows/wf_cert_list_certificates.html
-    - title: Install certificate
-      url: /workflows/wf_cert_install_certificate.html
   - title: Cluster
     entries:
     - title: Get cluster configuration
@@ -17,20 +11,36 @@ entries:
       url: /workflows/wf_cls_update_contact.html
     - title: Get job instance
       url: /workflows/wf_jobs_get_job.html
-  - title: RBAC
+  - title: Networking
     entries:
-    - title: Prepare to use RBAC
-      url: /workflows/wf_rbac_prepare.html
-    - title: Create roles
+    - title: List IP interfaces
+      url: /workflows/wf_net_list_ip_lifs.html
+  - title: Security
+    entries:
+    - title: Certificates and keys
       entries:
-      - title: Limit SVM volume operations
-        url: /workflows/wf_rbac_limit_svm.html
-      - title: Enable data protection
-        url: /workflows/wf_rbac_data_protection.html
-      - title: Allow ONTAP report generation
-        url: /workflows/wf_rbac_ontap_reports.html
-    - title: Create user with a role
-      url: /workflows/wf_rbac_user_role.html
+      - title: List certificates
+        url: /workflows/wf_cert_list_certificates.html
+      - title: Install certificate
+        url: /workflows/wf_cert_install_certificate.html
+    - title: RBAC
+      entries:
+      - title: Prepare to use RBAC
+        url: /workflows/wf_rbac_prepare.html
+      - title: Create roles
+        entries:
+        - title: Limit SVM volume operations
+          url: /workflows/wf_rbac_limit_svm.html
+        - title: Enable data protection
+          url: /workflows/wf_rbac_data_protection.html
+        - title: Allow ONTAP report generation
+          url: /workflows/wf_rbac_ontap_reports.html
+      - title: Create user with a role
+        url: /workflows/wf_rbac_user_role.html
+  - title: Storage
+    entries:
+    - title: List disks
+      url: /workflows/wf_stor_list_disks.html
   - title: SVM
     entries:
     - title: List SVMs
