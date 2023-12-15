@@ -72,15 +72,15 @@ When issuing an API call that uses GET, you can limit or filter the returned obj
 
 .Parsing and interpreting query parameters
 
-A set of one or more parameters is appended to the URL string beginning after the `?` character. If more than one parameter is provided, the query parameters are split with the `&` character. Then each key and value in a pair are split at the `=` character.
+A set of one or more parameters can be appended to the URL string beginning after the `?` character. If more than one parameter is provided, the query parameters are split using the `&` character. Then each key and value in the parameter are split at the `=` character.
 
-For example, you can specify an exact value to match using only the equal sign as follows:
+For example, you can specify an exact value to match using only the equal sign:
 
 `<field>=<value>`
 
-For a more complex query, the additional operator is placed after the equal sign. For example, to select objects with a field that is greater than or equal to a specific value, this would be:
+For a more complex query, the additional operator is placed after the equal sign. For example, to select the objects based on a specific field that is greater than or equal to some value the query would be:
 
-`<field>=>=<value>`
+`<field>\=>=<value>`
 
 .Filtering operations
 
@@ -110,6 +110,14 @@ Any fields that are not set are generally excluded from matching queries.
 |===
 
 You can also return a collection of objects based on whether a specific field is set or not set by using the `null` keyword or its negation `!null` as part of the query.
+
+.Examples
+
+Below are a few examples used in the REST API workflows at this site.
+
+* link:../workflows/wf_stor_list_disks.html[List disks]
++
+Filtering based on the `state` variable to select spare disks.
 
 == Requesting specific object fields
 
