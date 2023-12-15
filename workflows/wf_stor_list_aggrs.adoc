@@ -1,0 +1,112 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_stor_list_aggrs.html
+keywords: workflow, storage, aggregates, list aggregates
+summary: 
+---
+
+= List aggregates
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+XXX
+
+You can retrieve a list of disks in the cluster. You might do this to locate one or more spares to use as part of creating an aggregate.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/storage/disks
+|===
+
+.Processing type
+
+Synchronous
+
+.Additional input parameters for the Curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|state
+|Query
+|No
+|Can be used to identify the spare disks available for new aggregates.
+|===
+
+.Curl example: return all the disks
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/disks" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.Curl example: return spare disks
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/disks?state=spare" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+[%collapsible%closed]
+====
+----
+{
+  "records": [
+    {
+      "name": "NET-1.20",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.20"
+        }
+      }
+    },
+    {
+      "name": "NET-1.12",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.12"
+        }
+      }
+    },
+    {
+      "name": "NET-1.7",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.7"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
+  "_links": {
+    "self": {
+      "href": "/api/storage/disks?state=spare"
+    }
+  }
+}
+----
+====
