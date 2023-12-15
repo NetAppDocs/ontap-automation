@@ -17,6 +17,10 @@ entries:
       url: /workflows/wf_net_list_ip_lifs.html
   - title: Security
     entries:
+    - title: Accounts
+      entries:
+      - title: List accounts
+        url: /workflows/wf_sec_list_accounts.html
     - title: Certificates and keys
       entries:
       - title: List certificates
