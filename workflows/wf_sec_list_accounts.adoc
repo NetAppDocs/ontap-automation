@@ -5,7 +5,7 @@ keywords: workflow, job, job state
 summary: 
 ---
 
-= Get job instance
+= List the accounts
 :hardbreaks:
 :nofooter:
 :icons: font

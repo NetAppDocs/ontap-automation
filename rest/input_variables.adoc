@@ -72,9 +72,9 @@ When issuing an API call that uses GET, you can limit or filter the returned obj
 
 .Parsing and interpreting query parameters
 
-A set of one or more parameters can be appended to the URL string beginning after the `?` character. If more than one parameter is provided, the query parameters are split using the `&` character. Then each key and value in the parameter are split at the `=` character.
+A set of one or more parameters can be appended to the URL string beginning after the `?` character. If more than one parameter is provided, the query parameters are split based on the `&` character. Each key and value in the parameter are split at the `=` character.
 
-For example, you can specify an exact value to match using only the equal sign:
+For example, you can specify an exact value to match using the equal sign:
 
 `<field>=<value>`
 
