@@ -41,7 +41,8 @@ curl --request GET \
 --header "Authorization: Basic $BASIC_AUTH"
 
 .JSON output example
-
+[%collapsible%closed]
+====
 ----
 {
   "records": [
@@ -95,3 +96,4 @@ curl --request GET \
   }
 }
 ----
+====
