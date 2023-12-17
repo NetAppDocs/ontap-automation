@@ -68,15 +68,29 @@ The content of the request body varies depending on the specific call. The HTTP 
 
 == Filtering objects
 
-When issuing an API call that uses GET, you can limit or filter the returned objects based on any attribute. For example, you can specify an exact value to match:
+When issuing an API call with the GET method, you can limit or filter the returned objects based on any attribute using a query parameter.
 
-`<field>=<query value>`
+.Parsing and interpreting query parameters
 
-In addition to an exact match, other operators are available to return a set of objects over a range of values. The ONTAP REST API supports the filtering operators shown in the table below.
+A set of one or more parameters can be appended to the URL string beginning after the `?` character. If more than one parameter is provided, the query parameters are split based on the `&` character. Each key and value in the parameter are split at the `=` character.
+
+For example, you can specify an exact value to match using the equal sign:
+
+`<field>=<value>`
+
+For a more complex query, the additional operator is placed after the equal sign. For example, to select the set of objects based on a specific field that is greater than or equal to some value, the query would be:
+
+`<field>\=>=<value>`
+
+.Filtering operators
+
+In addition to the examples provided above, additional operators are available to return objects over a range of values. A summary of the filtering operators supported by the ONTAP REST API is shown in the table below.
+
+[NOTE]
+Any fields that are not set are generally excluded from matching queries.
 
 |===
 |Operator |Description
-
 |=
 |Equal to
 |<
@@ -97,8 +111,13 @@ In addition to an exact match, other operators are available to return a set of 
 
 You can also return a collection of objects based on whether a specific field is set or not set by using the `null` keyword or its negation `!null` as part of the query.
 
-[NOTE]
-Any fields that are not set are generally excluded from matching queries.
+.Workflow examples
+
+Some examples are included below from the REST API workflows at this site.
+
+* link:../workflows/wf_stor_list_disks.html[List disks]
++
+Filter based on the `state` variable to select the spare disks.
 
 == Requesting specific object fields
 

@@ -1,0 +1,95 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_stor_list_aggrs.html
+keywords: workflow, storage, aggregates, list aggregates
+summary: 
+---
+
+= List the aggregates
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can retrieve a list of aggregates in the cluster. You might do this to assess utilization and performance.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/storage/disks
+|===
+
+.Processing type
+
+Synchronous
+
+.Additional input parameters for the Curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|node.name
+|Query
+|No
+|Can be used to identify the node each aggregate is attached to.
+|===
+
+.Curl example: return all aggregates with the default configuration values
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.Curl example: return all aggregates with a specific configuration value
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates?fields=node.name" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+[%collapsible%closed]
+====
+----
+{
+  "records": [
+    {
+      "uuid": "760d8137-fc59-47da-906a-cc28db0a1c1b",
+      "name": "sti214_vsim_sr027o_aggr1",
+      "node": {
+        "name": "sti214-vsim-sr027o"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/aggregates/760d8137-fc59-47da-906a-cc28db0a1c1b"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/storage/aggregates?fields=node.name"
+    }
+  }
+}
+----
+====
