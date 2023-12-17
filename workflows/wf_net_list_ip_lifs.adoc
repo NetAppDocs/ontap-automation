@@ -5,7 +5,7 @@ keywords: workflow, job, job state
 summary: 
 ---
 
-= List IP interfaces
+= List the IP interfaces
 :hardbreaks:
 :nofooter:
 :icons: font

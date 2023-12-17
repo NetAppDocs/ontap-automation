@@ -47,7 +47,7 @@ In addition to the parameters common with all REST API calls, the following para
 |$JOB_ID
 |Path
 |Yes
-|Needed identify the job being reuqested.
+|Needed to identify the job being requested.
 |===
 
 .Curl example

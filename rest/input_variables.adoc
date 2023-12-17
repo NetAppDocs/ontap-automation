@@ -68,7 +68,7 @@ The content of the request body varies depending on the specific call. The HTTP 
 
 == Filtering objects
 
-When issuing an API call that uses GET, you can limit or filter the returned objects based on any attribute using a query parameter.
+When issuing an API call with the GET method, you can limit or filter the returned objects based on any attribute using a query parameter.
 
 .Parsing and interpreting query parameters
 
@@ -78,13 +78,13 @@ For example, you can specify an exact value to match using the equal sign:
 
 `<field>=<value>`
 
-For a more complex query, the additional operator is placed after the equal sign. For example, to select the objects based on a specific field that is greater than or equal to some value the query would be:
+For a more complex query, the additional operator is placed after the equal sign. For example, to select the set of objects based on a specific field that is greater than or equal to some value, the query would be:
 
 `<field>\=>=<value>`
 
 .Filtering operators
 
-In addition to the examples provided above, additional operators are available to return a set of objects over a range of values. A summary of the filtering operators supported by the ONTAP REST API is shown in the table below.
+In addition to the examples provided above, additional operators are available to return objects over a range of values. A summary of the filtering operators supported by the ONTAP REST API is shown in the table below.
 
 [NOTE]
 Any fields that are not set are generally excluded from matching queries.
@@ -113,7 +113,7 @@ You can also return a collection of objects based on whether a specific field is
 
 .Workflow examples
 
-Below are a few examples used in the REST API workflows at this site.
+Some examples are included below from the REST API workflows at this site.
 
 * link:../workflows/wf_stor_list_disks.html[List disks]
 +

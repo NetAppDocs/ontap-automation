@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_sec_list_accounts.html
-keywords: workflow, job, job state
+keywords: workflow, security, accounts, list accounts
 summary: 
 ---
 
@@ -13,12 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-XXX
-
-You can retrieve the instance of a specific ONTAP job. You would typically do this to determine if the job and associated operation completed successfully.
-
-[NOTE]
-You need the UUID of the job object, which is typically provided after issuing an asynchronous request. Also review link:../rest/asynchronous_processing.html[Asynchronous processing using the Job object] before working with ONTAP internal jobs.
+You can retrieve a list of the accounts. Yuo might do this to asess your security environment or before creating a new account.
 
 .HTTP method and endpoint
 
@@ -29,7 +24,7 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/api/cluster/jobs/{uuid}
+|/api/security/accounts
 |===
 
 .Processing type
@@ -40,25 +35,62 @@ Synchronous
 
 [source,curl,%autofill]
 curl --request GET \
---location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--location "https://$FQDN_IP/api/security/accounts" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
 .JSON output example
 
-The state value and other fields are included in the returned job object. The job in this example was run as part of updating an ONTAP cluster.
-
 ----
 {
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-  "description": "PATCH /api/cluster",
-  "state": "success",
-  "message": "success",
-  "code": 0,
+  "records": [
+    {
+      "owner": {
+        "uuid": "642573a8-9d14-11ee-9330-005056aed3de",
+        "name": "vs0",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/642573a8-9d14-11ee-9330-005056aed3de"
+          }
+        }
+      },
+      "name": "vsadmin",
+      "_links": {
+        "self": {
+          "href": "/api/security/accounts/642573a8-9d14-11ee-9330-005056aed3de/vsadmin"
+        }
+      }
+    },
+    {
+      "owner": {
+        "uuid": "fdb6fe29-9d13-11ee-9330-005056aed3de",
+        "name": "sti214nscluster-1"
+      },
+      "name": "admin",
+      "_links": {
+        "self": {
+          "href": "/api/security/accounts/fdb6fe29-9d13-11ee-9330-005056aed3de/admin"
+        }
+      }
+    },
+    {
+      "owner": {
+        "uuid": "fdb6fe29-9d13-11ee-9330-005056aed3de",
+        "name": "sti214nscluster-1"
+      },
+      "name": "autosupport",
+      "_links": {
+        "self": {
+          "href": "/api/security/accounts/fdb6fe29-9d13-11ee-9330-005056aed3de/autosupport"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
   "_links": {
     "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      "href": "/api/security/accounts"
     }
   }
 }

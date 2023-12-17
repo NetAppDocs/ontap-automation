@@ -5,7 +5,7 @@ keywords: workflow, storage, aggregates, list aggregates
 summary: 
 ---
 
-= List aggregates
+= List the aggregates
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-XXX
-
-You can retrieve a list of disks in the cluster. You might do this to locate one or more spares to use as part of creating an aggregate.
+You can retrieve a list of aggregates in the cluster. You might do this to assess utilization and performance.
 
 .HTTP method and endpoint
 
@@ -43,26 +41,26 @@ In addition to the parameters common with all REST API calls, the following para
 |Type
 |Required
 |Description
-|state
+|node.name
 |Query
 |No
-|Can be used to identify the spare disks available for new aggregates.
+|Can be used to identify the node each aggregate is attached to.
 |===
 
-.Curl example: return all the disks
+.Curl example: return all aggregates with the default configuration values
 
 [source,curl,%autofill]
 curl --request GET \
---location "https://$FQDN_IP/api/storage/disks" \
+--location "https://$FQDN_IP/api/storage/aggregates" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
-.Curl example: return spare disks
+.Curl example: return all aggregates with a specific configuration value
 
 [source,curl,%autofill]
 curl --request GET \
---location "https://$FQDN_IP/api/storage/disks?state=spare" \
+--location "https://$FQDN_IP/api/storage/aggregates?fields=node.name" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
@@ -74,37 +72,22 @@ curl --request GET \
 {
   "records": [
     {
-      "name": "NET-1.20",
-      "state": "spare",
+      "uuid": "760d8137-fc59-47da-906a-cc28db0a1c1b",
+      "name": "sti214_vsim_sr027o_aggr1",
+      "node": {
+        "name": "sti214-vsim-sr027o"
+      },
       "_links": {
         "self": {
-          "href": "/api/storage/disks/NET-1.20"
-        }
-      }
-    },
-    {
-      "name": "NET-1.12",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.12"
-        }
-      }
-    },
-    {
-      "name": "NET-1.7",
-      "state": "spare",
-      "_links": {
-        "self": {
-          "href": "/api/storage/disks/NET-1.7"
+          "href": "/api/storage/aggregates/760d8137-fc59-47da-906a-cc28db0a1c1b"
         }
       }
     }
   ],
-  "num_records": 3,
+  "num_records": 1,
   "_links": {
     "self": {
-      "href": "/api/storage/disks?state=spare"
+      "href": "/api/storage/aggregates?fields=node.name"
     }
   }
 }
