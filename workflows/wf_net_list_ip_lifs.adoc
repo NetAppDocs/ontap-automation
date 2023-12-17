@@ -5,7 +5,7 @@ keywords: workflow, job, job state
 summary: 
 ---
 
-= List IP interfaces
+= List the IP interfaces
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -47,7 +47,7 @@ In addition to the parameters common with all REST API calls, the following para
 |Return a limited list of the relevant configuration values.
 |===
 
-.Curl example: Return all LIFs with the default configuration values
+.Curl example: return all LIFs with the default configuration values
 
 [source,curl,%autofill]
 curl --request GET \

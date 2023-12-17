@@ -1,0 +1,99 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_sec_list_accounts.html
+keywords: workflow, security, accounts, list accounts
+summary: 
+---
+
+= List the accounts
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can retrieve a list of the accounts. You might do this to assess your security environment or before creating a new account.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/security/accounts
+|===
+
+.Processing type
+
+Synchronous
+
+.Curl example
+
+[source,curl,%autofill]
+curl --request GET \
+--location "https://$FQDN_IP/api/security/accounts" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+[%collapsible%closed]
+====
+----
+{
+  "records": [
+    {
+      "owner": {
+        "uuid": "642573a8-9d14-11ee-9330-005056aed3de",
+        "name": "vs0",
+        "_links": {
+          "self": {
+            "href": "/api/svm/svms/642573a8-9d14-11ee-9330-005056aed3de"
+          }
+        }
+      },
+      "name": "vsadmin",
+      "_links": {
+        "self": {
+          "href": "/api/security/accounts/642573a8-9d14-11ee-9330-005056aed3de/vsadmin"
+        }
+      }
+    },
+    {
+      "owner": {
+        "uuid": "fdb6fe29-9d13-11ee-9330-005056aed3de",
+        "name": "sti214nscluster-1"
+      },
+      "name": "admin",
+      "_links": {
+        "self": {
+          "href": "/api/security/accounts/fdb6fe29-9d13-11ee-9330-005056aed3de/admin"
+        }
+      }
+    },
+    {
+      "owner": {
+        "uuid": "fdb6fe29-9d13-11ee-9330-005056aed3de",
+        "name": "sti214nscluster-1"
+      },
+      "name": "autosupport",
+      "_links": {
+        "self": {
+          "href": "/api/security/accounts/fdb6fe29-9d13-11ee-9330-005056aed3de/autosupport"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
+  "_links": {
+    "self": {
+      "href": "/api/security/accounts"
+    }
+  }
+}
+----
+====
