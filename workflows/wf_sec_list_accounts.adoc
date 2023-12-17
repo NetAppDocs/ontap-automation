@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can retrieve a list of the accounts. Yuo might do this to asess your security environment or before creating a new account.
+You can retrieve a list of the accounts. You might do this to assess your security environment or before creating a new account.
 
 .HTTP method and endpoint
 
