@@ -1,0 +1,4 @@
+---
+permalink: get-started/retrieve_cluster_software_version.html
+redirect: ontap-automation/rest/rest_web_services_foundation.html
+---
