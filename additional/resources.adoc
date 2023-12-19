@@ -13,7 +13,7 @@ summary: There are several additional resources you can access to get help and f
 :imagesdir: ../media/
 
 [.lead]
-There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
+There are several additional resources available to help you automate the deployment and administration of your ONTAP storage systems.
 
 == ONTAP 9 resources
 
@@ -51,7 +51,7 @@ https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP^]
 +
 https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html[NetApp PCL documentation for 9.14.1^]
 
-* Provides resources and documentation needed to use the ONTAP REST API, including the ONTAP Python client library.
+* Provides resources and documentation needed to use the ONTAP REST API.
 +
 https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]
 
@@ -59,7 +59,7 @@ https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful AP
 
 * The CLI passthrough provides a technique for executing ONTAP CLI commands using the REST API.
 +
-* https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api[Using the private CLI passthrough with the ONTAP REST API^]
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api[Using the private CLI passthrough with the ONTAP REST API^]
 
 * If you're new to using Ansible for ONTAP automation, this is a good place to start.
 +
