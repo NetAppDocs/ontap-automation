@@ -33,77 +33,62 @@ https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[
 +
 https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[ONTAP 9 Product Library^]
 
-== ONTAP 9 resources - OLD
-
-* https://docs.netapp.com/us-en/ontap-family/[ONTAP 9 product documentation^]
-+
-Provides documentation for the ONTAP 9 product family.
-
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^]
-+
-ONTAP 9 release notes with information about the current release.
-
-* https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[ONTAP and ONTAP System Manager Resources^]
-+
-Includes documentation and other helpful links you need to plan, administer, and support ONTAP 9.
-
-* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[ONTAP 9 Product Library^]
-+
-Access the release notes and other documentation for previous ONTAP releases.
-
 == ONTAP 9 developer resources
 
-* link:../migrate/mapping.html[ONTAPI to REST API mapping]
+* Helps to get started with Ansible in a DevOps environment.
 +
-Provides the key ONTAPI calls and a mapping to the equivalent REST API calls. Select the appropriate ONTAP release.
+https://www.netapp.com/devops-solutions/ansible/[NetApp Ansible DevOps Solutions^]
 
-* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP^]
+* Provides the key ONTAPI calls and a mapping to the equivalent REST API calls. Select the appropriate ONTAP release.
 +
-The NetApp Python Client Library package at PyPI.
+link:../migrate/mapping.html[ONTAPI to REST API mapping]
 
-* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html[NetApp PCL documentation for 9.14.1^]
-//https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html[NetApp PCL documentation for 9.13.1^]
+* The NetApp Python Client Library package at PyPI.
 +
-Documentation for the NetApp Python Client Library.
+https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP^]
 
-* https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]
+* Documentation for the NetApp Python Client Library.
 +
-Provides resources and documentation needed to use the ONTAP REST API, including the ONTAP Python client library.
+https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html[NetApp PCL documentation for 9.14.1^]
+
+* Provides resources and documentation needed to use the ONTAP REST API, including the ONTAP Python client library.
++
+https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]
 
 == Blog articles
 
+* The CLI passthrough provides a technique for executing ONTAP CLI commands using the REST API.
++
 * https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api[Using the private CLI passthrough with the ONTAP REST API^]
-+
-The CLI passthrough provides a technique for executing ONTAP CLI commands using the REST API.
 
-* https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[Getting Started with NetApp and Ansible: Install Ansible^]
+* If you're new to using Ansible for ONTAP automation, this is a good place to start.
 +
-If you're new to using Ansible for ONTAP automation, this is a good place to start.
+https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[Getting Started with NetApp and Ansible: Install Ansible^]
 
 == Videos
 
-* https://www.youtube.com/watch?v=Wws3SB5d9Ss[Getting started with the NetApp ONTAP Python client library^]
+* A good introduction to the NetApp Python client library and how to get started writing code using the library.
 +
-Good introduction to the NetApp Python client library and how to get started writing code using the library.
+https://www.youtube.com/watch?v=Wws3SB5d9Ss[Getting started with the NetApp ONTAP Python client library^]
 
-// Dec 19 2023
+* This video is also available through NetApp TV at link:https://tv.netapp.com/detail/video/6217195551001[Ansible Certified Modules^].
++
 video::L5DZBV_Sg9E[youtube, width=848, height=480]
 
-The above video is also available through NetApp TV at link:https://tv.netapp.com/detail/video/6217195551001[Ansible Certified Modules^].
-
+* A look at the Ansible Certified Modules.
++
 video::ZlmQ5IuVZD8[youtube, width=848, height=480]
-// -----------
 
 == NetApp resources
 
-* https://mysupport.netapp.com/[NetApp Support^]
+* Access troubleshooting tools, documentation, and technical support assistance.
 +
-Access troubleshooting tools, documentation, and technical support assistance.
+https://mysupport.netapp.com/[NetApp Support^]
 
-* https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^]
+* Access requirements and compatibility information related to using ONTAP 9 and the ONTAP REST API.
 +
-Access requirements and compatibility information related to using ONTAP 9 and the ONTAP REST API.
+https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^]
 
-* http://www.netapp.com/us/library/index.aspx[NetApp library of technical reports and white papers^]
+* Access technical reports, white papers, and other documents.
 +
-Access technical reports, white papers, and other documents.
+http://www.netapp.com/us/library/index.aspx[NetApp library of technical reports and white papers^]
