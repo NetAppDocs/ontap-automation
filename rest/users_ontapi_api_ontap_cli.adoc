@@ -43,4 +43,4 @@ For more information, see the https://library.netapp.com/ecm/ecm_download_file/E
 .Related information
 
 * link:../rest/input_variables.html[Input variables controlling an API request]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAPI to REST API mapping information^]
+* link:../migrate/mapping.html[ONTAPI to REST API mapping]
