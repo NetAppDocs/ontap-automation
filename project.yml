@@ -47,6 +47,12 @@ homepage:
           url: /resources/overview_categories.html
         - title: API reference
           url: /reference/api_reference.html
+    - title: Automation
+      links:
+        - title: Workflows
+          url: /workflows/prepare_workflows.html
+        - title: Python client library
+          url: /python/overview_pcl.html
     - title: Migrate to the REST API
       links:
         - title: ONTAPI disablement
@@ -57,10 +63,6 @@ homepage:
           url: /migrate/performance-counters.html
         - title: Blog articles
           url: /migrate/blogs.html
-    - title: Automation
-      links:
-        - title: Python client library
-          url: /python/overview_pcl.html
     - title: Knowledge and support
       links:
         - title: Additional resources
