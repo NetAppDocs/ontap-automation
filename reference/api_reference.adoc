@@ -52,7 +52,7 @@ You can access a copy of the ONTAP REST API reference documentation through the 
 * https://docs.netapp.com/us-en/ontap-restapi-9121/[ONTAP 9.12.1^]
 * https://docs.netapp.com/us-en/ontap-restapi-9111/[ONTAP 9.11.1^]
 * https://docs.netapp.com/us-en/ontap-restapi-9101/[ONTAP 9.10.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9991/[ONTAP 9.9.1^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/[ONTAP 9.9.1^]
 * https://docs.netapp.com/us-en/ontap-restapi-98/[ONTAP 9.8^]
 * https://docs.netapp.com/us-en/ontap-restapi-97/[ONTAP 9.7^]
 * https://docs.netapp.com/us-en/ontap-restapi-96/[ONTAP 9.6^]

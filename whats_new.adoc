@@ -176,7 +176,7 @@ ONTAP 9.9.1 continues to expand the capabilities of the ONTAP REST API. There ar
 
 Mapping ONTAPI to the ONTAP 9 REST API::
 
-To help you transition your ONTAP automation code to the REST API, NetApp provides API mapping documentation. This reference includes a list of ONTAPI calls and the REST API equivalent for each. The mapping document has been updated to include the new ONTAP 9.9.1 API end points. See https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895[ONTAPI to REST API mapping^] for more information.
+To help you transition your ONTAP automation code to the REST API, NetApp provides API mapping documentation. This reference includes a list of ONTAPI calls and the REST API equivalent for each. The mapping document has been updated to include the new ONTAP 9.9.1 API end points. See link:../migrate/mapping.html[ONTAPI to REST API mapping] for more information.
 
 API endpoints for new ONTAP 9.9.1 core features::
 
@@ -196,7 +196,7 @@ ONTAP 9.8 greatly expands the breadth and depth of the ONTAP REST API. It includ
 
 Mapping ONTAPI to the ONTAP 9 REST API::
 
-To help you update your ONTAPI automation, NetApp provides a list of ONTAPI calls that require one or more input parameters, along with a mapping of those calls to the equivalent ONTAP 9 REST API call. See https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAPI to REST API mapping^] for more information.
+To help you update your ONTAPI automation, NetApp provides a list of ONTAPI calls that require one or more input parameters, along with a mapping of those calls to the equivalent ONTAP 9 REST API call. See link:../migrate/mapping.html[ONTAPI to REST API mapping] for more information.
 
 API endpoints for new ONTAP 9.8 core features::
 
