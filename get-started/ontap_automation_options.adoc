@@ -32,7 +32,8 @@ The Python client library is a package you can use when writing scripts to acces
 
 == Using Ansible
 
-Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems. You should begin by reviewing the documentation at this site, including link:../automate/ontap_ansible.html[ONTAP and Ansible automation].
+Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems. You should begin by reviewing the documentation at this site.
+//, including link:../automate/ontap_ansible.html[ONTAP and Ansible automation].
 
 == BlueXP automation catalog
 
