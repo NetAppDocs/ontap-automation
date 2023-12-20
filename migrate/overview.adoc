@@ -20,4 +20,4 @@ NetApp first introduced the REST API with ONTAP 9.6. Since then the REST API has
 .Related information
 
 * https://mysupport.netapp.com/info/communications/ECMLP2880232.html[CPC-00410 End of availability: ONTAPI^]
-* https://devnet.netapp.com/restapi.php[NetApp DevNet: ONTAP REST API^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification[FAQs on ZAPI to ONTAP REST API transformation for CPC^]
