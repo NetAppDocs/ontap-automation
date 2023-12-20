@@ -16,7 +16,7 @@ sidebar:
     - section: rest
     - section: workflows
     - section: manage
-    - section: python
+    - section: sw-tools
     - section: migrate
     - section: reference
     - section: additional
@@ -41,14 +41,16 @@ homepage:
       links:
         - title: REST implementation details
           url: /rest/rest_web_services_foundation.html
-        - title: Additional considerations
-          url: /rest/object_references_and_access.html
+        - title: RBAC security
+          url: /rest/rbac_overview.html
         - title: Summary of REST resources
           url: /resources/overview_categories.html
         - title: API reference
           url: /reference/api_reference.html
     - title: Automation
       links:
+        - title: Workflows
+          url: /workflows/prepare_workflows.html
         - title: Python client library
           url: /python/overview_pcl.html
     - title: Migrate to the REST API
@@ -65,8 +67,6 @@ homepage:
       links:
         - title: Additional resources
           url: /additional/resources.html
-        - title: NetApp DevNet
-          url: https://devnet.netapp.com/restapi.php
         - title: ONTAP 9 docs
           url: https://docs.netapp.com/us-en/ontap/
         - title: ONTAP Select docs
