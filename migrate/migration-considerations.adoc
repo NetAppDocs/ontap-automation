@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: rest/users_ontapi_api_ontap_cli.html
+permalink: migrate/migration-considerations.html
 keywords: snapdiff, migrating to rest
-summary: ONTAPI is a set of API calls provided through the Network Manageability SDK that can be used to administer ONTAP storage systems. There are differences between the REST API and the ONTAPI API calls, as well as between the REST API and ONTAP CLI.
+summary: 
 ---
 
-= Users of the ONTAPI API and ONTAP CLI
+= Migration considerations
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,6 +13,8 @@ summary: ONTAPI is a set of API calls provided through the Network Manageability
 :imagesdir: ../media/
 
 [.lead]
+XXX
+
 ONTAPI is a set of API calls provided through the Network Manageability SDK that can be used to administer ONTAP storage systems. There are differences between the REST API and the ONTAPI API calls, as well as between the REST API and ONTAP CLI. You should understand these differences before using the REST API in a production environment.
 
 == General design differences
