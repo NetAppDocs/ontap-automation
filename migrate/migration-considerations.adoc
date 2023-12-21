@@ -13,22 +13,27 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-XXX
-
-ONTAPI is a set of API calls provided through the Network Manageability SDK that can be used to administer ONTAP storage systems. There are differences between the REST API and the ONTAPI API calls, as well as between the REST API and ONTAP CLI. You should understand these differences before using the REST API in a production environment.
+As part of migrating to the ONTAP REST API from either the ONTAPI API (ZAPI) or ONTAP CLI, there are several issues you should consider.
 
 == General design differences
 
-The ONTAP REST API and command line interface have a fundamentally different designs. The CLI commands and parameters do not map directly to the REST API calls. And even where there might be a similarity, the details of the input parameters can be different. For example, numeric units might be specified in bytes or using a suffix (such as KB). You should review link:input_variables.html[Input variables controlling an API request] as well as the link:../reference/api_reference.html[API reference] for more information.
+The ONTAP REST API and command line interface have a fundamentally different designs. The CLI commands and parameters do not map directly to the REST API calls. And even where there might be a similarity, the details of the input parameters can be different. For example, numeric units might be specified in bytes or using a suffix (such as KB). You should review link:../rest/input_variables.html[Input variables controlling an API request] as well as the link:../reference/api_reference.html[API reference] for more information.
 
 == Data SVMs exposed through the REST API
 
 ONTAP supports several types of storage virtual machines (SVMs). However, only the data SVMs are directly exposed through the ONTAP REST API. The configuration information describing the cluster and nodes is available through the REST API, however the cluster and nodes are not treated as separate SVMs.
 
-== Migrating from ONTAPI to REST
+== Access the ONTAP CLI through the REST API
 
-The REST API is the primary and strategic choice for automating ONTAP system administration. If you are currently using the ONTAPI API, you should consider migrating to the REST API. NetApp provides mapping documentation to assist with the migration from ONTAPI to REST. See link:../migrate/mapping.html[ONTAPI to REST API mapping] for more information.
+To assist ONTAPI API and CLI users in their transition to the ONTAP REST API, ONTAP provides a REST endpoint to access the ONTAP CLI. You can use this passthrough feature to execute any CLI command.  Use of the REST endpoint is returned in AutoSupport data so NetApp can identify gaps in the REST API and make improvements in future ONTAP releases.
 
+To issue a CLI command, you must make a REST API call that is properly formed based on rules regarding the following:
+
+* Resource paths
+* Field names
+* HTTP methods
+
+The base resource path for CLI access is `/private/cli`. Refer to the ONTAP API online documentation page for details about accessing the CLI through the REST API. NetApp also maintains a GitHub repository containing code samples and other helpful information. See https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples[ONTAP REST Python GitHub repository - CLI passthrough samples^] for more information.
 
 == Changes to SnapDiff availability in ONTAPI
 
