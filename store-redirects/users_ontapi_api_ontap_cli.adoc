@@ -1,0 +1,4 @@
+---
+permalink: rest/users_ontapi_api_ontap_cli.html
+redirect: ontap-automation/migrate/migration-considerations.html
+---
