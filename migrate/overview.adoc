@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: migrate/overview.html
-keywords: ONTAPI, migrate, migrate to REST API
-summary: If you are using the ONTAPI API, you are encouraged to begin migrating to the ONTAP REST API.
+keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API
+summary: The ONTAPI interface will be disabled in future versions of ONTAP. If you are using ONTAPI, you should plan your migration to the ONTAP REST API.
 ---
 
 = ONTAPI disablement
@@ -15,9 +15,8 @@ summary: If you are using the ONTAPI API, you are encouraged to begin migrating 
 [.lead]
 The ONTAPI API (ZAPI) is the original set of proprietary calls included with the NetApp ONTAP software. The API is provided through the Network Manageability SDK and supports the automation of data storage administration and management tasks. The ONTAPI interface will be disabled in future versions of ONTAP. If you are using ONTAPI, you should plan your migration to the ONTAP REST API.
 
-NetApp first introduced the REST API with ONTAP 9.6. It now provides the preferred and strategic option when automating the administration of your ONTAP deployments. There are many helpful resources and tools available to support your migration.
-
 .Related information
 
+* link:../get-started/ontap_automation_options.html[Understand the ONTAP automation options]
 * https://mysupport.netapp.com/info/communications/ECMLP2880232.html[CPC-00410 End of availability: ONTAPI^]
 * https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification[FAQs on ZAPI to ONTAP REST API transformation for CPC^]

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: migrate/migration-considerations.html
-keywords: snapdiff, migrating to rest
-summary: 
+keywords: migrate, mirgate to rest api, snapdiff
+summary: Before migrating to the ONTAP REST API from either the ONTAPI API (ZAPI) or ONTAP CLI, there are several issues you should consider.
 ---
 
 = Migration considerations
