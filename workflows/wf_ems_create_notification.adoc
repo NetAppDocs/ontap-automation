@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_ems_create_notification.html
+keywords: 
+summary: xxx
+---
+
+= Create an EMS notification
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+XXX

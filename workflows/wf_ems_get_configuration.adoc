@@ -1,0 +1,16 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_ems_get_configuration.html
+keywords: 
+summary: xxx
+---
+
+= Get the EMS configuration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+XXX
