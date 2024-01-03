@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: workflows/wf_ems_prepare.html
 keywords: 
-summary: xxx
+summary: 
 ---
 
 = Prepare to use EMS support services
@@ -13,8 +13,46 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-XXX
+You can use the ONTAP REST API to configure how Event Management System (EMS) event notifications are sent as well as retrieve EMS messages.
 
-You can use the ONTAP RBAC capability in several different ways depending on your environment. A few common scenarios are presented as workflows in this section. In each case the focus is on a specific security and administrative goal.
+=== Overview
 
+The following examples show you how you can use the ONTAP REST API to work with EMS messages.
+
+[NOTE]
 Before creating any roles and assigning a role to an ONTAP user account, you should prepare by reviewing the major security requirements and options presented below. Also make sure to review the general workflow concepts at link:../workflows/prepare_workflows.html[Prepare to use the workflows].
+
+.List log events
+xxx
+
+.Get the EMS configuration
+xxx
+
+.Create an EMS notification
+xxx
+
+=== ONTAP REST API versus ONTAP CLI commands
+
+The ONTAP REST API enables you to automate workflows with fewer commands than the ONTAP CLI for many tasks. For example, you can use a single POST API method to create a filter, instead of using multiple CLI commands. The following table shows the CLI commands that you would need to complete common EMS tasks versus the corresponding REST API calls:
+
+|===
+|ONTAP REST API |ONTAP CLI
+
+|`GET /support/ems`
+|`event config show`
+
+|`POST /support/ems/destinations`
+a|
+
+. `event notification destination create`
+. `event notification create`
+
+|`GET /support/ems/events`
+|`event log show`
+
+|`POST /support/ems/filters`
+a|
+
+. `event filter create -filter-name <filtername>`
+. `event filter rule add -filter-name  <filtername>`
+|===
