@@ -13,4 +13,98 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-XXX
+You can use the following workflow to create a new EMS notification destination receive selected event messages.
+
+== Step 1: Configure the system-wide email settings
+
+You can issue an API call to XXX
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/support/ems
+|===
+
+.Processing type
+
+???
+
+.Additional input parameters for the Curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|fields
+|Query
+|No
+|Can be used to identify the node each aggregate is attached to.
+|max_records
+|Query
+|No
+|Can be used to identify the node each aggregate is attached to.
+|===
+
+.Curl example: Return a message containing specific text and severity
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems/events?log_message=*disk*&message.severity=alert" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+----
+xxx
+----
+
+== Step 2: Define a message filter
+
+You can issue an API call to XXX
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/support/ems
+|===
+
+.Processing type
+
+???
+
+== Step 3: Create a message destination
+
+You can issue an API call to XXX
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/support/ems
+|===
+
+.Processing type
+
+???

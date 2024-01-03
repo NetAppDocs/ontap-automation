@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_ems_list_log_events.html
-keywords: 
-summary: 
+keywords: support, ems, event management system, get events, get notifications
+summary: You can retrieve all event notification messages or those with specific characteristics.
 ---
 
 = List the EMS log events
@@ -13,9 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-XXX
-
-You can retrieve the current EMS configuration for an ONTAP cluster. You might do this before updating the configuration or creating a new EMS notification.
+You can retrieve all event notification messages or those with specific characteristics.
 
 .HTTP method and endpoint
 
@@ -26,7 +24,7 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/api/support/ems
+|/api/support/ems/events
 |===
 
 .Processing type
@@ -43,35 +41,26 @@ In addition to the parameters common with all REST API calls, the following para
 |Type
 |Required
 |Description
-|node.name
+|fields
+|Query
+|No
+|Can be used to identify the node each aggregate is attached to.
+|max_records
 |Query
 |No
 |Can be used to identify the node each aggregate is attached to.
 |===
 
-.Curl example: return all aggregates with the default configuration values
-
-.Curl example
+.Curl example: Return a message containing specific text and severity
 
 [source,curl]
 curl --request GET \
---location "https://$FQDN_IP/api/support/ems" \
+--location "https://$FQDN_IP/api/support/ems/events?log_message=*disk*&message.severity=alert" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 
 .JSON output example
 ----
-{
-  "proxy_url": "https://proxyserver.mycompany.com",
-  "proxy_user": "proxy_user",
-  "mail_server": "mail@mycompany.com",
-  "_links": {
-    "self": {
-      "href": "/api/resourcelink"
-    }
-  },
-  "pubsub_enabled": "1",
-  "mail_from": "administrator@mycompany.com"
-}
+xxx
 ----

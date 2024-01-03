@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_ems_prepare.html
-keywords: 
-summary: 
+keywords: support, ems, event management system, event notifications, notifications
+summary: You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages.
 ---
 
 = Prepare to use EMS support services
@@ -13,23 +13,13 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can use the ONTAP REST API to configure how Event Management System (EMS) event notifications are sent as well as retrieve EMS messages.
+You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages as needed.
 
 === Overview
 
-The following examples show you how you can use the ONTAP REST API to work with EMS messages.
+There are several workflows available that illustrate how to use the ONTAP EMS services. Before using the workflows and issuing any REST API calls, make sure to review the general workflow concepts at link:../workflows/prepare_workflows.html[Prepare to use the workflows].
 
-[NOTE]
-Before creating any roles and assigning a role to an ONTAP user account, you should prepare by reviewing the major security requirements and options presented below. Also make sure to review the general workflow concepts at link:../workflows/prepare_workflows.html[Prepare to use the workflows].
-
-.List log events
-xxx
-
-.Get the EMS configuration
-xxx
-
-.Create an EMS notification
-xxx
+You can also review a sample https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[Python script^] that demonstrates how to automate a number of EMS-related activities.
 
 === ONTAP REST API versus ONTAP CLI commands
 
