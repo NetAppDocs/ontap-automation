@@ -13,7 +13,7 @@ summary: You can retrieve all event notification messages or those with specific
 :imagesdir: ./media/
 
 [.lead]
-You can retrieve all event notification messages or those with specific characteristics.
+You can retrieve all event notification messages or only those with specific characteristics.
 
 .HTTP method and endpoint
 
@@ -51,6 +51,15 @@ In addition to the parameters common with all REST API calls, the following para
 |Can be used to identify the node each aggregate is attached to.
 |===
 
+.Curl example: Return the latest message
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems/events?fields=message.name&max_records=1" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
 .Curl example: Return a message containing specific text and severity
 
 [source,curl]
@@ -62,5 +71,40 @@ curl --request GET \
 
 .JSON output example
 ----
-xxx
+{
+  "records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 4602,
+      "time": "2022-03-18T06:37:46-04:00",
+      "message": {
+        "severity": "alert",
+        "name": "raid.autoPart.disabled"
+      },
+      "log_message": "raid.autoPart.disabled: Disk auto-partitioning is disabled on this system: the system needs a minimum of 4 usable internal hard disks.",
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/4602"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/support/ems/events?log_message=*disk*&message.severity=alert&max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-18T06%3A37%3A46-04%3A00&start.node.name=malha-vsim1&start.index=4602&log_message=*disk*&message.severity=alert"
+    }
+  }
+}
 ----

@@ -17,7 +17,7 @@ You can use the following workflow to create a new EMS notification destination 
 
 == Step 1: Configure the system-wide email settings
 
-You can issue an API call to XXX
+You can issue the following API call to configure the system-wide email settings.
 
 .HTTP method and endpoint
 
@@ -45,14 +45,14 @@ In addition to the parameters common with all REST API calls, the following para
 |Type
 |Required
 |Description
-|fields
+|mail_from
 |Query
-|No
-|Can be used to identify the node each aggregate is attached to.
-|max_records
+|Yes
+|Sets the `from` field in the notification email messages.
+|mail_server
 |Query
-|No
-|Can be used to identify the node each aggregate is attached to.
+|Yes
+|Configures the target email server.
 |===
 
 .Curl example: Return a message containing specific text and severity
@@ -82,15 +82,52 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/api/support/ems
+|/api/support/ems/filters
 |===
 
 .Processing type
 
 ???
 
+.Additional input parameters for the Curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|Filter configuration
+|Body
+|Yes
+|Includes the values for the filter configuration.
+|===
+
+.Curl example
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems/events?log_message=*disk*&message.severity=alert" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON input example
+[source,curl]
+----
+xxx
+----
+
+.JSON output example
+----
+xxx
+----
+
 == Step 3: Create a message destination
 
+Y
 You can issue an API call to XXX
 
 .HTTP method and endpoint
@@ -102,9 +139,45 @@ This REST API call uses the following method and endpoint.
 |HTTP method
 |Path
 |GET
-|/api/support/ems
+|/api/support/ems/filters
 |===
 
 .Processing type
 
 ???
+
+.Additional input parameters for the Curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl examples for this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|Filter configuration
+|Body
+|Yes
+|Includes the values for the filter configuration.
+|===
+
+.Curl example
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems/events?log_message=*disk*&message.severity=alert" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON input example
+[source,curl]
+----
+xxx
+----
+
+.JSON output example
+----
+xxx
+----
