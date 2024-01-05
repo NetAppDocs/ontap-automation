@@ -19,11 +19,11 @@ You can configure Event Management System (EMS) processing for an ONTAP cluster 
 
 There are several example workflows available that illustrate how to use the ONTAP EMS services. Before using the workflows and issuing any of the REST API calls, make sure to review link:../workflows/prepare_workflows.html[Prepare to use the workflows].
 
-If you use Python, also see https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[Python script^] for examples demonstrating how to automate a number of EMS-related activities.
+If you use Python, also see the scripy https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[events.py^] for examples of how to automate some of the EMS-related activities.
 
 === ONTAP REST API versus ONTAP CLI commands
 
-The ONTAP REST API enables you to automate workflows with fewer commands than the ONTAP CLI for many tasks. For example, you can use a single POST API method to create a filter, instead of using multiple CLI commands. The following table shows the CLI commands that you would need to complete common EMS tasks versus the corresponding REST API calls:
+For many tasks, using the ONTAP REST API requires fewer calls than the equivalent ONTAP CLI commands. The table below includes a list of API calls and the equivalent the CLI commands needed for each task.
 
 
 [cols="25,75"*,options="header"]
@@ -51,5 +51,5 @@ a|
 
 .Related information
 
-* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[ONTAP REST API EMS example Python script^]
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[Python script illustrating EMS^]
 * https://blog.netapp.com/ontap-rest-apis-automate-notification[ONTAP REST APIs: Automate Notification of High-Severity Events^]
