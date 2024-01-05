@@ -25,8 +25,7 @@ If you use Python, also see the scripy https://github.com/NetApp/ontap-rest-pyth
 
 For many tasks, using the ONTAP REST API requires fewer calls than the equivalent ONTAP CLI commands. The table below includes a list of API calls and the equivalent the CLI commands needed for each task.
 
-
-[cols="25,75"*,options="header"]
+//[cols="25,75"*,options="header"]
 |===
 |ONTAP REST API
 |ONTAP CLI

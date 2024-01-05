@@ -94,7 +94,7 @@ In addition to the parameters common with all REST API calls, the following para
 |Type
 |Required
 |Description
-|Filter configuration
+|Filter
 |Body
 |Yes
 |Includes the values for the filter configuration.

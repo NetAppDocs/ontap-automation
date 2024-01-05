@@ -41,24 +41,27 @@ In addition to the parameters common with all REST API calls, the following para
 |Type
 |Required
 |Description
+
 |fields
 |Query
 |No
-|Used request specific fields to be included in the response.
+|Used to request specific fields to be included in the response.
+
 |max_records
 |Query
 |No
 |Can be used to limit the number of records returned in a single request.
+
 |log_message
 |Query
 |No
 |Used to search for a specific text value and only return the matching messages.
+
 |message.severity
-|fields
 |Query
 |No
 |Limit the returned messages to those with a specific severity such as `alert`.
-|max_records
+
 |===
 
 .Curl example: Return the latest message and the name value
