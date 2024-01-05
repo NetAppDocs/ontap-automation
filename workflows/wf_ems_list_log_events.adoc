@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_ems_list_log_events.html
-keywords: support, ems, event management system, get events, get notifications
+keywords: support, ems, event management system, get events, get notifications, retrieve events
 summary: You can retrieve all event notification messages or those with specific characteristics.
 ---
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: workflows/wf_ems_prepare.html
 keywords: support, ems, event management system, event notifications, notifications
-summary: You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages.
+summary: You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages as needed.
 ---
 
 = Prepare to manage EMS support services

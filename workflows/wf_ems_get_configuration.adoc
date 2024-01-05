@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_ems_get_configuration.html
-keywords: support, ems, event management system, event notifications, notifications
+keywords: support, ems, event management system, ems configuration
 summary: You can retrieve the current EMS configuration for an ONTAP cluster. You might do this before updating the configuration or creating a new EMS notification.
 ---
 
