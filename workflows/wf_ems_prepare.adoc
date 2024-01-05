@@ -1,0 +1,54 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_ems_prepare.html
+keywords: support, ems, event management system, event notifications, notifications
+summary: You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages as needed.
+---
+
+= Prepare to manage EMS support services
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages as needed.
+
+=== Overview
+
+There are several example workflows available that illustrate how to use the ONTAP EMS services. Before using the workflows and issuing any of the REST API calls, make sure to review link:../workflows/prepare_workflows.html[Prepare to use the workflows].
+
+If you use Python, also see the scripy https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[events.py^] for examples of how to automate some of the EMS-related activities.
+
+=== ONTAP REST API versus ONTAP CLI commands
+
+For many tasks, using the ONTAP REST API requires fewer calls than the equivalent ONTAP CLI commands. The table below includes a list of API calls and the equivalent the CLI commands needed for each task.
+
+[cols="30,70"*,options="header"]
+|===
+|ONTAP REST API
+|ONTAP CLI
+
+|GET /support/ems
+|`event config show`
+
+|POST /support/ems/destinations
+a|
+. `event notification destination create`
+. `event notification create`
+
+|`GET /support/ems/events`
+|`event log show`
+
+|`POST /support/ems/filters`
+a|
+. `event filter create -filter-name <filtername>`
+. `event filter rule add -filter-name  <filtername>`
+
+|===
+
+.Related information
+
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py[Python script illustrating EMS^]
+* https://blog.netapp.com/ontap-rest-apis-automate-notification[ONTAP REST APIs: Automate Notification of High-Severity Events^]
