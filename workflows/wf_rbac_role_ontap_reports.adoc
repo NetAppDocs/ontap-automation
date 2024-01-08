@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_rbac_ontap_reports.html
-keywords: 
-summary: xxx
+permalink: workflows/wf_rbac_role_ontap_reports.html
+keywords: rbac, role, ontap reports, allow generation ontap reports
+summary: You can create a REST role to provide users with the ability to generate ONTAP reports.
 ---
 
 = Allow generation of ONTAP reports

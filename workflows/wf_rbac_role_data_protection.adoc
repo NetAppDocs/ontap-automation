@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
-permalink: workflows/wf_rbac_data_protection.html
-keywords: 
-summary: xxx
+permalink: workflows/wf_rbac_role_data_protection.html
+keywords: rbac, role, data protection, limited data protection
+summary: You can provide a user with limited data protection capabilities.
 ---
 
 = Enable adminstration of data protection
@@ -13,7 +13,7 @@ summary: xxx
 :imagesdir: ./media/
 
 [.lead]
-In certain situations you may want to provide a user with limited data protection capabilities.
+You can provide a user with limited data protection capabilities.
 
 .About this workflow
 
