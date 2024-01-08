@@ -20,7 +20,6 @@ You can access the online API reference content at your local ONTAP system or a 
 
 == Access the ONTAP API documentation page
 
-[.lead]
 You can access the ONTAP API online documentation page at your local ONTAP system.
 
 .Before you begin
@@ -44,7 +43,6 @@ The ONTAP API documentation page is displayed with the API calls organized in ma
 
 == Access a copy of the ONTAP REST API reference documentation
 
-[.lead]
 You can access a copy of the ONTAP REST API reference documentation through the links provided below. The API reference documentation is maintained by ONTAP release.
 
 * https://docs.netapp.com/us-en/ontap-restapi/[ONTAP 9.14.1^]
