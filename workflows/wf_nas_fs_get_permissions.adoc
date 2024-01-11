@@ -1,0 +1,102 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_nas_fs_get_permissions.html
+keywords: 
+summary: 
+---
+
+= Get the effective permissions for a file
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can retrieve the current effective permissions for a specific file or folder.
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|GET
+|/api/protocols/file-security/effective-permissions/{svm.uuid}/{path}
+|===
+
+.Processing type
+
+Synchronous
+
+.Additional input parameters for curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl example in this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|$SVM_ID
+|Path
+|Yes
+|This is the UUID of the SVM containing the file.
+|$FILE_PATH
+|Path
+|Yes
+|This is the path to the file or folder.
+|===
+
+.Curl example
+
+[source,curl]
+curl --request GET \
+--location "https://$FQDN_IP/api/protocols/file-security/effective-permissions/$SVM_ID/$FILE_PATH" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+
+.JSON output example
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----
