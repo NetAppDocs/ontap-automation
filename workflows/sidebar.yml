@@ -13,7 +13,7 @@ entries:
       url: /workflows/wf_jobs_get_job.html
   - title: NAS
     entries:
-    - title: File xecurity permissions
+    - title: File security permissions
       entries:
       - title: Prepare to manage file security
         url: /workflows/wf_nas_fs_prepare.html
