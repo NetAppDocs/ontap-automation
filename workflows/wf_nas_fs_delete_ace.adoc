@@ -5,7 +5,7 @@ keywords:
 summary: 
 ---
 
-= Get the auditing information for a file
+= Delete an access control entry
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can apply a new security descriptor to a specific file or folder.
+You can delete an existing access cotrol entry (ACE) from a specific file or folder. The change propagates to any child objects.
 
 == Step 1: Apply the new permissions
 
@@ -25,7 +25,7 @@ This REST API call uses the following method and endpoint.
 |===
 |HTTP method
 |Path
-|POST
+|DELETE
 |/api/protocols/file-security/permissions/{svm.uuid}/{path}
 |===
 
@@ -56,7 +56,7 @@ In addition to the parameters common with all REST API calls, the following para
 .Curl example
 
 [source,curl]
-curl -u admin:<PASSWORD> -X POST -d '{ \"acls\": [ { \"access\": \"access_allow\", \"advanced_rights\": { \"append_data\": true, \"delete\": true, \"delete_child\": true, \"execute_file\": true, \"full_control\": true, \"read_attr\": true, \"read_data\": true, \"read_ea\": true, \"read_perm\": true, \"write_attr\": true, \"write_data\": true, \"write_ea\": true, \"write_owner\": true, \"write_perm\": true }, \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"user\": \"administrator\" } ], \"control_flags\": \"32788\", \"group\": \"S-1-5-21-2233347455-2266964949-1780268902-69700\", \"ignore_paths\": [ \"/parent/child2\" ], \"owner\": \"S-1-5-21-2233347455-2266964949-1780268902-69304\", \"propagation_mode\": \"propagate\"}' -k 'https://<IP_ADDRESS>/api/protocols/file-security/permissions/$SVM_ID/$FILE_PATH?return_timeout=0'
+curl --request DELETE --location "https://$FQDN_IP/api/protocols/file-security/permissions/$SVM_ID/$FILE_PATH?return_timeout=0" --include --header "Accept */*" --header "Authorization: Basic $BASIC_AUTH" --data '{ \"access\": \"access_allow\", \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"ignore_paths\": [ \"/parent/child2\" ], \"propagation_mode\": \"propagate\"}'
 
 .JSON output example
 ----

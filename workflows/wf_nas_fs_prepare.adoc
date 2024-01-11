@@ -17,10 +17,10 @@ You can manage the permissions and audit policies for files shared by the SVMs w
 
 === Overview
 
-ONTAP uses System Access Control Lists (SACLs) and Discretionary Access Control Lists (DACLs) to assign permissions to file objects. Beginning with ONTAP 9.9.1, the ONTAP REST API includes support for assigning the SACL and DACL permissions to files. These endpoints can help you automate the administration of the file security permissions. In many cases you can use a single REST API call instead of multiple CLI commands or ONTAPI (ZAPI) calls.
+ONTAP uses System Access Control Lists (SACLs) and Discretionary Access Control Lists (DACLs) to assign permissions to file objects. Beginning with ONTAP 9.9.1, the ONTAP REST API includes support for managing the SACL and DACL permissions. This support can help you automate the administration of the file security permissions. In many cases you can use a single REST API call instead of multiple CLI commands or ONTAPI (ZAPI) calls.
 
 [NOTE]
-For releases prior to ONTAP 9.9.1, you can automate the administration of the SACL and DACL permissions using the CLI passthrough feature. See https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[Using the private CLI passthrough with the ONTAP REST API^] for more information.
+For ONTAP releases prior to 9.9.1, you can automate the administration of the SACL and DACL permissions using the CLI passthrough feature. See link:../migrate/migration-considerations.html[Migration considerations] and https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[Using the private CLI passthrough with the ONTAP REST API^] for more information.
 
 There are several example workflows available that illustrate how to manage the ONTAP file security services. Before using the workflows and issuing any of the REST API calls, make sure to review link:../workflows/prepare_workflows.html[Prepare to use the workflows].
 
