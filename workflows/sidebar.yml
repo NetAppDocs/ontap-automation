@@ -11,6 +11,22 @@ entries:
       url: /workflows/wf_cls_update_contact.html
     - title: Get job instance
       url: /workflows/wf_jobs_get_job.html
+  - title: NAS
+    entries:
+    - title: File security permissions
+      entries:
+      - title: Prepare to manage file security
+        url: /workflows/wf_nas_fs_prepare.html
+      - title: Get effective permissions
+        url: /workflows/wf_nas_fs_get_permissions.html
+      - title: Get audit information
+        url: /workflows/wf_nas_fs_get_audit_info.html
+      - title: Apply permissions
+        url: /workflows/wf_nas_fs_apply_permissions.html
+      - title: Update a security descriptor
+        url: /workflows/wf_nas_fs_update_sd.html
+      - title: Delete an access control entry
+        url: /workflows/wf_nas_fs_delete_ace.html
   - title: Networking
     entries:
     - title: List IP interfaces

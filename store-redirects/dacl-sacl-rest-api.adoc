@@ -1,0 +1,4 @@
+---
+permalink: manage/dacl-sacl-rest-api.html
+redirect: ontap-automation/workflows/wf_nas_fs_prepare.html
+---

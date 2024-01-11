@@ -1,0 +1,77 @@
+---
+sidebar: sidebar
+permalink: workflows/wf_nas_fs_delete_ace.html
+keywords: nas, file security, access control entry, ace, delete ace
+summary: You can delete an existing access cotrol entry (ACE) from a specific file or folder. The change propagates to any child objects.
+---
+
+= Delete an access control entry
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can delete an existing Access Control Entry (ACE) from a specific file or folder. The change propagates to any child objects.
+
+== Step 1: Apply the new permissions
+
+.HTTP method and endpoint
+
+This REST API call uses the following method and endpoint.
+
+[cols="25,75"*,options="header"]
+|===
+|HTTP method
+|Path
+|DELETE
+|/api/protocols/file-security/permissions/{svm.uuid}/{path}
+|===
+
+.Processing type
+
+Asynchronous
+
+.Additional input parameters for curl examples
+
+In addition to the parameters common with all REST API calls, the following parameters are also used in the curl example in this step.
+
+[cols="25,10,10,55"*,options="header"]
+|===
+|Parameter
+|Type
+|Required
+|Description
+|$SVM_ID
+|Path
+|Yes
+|This is the UUID of the SVM containing the file.
+|$FILE_PATH
+|Path
+|Yes
+|This is the path to the file or folder.
+|===
+
+.Curl example
+
+[source,curl]
+curl --request DELETE --location "https://$FQDN_IP/api/protocols/file-security/permissions/$SVM_ID/$FILE_PATH?return_timeout=0" --include --header "Accept */*" --header "Authorization: Basic $BASIC_AUTH" --data '{ \"access\": \"access_allow\", \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"ignore_paths\": [ \"/parent/child2\" ], \"propagation_mode\": \"propagate\"}'
+
+.JSON output example
+----
+{
+  "job": {
+    "uuid": "3015c294-5bbc-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/3015c294-5bbc-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+== Step 2: Retrieve the status of the job
+
+Perform the workflow link:../workflows/wf_jobs_get_job.html[Get job instance] and confirm the `state` value is `success`.
