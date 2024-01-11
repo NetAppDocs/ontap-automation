@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_nas_fs_get_audit_info.html
-keywords: 
+keywords: nas, file security, sacl, dacl, get auditing
 summary: You can retrieve all the auditing information for a specific file or folder.
 ---
 

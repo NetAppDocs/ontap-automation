@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_nas_fs_apply_permissions.html
-keywords: 
-summary: 
+keywords: nas, file security, sacl, dacl, permissions, apply permissions
+summary: You can apply a new security descriptor to a specific file or folder.
 ---
 
 = Apply new permissions to a file

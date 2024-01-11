@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_nas_fs_delete_ace.html
-keywords: 
-summary: 
+keywords: nas, file security, access control entry, ace, delete ace
+summary: You can delete an existing access cotrol entry (ACE) from a specific file or folder. The change propagates to any child objects.
 ---
 
 = Delete an access control entry
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You can delete an existing access cotrol entry (ACE) from a specific file or folder. The change propagates to any child objects.
+You can delete an existing Access Control Entry (ACE) from a specific file or folder. The change propagates to any child objects.
 
 == Step 1: Apply the new permissions
 

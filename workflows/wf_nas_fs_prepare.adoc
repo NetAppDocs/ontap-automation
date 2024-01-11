@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_nas_fs_prepare.html
-keywords: support, nas, file security, sacl, dacl, file permissions
-summary: You can manage the permissions and audit policies for files shared by the SVMs within an ONTAP cluster.
+keywords: nas, file security, sacl, dacl, prepare
+summary: You can manage the permissions and audit policies for files available through the SVMs within an ONTAP cluster.
 ---
 
 = Prepare to manage file security and audit policies
@@ -13,22 +13,22 @@ summary: You can manage the permissions and audit policies for files shared by t
 :imagesdir: ./media/
 
 [.lead]
-You can manage the permissions and audit policies for files shared by the SVMs within an ONTAP cluster.
+You can manage the permissions and audit policies for files available through the SVMs within an ONTAP cluster.
 
 === Overview
 
-ONTAP uses System Access Control Lists (SACLs) and Discretionary Access Control Lists (DACLs) to assign permissions to file objects. Beginning with ONTAP 9.9.1, the ONTAP REST API includes support for managing the SACL and DACL permissions. This support can help you automate the administration of the file security permissions. In many cases you can use a single REST API call instead of multiple CLI commands or ONTAPI (ZAPI) calls.
+ONTAP uses System Access Control Lists (SACLs) and Discretionary Access Control Lists (DACLs) to assign permissions to file objects. Beginning with ONTAP 9.9.1, the REST API includes support for managing the SACL and DACL permissions. You can use the API to automate the administration of the file security permissions. In many cases you can use a single REST API call instead of multiple CLI commands or ONTAPI (ZAPI) calls.
 
 [NOTE]
 For ONTAP releases prior to 9.9.1, you can automate the administration of the SACL and DACL permissions using the CLI passthrough feature. See link:../migrate/migration-considerations.html[Migration considerations] and https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[Using the private CLI passthrough with the ONTAP REST API^] for more information.
 
-There are several example workflows available that illustrate how to manage the ONTAP file security services. Before using the workflows and issuing any of the REST API calls, make sure to review link:../workflows/prepare_workflows.html[Prepare to use the workflows].
+Several example workflows are available to illustrate how to manage the ONTAP file security services using the REST API. Before using the workflows and issuing any of the REST API calls, make sure to review link:../workflows/prepare_workflows.html[Prepare to use the workflows].
 
 If you use Python, also see the script https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py[file_security_permissions.py^] for examples of how to automate some of the file security activities.
 
 === ONTAP REST API versus ONTAP CLI commands
 
-For many tasks, using the ONTAP REST API requires fewer calls than the equivalent ONTAP CLI commands. The table below includes a list of API calls and the equivalent the CLI commands needed for each task.
+For many tasks, using the ONTAP REST API requires fewer calls than the equivalent ONTAP CLI commands or ONTAPI (ZAPI) calls. The table below includes a list of API calls and the equivalent the CLI commands needed for each task.
 
 [cols="40,60"*,options="header"]
 |===

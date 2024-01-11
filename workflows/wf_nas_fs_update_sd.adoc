@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_nas_fs_update_sd.html
-keywords: 
-summary: 
+keywords: nas, file security, security descriptor, sd, update security descriptor
+summary: You can update a specific security descriptor to a specific file or folder, including the primary owner, group, or control flags.
 ---
 
 = Update security descriptor information

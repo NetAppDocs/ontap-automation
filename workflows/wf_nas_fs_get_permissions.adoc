@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: workflows/wf_nas_fs_get_permissions.html
-keywords: 
-summary: 
+keywords: nas, file security, effective permissions
+summary: You can retrieve the current effective permissions for a specific file or folder.
 ---
 
 = Get the effective permissions for a file
