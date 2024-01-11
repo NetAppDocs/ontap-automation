@@ -15,7 +15,7 @@ summary: You can delete an existing access cotrol entry (ACE) from a specific fi
 [.lead]
 You can delete an existing Access Control Entry (ACE) from a specific file or folder. The change propagates to any child objects.
 
-== Step 1: Apply the new permissions
+== Step 1: Delete the ACE
 
 .HTTP method and endpoint
 
