@@ -31,7 +31,7 @@ This REST API call uses the following method and endpoint.
 
 .Processing type
 
-Synchronous
+Asynchronous
 
 .Additional input parameters for curl examples
 
