@@ -22,15 +22,15 @@ You can access the REST API reference documentation at one of several sites base
 
 You can access a copy of the ONTAP REST API reference documentation through the links provided below. The documentation is maintained by ONTAP release.
 
-* https://docs.netapp.com/us-en/ontap-restapi/[ONTAP 9.14.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9131/[ONTAP 9.13.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9121/[ONTAP 9.12.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9111/[ONTAP 9.11.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9101/[ONTAP 9.10.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-991/[ONTAP 9.9.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-98/[ONTAP 9.8^]
-* https://docs.netapp.com/us-en/ontap-restapi-97/[ONTAP 9.7^]
-* https://docs.netapp.com/us-en/ontap-restapi-96/[ONTAP 9.6^]
+* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.14.1^]
+* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.13.1^]
+* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.12.1^]
+* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.11.1^]
+* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.10.1^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.9.1^]
+* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.8^]
+* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.7^]
+* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.6^]
 
 // Dec 19, 2023
 //* https://library.netapp.com/ecmdocs/ECMLP2886775/html/[ONTAP 9.14.1^]
