@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/access_ontap_cli.html</loc>
+        
+      
+      <lastmod>2023-12-21T18:49:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/get-started/access_rest_api.html</loc>
+        
+      
+      <lastmod>2023-11-05T22:05:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/access_rest_api.html</loc>
+        
+      
+      <lastmod>2023-09-18T16:29:39+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/reference/api_reference.html</loc>
+        
+      
+      <lastmod>2024-01-25T21:08:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/application.html</loc>
+        
+      
+      <lastmod>2023-05-04T10:15:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/asynchronous_processing.html</loc>
+        
+      
+      <lastmod>2023-12-12T00:37:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/automate/blogs.html</loc>
+        
+      
+      <lastmod>2023-12-19T20:36:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/migrate/blogs.html</loc>
+        
+      
+      <lastmod>2023-02-07T17:45:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/cloud.html</loc>
+        
+      
+      <lastmod>2022-11-10T13:42:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/cluster.html</loc>
+        
+      
+      <lastmod>2023-05-04T10:15:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/manage/dacl-sacl-rest-api.html</loc>
+        
+      
+      <lastmod>2024-01-11T00:34:12+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/manage/ems-rest-api.html</loc>
+        
+      
+      <lastmod>2024-01-02T23:57:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/get-started/first_call.html</loc>
+        
+      
+      <lastmod>2023-09-04T19:15:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/additional/get_more_information.html</loc>
+        
+      
+      <lastmod>2023-09-15T23:44:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/getting_started_with_the_rest_api.html</loc>
+        
+      
+      <lastmod>2023-09-16T00:06:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/</loc>
+        
+      
+      <lastmod>2023-09-11T13:31:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/input_variables.html</loc>
+        
+      
+      <lastmod>2023-12-17T20:53:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/interpret_api_response.html</loc>
+        
+      
+      <lastmod>2022-11-10T12:51:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rn/known_limitations.html</loc>
+        
+      
+      <lastmod>2023-11-09T18:23:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/legal-notices.html</loc>
+        
+      
+      <lastmod>2021-09-27T12:43:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/migrate/mapping.html</loc>
+        
+      
+      <lastmod>2023-11-09T22:01:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/migrate/migration-considerations.html</loc>
+        
+      
+      <lastmod>2023-12-21T20:30:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/name_services.html</loc>
+        
+      
+      <lastmod>2023-05-04T10:15:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/nas.html</loc>
+        
+      
+      <lastmod>2023-11-14T18:32:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/ndmp.html</loc>
+        
+      
+      <lastmod>2022-11-10T13:42:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/networking.html</loc>
+        
+      
+      <lastmod>2023-11-14T18:32:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/nvme.html</loc>
+        
+      
+      <lastmod>2023-11-14T18:32:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/object_references_and_access.html</loc>
+        
+      
+      <lastmod>2022-11-10T21:23:48+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/object_store.html</loc>
+        
+      
+      <lastmod>2023-05-04T10:15:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/automate/ontap_ansible.html</loc>
+        
+      
+      <lastmod>2023-12-19T20:36:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/get-started/ontap_automation_options.html</loc>
+        
+      
+      <lastmod>2023-12-21T20:30:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/operational_characteristics.html</loc>
+        
+      
+      <lastmod>2023-12-12T00:37:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/migrate/overview.html</loc>
+        
+      
+      <lastmod>2023-12-21T20:30:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/overview_categories.html</loc>
+        
+      
+      <lastmod>2023-11-09T16:17:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/python/overview_pcl.html</loc>
+        
+      
+      <lastmod>2022-11-06T19:05:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/migrate/performance-counters.html</loc>
+        
+      
+      <lastmod>2023-11-09T22:01:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/performance_metrics.html</loc>
+        
+      
+      <lastmod>2022-11-08T18:35:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/python/prepare_pcl.html</loc>
+        
+      
+      <lastmod>2023-11-29T12:03:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/get-started/prepare_rest.html</loc>
+        
+      
+      <lastmod>2023-09-12T18:52:09+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/prepare_workflows.html</loc>
+        
+      
+      <lastmod>2023-11-14T19:11:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/get-started/prepare_workflows.html</loc>
+        
+      
+      <lastmod>2023-09-15T23:44:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/rbac_overview.html</loc>
+        
+      
+      <lastmod>2023-11-09T18:30:54+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/rbac_roles_users.html</loc>
+        
+      
+      <lastmod>2023-09-19T01:27:51+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/rbac_sample_roles.html</loc>
+        
+      
+      <lastmod>2023-09-19T16:13:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/rbac_wf_create_user.html</loc>
+        
+      
+      <lastmod>2023-09-19T16:13:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/additional/resources.html</loc>
+        
+      
+      <lastmod>2023-12-19T20:36:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/rest_api_versioning.html</loc>
+        
+      
+      <lastmod>2023-09-18T16:02:50+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/rest_web_services_foundation.html</loc>
+        
+      
+      <lastmod>2023-12-19T19:13:06+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/get-started/retrieve_cluster_software_version.html</loc>
+        
+      
+      <lastmod>2023-12-19T18:01:24+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/san.html</loc>
+        
+      
+      <lastmod>2023-11-14T18:32:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/python/script_retrieve_cluster_configuration.html</loc>
+        
+      
+      <lastmod>2023-11-14T18:32:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation//search.html</loc>
+        
+      
+      <lastmod>2024-02-11T23:26:43+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/security.html</loc>
+        
+      
+      <lastmod>2023-11-14T18:32:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/snaplock.html</loc>
+        
+      
+      <lastmod>2022-11-10T13:42:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/snapmirror.html</loc>
+        
+      
+      <lastmod>2022-11-10T13:42:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/migrate/software.html</loc>
+        
+      
+      <lastmod>2023-05-04T10:43:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/storage.html</loc>
+        
+      
+      <lastmod>2023-11-14T18:32:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/support.html</loc>
+        
+      
+      <lastmod>2023-05-04T10:15:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/resources/svm.html</loc>
+        
+      
+      <lastmod>2022-11-10T14:25:40+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rest/users_ontapi_api_ontap_cli.html</loc>
+        
+      
+      <lastmod>2023-12-21T18:49:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_cert_install_certificate.html</loc>
+        
+      
+      <lastmod>2023-10-07T12:18:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_cert_list_certificates.html</loc>
+        
+      
+      <lastmod>2023-10-03T22:36:24+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_cls_get_cluster.html</loc>
+        
+      
+      <lastmod>2023-09-19T16:13:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_cls_update_contact.html</loc>
+        
+      
+      <lastmod>2023-12-12T00:37:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_ems_create_notification.html</loc>
+        
+      
+      <lastmod>2024-01-05T17:00:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_ems_get_configuration.html</loc>
+        
+      
+      <lastmod>2024-01-05T15:53:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_ems_list_log_events.html</loc>
+        
+      
+      <lastmod>2024-01-05T17:00:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_ems_prepare.html</loc>
+        
+      
+      <lastmod>2024-01-05T17:13:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_jobs_get_job.html</loc>
+        
+      
+      <lastmod>2023-12-17T20:53:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_nas_fs_apply_permissions.html</loc>
+        
+      
+      <lastmod>2024-01-11T20:37:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_nas_fs_delete_ace.html</loc>
+        
+      
+      <lastmod>2024-01-11T22:25:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_nas_fs_get_audit_info.html</loc>
+        
+      
+      <lastmod>2024-01-11T20:37:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_nas_fs_get_permissions.html</loc>
+        
+      
+      <lastmod>2024-01-11T20:37:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_nas_fs_prepare.html</loc>
+        
+      
+      <lastmod>2024-01-11T20:37:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_nas_fs_update_sd.html</loc>
+        
+      
+      <lastmod>2024-01-11T20:37:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_net_list_ip_lifs.html</loc>
+        
+      
+      <lastmod>2023-12-17T21:10:51+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_rbac_prepare.html</loc>
+        
+      
+      <lastmod>2024-01-02T23:18:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_rbac_role_data_protection.html</loc>
+        
+      
+      <lastmod>2024-01-08T22:40:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_rbac_role_limit_svm.html</loc>
+        
+      
+      <lastmod>2024-01-08T22:40:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_rbac_role_ontap_reports.html</loc>
+        
+      
+      <lastmod>2024-01-08T22:40:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_rbac_user_role.html</loc>
+        
+      
+      <lastmod>2023-09-25T19:47:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_sec_list_accounts.html</loc>
+        
+      
+      <lastmod>2023-12-17T21:33:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_stor_list_aggrs.html</loc>
+        
+      
+      <lastmod>2023-12-17T20:53:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_stor_list_disks.html</loc>
+        
+      
+      <lastmod>2023-12-17T20:53:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/workflows/wf_svm_list_svms.html</loc>
+        
+      
+      <lastmod>2023-09-19T16:13:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/rn/whats_new.html</loc>
+        
+      
+      <lastmod>2023-11-09T16:17:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/us-en/ontap-automation/whats_new.html</loc>
+        
+      
+      <lastmod>2023-12-19T12:16:00+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
