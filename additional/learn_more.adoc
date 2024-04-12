@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: additional/resources.html
-keywords: more information, additional resources
+permalink: additional/learn_more.html
+keywords: learn, learn more, more information, additional resources
 summary: There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 ---
 
-= Additional resources
+= Learn more
 :hardbreaks:
 :nofooter:
 :icons: font
