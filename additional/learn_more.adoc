@@ -97,9 +97,9 @@ https://www.netapp.tv/details/29670[Modernize your ONTAP Storage Management with
 +
 https://www.netapp.tv/details/28343[NetApp ONTAP: Save time and simplify using REST APIs^]
 
-* NetApp Learning Services
+* NetApp Learning Services.
 +
-https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI[NetApp Learning Services^]
+https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI[Automate Storage Administration Using ONTAP REST API and Ansible^]
 
 == NetApp resources
 

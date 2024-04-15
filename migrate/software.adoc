@@ -34,7 +34,7 @@ The ONTAPI usage reporting tool is designed to help NetApp professional services
 |A script to extract the REST details of the ONTAPI calls and attributes passed
 |===
 
-See https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool[ONTAPI usage reporting tool^] for more information.
+You can access the https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool[ONTAPI usage reporting tool^] to get started. Also see the following https://www.youtube.com/watch?v=gJSWerW9S7o[Demo^].
 
 .Private CLI passthrough
 
