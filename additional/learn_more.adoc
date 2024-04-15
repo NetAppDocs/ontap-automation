@@ -57,6 +57,14 @@ https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful AP
 
 == Blog articles
 
+* A good summary of the current ONTAP automation technologies.
++
+https://www.netapp.com/blog/new-normal-for-automation[New normal for automation^]
+
+* An introduction to accessing and using the Python samples scripts at GitHub for the ONTAP REST API.
++
+https://netapp.io/2020/04/23/ontap-rest-apis[Get started with sample scripts at GitHub^]
+
 * The CLI passthrough provides a technique for executing ONTAP CLI commands using the REST API.
 +
 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api[Using the private CLI passthrough with the ONTAP REST API^]
@@ -78,6 +86,20 @@ video::L5DZBV_Sg9E[youtube, width=848, height=480]
 * A look at the Ansible Certified Modules.
 +
 video::ZlmQ5IuVZD8[youtube, width=848, height=480]
+
+== Technical training
+
+* Insight 2022 presentation (26 minutes).
++
+https://www.netapp.tv/details/29670[Modernize your ONTAP Storage Management with ONTAP REST API^]
+
+* Insight 2021 presentation (31 minutes).
++
+https://www.netapp.tv/details/28343[NetApp ONTAP: Save time and simplify using REST APIs^]
+
+* NetApp Learning Services
++
+https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI[NetApp Learning Services^]
 
 == NetApp resources
 
