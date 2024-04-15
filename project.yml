@@ -61,7 +61,7 @@ homepage:
         - title: Performance counters
           url: /migrate/performance-counters.html
         - title: Blog articles
-          url: /migrate/blogs.html
+          url: /migrate/blogs_migrate.html
     - title: Knowledge and support
       links:
         - title: Learn more
