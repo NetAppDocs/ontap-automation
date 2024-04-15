@@ -1,4 +1,4 @@
 ---
-permalink: automate/ontap_ansible.html
+permalink: additional/resources.html
 redirect: ontap-automation/additional/learn_more.html
 ---

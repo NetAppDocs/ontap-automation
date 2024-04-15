@@ -41,7 +41,7 @@ You can create and deploy automation code using one of several frameworks
 
 .Ansible
 
-Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems. See link:../additional/resources.html[Additional resources] for more information.
+Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems. See link:../additional/learn_more.html[Learn more] for additional information.
 
 .BlueXP automation catalog
 
