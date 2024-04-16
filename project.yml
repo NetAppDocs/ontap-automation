@@ -52,6 +52,8 @@ homepage:
           url: /workflows/prepare_workflows.html
         - title: Python client library
           url: /python/overview_pcl.html
+        - title: PowerShell Toolkit
+          url: /pstk/overview_pstk.html
     - title: Migrate to the REST API
       links:
         - title: ONTAPI disablement

@@ -22,7 +22,9 @@ This blog provides a good introduction to the features of the ONTAP Python clien
 
 https://www.netapp.com/blog/simplify-ontap-rest-api-consumption[www.netapp.com/blog/simplify-ontap-rest-api-consumption^]
 
-.Getting Started with ONTAP REST API Python Client Library (blog series)
+.Getting Started with ONTAP REST API Python Client Library
+
+This is a three-part series of blogs covering more details about the Python client library.
 
 Part 1: https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1[netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1^]
 
