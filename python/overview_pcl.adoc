@@ -20,4 +20,6 @@ NetApp maintains a GitHub repository containing code samples and other helpful i
 
 .Related links
 
-https://github.com/NetApp/ontap-rest-python[ONTAP REST Python GitHub repository^]
+* https://github.com/NetApp/ontap-rest-python[ONTAP REST Python GitHub repository^]
+
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library[ONTAP REST Python Client Library Examples^]

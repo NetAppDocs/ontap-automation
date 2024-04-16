@@ -15,10 +15,6 @@ summary:
 [.lead]
 NetApp provides a lab environment for you to test the ONTAP REST API and other related automation technologies.
 
-The Lab on Demand is available to NetApp customers and partners. You'll need valid credentials to sign in and begin using the lab resources. See https://labondemand.netapp.com[Lab on Demand^] for more information. You can also search for *REST* or other technologies as needed.
+The Lab on Demand is available to NetApp customers and partners. You'll need valid credentials to sign in and begin using the lab resources. See https://labondemand.netapp.com[Lab on Demand^] for more information. You can search for *REST* or other technologies as needed.
 
-Also refer to the following resources:
-
-* https://github.com/NetApp/ontap-rest-python/tree/master/lod[Preparing the Lab on Demand to run the sample scripts^]
-* xxx
-* xxx
+Also refer to https://github.com/NetApp/ontap-rest-python/tree/master/lod[Preparing the Lab on Demand to run the sample scripts^] to get started.
