@@ -15,14 +15,6 @@ summary: You should prepare the local runtime environment before using the Pytho
 [.lead]
 You should prepare the local runtime environment before using the Python client library.
 
-.Basic requirements
-
-You must use Python 3.5 or later. In addition, the following packages are also required:
-
-* requests 2.22.1 or later
-* requests-toolbelt 0.9.1 or later
-* marshmallow 3.2.1 or later
-
 .Package name and version
 
 The name of the Python client library package is *netapp-ontap*. The version associated with the package is a combination of the ONTAP major and minor version numbers the library was generated from, along with a minor version for the client within the ONTAP release. For example,  valid version numbers include: 9.6.1, 9.6.2, and 9.7.1.
@@ -31,11 +23,11 @@ The name of the Python client library package is *netapp-ontap*. The version ass
 
 You must use pip to install the netapp_ontap package from the Python Package Index (PyPi) web site.
 
-.Documentation and additional resources
+.Packages and documentation by ONTAP release
 
-See the _NetApp Developer Network_ for links to documentation and other resources.
+Each ONTAP release beginning with 9.6 has a PyPI package and associated documentation. See link:../python/packages.html[Packages and documentation] for more information. Installation requirements are include with each package and include different versions of the following:
 
-.Related information
-
-* https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.14.1^]
-* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html[NetApp PCL documentation for 9.14.1^]
+* python
+* requests
+* requests-toolbelt
+* marshmallow
