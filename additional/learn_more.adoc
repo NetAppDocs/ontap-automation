@@ -77,13 +77,39 @@ https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ans
 +
 https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis[Simplified management of file-security permissions with ONTAP REST APIs^]
 
-* ONTAP events keep you aware of the system activity. You can automation the configuration and managemet of these events using the REST API.
+* You can monitor ONTAP events to stay aware of the system activity. The configuration and management of these events can be automated using the REST API.
 +
 https://blog.netapp.com/ontap-rest-apis-automate-notification[ONTAP REST APIs: Automate Notification of High-Severity Events^]
 
 * You can use the REST API to configure roles and access levels as part of an RBAC security environment.
 +
 https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis[Role-based Access Control (RBAC) using ONTAP REST APIs^]
+
+== NetApp community blogs
+
+* Coffee breaks with REST - Episode 1
++
+https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852[Basics of ONTAP REST APIs^]
+
+* Coffee breaks with REST - Episode 2
++
+xxx
+
+* Coffee breaks with REST - Episode 3
++
+xxx
+
+* Coffee breaks with REST - Episode 4
++
+xxx
+
+* Coffee breaks with REST - Episode 5
++
+xxx
+
+* Coffee breaks with REST - Episode 6
++
+xxx
 
 == Videos
 
@@ -99,6 +125,10 @@ video::L5DZBV_Sg9E[youtube, width=848, height=480]
 +
 video::ZlmQ5IuVZD8[youtube, width=848, height=480]
 
+* A collection of videos at NetApp TechComm TV.
++
+https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_[Automate NetApp ONTAP Management^]
+
 == Technical training and events
 
 * Insight 2022 presentation (26 minutes).
@@ -112,10 +142,6 @@ https://www.netapp.tv/details/28343[NetApp ONTAP: Save time and simplify using R
 * NetApp Learning Services.
 +
 https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI[Automate Storage Administration Using ONTAP REST API and Ansible^]
-
-== NetApp community blogs
-
-xxx
 
 == NetApp Knowledge Base
 
