@@ -85,6 +85,10 @@ https://blog.netapp.com/ontap-rest-apis-automate-notification[ONTAP REST APIs: A
 +
 https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis[Role-based Access Control (RBAC) using ONTAP REST APIs^]
 
+* NetApp provides Python sample scripts to use the ONTAP REST API.
++
+https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Scripts Now Available on GitHub!^]
+
 == NetApp community blogs
 
 * Coffee breaks with REST - Episode 1
@@ -145,7 +149,13 @@ https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2
 
 == NetApp Knowledge Base
 
-xxx
+* If you encounter an issues with the ONTAP REST API, you can report it to NetApp.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_report_REST_API_and_NetApp_Python_Module_(REST_API_via_python_module)_issues[How to report issues on ONTAP REST API and ONTAP REST API Python client library^]
+
+* You can request a new feature for the ONTAP REST API.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_request_a_feature_for_ONTAP_REST_API[How to request a feature for ONTAP REST API^]
 
 == Additional NetApp resources
 
