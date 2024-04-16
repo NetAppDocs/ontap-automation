@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: pstk/install_pstk.html
-keywords: overview, python client library, pcl
-summary: The NetApp ONTAP Python client library is a package you can install and use to write scripts that access the ONTAP REST API. By using the Python client library, you can quickly develop robust code to support the automation of ONTAP deployments.
+keywords: install, powershell, powershell toolkit
+summary: 
 ---
 
 = Download and install the PowerShell Toolkit
@@ -13,11 +13,14 @@ summary: The NetApp ONTAP Python client library is a package you can install and
 :imagesdir: ./media/
 
 [.lead]
-The NetApp ONTAP Python client library is a package you can install and use to write scripts that access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous processing, exception handling, and error messages. By using the Python client library, you can quickly develop robust code to support the automation of ONTAP deployments.
+There are two options available to download and install the NetApp ONTAP PowerShell Toolkit.
 
-[NOTE]
-NetApp maintains a GitHub repository containing code samples and other helpful information. You can navigate to the _examples_ folder to access samples using the Python client library.
+.NetApp support
+You can download the PowerShell toolkit from the NetApp support site:
 
-.Related links
+https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit
 
-https://github.com/NetApp/ontap-rest-python[ONTAP REST Python GitHub repository^]
+.PowerShell Gallery
+You can download the PowerShell toolkit from PowerShell Gallery:
+
+https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302
