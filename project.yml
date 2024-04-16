@@ -55,7 +55,7 @@ homepage:
     - title: Migrate to the REST API
       links:
         - title: ONTAPI disablement
-          url: /migrate/overview.html
+          url: /migrate/ontapi_disablement.html
         - title: ONTAPI to REST mapping
           url: /migrate/mapping.html
         - title: Performance counters

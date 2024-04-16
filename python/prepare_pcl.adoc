@@ -39,4 +39,3 @@ See the _NetApp Developer Network_ for links to documentation and other resource
 
 * https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP 9.14.1^]
 * https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html[NetApp PCL documentation for 9.14.1^]
-* https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]

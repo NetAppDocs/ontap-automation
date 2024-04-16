@@ -25,7 +25,7 @@ You can access the ONTAP REST API directly using any programming language that s
 
 .Migrating legacy ONTAPI code to use REST
 
-The ONTAPI API (ZAPI) is the original set of proprietary calls included with the NetApp ONTAP software to support the automation of data storage administration and management tasks. The ONTAPI interface will be disabled in future versions of ONTAP. If you have existing code using the ONTAPI API, you should plan to migrate away from ONTAPI. NetApp provides support for converting your code to use the newer ONTAP REST API. See link:../migrate/overview.html[Migrate to the REST API] for more information.
+The ONTAPI API (ZAPI) is the original set of proprietary calls included with the NetApp ONTAP software to support the automation of data storage administration and management tasks. The ONTAPI interface will be disabled in future versions of ONTAP. If you have existing code using the ONTAPI API, you should plan to migrate away from ONTAPI. NetApp provides support for converting your code to use the newer ONTAP REST API. See link:../migrate/ontapi_disablement.html[Migrate to the REST API] for more information.
 
 == Client software toolkits
 

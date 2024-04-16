@@ -51,10 +51,6 @@ https://pypi.org/project/netapp-ontap[PyPI: NetApp ONTAP^]
 +
 https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html[NetApp PCL documentation for 9.14.1^]
 
-* Provides resources and documentation needed to use the ONTAP REST API.
-+
-https://devnet.netapp.com/restapi.php[NetApp Developer Network: ONTAP RESTful API^]
-
 == Blog articles
 
 * A good summary of the current ONTAP automation technologies.
