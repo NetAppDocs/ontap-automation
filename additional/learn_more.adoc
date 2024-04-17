@@ -85,19 +85,19 @@ https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis[Role-based Access Contro
 +
 https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Scripts Now Available on GitHub!^]
 
-* Coffee breaks with REST (6 episodes)
+* Coffee breaks with REST (6 episodes).
 +
-https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852[Basics of ONTAP REST APIs^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852[Basics of ONTAP REST APIs^]
 +
-https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-2-Features-of-ONTAP-REST-APIs/m-p/168168/highlight/true#M208[Features of ONTAP REST APIs^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-2-Features-of-ONTAP-REST-APIs/m-p/168168/highlight/true#M208[Features of ONTAP REST APIs^]
 +
-https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-3-Getting-Hands-on-with-ONTAP-REST-using-Postman/m-p/431965/highlight/true#M283[Getting Hands-on with ONTAP REST using Postman^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-3-Getting-Hands-on-with-ONTAP-REST-using-Postman/m-p/431965/highlight/true#M283[Getting Hands-on with ONTAP REST using Postman^]
 +
-https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-4-ONTAPI-ZAPI-Reporting-tool/m-p/433200[ONTAPI (ZAPI) Reporting tool^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-4-ONTAPI-ZAPI-Reporting-tool/m-p/433200[ONTAPI (ZAPI) Reporting tool^]
 +
-https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-5-Private-CLI-Passthrough/m-p/435293[Private CLI Passthrough^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-5-Private-CLI-Passthrough/m-p/435293[Private CLI Passthrough^]
 +
-https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-6-5-magical-features-that-make-ONTAP-storage/m-p/435604[5 magical features that make ONTAP storage automation simple!^]
+** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-6-5-magical-features-that-make-ONTAP-storage/m-p/435604[5 magical features that make ONTAP storage automation simple!^]
 
 == Videos
 
