@@ -18,7 +18,7 @@ NetApp provides sample Python scripts and other related software to support your
 [NOTE]
 All the Python code samples are available at the https://github.com/NetApp/ontap-rest-python[NetApp ONTAP REST Python^] GitHub repository.
 
-.ONTAPI usage reporting tool
+== ONTAPI usage reporting tool
 
 The ONTAPI usage reporting tool is designed to help NetApp professional services, customers, and partners identify the ONTAPI usage in their ONTAP environment. Scripts are provided for three different use cases as described in the table below.
 
@@ -36,14 +36,18 @@ The ONTAPI usage reporting tool is designed to help NetApp professional services
 
 You can access the https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool[ONTAPI usage reporting tool^] to get started. Also see a https://www.youtube.com/watch?v=gJSWerW9S7o[Demo^] about the reporting tool and how to use it.
 
-.Private CLI passthrough
+== Private CLI passthrough
 
 The REST API provides broad coverage of the features and facilities available with ONTAP. However, there may be instances when direct access to the ONTAP CLI through the REST API can be useful.
 
 For an introduction to this feature, see link:../rest/access_ontap_cli.html[Access the ONTAP CLI through the REST API]. For the Python samples see https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples[REST CLI passthrough samples^].
 
-.Python client library
+== Python client library
 
 The Python client library is a package you can install and use to access the ONTAP REST API with Python. It allows you to quickly develop robust code for the automation of your ONTAP deployments.
 
 For an introduction to the Python client library, see link:../python/overview_pcl.html[Overview of the Python client library]. For the Python samples see https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library[Python client library examples^].
+
+== NetApp ONTAP PowerShell Toolkit
+
+The NetApp.ONTAP PowerShell Toolkit enhances your local PowerShell environment. The module includes over 2,400 cmdlets. It allows you to quickly develop code for your Windows host to automate the ONTAP deployments. For more information, see link:../pstk/overview_pstk.html[Over of the PowerShell Toolkit].

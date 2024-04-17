@@ -85,29 +85,17 @@ https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis[Role-based Access Contro
 +
 https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Scripts Now Available on GitHub!^]
 
-== NetApp community blogs
-
-* Coffee breaks with REST - Episode 1
+* Coffee breaks with REST (6 episodes)
 +
 https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852[Basics of ONTAP REST APIs^]
-
-* Coffee breaks with REST - Episode 2
 +
 https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-2-Features-of-ONTAP-REST-APIs/m-p/168168/highlight/true#M208[Features of ONTAP REST APIs^]
-
-* Coffee breaks with REST - Episode 3
 +
 https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-3-Getting-Hands-on-with-ONTAP-REST-using-Postman/m-p/431965/highlight/true#M283[Getting Hands-on with ONTAP REST using Postman^]
-
-* Coffee breaks with REST - Episode 4
 +
 https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-4-ONTAPI-ZAPI-Reporting-tool/m-p/433200[ONTAPI (ZAPI) Reporting tool^]
-
-* Coffee breaks with REST - Episode 5
 +
 https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-5-Private-CLI-Passthrough/m-p/435293[Private CLI Passthrough^]
-
-* Coffee breaks with REST - Episode 6
 +
 https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-6-5-magical-features-that-make-ONTAP-storage/m-p/435604[5 magical features that make ONTAP storage automation simple!^]
 
@@ -117,7 +105,7 @@ https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-RE
 +
 https://www.youtube.com/watch?v=Wws3SB5d9Ss[Getting started with the NetApp ONTAP Python client library^]
 
-* This video is also available through NetApp TV at link:https://tv.netapp.com/detail/video/6217195551001[Ansible Certified Modules^].
+* Ansible Certified Modules - Use case.
 +
 video::L5DZBV_Sg9E[youtube, width=848, height=480]
 
@@ -145,24 +133,10 @@ https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2
 
 == NetApp Knowledge Base
 
-* If you encounter an issues with the ONTAP REST API, you can report it to NetApp.
+* If you encounter an issue with the ONTAP REST API, you can report it to NetApp. 
 +
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_report_REST_API_and_NetApp_Python_Module_(REST_API_via_python_module)_issues[How to report issues on ONTAP REST API and ONTAP REST API Python client library^]
 
-* You can request a new feature for the ONTAP REST API.
+* If you identify a functional gap in the ONTAP REST API, you can request a new feature for the API.
 +
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_request_a_feature_for_ONTAP_REST_API[How to request a feature for ONTAP REST API^]
-
-== Additional NetApp resources
-
-* Access troubleshooting tools, documentation, and technical support assistance.
-+
-https://mysupport.netapp.com/[NetApp Support^]
-
-* Access requirements and compatibility information related to using ONTAP 9 and the ONTAP REST API.
-+
-https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^]
-
-* Access technical reports, white papers, and other documents.
-+
-http://www.netapp.com/us/library/index.aspx[NetApp library of technical reports and white papers^]
