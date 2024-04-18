@@ -1,5 +1,5 @@
 section: migrate
-title: Migrate to the REST API
+title: Migrate from ONTAPI to the REST API
 entries:
   - title: ONTAPI disablement
     url: /migrate/ontapi_disablement.html
