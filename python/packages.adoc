@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: python/packages.html
+keywords: packages, documentation
+summary: 
+---
+
+= Packages and documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The Python client library is available for each ONTAP release beginning with 9.6. You should access the PyPI package and documentation based on the ONTAP release you are using.
+
+.ONTAP 9.14.1
+
+* https://pypi.org/project/netapp-ontap/9.14.1.0/[PyPI: NetApp ONTAP 9.14.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html[NetApp PCL documentation for 9.14.1^]
+
+.ONTAP 9.13.1
+
+* https://pypi.org/project/netapp-ontap/9.13.1.0/[PyPI: NetApp ONTAP 9.13.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html[NetApp PCL documentation for 9.13.1^]
+
+.ONTAP 9.12.1
+
+* https://pypi.org/project/netapp-ontap/9.12.1.0/[PyPI: NetApp ONTAP 9.12.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html[NetApp PCL documentation for 9.12.1^]
+
+.ONTAP 9.11.1
+
+* https://pypi.org/project/netapp-ontap/9.11.1.0/[PyPI: NetApp ONTAP 9.11.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html[NetApp PCL documentation for 9.11.1^]
+
+.ONTAP 9.10.1
+
+* https://pypi.org/project/netapp-ontap/9.10.1.0/[PyPI: NetApp ONTAP 9.10.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html[NetApp PCL documentation for 9.10.1^]
+
+.ONTAP 9.9.1
+
+* https://pypi.org/project/netapp-ontap/9.9.1/[PyPI: NetApp ONTAP 9.9.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2876965/html/index.html[NetApp PCL documentation for 9.9.1^]
+
+.ONTAP 9.8
+
+* https://pypi.org/project/netapp-ontap/9.8.0/[PyPI: NetApp ONTAP 9.8^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2874673/html/index.html[NetApp PCL documentation for 9.8^]
+
+.ONTAP 9.7
+
+* https://pypi.org/project/netapp-ontap/9.7.3/[PyPI: NetApp ONTAP 9.7^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2858435/html/index.html[NetApp PCL documentation for 9.7^]
+
+.ONTAP 9.6
+
+* https://pypi.org/project/netapp-ontap/9.6.0/[PyPI: NetApp ONTAP 9.6^]
+
+* https://library.netapp.com/ecmdocs/ECMLP2870387/html/index.html[NetApp PCL documentation for 9.6^]

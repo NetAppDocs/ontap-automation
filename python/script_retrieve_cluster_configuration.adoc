@@ -25,7 +25,7 @@ The following script provides a simple example of how to use the Python client l
 # python3 get_cluster.py
 #
 #
-# (C) Copyright 2020 NetApp, Inc.
+# (C) Copyright 2024 NetApp, Inc.
 #
 # This sample code is provided AS IS, with no support or warranties of
 # any kind, including but not limited for warranties of merchantability
@@ -38,6 +38,8 @@ The following script provides a simple example of how to use the Python client l
 # no less restrictive than those set forth herein.
 #
 ##--------------------------------------------------------------------
+# For reading the password from the commandline
+from getpass import getpass
 # Global configuration for the library
 from netapp_ontap import config
 # Support for the connection to ONTAP
@@ -45,8 +47,10 @@ from netapp_ontap import HostConnection
 # Specific API needed for this script
 from netapp_ontap.resources import Cluster
 # Create connection to the ONTAP management LIF
-conn = HostConnection("10.236.252.97", username="admin",
-password="mypassword", verify=False)
+# (add verify=False if the certificate your cluster is serving is not trusted)
+conn = HostConnection(
+    "<mgmt_ip>", username="admin", password=getpass("ONTAP admin password: "),
+)
 # Set connection as the default for all API calls
 config.CONNECTION = conn
 # Create new cluster object
