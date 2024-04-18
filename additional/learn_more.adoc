@@ -88,13 +88,11 @@ https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Script
 video::Wws3SB5d9Ss[youtube, width=848, height=480]
 //https://www.youtube.com/watch?v=Wws3SB5d9Ss[Getting started with the NetApp ONTAP Python client library^]
 
-* Ansible Certified Modules - Use case.
-+
-video::L5DZBV_Sg9E[youtube, width=848, height=480]
-
 * A look at the Ansible Certified Modules.
 +
 video::ZlmQ5IuVZD8[youtube, width=848, height=480]
++
+video::L5DZBV_Sg9E[youtube, width=848, height=480]
 
 * A collection of videos at NetApp TechComm TV.
 +
