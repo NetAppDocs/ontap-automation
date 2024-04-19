@@ -7,5 +7,15 @@ entries:
         url: /python/overview_pcl.html
       - title: Prepare to use the Python client library
         url: /python/prepare_pcl.html
+      - title: Packages and documentation
+        url: /python/packages.html
       - title: Script to retrieve cluster configuration
         url: /python/script_retrieve_cluster_configuration.html
+      - title: Blog articles
+        url: /python/blogs_pcl.html
+  - title: Powershell toolkit
+    entries:
+      - title: Overview
+        url: /pstk/overview_pstk.html
+      - title: Download and install
+        url: /pstk/install_pstk.html

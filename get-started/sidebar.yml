@@ -7,3 +7,5 @@ entries:
     url: /get-started/access_rest_api.html
   - title: Your first API call
     url: /get-started/first_call.html
+  - title: NetApp lab resources
+    url: /get-started/labs.html

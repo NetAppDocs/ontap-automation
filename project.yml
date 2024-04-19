@@ -52,20 +52,22 @@ homepage:
           url: /workflows/prepare_workflows.html
         - title: Python client library
           url: /python/overview_pcl.html
+        - title: PowerShell Toolkit
+          url: /pstk/overview_pstk.html
     - title: Migrate to the REST API
       links:
         - title: ONTAPI disablement
-          url: /migrate/overview.html
+          url: /migrate/ontapi_disablement.html
         - title: ONTAPI to REST mapping
           url: /migrate/mapping.html
         - title: Performance counters
           url: /migrate/performance-counters.html
         - title: Blog articles
-          url: /migrate/blogs.html
+          url: /migrate/blogs_migrate.html
     - title: Knowledge and support
       links:
-        - title: Additional resources
-          url: /additional/resources.html
+        - title: Learn more
+          url: /additional/learn_more.html
         - title: ONTAP 9 docs
           url: https://docs.netapp.com/us-en/ontap/
         - title: ONTAP Select docs

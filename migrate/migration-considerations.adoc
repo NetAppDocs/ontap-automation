@@ -46,3 +46,7 @@ SnapDiff API availability across ONTAP releases is defined as follows:
 * ONTAP 9.10.1:  v3 only (REST API only)
 
 Also see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for more information.
+
+== Submit your ONTAPI to REST API gaps
+
+NetApp is committed to supporting our customers with their migration from ONTAPI to the ONTAP REST API. If you notice something missing in the REST API, please let us know. You can submit these gaps and any other ideas at the https://forms.office.com/Pages/ResponsePage.aspx?id=oBEJS5uSFUeUS8A3RRZbOtlEKM3rNwBHjLH8dubcgOVURVM2UzIzTkQzSzdTU0pQRVFFRENZWlAxNi4u[ONTAPI to REST API^] page.

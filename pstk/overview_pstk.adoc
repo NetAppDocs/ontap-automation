@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: pstk/overview_pstk.html
+keywords: overview, powershell, powershell toolkit
+summary: NetApp provides support for using PowerShell to administer your ONTAP storage systems.
+---
+
+= Overview of the PowerShell Toolkit
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp provides support for using PowerShell to administer your ONTAP storage systems.
+
+.PowerShell
+PowerShell is a program from Microsoft that you can use for task automation and configuration management. It includes a command line shell environment as well as a scripting language.
+
+.NetApp ONTAP PowerShell Toolkit
+The NetApp.ONTAP PowerShell Toolkit includes the PowerShell module for NetApp ONTAP. The toolkit supports ONTAP running in a variety of environments, including NetApp AFF and FAS systems, commodity hardware, and the cloud. The module includes over 2,400 cmdlets which collectively support storage administration on Windows hosts.
