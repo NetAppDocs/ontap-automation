@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: resources/overview_categories.html
 keywords: resources, resource categories
-summary: The resources available through the ONTAP REST API are organized in categories, as displayed on the ONTAP API documentation page.
+summary: 
 ---
 
 = Overview of the resource categories
@@ -13,14 +13,13 @@ summary: The resources available through the ONTAP REST API are organized in cat
 :imagesdir: ../media/
 
 [.lead]
-The resources available through the ONTAP REST API are organized in categories, as displayed in the ONTAP API online documentation. A brief description of each of the resources is presented below along with additional usage considerations where appropriate.
+The resources available through the ONTAP REST API are organized in categories. Each of the resource categories includes a brief description along with additional usage considerations where appropriate.
 
-The REST resources described in this summary are based on the latest version of the product. If you need to understand the changes made from previous releases, see link:../whats_new.html[What's new with the ONTAP REST API] as well as the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^].
+The REST resources described in the summary are based on the latest version of the product. If you need a more detailed understanding of the changes made in previous releases, see link:../whats_new.html[What's new with the ONTAP REST API] as well as the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^].
 
 [TIP]
-For many of the REST endpoints, you can include a UUID key as part of the path string to access a specific object instance. However, you can also access objects using a property value on a query parameter.
+For many of the REST endpoints, you can include a UUID key as part of the path string to access a specific object instance. However, in many cases you can also access objects using a property value on a query parameter.
 
 .Related information
 
-* link:../rest/object_references_and_access.html[Additional REST considerations]
 * link:../reference/api_reference.html[API reference]
