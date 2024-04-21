@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-These API calls can be used to manage the cluster and SVM security settings.
+You can use these API calls to manage the cluster and SVM security settings.
 
 .Accounts
 

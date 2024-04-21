@@ -13,7 +13,9 @@ summary: You can use these API calls to administer the SnapLock feature.
 :imagesdir: ../media/
 
 [.lead]
-SnapLock is a storage-based implementation of the traditional WORM (write once, read many) optical solution and provides for the long-term retention of data. You can use these API calls to administer the SnapLock feature.
+You can use these API calls to administer the ONTAP SnapLock feature.
+
+//SnapLock is a storage-based implementation of the traditional WORM (write once, read many) optical solution and provides for the long-term retention of data.
 
 .Log
 
