@@ -13,7 +13,9 @@ summary: You can use these API calls to manage the NDMP services.
 :imagesdir: ../media/
 
 [.lead]
-The Network Data Management Protocol provides a standard for backing up NAS devices. You can use these API calls to manage the NDMP services.
+You can use these API calls to manage the NDMP services.
+
+//The Network Data Management Protocol provides a standard for backing up NAS devices. You can use these API calls to manage the NDMP services.
 
 .NDMP mode
 
