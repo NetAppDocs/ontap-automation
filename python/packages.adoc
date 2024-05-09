@@ -15,6 +15,12 @@ summary:
 [.lead]
 The Python client library is available for each ONTAP release beginning with 9.6. You should access the PyPI package and documentation based on the ONTAP release you are using.
 
+.ONTAP 9.15.1
+
+* https://pypi.org/project/netapp-ontap/9.15.1.0/[PyPI: NetApp ONTAP 9.15.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP3319064/html/index.html[NetApp PCL documentation for 9.15.1^]
+
 .ONTAP 9.14.1
 
 * https://pypi.org/project/netapp-ontap/9.14.1.0/[PyPI: NetApp ONTAP 9.14.1^]
