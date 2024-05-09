@@ -18,6 +18,16 @@ NetApp periodically updates the ONTAP REST API to bring you new features, enhanc
 [TIP]
 You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues.
 
+== ONTAP 9.15.1
+
+xxx
+
+Feature 1::
+yyy
+
+Feature 2::
+zzz
+
 == ONTAP 9.14.1
 
 The ONTAP 9.14.1 release includes over three dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These endpoints support several new ONTAP features as well as updates to existing features. This release focuses primarily on security enhancements but also includes improvements to NAS, QOS, and performance metrics.
