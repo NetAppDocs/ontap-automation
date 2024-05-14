@@ -139,6 +139,10 @@ The configuration settings for an interface to Kerberos. This resource type was 
 
 The configuration settings for Kerberos realms. This resource type was introduced with ONTAP 9.6.
 
+.NFS over TLS
+
+This resource allows you to retrieve and update the interface configuration when using NFS over TLS. This resource type was introduced with ONTAP 9.15.
+
 .NFS services
 
 The core configuration of the NFS server. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.

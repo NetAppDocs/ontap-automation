@@ -20,13 +20,21 @@ You should also review the https://library.netapp.com/ecm/ecm_download_file/ECML
 
 == ONTAP 9.15.1
 
-xxx
+ONTAP 9.15.1 continues to expand the capabilities of the ONTAP REST API. The update for this release is relatively modest with a total of four new endpoints supporting two new features.
 
-Feature 1::
-yyy
+Directory restore::
 
-Feature 2::
-zzz
+There is a single new endpoint provided with this feature. You can use the API call to restore a full directory from a volume snapshot copy. Note the following:
+
+* Data copy functionality is not needed or used.
+* The directory in the snapshot copy contains subdirectories and files.
+* After a directory is restored, all the directory entries from the source remain as they are except the junction path inodes.
+* The directory entries in the restored directory contain new inodes which are in the active file system.
+* The newly created inodes in the active file system have the same attributes as those in the source Snapshot copy.
+
+NFS over TLS::
+
+There are three new endpoints available with this feature. You can issue these API calls to retrieve all the NFS over TLS interfaces, retrieve a specific interface by UUID, and update the configuration properties for a TLS interface. Collectively these API calls provide an equivalent to the set of `vserver nfs tls interface` CLI commands.
 
 == ONTAP 9.14.1
 

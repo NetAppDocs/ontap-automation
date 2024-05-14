@@ -31,6 +31,10 @@ An aggregate consists of one or more RAID groups. This resource type was introdu
 
 You can retrieve the bridges in a cluster. This resource type was introduced with ONTAP 9.9.
 
+.Directory restore
+
+Provides the ability to restore a full directory from a volume snapshot copy. This resource type was introduced with ONTAP 9.15.
+
 .Disks
 
 The physical disks in the cluster. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7 and 9.8.
