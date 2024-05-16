@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: nmsdk.html
+keywords: 
+summary: 
+---
+
+= NetApp Manageability SDK
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+XXX
+
+.Related information
+
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US[NetApp Manageability SDK documentation^]
+
+* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/[OnCommand Workflow Automation documentation resources^]
+
+* https://automationstore.netapp.com/home.shtml[NetApp Automation Store^]
