@@ -36,6 +36,9 @@ NFS over TLS::
 
 There are three new endpoints available with this feature. You can issue these API calls to retrieve all the NFS over TLS interfaces, retrieve a specific interface by UUID, and update the configuration properties for a TLS interface. Collectively these API calls provide an equivalent to the set of `vserver nfs tls interface` CLI commands.
 
+[CAUTION]
+NFS over TLS is available in ONTAP 9.15.1 as a public preview. As a preview offering, this feature is not supported for production workloads with ONTAP 9.15.1.
+
 == ONTAP 9.14.1
 
 The ONTAP 9.14.1 release includes over three dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These endpoints support several new ONTAP features as well as updates to existing features. This release focuses primarily on security enhancements but also includes improvements to NAS, QOS, and performance metrics.
