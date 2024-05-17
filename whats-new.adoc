@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: whats_new.html
+permalink: whats-new.html
 keywords: new features, new in release
 summary: NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 ---
