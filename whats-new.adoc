@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: whats_new.html
+permalink: whats-new.html
 keywords: new features, new in release
 summary: NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 ---
@@ -17,6 +17,17 @@ NetApp periodically updates the ONTAP REST API to bring you new features, enhanc
 
 [TIP]
 You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues.
+
+== ONTAP 9.15.1
+
+ONTAP 9.15.1 continues to expand the capabilities of the ONTAP REST API. The update for this release is relatively modest with three new endpoints supporting a new feature.
+
+NFS over TLS::
+
+There are three new endpoints available with this feature. You can issue these API calls to retrieve all the NFS over TLS interfaces, retrieve a specific interface by UUID, and update the configuration properties for a TLS interface. Collectively these API calls provide an equivalent to the set of `vserver nfs tls interface` CLI commands.
+
+[CAUTION]
+NFS over TLS is available in ONTAP 9.15.1 as a public preview. As a preview offering, this feature is not supported for production workloads with ONTAP 9.15.1.
 
 == ONTAP 9.14.1
 

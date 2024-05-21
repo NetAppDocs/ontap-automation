@@ -1,0 +1,39 @@
+---
+sidebar: sidebar
+permalink: sw-tools/nmsdk.html
+keywords: netapp manageability sdk, oncommand workflow automation, oncommand wfa, ontapi, ontap rest api
+summary: The NetApp Manageability SDK provides a set of ONTAPI API calls for developing applications to monitor and manage your ONTAP storage. Together with the OnCommand Workflow Automation package, the SDK supports your efforts to automate the manage of your ONTAP systems.
+---
+
+= NetApp Manageability SDK
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The NetApp Manageability SDK provides a set of ONTAPI API calls for developing applications to monitor and manage your ONTAP storage. Together with the OnCommand Workflow Automation package, the SDK supports your efforts to automate the manage of your ONTAP systems.
+
+[NOTE]
+While the NetApp Manageability SDK and OnCommand Workflow Automation continued to be supported, the ONTAP REST API is the preferred and strategic technology to use when automating your ONTAP systems. See link:../migrate/ontapi_disablement.html[ONTAPI disablement] for more information.
+
+.Download the SDK
+
+You can download the NetApp Manageability SDK from the NetApp Support Site. The SDK supports several languages on the client side, including: Python, PowerShell, C, C++, Java, C#, VB.Net, and Ruby. Make sure to review the Interoperability Matrix Tool for information about the NetApp Manageability SDK and how it is supported with your version of ONTAP.
+
+.Use OnCommand Workflow Automation
+
+You can also use the API provided with the SDK to automate management tasks without writing any scripts. OnCommand Workflow Automation (OnCommand WFA) provides several prepackaged workflows to deploy and run the management tasks. You can download the OnCommand WFA package from the NetApp Storage Automation Store.
+
+.Related information
+
+* https://mysupport.netapp.com/site/[NetApp Support Site^]
+
+* https://www.netapp.com/company/interoperability/[NetApp Interoperability Matrix Tool^]
+
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US[NetApp Manageability SDK documentation^]
+
+* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/[OnCommand Workflow Automation documentation resources^]
+
+* https://automationstore.netapp.com/home.shtml[NetApp Automation Store^]

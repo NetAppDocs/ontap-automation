@@ -19,3 +19,5 @@ entries:
         url: /pstk/overview_pstk.html
       - title: Download and install
         url: /pstk/install_pstk.html
+  - title: NetApp Manageability SDK
+    url: /sw-tools/nmsdk.html

@@ -1,4 +1,4 @@
 ---
-permalink: rn/whats_new.html
-redirect: ontap-automation/whats_new.html
+permalink: whats_new.html
+redirect: ontap-automation/whats-new.html
 ---
