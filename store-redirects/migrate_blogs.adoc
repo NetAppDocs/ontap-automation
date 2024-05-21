@@ -1,0 +1,4 @@
+---
+permalink: migrate/blogs.html
+redirect: ontap-automation/migrate/blogs_migrate.html
+---

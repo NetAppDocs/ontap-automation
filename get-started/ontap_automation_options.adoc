@@ -17,7 +17,7 @@ There are several options available to automate the deployment and administratio
 
 == ONTAP REST API
 
-Beginning with ONTAP 9.6, ONTAP includes an expansive REST API that provides the foundation for automating the deployment and administration of your storage systems. Since then the REST API has continued to expand and mature. It now provides the preferred and strategic option when automating the administration of your ONTAP deployments. There are several considerations when using the ONTAP REST API.
+Beginning with ONTAP 9.6, ONTAP includes an expansive REST API that provides the foundation for automating the deployment and administration of your storage systems. Since then the REST API has continued to expand and mature. It now provides the preferred and strategic option when automating the administration of your ONTAP deployments.
 
 .Accessing the REST API natively
 
@@ -25,7 +25,7 @@ You can access the ONTAP REST API directly using any programming language that s
 
 .Migrating legacy ONTAPI code to use REST
 
-The ONTAPI API (ZAPI) is the original set of proprietary calls included with the NetApp ONTAP software to support the automation of data storage administration and management tasks. The ONTAPI interface will be disabled in future versions of ONTAP. If you have existing code using the ONTAPI API, you should plan to migrate away from ONTAPI. NetApp provides support for converting your code to use the newer ONTAP REST API. See link:../migrate/ontapi_disablement.html[Migrate to the REST API] for more information.
+The ONTAPI API (Zephyr API or ZAPI) is the original set of proprietary calls included with the NetApp ONTAP software to support the automation of your data storage administration and management tasks. The API is part of the link:../sw-tools/nmsdk.html[NetApp Manageability SDK]. It is expected the ONTAPI interface will be disabled in future versions of ONTAP. If you have existing code using the ONTAPI API, you should plan to migrate away from ONTAPI. NetApp provides support for converting your code to use the newer ONTAP REST API. See link:../migrate/ontapi_disablement.html[Migrate from ONTAPI to the REST API] for more information.
 
 == Client software toolkits
 

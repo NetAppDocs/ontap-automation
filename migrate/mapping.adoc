@@ -17,6 +17,7 @@ The ONTAP REST API includes functionality that is equivalent to ONTAPI in most a
 
 The API mapping documentation is dependent on the ONTAP release:
 
+* https://docs.netapp.com/us-en/ontap-restmap[ONTAP 9.15.1^]
 * https://docs.netapp.com/us-en/ontap-restmap-9141[ONTAP 9.14.1^]
 * https://docs.netapp.com/us-en/ontap-restmap-9131[ONTAP 9.13.1^]
 * https://docs.netapp.com/us-en/ontap-restmap-9121[ONTAP 9.12.1^]
@@ -24,8 +25,3 @@ The API mapping documentation is dependent on the ONTAP release:
 * https://docs.netapp.com/us-en/ontap-restmap-9101[ONTAP 9.10.1^]
 * https://docs.netapp.com/us-en/ontap-restmap-991[ONTAP 9.9.1^]
 * https://docs.netapp.com/us-en/ontap-restmap-98[ONTAP 9.8^]
-
-//* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886[ONTAP 9.8^]
-//* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895[ONTAP 9.9.1^]
-//* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870[ONTAP 9.10.1^]
-//* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104[ONTAP 9.11.1^]
