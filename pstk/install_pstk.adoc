@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-There are two options available to download and install the NetApp ONTAP PowerShell Toolkit.
+There are two options available to download and install the NetApp ONTAP PowerShell toolkit.
 
 .NetApp support
 You can download the PowerShell toolkit from the NetApp support site:
