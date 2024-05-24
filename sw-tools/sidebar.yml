@@ -13,7 +13,7 @@ entries:
         url: /python/script_retrieve_cluster_configuration.html
       - title: Blog articles
         url: /python/blogs_pcl.html
-  - title: Powershell toolkit
+  - title: PowerShell toolkit
     entries:
       - title: Overview
         url: /pstk/overview_pstk.html
