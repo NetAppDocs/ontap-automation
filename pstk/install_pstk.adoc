@@ -16,11 +16,11 @@ summary:
 There are two options available to download and install the NetApp ONTAP PowerShell Toolkit.
 
 .NetApp support
-You can download the PowerShell toolkit from the NetApp support site:
+You can download the PowerShell Toolkit from the NetApp support site:
 
 https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit
 
 .PowerShell Gallery
-You can download the PowerShell toolkit from PowerShell Gallery:
+You can download the PowerShell Toolkit from PowerShell Gallery:
 
 https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302
