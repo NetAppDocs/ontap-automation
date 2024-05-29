@@ -1,3 +1,4 @@
+jekyll: azure-search-testing
 settings:
   name: ONTAP Automation
   internal:
