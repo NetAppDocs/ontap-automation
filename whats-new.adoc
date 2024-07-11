@@ -20,7 +20,7 @@ You should also review the https://library.netapp.com/ecm/ecm_download_file/ECML
 
 == ONTAP 9.15.1
 
-ONTAP 9.15.1 continues to expand the capabilities of the ONTAP REST API. The update for this release is relatively modest with three new endpoints supporting a new feature.
+ONTAP 9.15.1 continues to expand the capabilities of the ONTAP REST API. The update for this release is relatively modest with support for two new features.
 
 NFS over TLS::
 
@@ -28,6 +28,10 @@ There are three new endpoints available with this feature. You can issue these A
 
 [CAUTION]
 NFS over TLS is available in ONTAP 9.15.1 as a public preview. As a preview offering, this feature is not supported for production workloads with ONTAP 9.15.1.
+
+Windows backup applications and Unix-style symlinks::
+
+When a Windows backup application encounters a Unix-style symbolic link (symlink), the link is traversed and the data is returned by ONTAP and backed up. Beginning with ONTAP 9.15.1, you also have the option of backing up the symlink instead of the data it points to. This can provide several benefits, including improved performance of your backup applications. The endpoint `/protocols/cifs/services/{svm.uuid}` has been updated to include the new parameter `backup-symlink-enabled` in the `options` object.
 
 == ONTAP 9.14.1
 
