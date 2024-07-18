@@ -53,7 +53,7 @@ You can display information about the NetBIOS connections for the cluster. Detai
 
 .CIFS services
 
-The core configuration of the CIFS server. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7.
+The core configuration of the CIFS server. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.7 and 9.15.
 
 .CIFS session files
 
