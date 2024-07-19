@@ -16,7 +16,7 @@ summary: ONTAP includes a robust and extensible role-based access control (RBAC)
 ONTAP includes a robust and extensible role-based access control (RBAC) capability. You can assign each account a different role to control the user's access to the resources exposed through the REST API and CLI. The roles define different levels of administrative access for the various ONTAP users.
 
 [NOTE]
-The ONTAP RBAC capability has continued to expand and was significantly enhanced with ONTAP 9.11.1 (and subsequent releases). See link:../rest/rbac_overview.html#summary-of-rbac-evolution[Summary of RBAC evolution] and link:../whats-new.html[What’s new with the ONTAP REST API and automation] for more information.
+The ONTAP RBAC capability has continued to expand and was significantly enhanced with ONTAP 9.11.1 (and subsequent releases). See link:../rest/rbac_overview.html#summary-of-rbac-evolution[Summary of RBAC evolution] and link:../whats-new.html[What’s new with the ONTAP REST API] for more information.
 
 == ONTAP roles
 
