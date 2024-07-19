@@ -5,7 +5,7 @@ keywords: new features, new in release
 summary: NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 ---
 
-= What's new with the ONTAP REST API and automation
+= What's new with the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
