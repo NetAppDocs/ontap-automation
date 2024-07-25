@@ -5,7 +5,7 @@ keywords: install, powershell, powershell toolkit
 summary: 
 ---
 
-= Download and install the PowerShell Toolkit
+= Download and install the ONTAP PowerShell Toolkit
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -18,9 +18,10 @@ There are two options available to download and install the NetApp ONTAP PowerSh
 .NetApp support
 You can download the PowerShell toolkit from the NetApp support site:
 
-https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit
+https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit[NetApp.ONTAP PowerShell Toolkit^]
+
 
 .PowerShell Gallery
 You can download the PowerShell toolkit from PowerShell Gallery:
 
-https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302
+https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302[NetApp.ONTAP PowerShell Toolkit^]
