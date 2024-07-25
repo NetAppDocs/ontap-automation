@@ -5,7 +5,7 @@ entries:
     url: /get-started/ontap_automation_options.html
   - title: How to access the REST API
     url: /get-started/access_rest_api.html
-  - title: Your first API call
+  - title: Your first ONTAP REST API call
     url: /get-started/first_call.html
-  - title: NetApp lab resources
+  - title: ONTAP REST API lab resources
     url: /get-started/labs.html
