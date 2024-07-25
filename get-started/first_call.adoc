@@ -5,7 +5,7 @@ keywords: first REST API call, test REST API
 summary: You can issue a curl command to get started using the ONTAP REST API and confirm its availability.
 ---
 
-= Your first API call
+= Your first ONTAP REST API call
 :hardbreaks:
 :nofooter:
 :icons: font
