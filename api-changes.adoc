@@ -1,8 +1,8 @@
 ---
 permalink: api-changes.html
 sidebar: sidebar
-keywords: rest api, api changes, parameters, default values, breaking, breaking changes
-summary: 
+keywords: rest api, api changes, parameters, default values, breaking changes, documentation errors
+summary: NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls, such as the parameters and default values used. These changes can affect software that accesses the REST API.
 ---
 
 = Changes to ONTAP REST API calls
@@ -16,12 +16,12 @@ Any changes to the existing API calls can affect software that accesses the REST
 
 [cols="40%,50%,10%",options="header"]
 |===
-| Endpoint | Description of change | ONTAP Release
+| Endpoint | Description of change | ONTAP release
 
 // CONTAP-243461
 |`/security/authentication/duo/groups`
 `/security/authentication/duo/profiles`
-|The field `_links` in the response was removed from the duogroup for these endpoints. There is no recommended customer action or workaround. The field is expected to be added back in a future ONTAP release.
+|The field *_links* in the response was removed from the duogroup for these endpoints. There is no recommended customer action or workaround. The field is expected to be added back in a future ONTAP release.
 |9.15.1
 
 |===
@@ -34,13 +34,17 @@ You should review the list of errors in the table below. This will help you bett
 
 [cols="40%,50%,10%",options="header"]
 |===
-| Endpoint | Description of change | ONTAP Release
+| Endpoint | Description of change | ONTAP release
 
-|`storage/quota/reports`
+|`/storage/quota/reports`
 |The REST API documentation for the endpoint indicates that *specifier* is a valid field. However, the quota specifier is not supported with this endpoint. There is no recommended customer action or workaround.
 This field will be removed from the API documentation in a future ONTAP release.
 |9.6
 
 |===
+
+.Related information
+
+link:whats-new.html[What's new with the ONTAP REST API]
 
 // 2024 August 15 - ONTAPDOC-2221
