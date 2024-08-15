@@ -13,6 +13,8 @@ sidebar:
       entries:
         - title: What's new with the ONTAP REST API
           url: /whats-new.html
+        - title: Changes to ONTAP REST API calls
+          url: /api-changes.html
     - section: get-started
     - section: rest
     - section: workflows

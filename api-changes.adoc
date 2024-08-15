@@ -1,0 +1,50 @@
+---
+permalink: api-changes.html
+sidebar: sidebar
+keywords: rest api, api changes, parameters, default values, breaking changes, documentation errors
+summary: NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls, such as the parameters and default values used. These changes can affect software that accesses the REST API.
+---
+
+= Changes to ONTAP REST API calls
+
+[.lead]
+NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls, such as the parameters and default values used. These changes can affect software that accesses the REST API.
+
+== Changes to existing ONTAP REST API calls
+
+Any changes to the existing API calls can affect software that accesses the REST API. You should review the list of changes in the table below to determine if there is an impact to your ONTAP automation environment. Each entry includes the applicable API endpoint, a description of the change, and the ONTAP release it was introduced.
+
+[cols="40%,50%,10%",options="header"]
+|===
+| Endpoint | Description of change | ONTAP release
+
+// CONTAP-243461
+|`/security/authentication/duo/groups`
+`/security/authentication/duo/profiles`
+|The field *_links* in the response was removed from the duogroup for these endpoints. There is no recommended customer action or workaround. The field is expected to be added back in a future ONTAP release.
+|9.15.1
+
+|===
+
+== ONTAP REST API reference documentation errors
+
+As NetApp enhances and updates the ONTAP REST API, sometimes errors can be introduced in the online reference documentation. These errors can create confusion when using the API but generally don't impact or disrupt your ONTAP automation software or environment.
+
+You should review the list of errors in the table below. This will help you better understand and navigate the ONTAP REST API reference documentation. Each entry includes the applicable API endpoint, a description of the error, and the ONTAP release it was introduced.
+
+[cols="40%,50%,10%",options="header"]
+|===
+| Endpoint | Description of change | ONTAP release
+
+|`/storage/quota/reports`
+|The REST API documentation for the endpoint indicates that *specifier* is a valid field. However, the quota specifier is not supported with this endpoint. There is no recommended customer action or workaround.
+This field will be removed from the API documentation in a future ONTAP release.
+|9.6
+
+|===
+
+.Related information
+
+link:whats-new.html[What's new with the ONTAP REST API]
+
+// 2024 August 15 - ONTAPDOC-2221
