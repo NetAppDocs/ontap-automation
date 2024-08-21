@@ -18,7 +18,7 @@ Any changes to the existing API calls can affect software that accesses the REST
 |===
 | Endpoint | Description of change | ONTAP release
 
-// CONTAP-243461
+// CONTAP-253074
 |`/security/authentication/duo/groups`
 `/security/authentication/duo/profiles`
 |The field *_links* in the response was removed from the duogroup for these endpoints. There is no recommended customer action or workaround. The field is expected to be added back in a future ONTAP release.
@@ -36,6 +36,7 @@ You should review the list of errors in the table below. This will help you bett
 |===
 | Endpoint | Description of change | ONTAP release
 
+// CONTAP-275938
 |`/storage/quota/reports`
 |The REST API documentation for the endpoint indicates that *specifier* is a valid field. However, the quota specifier is not supported with this endpoint. There is no recommended customer action or workaround.
 This field will be removed from the API documentation in a future ONTAP release.
