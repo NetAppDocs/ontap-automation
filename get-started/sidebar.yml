@@ -1,6 +1,8 @@
 section: get-started
 title: Get started
 entries:
+  - title: ONTAP personalities
+    url: /get-started/ontap_personalities.html
   - title: Understand the automation options
     url: /get-started/ontap_automation_options.html
   - title: How to access the REST API

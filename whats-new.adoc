@@ -18,6 +18,37 @@ NetApp periodically updates the ONTAP REST API to bring you new features, enhanc
 [TIP]
 You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues. Also see link:api-changes.html[Changes to ONTAP REST API calls] for any changes that might impact your automation software.
 
+== ONTAP 9.16.1
+
+The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements to metrics and bucket capabilities.
+
+[NOTE]
+Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:../get-started/access_rest_api.html[ONTAP personalities] for more information.
+
+Groups::
+xxx
+
+Group role mapping::
+xxx
+
+External role mapping::
+xxx
+
+Anti-ransomware::
+xxx
+
+Web authorization::
+xxx authentication???
+
+Bucket snapshots::
+xxx
+
+Qtree metrics::
+xxx
+
+
+get-started/ontap_personalities.html
+
 == ONTAP 9.15.1
 
 ONTAP 9.15.1 continues to expand the capabilities of the ONTAP REST API. The update for this release is relatively modest with support for two new features.

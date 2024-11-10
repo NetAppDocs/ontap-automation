@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: get-started/ontap_personalities.html
+keywords: 
+summary: 
+---
+
+= ONTAP personalities
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Beginning with ONTAP 9.16.1, there are several unique ONTAP _personalities_. A personality is a packaging of ONTAP features adapted to the requirements of a specific environment or workload.
+
+== Overview of ONTAP personalities
+
+With the 9.16.1 release, there are two ONTAP personalities:
+
+Unified::
+The unified personality is what most people expect when they think of ONTAP. It includes a wide range of robust features and is available with the FAS, AFF, and ASA systems as well as ONTAP Select.
+
+ASA r2::
+The NetApp ASA r2 systems provide a combined hardware and software solution focused on the needs of SAN-only customers. The ONTAP asa r2 personality is included with these systems and provides a simplified environment for administering and using SAN storage.
+
+== Impact to the ONTAP REST API
+
+While the REST API provided with each ONTAP personality is based on a common foundation, there are differences in the REST APIs among the personalities. The differences can be found with the supported resource types, endpoints, HTTP methods for a specific endpoint, and fields.
+
+You should carefully review the API reference documentation for the personality you are using.
+
+.Related information
+
+* https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2^]
