@@ -13,11 +13,11 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Beginning with ONTAP 9.16.1, there are several unique ONTAP _personalities_. A personality is a packaging of ONTAP features adapted to the requirements of a specific environment or workload.
+Beginning with ONTAP 9.16.1, there are several unique ONTAP _personalities_ available. A personality is a package of ONTAP features adapted to the requirements of a specific environment or workload.
 
 == Overview of ONTAP personalities
 
-With the 9.16.1 release, there are two ONTAP personalities:
+With the 9.16.1 release, there are two ONTAP personalities.
 
 Unified::
 The unified personality is what most people expect when they think of ONTAP. It includes a wide range of robust features and is available with the FAS, AFF, and ASA systems as well as ONTAP Select.
@@ -27,9 +27,14 @@ The NetApp ASA r2 systems provide a combined hardware and software solution focu
 
 == Impact to the ONTAP REST API
 
-While the REST API provided with each ONTAP personality is based on a common foundation, there are differences in the REST APIs among the personalities. The differences can be found with the supported resource types, endpoints, HTTP methods for a specific endpoint, and fields.
+While the REST API provided with each ONTAP personality is based on a common foundation, there are differences in the REST APIs among the personalities. The differences can be found in several areas based on the supported:
 
-You should carefully review the API reference documentation for the personality you are using.
+* Resource types
+* Endpoints
+* HTTP methods for a specific endpoint
+* Fields or parameters
+
+You should carefully review the REST API reference documentation for the ONTAP personality you are using.
 
 .Related information
 

@@ -23,7 +23,7 @@ You should also review the https://library.netapp.com/ecm/ecm_download_file/ECML
 The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements to metrics and bucket capabilities.
 
 [NOTE]
-Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:../get-started/access_rest_api.html[ONTAP personalities] for more information.
+Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:../get-started/ontap-personalities.html[ONTAP personalities] for more information.
 
 Groups::
 xxx
