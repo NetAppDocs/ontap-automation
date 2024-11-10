@@ -29,7 +29,7 @@ You can administer the SVM account information at the Active Directory server. T
 
 .Anti-ransomware
 
-ONTAP detects files potentially containing a ransomware threat. There are several categories of endpoints. You can retrieve a list of these suspect files as well as remove them from a volume. This resource type was introduced with ONTAP 9.10.1.
+ONTAP detects files potentially containing a ransomware threat. There are several categories of endpoints. You can retrieve a list of these suspect files as well as remove them from a volume. This resource type was introduced with ONTAP 9.10.1. Support for displaying the version and updating the anti-ransomware package was added with ONTAP 9.16.
 
 .Audit
 
@@ -65,9 +65,21 @@ Duo provides two-factor authentication for SSH logins. You can configure Duo to 
 
 You can retrieve details of the cluster-wide security and update certain parameters. This resource type was introduced with ONTAP 9.7 and updated with ONTAP 9.8.
 
+.External roles
+
+An external role is defined at an OAUTH 2.0 identify provider. You can create and administer mapping relationships between these external roles and the ONTAP roles. This resource type was introduced with ONTAP 9.16.
+
 .GCP KMS
 
 This set of API calls allows you to use the Google Cloud Platform Key Management Service to store and manage the ONTAP encryption keys. This resource type was initially introduced with the ONTAP 9.8 REST API. However, this feature has been redesigned and so is considered to be new, with new resources types, in ONTAP 9.9.
+
+.Groups
+
+You can administer group configurations including groups represented with UUIDs. This resource type was introduced with ONTAP 9.16.
+
+.Group role mappings
+
+You can create and administer mapping relationships between groups and roles. This resource type was introduced with ONTAP 9.16.
 
 .IPSec
 
@@ -121,7 +133,7 @@ These settings are used to retrieve and manage the cluster NIS server configurat
 
 .OAuth 2.0
 
-Open Authorization (OAuth 2.0) is a token-based framework that can be used to restrict access to your ONTAP storage resources. You can use it with clients that access ONTAP through the REST API. Configuration can be performed with any of the ONTAP administrative interfaces including the REST API. This resource type was introduced with ONTAP 9.14.
+Open Authorization (OAuth 2.0) is a token-based framework that can be used to restrict access to your ONTAP storage resources. You can use it with clients that access ONTAP through the REST API. This resource type was introduced with ONTAP 9.14. It was enhanced with ONTAP 9.16 through the support of the Microsoft Entra ID authorization server (formerly Azure AD) with standard OAuth 2.0 claims. In addition, the Entra ID standard group claims based on UUID style values are supported through new group and role mapping capabilities. A new external role mapping feature has also been introduced. Also see *External roles*, *Groups*, and *Group role mappings*.
 
 .Password authentication
 
@@ -158,3 +170,7 @@ These endpoints allow you to retrieve the SSH security configuration for all SVM
 .TOTPS
 
 You can use the REST API to configure time-based one-time password (TOTP) profiles for accounts that sign in and access ONTAP using SSH. This resource type was introduced with ONTAP 9.13.
+
+.Web authentication
+
+Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. This feature was added with ONTAP 9.16.

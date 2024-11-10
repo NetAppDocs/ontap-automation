@@ -20,34 +20,36 @@ You should also review the https://library.netapp.com/ecm/ecm_download_file/ECML
 
 == ONTAP 9.16.1
 
-The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements to metrics and bucket capabilities.
+The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements to metrics and bucket administration.
 
 [NOTE]
-Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:../get-started/ontap-personalities.html[ONTAP personalities] for more information.
+Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:../get-started/ontap_personalities.html[ONTAP personalities] for more information.
 
-Groups::
-xxx
+OAuth 2.0 support for Microsoft Entra ID::
+OAuth 2.0 support was first introduced with ONTAP 9.14.1. The OAuth 2.0 capabilities have been enhanced with ONTAP 9.16.1 to support the Microsoft Entra ID authorization server (formerly Azure AD) with standard OAuth 2.0 claims. Two major features are included as described below.
 
-Group role mapping::
-xxx
+OAuth 2.0 with groups as UUIDs::
+The Entra ID standard group claims based on UUID style values are supported through two new capabilities:
 
-External role mapping::
-xxx
+* Group UUID to group name mapping
+* UUID group to role mapping
+
+Ten new API calls have been added with endpoints of the form `/security/groups` and `/security/group/role-mapping` respectively.
+
+OAuth 2.0 with external roles::
+An external role is defined at an OAUTH 2.0 identify provider. You can create and administer mapping relationships between these external roles and the ONTAP roles. Five new API calls have been added.
+
+Web authentication::
+Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. Seven new API calls have been added across several endpoints.
 
 Anti-ransomware::
-xxx
-
-Web authorization::
-xxx authentication???
-
-Bucket snapshots::
-xxx
+Two API calls have been added with a new endpoint to manage the anti-ransomware version used by ONTAP. You can display the version and update the anti-ransomware package.
 
 Qtree metrics::
-xxx
+ONTAP 9.16.1 includes an optional qtree extended performance monitoring feature. With the feature enabled, ONTAP captures additional data including latency metrics and historical data. A new endpoint has been added to allow you to retrieve this performance data.
 
-
-get-started/ontap_personalities.html
+S3 bucket snapshots::
+Four new API calls have been added to enable you to create and administer snapshots of your S3 buckets. Each snapshot is an image of the bucket as it existed when the snapshot was created.
 
 == ONTAP 9.15.1
 
