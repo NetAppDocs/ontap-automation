@@ -20,24 +20,24 @@ You should also review the https://library.netapp.com/ecm/ecm_download_file/ECML
 
 == ONTAP 9.16.1
 
-The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements to metrics and bucket administration.
+The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements with metrics and bucket administration.
 
 [NOTE]
-Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:../get-started/ontap_personalities.html[ONTAP personalities] for more information.
+Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:/get-started/ontap_personalities.html[ONTAP personalities] for more information.
 
 OAuth 2.0 support for Microsoft Entra ID::
 OAuth 2.0 support was first introduced with ONTAP 9.14.1. The OAuth 2.0 capabilities have been enhanced with ONTAP 9.16.1 to support the Microsoft Entra ID authorization server (formerly Azure AD) with standard OAuth 2.0 claims. Two major features are included as described below.
 
 OAuth 2.0 with groups as UUIDs::
 The Entra ID standard group claims based on UUID style values are supported through two new capabilities:
-
++
 * Group UUID to group name mapping
 * UUID group to role mapping
-
++
 Ten new API calls have been added with endpoints of the form `/security/groups` and `/security/group/role-mapping` respectively.
 
 OAuth 2.0 with external roles::
-An external role is defined at an OAUTH 2.0 identify provider. You can create and administer mapping relationships between these external roles and the ONTAP roles. Five new API calls have been added.
+An external role is defined at an OAUTH 2.0 identify provider defined to ONTAP. You can create and administer mapping relationships between these external roles and the ONTAP roles. Five new API calls have been added.
 
 Web authentication::
 Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. Seven new API calls have been added across several endpoints.
