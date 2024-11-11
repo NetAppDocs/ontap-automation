@@ -29,12 +29,10 @@ OAuth 2.0 support for Microsoft Entra ID::
 OAuth 2.0 support was first introduced with ONTAP 9.14.1. The OAuth 2.0 capabilities have been enhanced with ONTAP 9.16.1 to support the Microsoft Entra ID authorization server (formerly Azure AD) with standard OAuth 2.0 claims. Two major features are included as described below.
 
 OAuth 2.0 with groups as UUIDs::
-The Entra ID standard group claims based on UUID style values are supported through two new capabilities:
+The Entra ID standard group claims based on UUID style values are supported through two new capabilities with ten new API calls:
 +
-* Group UUID to group name mapping
-* UUID group to role mapping
-+
-Ten new API calls have been added with endpoints of the form `/security/groups` and `/security/group/role-mapping` respectively.
+* Group UUID to group name mapping (`/security/groups`)
+* UUID group to role mapping (`/security/group/role-mapping`)
 
 OAuth 2.0 with external roles::
 An external role is defined at an OAUTH 2.0 identify provider defined to ONTAP. You can create and administer mapping relationships between these external roles and the ONTAP roles. Five new API calls have been added.
