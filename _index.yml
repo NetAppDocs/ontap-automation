@@ -8,6 +8,8 @@ indexpage:
     links:
       - title: Release Notes
         url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+      - title: ONTAP personalities
+        url: /get-started/ontap_personalities.html
       - title: ONTAP automation options
         url: /get-started/ontap_automation_options.html
       - title: Your first API call
