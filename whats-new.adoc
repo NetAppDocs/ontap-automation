@@ -23,7 +23,7 @@ You should also review the https://library.netapp.com/ecm/ecm_download_file/ECML
 The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements with metrics and bucket administration.
 
 [NOTE]
-Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:/get-started/ontap_personalities.html[ONTAP personalities] for more information.
+Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:get-started/ontap_personalities.html[ONTAP personalities] for more information.
 
 OAuth 2.0 support for Microsoft Entra ID::
 OAuth 2.0 support was first introduced with ONTAP 9.14.1. The OAuth 2.0 capabilities have been enhanced with ONTAP 9.16.1 to support the Microsoft Entra ID authorization server (formerly Azure AD) with standard OAuth 2.0 claims. Two major features are included as described below.
