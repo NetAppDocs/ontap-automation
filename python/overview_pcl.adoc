@@ -10,7 +10,7 @@ summary: The NetApp ONTAP Python client library is a package you can install and
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The NetApp ONTAP Python client library is a package you can install and use to write scripts that access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous processing, exception handling, and error messages. By using the Python client library, you can quickly develop robust code to support the automation of ONTAP deployments.

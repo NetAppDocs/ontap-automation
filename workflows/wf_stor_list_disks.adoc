@@ -10,7 +10,7 @@ summary: You can retrieve a list of disks in the cluster. You might do this to l
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve a list of disks in the cluster. You might do this to locate one or more spares to use as part of creating an aggregate.

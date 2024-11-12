@@ -10,7 +10,7 @@ summary: You can retrieve all the auditing information for a specific file or fo
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the auditing information for a specific file or folder.

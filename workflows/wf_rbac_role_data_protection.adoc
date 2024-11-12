@@ -10,7 +10,7 @@ summary: You can provide a user with limited data protection capabilities.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can provide a user with limited data protection capabilities.

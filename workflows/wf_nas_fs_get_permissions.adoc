@@ -10,7 +10,7 @@ summary: You can retrieve the current effective permissions for a specific file 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the current effective permissions for a specific file or folder.

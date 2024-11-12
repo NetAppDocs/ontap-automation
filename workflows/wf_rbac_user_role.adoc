@@ -10,7 +10,7 @@ summary: You can use this workflow to create a user with an associated REST role
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use this workflow to create a user with an associated REST role.

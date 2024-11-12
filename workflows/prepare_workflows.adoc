@@ -10,7 +10,7 @@ summary: You should be familiar with the structure and format of the ONTAP workf
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You should be familiar with the structure and format of the workflows before using them with a live ONTAP deployment.

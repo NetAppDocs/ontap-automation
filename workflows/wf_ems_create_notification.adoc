@@ -10,7 +10,7 @@ summary: You can use the following workflow to create a new EMS notification des
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can use the following workflow to create a new EMS notification destination to receive selected event messages.

@@ -10,7 +10,7 @@ summary: You can retrieve the configuration for an ONTAP cluster including speci
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the configuration for an ONTAP cluster including specific fields. You might do this as part of assessing the state of the cluster or before updating the configuration.

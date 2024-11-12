@@ -10,7 +10,7 @@ summary: You can list the Storage Virtual Machines (SVMs) defined within an ONTA
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can list the Storage Virtual Machines (SVMs) defined within an ONTAP cluster. You might do this as part of finding the identifier for a specific SVM or to assure name uniqueness before creating a new SVM.
