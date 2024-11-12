@@ -10,7 +10,7 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the IP LIFs assigned to the cluster and SVMs. You might do this to confirm your network configuration or when planning to add another LIF.

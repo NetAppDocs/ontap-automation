@@ -10,7 +10,7 @@ summary: You can define a role to restrict storage volume administration within 
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can define a role to restrict storage volume administration within an SVM.

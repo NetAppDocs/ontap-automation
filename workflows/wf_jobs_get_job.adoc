@@ -10,7 +10,7 @@ summary: You can retrieve the instance of a specific ONTAP job. You would typica
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the instance of a specific ONTAP job. You would typically do this to determine if the job and associated operation completed successfully.

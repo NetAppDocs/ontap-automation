@@ -10,7 +10,7 @@ summary: You should prepare the local runtime environment before using the Pytho
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You should prepare the local runtime environment before using the Python client library.

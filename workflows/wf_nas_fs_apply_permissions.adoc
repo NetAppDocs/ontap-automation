@@ -10,7 +10,7 @@ summary: You can apply a new security descriptor to a specific file or folder.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can apply a new security descriptor to a specific file or folder.

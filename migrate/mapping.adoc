@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: migrate/mapping.html
-keywords: ONTAPI, REST API, mapping, mapping documentation
-summary: NetApp provides documentation that describes the mapping from the ONTAPI calls to the equivalent REST API calls.
+keywords: ontapi, rest api, mapping, mapping documentation, zapi
+summary: "The ONTAP REST API includes functionality that is equivalent to ONTAPI in most areas. NetApp provides documentation that describes the mapping from the ONTAPI calls to the equivalent REST API calls."
 ---
 
 = ONTAPI to REST API mapping
@@ -15,13 +15,4 @@ summary: NetApp provides documentation that describes the mapping from the ONTAP
 [.lead]
 The ONTAP REST API includes functionality that is equivalent to ONTAPI in most areas. NetApp provides documentation that describes the mapping from the ONTAPI calls to the equivalent REST API calls.
 
-The API mapping documentation is dependent on the ONTAP release:
-
-* https://docs.netapp.com/us-en/ontap-restmap[ONTAP 9.15.1^]
-* https://docs.netapp.com/us-en/ontap-restmap-9141[ONTAP 9.14.1^]
-* https://docs.netapp.com/us-en/ontap-restmap-9131[ONTAP 9.13.1^]
-* https://docs.netapp.com/us-en/ontap-restmap-9121[ONTAP 9.12.1^]
-* https://docs.netapp.com/us-en/ontap-restmap-9111[ONTAP 9.11.1^]
-* https://docs.netapp.com/us-en/ontap-restmap-9101[ONTAP 9.10.1^]
-* https://docs.netapp.com/us-en/ontap-restmap-991[ONTAP 9.9.1^]
-* https://docs.netapp.com/us-en/ontap-restmap-98[ONTAP 9.8^]
+You can access the current https://docs.netapp.com/us-en/ontap-restmap/[ONTAP ONTAPI-to-REST mapping^] documentation online. There is also a version selector available to access previous versions of the documentation based on the ONTAP release.

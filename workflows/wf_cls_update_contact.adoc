@@ -10,7 +10,7 @@ summary: You can update the contact information for a cluster. Because the reque
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can update the contact information for a cluster. Because the request is processed asynchronously, you also need to determine if the associated background job completed successfully.

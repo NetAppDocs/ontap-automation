@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping
-summary: The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as performance counters you can use to assess the performance of your ONTAP system and help meet your performance goals.
+summary: "The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as a set of performance counters you can use to assess the performance of your ONTAP system and help meet your performance goals."
 ---
 
 = Performance counters
@@ -98,13 +98,7 @@ Returns a specific row from a named counter table.
 
 NetApp provides extensive support for migrating your automation code from ONTAPI to the ONTAP REST API. This includes mapping documentation to identity the equivalent performance counter table available in the REST API for a given ONTAPI object.
 
-See the appropriate mapping documentation based on the ONTAP release you are using:
-
-* https://docs.netapp.com/us-en/ontap-pcmap/[ONTAP 9.15.1 performance counter mapping^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9141/[ONTAP 9.14.1 performance counter mapping^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9131/[ONTAP 9.13.1 performance counter mapping^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9121/[ONTAP 9.12.1 performance counter mapping^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9111/[ONTAP 9.11.1 performance counter mapping^]
+You can access the current https://docs.netapp.com/us-en/ontap-pcmap/[ONTAP performance counter mapping^] documentation online. There is also a version selector available to access previous versions of the documentation based on the ONTAP release.
 
 == Get started with the ONTAP REST API
 

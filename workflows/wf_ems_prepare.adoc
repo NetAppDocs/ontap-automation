@@ -10,7 +10,7 @@ summary: You can configure Event Management System (EMS) processing for an ONTAP
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages as needed.

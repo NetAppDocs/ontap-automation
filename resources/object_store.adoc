@@ -19,6 +19,10 @@ You can use these API calls to access S3-based object storage.
 
 A bucket is a container of objects and is structured using an object name space. Each S3 object server can have multiple buckets. This resource type was introduced with ONTAP 9.7 and updated with ONTAP 9.8.
 
+.Bucket snapshots
+
+You can create and administer snapshots of your S3 buckets. This feature was added with ONTAP 9.16.1.
+
 .Services
 
 You can create and manage the ONTAP S3 configuration, including servers and bucket configurations. This resource type was introduced with ONTAP 9.7.
