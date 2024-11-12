@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: new features, new in release
-summary: NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
+summary: "Each ONTAP release updates the ONTAP REST API to bring you new features, enhancements, and bug fixes."
 ---
 
 = What's new with the ONTAP REST API
@@ -13,14 +13,45 @@ summary: NetApp periodically updates the ONTAP REST API to bring you new feature
 :imagesdir: ../media/
 
 [.lead]
-NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
+Each ONTAP release updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 
 [TIP]
-You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues. Also see link:api-changes.html[Changes to ONTAP REST API calls] for any changes that might impact your automation software.
+You should review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues. Also see link:api-changes.html[Changes to ONTAP REST API calls] for any changes that might impact your automation software.
+
+== ONTAP 9.16.1
+
+ONTAP 9.16.1 includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements with metrics and bucket administration.
+
+[NOTE]
+The ONTAP REST API exposed to users of NetApp ASA r2 systems (ASA A1K, ASA A70, and ASA A90) is different than the REST API provided with all other FAS, AFF, and ASA systems. See https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2 systems^] for more information. 
+
+OAuth 2.0 support for Microsoft Entra ID::
+OAuth 2.0 support was first introduced with ONTAP 9.14.1. The OAuth 2.0 capabilities have been enhanced with ONTAP 9.16.1 to support the Microsoft Entra ID authorization server (formerly Azure AD) with standard OAuth 2.0 claims. Two major features are included as described below.
+
+OAuth 2.0 with groups as UUIDs::
+The Entra ID standard group claims based on UUID style values are supported through two new capabilities with ten new API calls:
++
+* Group UUID to group name mapping (`/security/groups`)
+* UUID group to role mapping (`/security/group/role-mapping`)
+
+OAuth 2.0 with external roles::
+An external role is defined at an OAUTH 2.0 identify provider defined to ONTAP. You can create and administer mapping relationships between these external roles and the ONTAP roles. Five new API calls have been added.
+
+Web authentication::
+Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistant MFAs through System Manager and the ONTAP REST API. Seven new API calls have been added across several endpoints.
+
+Autonomous Ransomware Protection versioning and updates::
+Two API calls have been added with a new endpoint to manage the Autonomous Ransomware Protection package used by ONTAP. You can display the version of and update the Autonomous Ransomware Protection package.
+
+Qtree metrics::
+ONTAP 9.16.1 includes an optional qtree extended performance monitoring feature. With the feature enabled, ONTAP captures additional data including latency metrics and historical data. A new endpoint has been added to allow you to retrieve this performance data.
+
+S3 bucket snapshots::
+Four new API calls have been added to enable you to create and administer snapshots of your S3 buckets. Each snapshot is an image of the bucket as it existed when the snapshot was created.
 
 == ONTAP 9.15.1
 
-ONTAP 9.15.1 continues to expand the capabilities of the ONTAP REST API. The update for this release is relatively modest with support for two new features.
+ONTAP 9.15.1 continues to expand the capabilities of the ONTAP REST API, including support for two new features.
 
 NFS over TLS::
 
@@ -107,7 +138,7 @@ The REST API has been enhanced to support the creation and management of CIFS gr
 
 == ONTAP 9.11.1
 
-ONTAP 9.11.1 continues to expand the capabilities of the ONTAP REST API with nearly a hundred new API calls. These endpoints support the new ONTAP features as well as enhancements to existing features. This release focuses on supporting customer migration to the ONTAP REST API from the Data ONTAP API (ONTAPI or ZAPI).
+ONTAP 9.11.1 continues to expand the capabilities of the ONTAP REST API with nearly a hundred new API calls. These endpoints support the new ONTAP features as well as enhancements to existing features.
 
 Granular RBAC::
 
@@ -139,11 +170,11 @@ Several endpoints have been added to provide access to the ONTAP storage pools. 
 
 Name services cache support::
 
-ONTAP name services has been enhanced to support caching which improves performance and resiliency. Configuration of the name services cache can now be accessed through the REST API. Settings can be applied at multiple levels including: hosts, unix-users, unix-groups, and netgroups.
+ONTAP name services has been enhanced to support caching which improves performance and resiliency. Configuration of the name services cache can now be accessed through the REST API. Settings can be applied at multiple levels including hosts, unix-users, unix-groups, and netgroups.
 
 ONTAPI reporting tool::
 
-The ONTAPI reporting tool helps customers and partners identify the ONTAPI usage in their environment. In addition to the Python software, there is also a video and evolving support in the NetApp Lab on Demand. This tool provides another resource when migrating from ONTAPI to the ONTAP REST API.
+The ONTAPI reporting tool helps customers and partners identify the ONTAPI usage in their environment. This tool provides valuable insights for customers planning their migration from ONTAPI to the ONTAP REST API.
 
 == ONTAP 9.10.1
 
@@ -183,7 +214,7 @@ Volume analytics and metrics have been expanded through additional endpoints to 
 
 Support enhancements::
 
-Support has been enhanced through several new features. Automatic update can keep your ONTAP systems current by downloading and applying the latest software updates. You can also retrieve and manage the memory core dumps generated by a node.
+Support has been enhanced through several new features. Automatic updates can keep your ONTAP systems current by downloading and applying the latest software updates. You can also retrieve and manage the memory core dumps generated by a node.
 
 == ONTAP 9.9.1
 
@@ -207,15 +238,15 @@ The ONTAP online documentation reference page now includes labels indicating the
 
 == ONTAP 9.8
 
-ONTAP 9.8 greatly expands the breadth and depth of the ONTAP REST API. It includes several new features which enhance your ability to automate the deployment and management of ONTAP storage systems. In addition, support has been improved for assisting with the transition to REST from the legacy ONTAPI API.
+ONTAP 9.8 includes several new features which enhance your ability to automate the deployment and management of ONTAP storage systems. In addition, support has been improved for assisting with the transition to REST from the legacy ONTAPI API.
 
 Mapping ONTAPI to the ONTAP 9 REST API::
 
 To help you update your ONTAPI automation, NetApp provides a list of ONTAPI calls that require one or more input parameters, along with a mapping of those calls to the equivalent ONTAP 9 REST API call. See link:migrate/mapping.html[ONTAPI to REST API mapping] for more information.
 
-API endpoints for new ONTAP 9.8 core features::
+API endpoints for new ONTAP 9.8 features::
 
-Support for the new core ONTAP 9.8 features not available through ONTAPI has been added to the REST API. This includes REST API support for ONTAP S3 buckets and services, SnapMirror Business Continuity, and File System Analytics.
+Support for the new ONTAP 9.8 features not available through ONTAPI has been added to the REST API. This includes REST API support for ONTAP S3 buckets and services, SnapMirror active sync (formerly SnapMirror Business Continuity) and File System Analytics.
 
 Expanded support for enhanced security::
 
@@ -223,11 +254,11 @@ Security has been enhanced through the support of several services and protocols
 
 Enhancements to improve simplicity::
 
-ONTAP 9.8 delivers more efficient and modern workflows using the REST API. For example, oneclick firmware updates are now available for several different types of firmware.
+ONTAP 9.8 delivers more efficient and modern workflows using the REST API. For example, one-click firmware updates are now available for several different types of firmware.
 
 Enhanced online documentation::
 
-The ONTAP online documentation page now includes labels indicating the ONTAP release that each REST endpoint or parameter was introduced, including those new in 9.8.
+The ONTAP online documentation page includes labels indicating the ONTAP release that each REST endpoint or parameter was introduced, including those new in 9.8.
 
 Improved support for transitioning to REST from ONTAPI::
 

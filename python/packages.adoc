@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: python/packages.html
-keywords: packages, documentation
-summary: 
+keywords: python, pypi, pcl, packages, documentation
+summary: "The Python client library is available for each ONTAP release beginning with 9.6. You should access the PyPI package and documentation based on the ONTAP release you are using."
 ---
 
 = Packages and documentation
@@ -10,10 +10,16 @@ summary:
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The Python client library is available for each ONTAP release beginning with 9.6. You should access the PyPI package and documentation based on the ONTAP release you are using.
+
+.ONTAP 9.16.1
+
+* https://pypi.org/project/netapp-ontap/9.16.1.0/[PyPI: NetApp ONTAP 9.16.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP3331665/html/index.html[NetApp PCL documentation for 9.16.1^]
 
 .ONTAP 9.15.1
 

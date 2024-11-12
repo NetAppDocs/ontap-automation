@@ -77,7 +77,7 @@ A QOS workload represents a storage object tracked by QOS. You can retrieve the 
 
 .Qtrees
 
-You can use these API calls to management Qtrees, a type of logically divided file system. This resource type was introduced with ONTAP 9.6.
+You can use these API calls to management Qtrees, a type of logically divided file system. This resource type was introduced with ONTAP 9.6. The qtree extended performance monitoring feature was added with ONTAP 9.16.1.
 
 .Quota reports
 

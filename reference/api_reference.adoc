@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference/api_reference.html
 keywords: reference, API reference, ONTAP API documentation, online reference, swagger
-summary: The API reference contains details about the ONTAP REST API calls, including the HTTP methods, input parameters, and responses. This complete reference is helpful when developing automation applications using the REST API.
+summary: "The API reference contains details about the ONTAP REST API calls, including the HTTP methods, input parameters, and responses. This complete reference is helpful when developing automation applications using the REST API."
 ---
 
 = API reference
@@ -20,30 +20,7 @@ You can access the REST API reference documentation at one of several sites base
 
 == Access the ONTAP API reference documentation online
 
-You can access a copy of the ONTAP REST API reference documentation through the links provided below. The documentation is maintained by ONTAP release.
-
-* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.15.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9141/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.14.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.13.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.12.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.11.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.10.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.9.1^]
-* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.8^]
-* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.7^]
-* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP 9.6^]
-
-// Dec 19, 2023
-//* https://library.netapp.com/ecmdocs/ECMLP2886775/html/[ONTAP 9.14.1^]
-//* https://library.netapp.com/ecmdocs/ECMLP2885799/html/[ONTAP 9.13.1^]
-//* https://library.netapp.com/ecmdocs/ECMLP2884821/html/[ONTAP 9.12.1^]
-//* https://library.netapp.com/ecmdocs/ECMLP2882307/html/[ONTAP 9.11.1^]
-//* https://library.netapp.com/ecmdocs/ECMLP2879871/html/[ONTAP 9.10.1^]
-//* https://library.netapp.com/ecmdocs/ECMLP2876964/html/[ONTAP 9.9.1^]
-//* https://library.netapp.com/ecmdocs/ECMLP2874708/html/[ONTAP 9.8^]
-//* https://library.netapp.com/ecmdocs/ECMLP2862544/html/[ONTAP 9.7^]
-//* https://library.netapp.com/ecmdocs/ECMLP2856304/html/[ONTAP 9.6^]
-// ------------
+You can access the current https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP REST API reference^] documentation online. There is also a version selector available to access previous versions of the documentation based on the ONTAP release.
 
 == Access the ONTAP API reference documentation through the Swagger UI
 
