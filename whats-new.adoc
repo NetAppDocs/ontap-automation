@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: new features, new in release
-summary: NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
+summary: "Each ONTAP release updates the ONTAP REST API to bring you new features, enhancements, and bug fixes."
 ---
 
 = What's new with the ONTAP REST API
@@ -13,17 +13,19 @@ summary: NetApp periodically updates the ONTAP REST API to bring you new feature
 :imagesdir: ../media/
 
 [.lead]
-NetApp periodically updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
+Each ONTAP release updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.
 
 [TIP]
 You should also review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues. Also see link:api-changes.html[Changes to ONTAP REST API calls] for any changes that might impact your automation software.
 
 == ONTAP 9.16.1
 
-The unified ONTAP 9.16.1 personality includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements with metrics and bucket administration.
+ONTAP 9.16.1 includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements with metrics and bucket administration.
 
 [NOTE]
-Beginning with the 9.16.1 release, ONTAP is available in one of several different _personalities_. See link:get-started/ontap_personalities.html[ONTAP personalities] for more information.
+The ONTAP REST API exposed to users of NetApp ASA r2 systems (ASA A1K, ASA A70, and ASA A90) is different than the REST API exposed for all other FAS, AFF, and ASA systems. See
+
+https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html[REST API support for ASA r2 systems^] for more information. 
 
 OAuth 2.0 support for Microsoft Entra ID::
 OAuth 2.0 support was first introduced with ONTAP 9.14.1. The OAuth 2.0 capabilities have been enhanced with ONTAP 9.16.1 to support the Microsoft Entra ID authorization server (formerly Azure AD) with standard OAuth 2.0 claims. Two major features are included as described below.
@@ -38,10 +40,10 @@ OAuth 2.0 with external roles::
 An external role is defined at an OAUTH 2.0 identify provider defined to ONTAP. You can create and administer mapping relationships between these external roles and the ONTAP roles. Five new API calls have been added.
 
 Web authentication::
-Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. Seven new API calls have been added across several endpoints.
+Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistant MFAs through System Manager and the ONTAP REST API. Seven new API calls have been added across several endpoints.
 
-Anti-ransomware::
-Two API calls have been added with a new endpoint to manage the anti-ransomware version used by ONTAP. You can display the version and update the anti-ransomware package.
+Autonomous Ransomware Protection versioning and updates::
+Two API calls have been added with a new endpoint to manage the Autonomous Ransomware Protection package used by ONTAP. You can display the version of and update the Autonomous Ransomware Protection package.
 
 Qtree metrics::
 ONTAP 9.16.1 includes an optional qtree extended performance monitoring feature. With the feature enabled, ONTAP captures additional data including latency metrics and historical data. A new endpoint has been added to allow you to retrieve this performance data.
