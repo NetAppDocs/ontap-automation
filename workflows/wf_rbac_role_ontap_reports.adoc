@@ -10,7 +10,7 @@ summary: You can create a REST role to provide users with the ability to generat
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can create a REST role to provide users with the ability to generate ONTAP reports.

@@ -10,7 +10,7 @@ summary: You can manage the permissions and audit policies for files available t
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can manage the permissions and audit policies for files available through the SVMs within an ONTAP cluster.

@@ -10,7 +10,7 @@ summary: You can update a specific security descriptor to a specific file or fol
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can update a specific security descriptor to a specific file or folder, including the primary owner, group, or control flags.

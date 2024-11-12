@@ -10,7 +10,7 @@ summary: You can install a signed X.509 certificate in your ONTAP cluster. You m
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can install a signed X.509 certificate in your ONTAP cluster. You might do this as part of configuring an ONTAP feature or protocol that requires strong authentication.

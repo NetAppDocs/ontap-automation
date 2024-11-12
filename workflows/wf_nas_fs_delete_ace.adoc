@@ -10,7 +10,7 @@ summary: You can delete an existing access cotrol entry (ACE) from a specific fi
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can delete an existing Access Control Entry (ACE) from a specific file or folder. The change propagates to any child objects.

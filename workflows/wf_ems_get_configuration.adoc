@@ -10,7 +10,7 @@ summary: You can retrieve the current EMS configuration for an ONTAP cluster. Yo
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 You can retrieve the current EMS configuration for an ONTAP cluster. You might do this before updating the configuration or creating a new EMS notification.
