@@ -37,7 +37,7 @@ The Python client library is a package you can use when writing scripts to acces
 
 .PowerShell toolkit
 
-You can use the NetApp.ONTAP PowerShell Toolkit to automate the administration of an ONTAP cluster from a Windows host. See https://docs.netapp.com/us-en/ontap-automation/pstk/overview_pstk.html[Overview of the PowerShell Toolkit^] for more information.
+You can use the NetApp.ONTAP PowerShell Toolkit to automate the administration of an ONTAP cluster from a Windows host. See link:../pstk/overview_pstk.html[Overview of the PowerShell Toolkit] for more information.
 
 == Automation frameworks
 
