@@ -36,6 +36,4 @@ You can also use the API provided with the SDK to automate management tasks with
 
 * https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US[NetApp Manageability SDK documentation^]
 
-* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/[OnCommand Workflow Automation documentation resources^]
-
-// https://automationstore.netapp.com/home.shtml[NetApp Automation Store^]
+* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/[OnCommand Workflow Automation documentation^]
