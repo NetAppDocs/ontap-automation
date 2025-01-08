@@ -22,7 +22,7 @@ You can use the Python client library to quickly develop robust code to automate
 * Connection management
 * Asynchronous processing
 * Exception handling
-* Uniform error messages. 
+* Uniform error messages
 
 .Package name and version
 
@@ -30,11 +30,11 @@ The name of the Python client library package is *netapp-ontap*. The version ass
 
 .Installation
 
-You must use pip utility to install the netapp_ontap package from the Python Package Index (PyPi) web site.
+You must use *pip* utility to install the netapp_ontap package from the Python Package Index (PyPi) site.
 
 .Packages and documentation by ONTAP release
 
-Each ONTAP release beginning with 9.6 has a PyPI package and associated documentation. See link:../python/packages.html[Packages and documentation] for more information. Installation requirements are include with each package and include different versions of the following:
+Each ONTAP release beginning with 9.6 has a PyPI package and associated documentation. See link:../python/packages.html[Packages and documentation] for more information. Installation requirements are included with each package and specify different versions of the following:
 
 * python
 * requests
@@ -43,7 +43,7 @@ Each ONTAP release beginning with 9.6 has a PyPI package and associated document
 
 .Code samples
 
-NetApp maintains a GitHub repository containing code samples and other helpful information. You can navigate to the _examples_ folder to access samples using the Python client library. Refer to the following locations at GitHub for details:
+NetApp maintains a GitHub repository with code samples and other helpful information. You can navigate to the _examples_ folder to access samples using the Python client library. Refer to the following locations at GitHub for details:
 
 * https://github.com/NetApp/ontap-rest-python[ONTAP REST Python GitHub repository^]
 
