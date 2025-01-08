@@ -5,7 +5,7 @@ keywords: learn about python client library, learn about pcl, pcl overview, pcl
 summary: "The NetApp ONTAP Python client library is a package you can install and use to quickly write scripts that access the ONTAP REST API. You'll need to prepare the local runtime environment before using it."
 ---
 
-= Learn about the Python client library
+= Learn about the ONTAP Python client library
 :hardbreaks:
 :nofooter:
 :icons: font
