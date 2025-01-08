@@ -33,7 +33,7 @@ NetApp provides client toolkits that abstract the ONTAP REST API and make it eas
 
 .Python client library
 
-The Python client library is a package you can use when writing scripts to access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous request processing, and exception handling. By using the Python client library, you can quickly develop robust code to support your ONTAP automation goals. See link:../python/overview_pcl.html[Python client library] for more information.
+The Python client library is a package you can use when writing scripts to access the ONTAP REST API. It provides support for several underlying services, including connection management, asynchronous request processing, and exception handling. By using the Python client library, you can quickly develop robust code to support your ONTAP automation goals. See link:../python/learn-about-pcl.html[Python client library] for more information.
 
 .PowerShell toolkit
 

@@ -1,0 +1,4 @@
+---
+permalink: python/prepare_pcl.html
+redirect: ontap-automation/python/learn-about-pcl.html
+---
