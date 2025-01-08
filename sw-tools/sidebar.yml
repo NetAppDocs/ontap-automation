@@ -3,10 +3,8 @@ title: Software tools
 entries:
   - title: Python client library
     entries:
-      - title: Overview
-        url: /python/overview_pcl.html
-      - title: Prepare to use the Python client library
-        url: /python/prepare_pcl.html
+      - title: Learn about the Python client library
+        url: /python/learn-about-pcl.html
       - title: Packages and documentation
         url: /python/packages.html
       - title: Script to retrieve cluster configuration
