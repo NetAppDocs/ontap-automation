@@ -25,10 +25,6 @@ The blog articles are arranged in several sections based on the subject.
 +
 https://www.netapp.com/blog/new-normal-for-automation[New normal for automation^]
 
-* The CLI passthrough provides a technique for executing ONTAP CLI commands using the REST API.
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api[Using the private CLI passthrough with the ONTAP REST API^]
-
 * If you're new to using Ansible for ONTAP automation, this is a good place to start.
 +
 https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[Getting Started with NetApp and Ansible: Install Ansible^]
@@ -71,33 +67,33 @@ https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Script
 
 * This blog provides a good introduction to the features of the ONTAP Python client library.
 +
-https://www.netapp.com/blog/simplify-ontap-rest-api-consumption[www.netapp.com/blog/simplify-ontap-rest-api-consumption^]
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption[Simplify ONTAP REST API Consumption with the Python Client Library^]
 
-* This is a three-part series of blogs covering more details about the Python client library:
+* This is a three-part series of blogs about getting started with the Python client library:
 +
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1[Part 1 netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1^]
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1[Part 1^]
 +
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2[Part 2 netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2/^]
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2[Part 2^]
 +
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3[Part 3 netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3^]
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3[Part 3^]
 
-=== Migrating to the ONTAP REST API
+=== Migrating to the REST API
 
 * NetApp provides support for moving from the proprietary ONTAPI API to the ONTAP REST API through mapping documentation.
 +
-https://netapp.io/2020/12/17/ontapi-to-rest-mapping/[netapp.io/2020/12/17/ontapi-to-rest-mapping^]
+https://netapp.io/2020/12/17/ontapi-to-rest-mapping/[ONTAPI to REST Mapping^]
 
 * There are several technologies available to help you transform your ONTAP automation environment based on the REST API.
 +
-https://www.netapp.com/blog/transform-automation-ontap-rest-api/[www.netapp.com/blog/transform-automation-ontap-rest-api^]
+https://www.netapp.com/blog/transform-automation-ontap-rest-api/[Transform your Automation to ONTAP REST API from ONTAPI ^]
 
 * To help CLI and ONTAP users transition to the ONTAP REST API, ONTAP provides a private REST API endpoint that can be used to access any CLI command.
 +
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api^]
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[Using the private CLI passthrough with the ONTAP REST API^]
 
 * NetApp provides a tool to help customers and partners transition to the ONTAP REST API.
 +
-https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/[netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool^]
+https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/[nTransitioning from ONTAPI(ZAPI) using ONTAPI Usage Reporting Tool^]
 
 == Videos
 
