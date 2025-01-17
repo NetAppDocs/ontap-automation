@@ -57,11 +57,7 @@ https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis[Role-based Access Contro
 
 === Python client library
 
-* An introduction to accessing and using the Python samples scripts at GitHub for the ONTAP REST API.
-+
-https://netapp.io/2020/04/23/ontap-rest-apis[Get started with sample scripts at GitHub^]
-
-* NetApp provides Python sample scripts to use the ONTAP REST API.
+* An introduction to using the Python sample scripts that NetApp provides at GitHub to access the ONTAP REST API.
 +
 https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Scripts Now Available on GitHub!^]
 
@@ -93,7 +89,7 @@ https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[Using the p
 
 * NetApp provides a tool to help customers and partners transition to the ONTAP REST API.
 +
-https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/[nTransitioning from ONTAPI(ZAPI) using ONTAPI Usage Reporting Tool^]
+https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/[Transitioning from ONTAPI(ZAPI) using ONTAPI Usage Reporting Tool^]
 
 == Videos
 
