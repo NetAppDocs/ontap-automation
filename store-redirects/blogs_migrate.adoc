@@ -1,4 +1,4 @@
 ---
-permalink: migrate/blogs.html
+permalink: migrate/blogs_migrate.html
 redirect: ontap-automation/additional/learn_more.html
 ---

@@ -16,7 +16,7 @@ summary:
 NetApp provides sample Python scripts and other related software to support your migration from ONTAPI to the ONTAP REST API. The most important of these samples are described below.
 
 [NOTE]
-All the Python code samples are available at the https://github.com/NetApp/ontap-rest-python[NetApp ONTAP REST Python^] GitHub repository.
+All the Python code samples are available at the https://github.com/NetApp/ontap-rest-python[NetApp ONTAP REST Python^] GitHub repository. You should also review the resources available in link:../additional/learn_more.html[Learn more about the ONTAP REST API].
 
 == ONTAPI usage reporting tool
 
