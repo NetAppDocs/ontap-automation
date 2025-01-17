@@ -5,7 +5,7 @@ keywords: learn, learn more, more information, additional resources
 summary: There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 ---
 
-= Learn more
+= Learn more about the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,17 +17,13 @@ There are several additional resources available to help you automate the deploy
 
 == Blog articles
 
+The blog articles are arranged in several sections based on the subject.
+
+=== General
+
 * A good summary of the current ONTAP automation technologies.
 +
 https://www.netapp.com/blog/new-normal-for-automation[New normal for automation^]
-
-* An introduction to accessing and using the Python samples scripts at GitHub for the ONTAP REST API.
-+
-https://netapp.io/2020/04/23/ontap-rest-apis[Get started with sample scripts at GitHub^]
-
-* The CLI passthrough provides a technique for executing ONTAP CLI commands using the REST API.
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api[Using the private CLI passthrough with the ONTAP REST API^]
 
 * If you're new to using Ansible for ONTAP automation, this is a good place to start.
 +
@@ -45,11 +41,7 @@ https://blog.netapp.com/ontap-rest-apis-automate-notification[ONTAP REST APIs: A
 +
 https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis[Role-based Access Control (RBAC) using ONTAP REST APIs^]
 
-* NetApp provides Python sample scripts to use the ONTAP REST API.
-+
-https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Scripts Now Available on GitHub!^]
-
-* Coffee breaks with REST (6 episodes).
+* Coffee breaks with REST (6 episodes):
 +
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852[Basics of ONTAP REST APIs^]
 +
@@ -62,6 +54,42 @@ https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Script
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-5-Private-CLI-Passthrough/m-p/435293[Private CLI Passthrough^]
 +
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-6-5-magical-features-that-make-ONTAP-storage/m-p/435604[5 magical features that make ONTAP storage automation simple!^]
+
+=== Python client library
+
+* An introduction to using the Python sample scripts that NetApp provides at GitHub to access the ONTAP REST API.
++
+https://netapp.io/2020/04/23/ontap-rest-apis[ONTAP REST API Python Sample Scripts Now Available on GitHub!^]
+
+* This blog provides a good introduction to the features of the ONTAP Python client library.
++
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption[Simplify ONTAP REST API Consumption with the Python Client Library^]
+
+* This is a three-part series of blogs about getting started with the Python client library:
++
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1[Part 1^]
++
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2[Part 2^]
++
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3[Part 3^]
+
+=== Migrating to the REST API
+
+* NetApp provides support for moving from the proprietary ONTAPI API to the ONTAP REST API through mapping documentation.
++
+https://netapp.io/2020/12/17/ontapi-to-rest-mapping/[ONTAPI to REST Mapping^]
+
+* There are several technologies available to help you transform your ONTAP automation environment based on the REST API.
++
+https://www.netapp.com/blog/transform-automation-ontap-rest-api/[Transform your Automation to ONTAP REST API from ONTAPI ^]
+
+* To help CLI and ONTAP users transition to the ONTAP REST API, ONTAP provides a private REST API endpoint that can be used to access any CLI command.
++
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/[Using the private CLI passthrough with the ONTAP REST API^]
+
+* NetApp provides a tool to help customers and partners transition to the ONTAP REST API.
++
+https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/[Transitioning from ONTAPI(ZAPI) using ONTAPI Usage Reporting Tool^]
 
 == Videos
 
