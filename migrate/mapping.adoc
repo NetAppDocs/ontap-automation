@@ -5,7 +5,7 @@ keywords: ontapi, rest api, mapping, mapping documentation, zapi
 summary: "The ONTAP REST API includes functionality that is equivalent to ONTAPI in most areas. NetApp provides documentation that describes the mapping from the ONTAPI calls to the equivalent REST API calls."
 ---
 
-= ONTAPI to REST API mapping
+= ONTAPI to ONTAP REST API mapping
 :hardbreaks:
 :nofooter:
 :icons: font
