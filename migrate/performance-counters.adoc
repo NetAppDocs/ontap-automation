@@ -5,7 +5,7 @@ keywords: performance, performance counters, mapping
 summary: "The ONTAP Counter Manager maintains extensive information about the performance of each ONTAP system. It exports this data as a set of performance counters you can use to assess the performance of your ONTAP system and help meet your performance goals."
 ---
 
-= Accessing performance counters using the ONTAP REST API
+= Using performance counters with the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
