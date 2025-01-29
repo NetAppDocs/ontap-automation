@@ -5,7 +5,7 @@ keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API
 summary: The ONTAPI interface will be disabled in future versions of ONTAP. If you are using ONTAPI, you should plan your migration to the ONTAP REST API.
 ---
 
-= ONTAPI disablement
+= ONTAPI disablement and impact on the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
