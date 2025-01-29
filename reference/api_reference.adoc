@@ -5,7 +5,7 @@ keywords: reference, API reference, ONTAP API documentation, online reference, s
 summary: "The API reference contains details about the ONTAP REST API calls, including the HTTP methods, input parameters, and responses. This complete reference is helpful when developing automation applications using the REST API."
 ---
 
-= API reference
+= Reference for the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: workflows, preparation, prepare to use workflows
 summary: You should be familiar with the structure and format of the ONTAP workflows before using them with a live deployment.
 ---
 
-= Prepare to use the workflows
+= Prepare to use the ONTAP REST API workflows
 :hardbreaks:
 :nofooter:
 :icons: font
