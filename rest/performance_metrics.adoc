@@ -5,7 +5,7 @@ keywords: performance, performance metrics
 summary: ONTAP collects performance metrics about selected SVM storage objects and protocols, and reports this information through the REST API. You can use this data to monitor the performance of an ONTAP system.
 ---
 
-= Performance metrics for storage resources
+= Access performance metrics with the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

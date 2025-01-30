@@ -11,11 +11,11 @@ entries:
         url: /rest/input_variables.html
       - title: Interpret an API response
         url: /rest/interpret_api_response.html
-      - title: Asynchronous processing using the job object
+      - title: Asynchronous processing
         url: /rest/asynchronous_processing.html
       - title: Object references and access
         url: /rest/object_references_and_access.html
-      - title: Performance metrics for storage resources
+      - title: Performance metrics
         url: /rest/performance_metrics.html
   - title: RBAC security
     entries:

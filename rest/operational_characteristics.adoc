@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: rest/operational_characteristics.html
-keywords: operation, request and response, crud
-summary: You can access the ONTAP REST API in several different ways.
+keywords: rest, rest api, operation, request, response, crud
+summary: "While REST establishes a common set of technologies and best practices, the details of each API can vary based on the design choices."
 ---
 
-= Basic operational characteristics
+= Operational characteristics of the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

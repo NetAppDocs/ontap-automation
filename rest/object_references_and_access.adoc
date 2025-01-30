@@ -5,7 +5,7 @@ keywords: objects, access paths, uuid, uuidv4, collections, object collection
 summary: The resource instances or objects exposed through the ONTAP REST API can be referenced and accessed in several different ways.
 ---
 
-= Object references and access
+= ONTAP REST API object references and access
 :hardbreaks:
 :nofooter:
 :icons: font

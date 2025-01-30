@@ -5,7 +5,7 @@ keywords: variables, input, input variabls
 summary: You can control how an API call is processed through parameters and variables set in the HTTP request.
 ---
 
-= Input variables controlling an API request
+= Input variables for an ONTAP REST API request
 :hardbreaks:
 :nofooter:
 :icons: font
