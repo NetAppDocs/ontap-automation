@@ -5,7 +5,7 @@ keywords: response, api response, status codes
 summary: Each API request generates a response back to the client. You should examine the response to determine whether it was successful and retrieve additional data as needed.
 ---
 
-= Interpreting an API response
+= Interpret an ONTAP REST API response
 :hardbreaks:
 :nofooter:
 :icons: font

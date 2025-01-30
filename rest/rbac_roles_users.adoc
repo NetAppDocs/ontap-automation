@@ -5,7 +5,7 @@ keywords: rbac, roles, users, rest endpoints, cli, privileges, access level, clu
 summary: After understanding the basic RBAC capabilities, you can get started working with the ONTAP roles and users.
 ---
 
-= Work with roles and users
+= Work with roles and users in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
