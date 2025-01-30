@@ -5,7 +5,7 @@ keywords: nas, file security, security descriptor, sd, update security descripto
 summary: You can update a specific security descriptor to a specific file or folder, including the primary owner, group, or control flags.
 ---
 
-= Update security descriptor information
+= Update security descriptor information using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

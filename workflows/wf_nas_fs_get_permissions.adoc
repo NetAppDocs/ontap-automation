@@ -5,7 +5,7 @@ keywords: nas, file security, effective permissions
 summary: You can retrieve the current effective permissions for a specific file or folder.
 ---
 
-= Get the effective permissions for a file
+= Get the effective permissions for a file using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
