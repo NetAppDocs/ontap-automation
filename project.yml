@@ -1,5 +1,5 @@
 settings:
-  name: ONTAP Automation
+  name: ONTAP automation
   internal:
     pdf_enabled: true
   prod:
@@ -7,7 +7,7 @@ settings:
     harmony_enabled: true
 sidebar:
   entries:
-    - title: ONTAP Automation docs
+    - title: ONTAP automation docs
       url: /index.html
     - title: What's new
       entries:
