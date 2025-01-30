@@ -5,7 +5,7 @@ keywords: support, ems, event management system, get events, get notifications, 
 summary: You can retrieve all event notification messages or those with specific characteristics.
 ---
 
-= List the EMS log events
+= List the EMS log events using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

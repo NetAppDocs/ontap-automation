@@ -1,5 +1,5 @@
 indexpage:
-  title: ONTAP Automation
+  title: ONTAP automation
   lead: You can automate the deployment and administration of your ONTAP storage systems using one of several available options. The ONTAP REST API provides the primary foundation for the automation technologies.
   summary: You can automate the deployment and administration of your ONTAP storage systems using one of several available options.
   keywords: automation, ontap automation, rest, rest api, migrate, migration

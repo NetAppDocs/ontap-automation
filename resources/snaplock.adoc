@@ -5,7 +5,7 @@ keywords: snaplock resources
 summary: You can use these API calls to administer the SnapLock feature.
 ---
 
-= SnapLock
+= SnapLock resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

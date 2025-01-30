@@ -5,7 +5,7 @@ keywords: ndmp resources
 summary: You can use these API calls to manage the NDMP services.
 ---
 
-= NDMP
+= NDMP resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

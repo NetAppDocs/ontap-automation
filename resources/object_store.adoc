@@ -5,7 +5,7 @@ keywords: object store resources
 summary: You can use these API calls to access S3-based object storage.
 ---
 
-= Object store
+= Object store resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

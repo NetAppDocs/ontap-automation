@@ -5,7 +5,7 @@ keywords: nas, file security, sacl, dacl, prepare
 summary: You can manage the permissions and audit policies for files available through the SVMs within an ONTAP cluster.
 ---
 
-= Prepare to manage file security and audit policies
+= Prepare to manage file security and audit policies using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

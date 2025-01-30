@@ -5,7 +5,7 @@ keywords: rbac, role, ontap reports, allow generation ontap reports
 summary: You can create a REST role to provide users with the ability to generate ONTAP reports.
 ---
 
-= Allow generation of ONTAP reports
+= Allow generation of ONTAP reports using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

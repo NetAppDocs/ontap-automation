@@ -5,7 +5,7 @@ keywords: cluster resources
 summary: You can use these API calls to manage ONTAP clusters and the related resources.
 ---
 
-= Cluster
+= Cluster resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

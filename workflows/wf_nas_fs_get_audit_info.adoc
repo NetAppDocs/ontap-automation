@@ -5,7 +5,7 @@ keywords: nas, file security, sacl, dacl, get auditing
 summary: You can retrieve all the auditing information for a specific file or folder.
 ---
 
-= Get the auditing information for a file
+= Get auditing information for a file using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
