@@ -5,7 +5,7 @@ keywords: workflow, job, job state
 summary: 
 ---
 
-= List the IP interfaces
+= List the IP interfaces using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

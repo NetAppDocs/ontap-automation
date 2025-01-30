@@ -5,7 +5,7 @@ keywords: workflow, list certificates
 summary: You can list the certificates installed in your ONTAP cluster. You might do this to see if a particular certificate is available or to get the ID of a specific certificate to be able to retrieve the entire certificate.
 ---
 
-= List the installed certificates
+= List the installed certificates using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

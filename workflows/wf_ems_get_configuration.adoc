@@ -5,7 +5,7 @@ keywords: support, ems, event management system, ems configuration
 summary: You can retrieve the current EMS configuration for an ONTAP cluster. You might do this before updating the configuration or creating a new EMS notification.
 ---
 
-= Get the EMS configuration
+= Get the EMS configuration using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

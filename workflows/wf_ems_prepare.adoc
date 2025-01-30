@@ -5,7 +5,7 @@ keywords: support, ems, event management system, event notifications, notificati
 summary: You can configure Event Management System (EMS) processing for an ONTAP cluster as well as retrieve EMS messages as needed.
 ---
 
-= Prepare to manage EMS support services
+= Prepare to manage EMS support services using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

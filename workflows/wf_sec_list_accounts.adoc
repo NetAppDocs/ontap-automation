@@ -5,7 +5,7 @@ keywords: workflow, security, accounts, list accounts
 summary: 
 ---
 
-= List the accounts
+= List the accounts using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
