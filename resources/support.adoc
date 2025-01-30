@@ -5,7 +5,7 @@ keywords: support resources
 summary: You can use these API calls to manage the ONTAP features used to support a cluster.
 ---
 
-= Support
+= Support resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

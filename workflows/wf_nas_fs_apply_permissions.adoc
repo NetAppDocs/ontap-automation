@@ -5,7 +5,7 @@ keywords: nas, file security, sacl, dacl, permissions, apply permissions
 summary: You can apply a new security descriptor to a specific file or folder.
 ---
 
-= Apply new permissions to a file
+= Apply new permissions to a file using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: workflow, job, job state
 summary: You can retrieve the instance of a specific ONTAP job. You would typically do this to determine if the job and associated operation completed successfully.
 ---
 
-= Get job instance
+= Get job instance using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

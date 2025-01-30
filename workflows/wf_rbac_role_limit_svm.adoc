@@ -5,7 +5,7 @@ keywords: rbac, role, storage volume, limited storage volume administration
 summary: You can define a role to restrict storage volume administration within an SVM.
 ---
 
-= Limit access to SVM volume operations
+= Limit access to SVM volume operations using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

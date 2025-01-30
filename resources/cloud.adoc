@@ -5,7 +5,7 @@ keywords: cloud resources
 summary: You can use these API calls to manage connections to object storage resources in the cloud.
 ---
 
-= Cloud
+= Cloud resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

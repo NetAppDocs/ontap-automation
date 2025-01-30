@@ -5,7 +5,7 @@ keywords: san resources
 summary: You can use these API calls to manage SAN resources.
 ---
 
-= SAN
+= SAN resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

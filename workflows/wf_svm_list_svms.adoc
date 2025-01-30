@@ -5,7 +5,7 @@ keywords: workflow, list SVMs
 summary: You can list the Storage Virtual Machines (SVMs) defined within an ONTAP cluster. You might do this as part of finding the identifier for a specific SVM or to assure name uniqueness before creating a new SVM.
 ---
 
-= List the SVMs
+= List the SVMs using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

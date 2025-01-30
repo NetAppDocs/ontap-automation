@@ -5,7 +5,7 @@ keywords: nas, file security, access control entry, ace, delete ace
 summary: You can delete an existing access cotrol entry (ACE) from a specific file or folder. The change propagates to any child objects.
 ---
 
-= Delete an access control entry
+= Delete an access control entry using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

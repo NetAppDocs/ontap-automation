@@ -5,7 +5,7 @@ keywords: support, ems, event management system, create ems, create ems notifica
 summary: You can use the following workflow to create a new EMS notification destination to receive selected event messages.
 ---
 
-= Create an EMS notification
+= Create an EMS notification using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

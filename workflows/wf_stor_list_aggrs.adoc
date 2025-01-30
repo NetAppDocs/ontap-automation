@@ -5,7 +5,7 @@ keywords: workflow, storage, aggregates, list aggregates
 summary: 
 ---
 
-= List the aggregates
+= List the aggregates using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

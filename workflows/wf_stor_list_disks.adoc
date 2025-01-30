@@ -5,7 +5,7 @@ keywords: workflow, storage, disks, list disks
 summary: You can retrieve a list of disks in the cluster. You might do this to locate one or more spares to use as part of creating an aggregate.
 ---
 
-= List the disks
+= List the disks using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

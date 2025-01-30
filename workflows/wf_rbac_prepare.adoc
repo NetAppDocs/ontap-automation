@@ -5,7 +5,7 @@ keywords: security, rbac, prepare rbac, rbac workflows
 summary: You can use the ONTAP RBAC capability in several different ways depending on your environment. A few common scenarios are presented as workflows in this section. In each case the focus is on a specific security and administrative goal.
 ---
 
-= Prepare to use RBAC
+= Prepare to use RBAC using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

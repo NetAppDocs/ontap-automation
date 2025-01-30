@@ -5,7 +5,7 @@ keywords: rbac, role, data protection, limited data protection
 summary: You can provide a user with limited data protection capabilities.
 ---
 
-= Enable adminstration of data protection
+= Enable adminstration of data protection using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

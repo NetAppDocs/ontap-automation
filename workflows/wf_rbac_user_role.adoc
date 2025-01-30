@@ -5,7 +5,7 @@ keywords:
 summary: You can use this workflow to create a user with an associated REST role.
 ---
 
-= Create a user with a role
+= Create a user with a role using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
