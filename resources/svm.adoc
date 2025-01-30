@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= SVM in the ONTAP REST API
+= SVM resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
