@@ -5,7 +5,7 @@ keywords: workflow, get cluster, cluster configuration
 summary: You can retrieve the configuration for an ONTAP cluster including specific fields. You might do this as part of assessing the state of the cluster or before updating the configuration.
 ---
 
-= Get cluster configuration
+= Get cluster configuration using the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
