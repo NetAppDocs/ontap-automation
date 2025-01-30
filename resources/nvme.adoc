@@ -5,7 +5,7 @@ keywords: nvme resources
 summary: You can use these API calls to manage resources supporting NVMe.
 ---
 
-= NVMe
+= NVMe resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

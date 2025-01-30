@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Security
+= Security resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

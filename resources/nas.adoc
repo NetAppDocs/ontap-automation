@@ -5,7 +5,7 @@ keywords: nas resources
 summary: You can use these API calls to manage the CIFS and NFS settings for the cluster and SVMs.
 ---
 
-= NAS
+= NAS resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: name services resources
 summary: You can use these API calls to manage the name services supported by ONTAP.
 ---
 
-= Name services
+= Name services resources in the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
