@@ -10,10 +10,6 @@ entries:
       - title: Script to retrieve cluster configuration
         url: /python/script_retrieve_cluster_configuration.html
   - title: PowerShell toolkit
-    entries:
-      - title: Overview
-        url: /pstk/overview_pstk.html
-      - title: Download and install
-        url: /pstk/install_pstk.html
+    url: /pstk/learn-about-pstk.html
   - title: NetApp Manageability SDK
-    url: /sw-tools/nmsdk.html
+    url: /sw-tools/learn-about-nmsdk.html
