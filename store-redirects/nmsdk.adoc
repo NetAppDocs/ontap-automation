@@ -1,0 +1,4 @@
+---
+permalink: sw-tools/nmsdk.html
+redirect: ontap-automation/sw-tools/learn-about-nmsdk.html
+---
