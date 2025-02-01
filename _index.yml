@@ -29,9 +29,9 @@ indexpage:
       - title: Python client library
         url: /python/learn-about-pcl.html
       - title: PowerShell Toolkit
-        url: /pstk/overview_pstk.html
+        url: /pstk/learn-about-pstk.html
       - title: NetApp Manageability SDK
-        url: /sw-tools/nmsdk.html
+        url: /sw-tools/learn-about-nmsdk.html
   - title: Migrate to the REST API
     links:
       - title: ONTAPI disablement
