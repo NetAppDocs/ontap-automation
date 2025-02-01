@@ -1,0 +1,4 @@
+---
+permalink: rest/rest_web_services_foundation.html
+redirect: ontap-automation/get-started/learn-about-rest.html
+---
