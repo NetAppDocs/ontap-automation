@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: sw-tools/nmsdk.html
+permalink: sw-tools/learn-about-nmsdk.html
 keywords: netapp manageability sdk, oncommand workflow automation, oncommand wfa, ontapi, zapi
 summary: "The NetApp Manageability SDK provides a set of ONTAPI API calls for developing applications to monitor and manage your ONTAP storage. Together with the OnCommand Workflow Automation package, the SDK supports your efforts to automate the manage of your ONTAP systems."
 ---
 
-= NetApp Manageability SDK
+= Learn about the NetApp Manageability SDK
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -25,8 +25,6 @@ You can download the NetApp Manageability SDK from the NetApp Support Site. The 
 .Use OnCommand Workflow Automation
 
 You can also use the API provided with the SDK to automate management tasks without writing any scripts. OnCommand Workflow Automation (OnCommand WFA) provides several prepackaged workflows to deploy and run the management tasks.
-
-//You can download the OnCommand WFA package from the NetApp Storage Automation Store.
 
 .Related information
 

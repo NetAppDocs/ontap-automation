@@ -1,0 +1,4 @@
+---
+permalink: pstk/overview_pstk.html
+redirect: ontap-automation/pstk/learn-about-pstk.html
+---
