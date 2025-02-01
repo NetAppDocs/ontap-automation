@@ -5,8 +5,6 @@ entries:
     entries:
       - title: Learn about the Python client library
         url: /python/learn-about-pcl.html
-      - title: Packages and documentation
-        url: /python/packages.html
       - title: Script to retrieve cluster configuration
         url: /python/script_retrieve_cluster_configuration.html
   - title: PowerShell toolkit
