@@ -32,9 +32,11 @@ You can use the Python client library to quickly develop robust code to automate
 
 The name of the Python client library package is *netapp-ontap*. The version associated with the package is a combination of the ONTAP major and minor version numbers the library was generated from, along with a minor version for the client library within the ONTAP release. For example, valid version numbers include 9.6.1, 9.6.2, and 9.7.1.
 
+=== Packages and documentation
+
 Each ONTAP release beginning with 9.6 has a PyPI package and associated documentation. Installation requirements are included with each package and specify different versions of: python, requests, requests-toolbelt, and marshmallow.
 
-=== Packages and documentation
+.List of packages and documentation
 [%collapsible%closed]
 ====
 .ONTAP 9.16.1

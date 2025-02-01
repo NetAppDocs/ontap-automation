@@ -5,7 +5,7 @@ keywords: Python, sample script, Python example
 summary: You can run the script using Python 3 at the CLI to retrieve the ONTAP cluster configuration.
 ---
 
-= Script to retrieve the cluster configuration
+= Script to retrieve the cluster configuration using the Python client library
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -25,7 +25,7 @@ The following script provides a simple example of how to use the Python client l
 # python3 get_cluster.py
 #
 #
-# (C) Copyright 2024 NetApp, Inc.
+# (C) Copyright 2025 NetApp, Inc.
 #
 # This sample code is provided AS IS, with no support or warranties of
 # any kind, including but not limited for warranties of merchantability
