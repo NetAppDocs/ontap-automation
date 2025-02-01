@@ -3,6 +3,8 @@ title: Get started
 entries:
   - title: Understand the automation options
     url: /get-started/ontap_automation_options.html
+  - title: Learn about REST web services
+    url: /get-started/learn-about-rest.html
   - title: How to access the REST API
     url: /get-started/access_rest_api.html
   - title: Your first ONTAP REST API call
