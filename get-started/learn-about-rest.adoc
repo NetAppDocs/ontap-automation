@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: rest/rest_web_services_foundation.html
+permalink: get-started/learn-about-rest.html
 keywords: REST, web services, transaction, API transaction, request, response
 summary: Representational State Transfer (REST) is a style for creating distributed web applications. When applied to the design of a web services API, it establishes a set of technologies for exposing server-based resources and managing their states. It uses mainstream protocols and standards to provide a flexible foundation for administering ONTAP clusters.
 ---
 
-= REST web services foundation
+= Learn about REST web services
 :hardbreaks:
 :nofooter:
 :icons: font

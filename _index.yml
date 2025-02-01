@@ -15,7 +15,7 @@ indexpage:
   - title: ONTAP REST API
     links:
       - title: REST implementation details
-        url: /rest/rest_web_services_foundation.html
+        url: /rest/operational_characteristics.html
       - title: RBAC security
         url: /rest/rbac_overview.html
       - title: Summary of REST resources
