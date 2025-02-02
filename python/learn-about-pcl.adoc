@@ -28,11 +28,11 @@ You can use the Python client library to quickly develop robust code to automate
 * Exception handling
 * Uniform error messages
 
-== Packages and documentation for each ONTAP release
+== Packages and documentation
 
-The name of the Python client library package is *netapp-ontap*. The version associated with the package is a combination of the ONTAP major and minor version numbers the library was generated from, along with a minor version for the client library within the ONTAP release. For example, valid version numbers include 9.6.1, 9.6.2, and 9.7.1.
+The name of the Python client library package is _netapp-ontap_. The version associated with the package is a combination of the ONTAP major and minor version numbers the library was generated from, along with a minor version for the client library within the ONTAP release. For example, valid version numbers include 9.6.1, 9.6.2, and 9.7.1.
 
-Each ONTAP release beginning with 9.6 has a PyPI package and associated documentation. Installation requirements are included with each package and specify versions of the supporting libraries such as python, requests, requests-toolbelt, and marshmallow.
+Each ONTAP release beginning with 9.6 has a PyPI package with associated documentation. Installation requirements are included with each package and specify versions of the supporting libraries such as python, requests, requests-toolbelt, and marshmallow.
 
 .List of packages and documentation
 [%collapsible%closed]
