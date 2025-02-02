@@ -1,0 +1,4 @@
+---
+permalink: python/packages.html
+redirect: ontap-automation/python/learn-about-pcl.html
+---
