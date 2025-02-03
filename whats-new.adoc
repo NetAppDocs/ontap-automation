@@ -10,7 +10,7 @@ summary: "Each ONTAP release updates the ONTAP REST API to bring you new feature
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Each ONTAP release updates the ONTAP REST API to bring you new features, enhancements, and bug fixes.

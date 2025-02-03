@@ -10,7 +10,7 @@ summary: NetApp continues to enhance and update the ONTAP REST API with each maj
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls, such as the parameters and default values used. These changes can affect software that accesses the REST API.
