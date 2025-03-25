@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: pstk/learn-about-pstk.html
 keywords: overview, powershell, powershell toolkit, install powershell toolkit
-summary: "NetApp provides support for PowerShell which you can use to administer your ONTAP storage systems."
+summary: "NetApp provides a toolkit for PowerShell applications that you can use to administer your ONTAP storage systems. The toolkit was created by NetApp developers and is supported by the customer community."
 ---
 
 = Learn about the NetApp PowerShell Toolkit
@@ -13,7 +13,7 @@ summary: "NetApp provides support for PowerShell which you can use to administer
 :imagesdir: ../media/
 
 [.lead]
-NetApp provides support for PowerShell which you can use to administer your ONTAP storage systems.
+NetApp provides a toolkit for PowerShell applications that you can use to administer your ONTAP storage systems. The toolkit was created by NetApp developers and is supported by the customer community.
 
 == Overview
 
@@ -39,7 +39,6 @@ https://mysupport.netapp.com/site/tools/tool-eula/ontap-powershell-toolkit[NetAp
 You can download the PowerShell toolkit from PowerShell Gallery:
 
 https://www.powershellgallery.com/packages/NetApp.ONTAP/[NetApp.ONTAP PowerShell Toolkit^]
-//https://www.powershellgallery.com/packages/NetApp.ONTAP/9.15.1.2410[NetApp.ONTAP PowerShell Toolkit^]
-//https://www.powershellgallery.com/packages/NetApp.ONTAP/9.12.1.2302
 
+// GH issue 126
 // ONTAPDOC-2599
