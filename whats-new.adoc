@@ -18,6 +18,22 @@ Each ONTAP release updates the ONTAP REST API to bring you new features, enhance
 [TIP]
 You should review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for additional information including known limitations or issues. Also see link:api-changes.html[Changes to ONTAP REST API calls] for any changes that might impact your automation software.
 
+== ONTAP 9.17.1
+
+The ONTAP 9.17.1 release continues to expand the capabilities of the ONTAP REST API with nearly two dozen new API calls. This release focuses primarily on security enhancements with additional updates to mediator processing, NMVe subsystems, and application containers.
+
+Security::
+There are four major security features introduced with the ONTAP 9.17.1 REST API. ONTAP just in time (JIT) privilege elevation is an enhancement to role-based access control (RBAC). Cluster administrators can request temporary elevation to an existing role which allows access to privileged commands. The feature includes a robust set of configuration options. Support for the OpenStack Barbican key manager has been added. This KMS is used to maintain keys for NetApp Volume Encryption (NVE). Autonomous Ransomware Protection (ARP) for SAN volumes is included with ONTAP 9.17.1. Detailed ARP entropy statistics are available through the REST API. Several API calls have been added to manage the SAML default metadata configuration for a cluster.
+
+Cluster mediators::
+You can ping the BlueXP cloud service. The configuration of a specific mediator can also be modified through support for the PATCH method with an existing endpoint.
+
+NVMe::
+NVMe subsystems maintain the configuration state and namespace access control for a set of NVMe-connected hosts. With ONTAP 9.17.1, an NVMe subsystem can be modified through the PATCH method with an existing endpoint.
+
+Application containers::
+Application containers are new with ONTAP 9.17.1 and enable provisioning of one or more storage objects. You can configure the policies and rules needed to for client access to storage. FlexCache volumes can also be provisioned.
+
 == ONTAP 9.16.1
 
 ONTAP 9.16.1 includes over two dozen new API calls which continue to expand the capabilities of the ONTAP REST API. These enhancements focus primarily on security but also include improvements with metrics and bucket administration.
