@@ -15,6 +15,10 @@ summary: You can use these API calls to manage the ONTAP application resources.
 [.lead]
 You can use these API calls to manage the ONTAP application resources.
 
+.Application containers
+
+You can use an application container to provision one or more storage objects. This resource type was introduced with ONTAP 9.17.1.
+
 .Application snapshots
 
 Applications support snapshot copies, which can be created or restored at any time. This resource type was introduced with ONTAP 9.6.
