@@ -1,8 +1,8 @@
-    ---
+---
 sidebar: sidebar
 permalink: resources/security.html
-keywords:
-summary:
+keywords: rest, rest api, security, security resources
+summary: You can use these API calls to manage the security settings for the cluster and SVMs.
 ---
 
 = Security resources in the ONTAP REST API
@@ -13,7 +13,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-You can use these API calls to manage the cluster and SVM security settings.
+You can use these API calls to manage the security settings for the cluster and SVMs.
 
 .Accounts
 
