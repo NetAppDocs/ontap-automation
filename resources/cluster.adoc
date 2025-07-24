@@ -51,9 +51,13 @@ You can manage configuration and other information related to each license manag
 
 The licenses allow you to implement specific ONTAP features and functionality. This resource type was introduced with ONTAP 9.6.
 
+.Mediator ping
+
+You can ping the BlueXP cloud service. This resource type is new with ONTAP 9.17.1.
+
 .Mediators
 
-You can manage the mediator associated with MetroCluster, including adding or removing the mediator instance. This resource type is new with ONTAP 9.8.
+You can manage the mediator associated with MetroCluster, including adding or removing the mediator instance. This resource type is new with ONTAP 9.8 and updated with 9.17.1.
 
 .MetroCluster
 

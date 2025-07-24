@@ -41,4 +41,4 @@ An NVMe subsystem map is an association of an NVMe namespace with an NVMe subsys
 
 .NVMe subsystems
 
-An NVMe subsystem maintains configuration state and namespace access control for a set of NVMe-connected hosts. This resource type was introduced with ONTAP 9.6.
+An NVMe subsystem maintains configuration state and namespace access control for a set of NVMe-connected hosts. This resource type was introduced with ONTAP 9.6 and updated with 9.17.1.
