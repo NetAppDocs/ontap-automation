@@ -1,4 +1,4 @@
 ---
-permalink: migrate/overview.html
+permalink: migrate/ontapi_disablement.html
 redirect: ontap-automation/migrate/migration-considerations.html
 ---
