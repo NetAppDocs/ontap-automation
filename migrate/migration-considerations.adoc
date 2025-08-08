@@ -13,7 +13,13 @@ summary: Before migrating to the ONTAP REST API from either the ONTAPI API (ZAPI
 :imagesdir: ../media/
 
 [.lead]
-Before migrating to the ONTAP REST API from either the ONTAPI API (ZAPI) or ONTAP CLI, there are several issues you should consider.
+The ONTAPI API (ZAPI) is the original set of proprietary calls included with the NetApp ONTAP software. The API is provided through the Network Manageability SDK and supports the automation of data storage administration and management tasks. If you are using ONTAPI, you should plan your migration to the ONTAP REST API to take advantage of the expanded ONTAP feature set available with the REST API.
+
+.Related information
+
+* link:../get-started/ontap_automation_options.html[Understand the ONTAP automation options]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html[CPC-00410 Deferral of ONTAPI (ZAPI) End-of-Availability Announcement^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification[FAQs on ZAPI to ONTAP REST API transformation for CPC^]
 
 == General design differences
 
@@ -46,7 +52,3 @@ SnapDiff API availability across ONTAP releases is defined as follows:
 * ONTAP 9.10.1 and later: v3 only (REST API only)
 
 Support was withdrawn at different points in each release. This includes ONTAP 9.10.1 P11 and later, 9.11.1 P7 and later, and 9.12.1 GA and later. See the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for more information.
-
-== Submit your ONTAPI to REST API gaps
-
-NetApp is committed to supporting our customers with their migration from ONTAPI to the ONTAP REST API. If you notice something missing in the REST API, please let us know. You can submit these gaps and any other ideas at the https://forms.office.com/Pages/ResponsePage.aspx?id=oBEJS5uSFUeUS8A3RRZbOtlEKM3rNwBHjLH8dubcgOVURVM2UzIzTkQzSzdTU0pQRVFFRENZWlAxNi4u[ONTAPI to REST API^] page.
