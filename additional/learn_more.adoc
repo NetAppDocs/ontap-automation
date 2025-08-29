@@ -95,8 +95,8 @@ https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-re
 
 * A good introduction to the NetApp Python client library and how to get started writing code using the library.
 +
-video::Wws3SB5d9Ss[youtube, width=848, height=480]
-//https://www.youtube.com/watch?v=Wws3SB5d9Ss[Getting started with the NetApp ONTAP Python client library^]
+video::pg5ls1Ol6uw[youtube, width=848, height=480]
+//https://www.youtube.com/watch?v=pg5ls1Ol6uw[Getting started with the NetApp ONTAP Python client library^]
 
 * A look at the Ansible Certified Modules.
 +
