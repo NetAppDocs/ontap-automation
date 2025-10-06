@@ -26,7 +26,7 @@ Security::
 There are four major security features introduced with the ONTAP 9.17.1 REST API. ONTAP just in time (JIT) privilege elevation is an enhancement to role-based access control (RBAC). Cluster administrators can request temporary elevation to an existing role which allows access to privileged commands. The feature includes a robust set of configuration options. Support for the OpenStack Barbican key manager has been added. This KMS is used to maintain keys for NetApp Volume Encryption (NVE). Autonomous Ransomware Protection (ARP) for SAN volumes is included with ONTAP 9.17.1. Detailed ARP entropy statistics are available through the REST API. Several API calls have also been added to manage the SAML default metadata configuration for a cluster.
 
 Cluster mediators::
-You can ping the BlueXP cloud service using the ONTAP REST API. You can also modify the configuration of a specific mediator using the PATCH method with an existing endpoint.
+You can ping the NetApp Console cloud service using the ONTAP REST API. You can also modify the configuration of a specific mediator using the PATCH method with an existing endpoint.
 
 NVMe::
 NVMe subsystems maintain the configuration state and namespace access control for a set of NVMe-connected hosts. With ONTAP 9.17.1, you can modify an NVMe subsystem using the PATCH method with an existing endpoint.
@@ -315,3 +315,5 @@ REST APIs in ONTAP 9.6 include the following key areas and many more:
 * Performance monitoring
 * Data protection
 * Application aware data management
+
+// 2025 Oct 06, GH 122 (internal)
