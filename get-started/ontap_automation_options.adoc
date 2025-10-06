@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: get-started/ontap_automation_options.html
-keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console
 summary: There are several options available to automate the deployment and administration of your ONTAP storage systems.
 ---
 
@@ -47,6 +47,8 @@ You can create and deploy automation code using one of several frameworks.
 
 Ansible is an open-source software tool that supports provisioning, configuration management, and application deployment. Since its release and subsequent acquisition by RedHat, it has continued to grow in popularity. NetApp provides Ansible-certified modules that customers can use to automate the administration of their ONTAP storage systems. See link:../additional/learn_more.html[Learn more] and https://www.netapp.com/devops-solutions/ansible/[NetApp Ansible DevOps Solutions^] for additional information.
 
-.BlueXP automation catalog
+.NetApp Console automation catalog
 
-The NetApp https://console.bluexp.netapp.com/automationCatalog/[BlueXP automation catalog^] is available through the BlueXP web user interface. The catalog provides access to packaged solutions that can help you to automate the deployment and integration of ONTAP with other products. See https://docs.netapp.com/us-en/netapp-automation/[NetApp automation^] for documentation and more information.
+The NetApp https://console.netapp.com/automationCatalog/[NetApp Console automation catalog^] is available through the Console web user interface. The catalog provides access to packaged solutions that can help you to automate the deployment and integration of ONTAP with other products. See https://docs.netapp.com/us-en/netapp-automation/[NetApp automation^] for documentation and more information.
+
+// 2025 Oct 06, GH 122 (internal)

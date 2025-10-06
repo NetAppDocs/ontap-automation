@@ -53,7 +53,7 @@ The licenses allow you to implement specific ONTAP features and functionality. T
 
 .Mediator ping
 
-You can ping the BlueXP cloud service. This resource type is new with ONTAP 9.17.1.
+You can ping the NetApp Console cloud service. This resource type is new with ONTAP 9.17.1.
 
 .Mediators
 
@@ -126,3 +126,5 @@ An ONTAP cluster includes the cluster software profile, software packages collec
 .Web
 
 You can use these endpoints to update the web services configurations and to retrieve the current configuration. This resource type was introduced with ONTAP 9.10.
+
+// 2025 Oct 06, GH 122 (internal)
