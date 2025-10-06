@@ -50,3 +50,5 @@ Ansible is an open-source software tool that supports provisioning, configuratio
 .NetApp Console automation catalog
 
 The NetApp https://console.netapp.com/automationCatalog/[NetApp Console automation catalog^] is available through the Console web user interface. The catalog provides access to packaged solutions that can help you to automate the deployment and integration of ONTAP with other products. See https://docs.netapp.com/us-en/netapp-automation/[NetApp automation^] for documentation and more information.
+
+// 2025 Oct 06, GH 122 (internal)
