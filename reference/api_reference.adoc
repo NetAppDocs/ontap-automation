@@ -20,7 +20,7 @@ You can access the REST API reference documentation at one of several sites base
 
 == Access the ONTAP API reference documentation online
 
-You can access the current https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html[ONTAP REST API reference^] documentation online. There is also a version selector available to access previous versions of the documentation based on the ONTAP release.
+You can access the current https://docs.netapp.com/us-en/ontap-restapi/getting_started_with_the_ontap_rest_api.html[ONTAP REST API reference^] documentation online. There is also a version selector available to access previous versions of the documentation based on the ONTAP release.
 
 == Access the ONTAP API reference documentation through the Swagger UI
 
