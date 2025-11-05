@@ -26,7 +26,7 @@ Security::
 There are two major security enhancements introduced with the ONTAP 9.18.1 REST API. You can use the new cluster network API endpoints to display and update the cluster network security configuration. Robust support is included for certificate management with the cluster network. In addition, you can display and update the security configuration of the HA network for NVLog traffic.
 
 Storage::
-NetApp FlexCache is a persistent cache of an origin volume. It supports fan-out so that more than one FlexCache can be created from a single origin volume. The REST API now includes support for the retrieval of the connection status between the cache instances and origin volumes.
+NetApp FlexCache is a persistent cache of an origin volume. It supports fan-out so that more than one FlexCache can be created from a single origin volume. The REST API includes support for the retrieval of the connection status between the cache instances and origin volumes.
 
 == ONTAP 9.17.1
 
