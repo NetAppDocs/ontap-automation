@@ -49,7 +49,7 @@ This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
 
 .FlexCache connection status
 
-You can retrieve lay and update the FlexCache connection status. This resource type was introduced with ONTAP 9.18.
+You can retrieve the FlexCache connection status. This resource type was introduced with ONTAP 9.18.
 
 .FlexCache origins
 
