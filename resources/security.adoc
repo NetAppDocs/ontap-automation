@@ -67,6 +67,10 @@ The APIs calls can be used to install, display, and delete certificates used by 
 
 Duo provides two-factor authentication for SSH logins. You can configure Duo to operate at the ONTAP cluster or SVM level. This resource type was introduced with ONTAP 9.14.
 
+.Cluster network security
+
+You can retrieve and update the cluster network security configuration including the certificates. This resource type was introduced with ONTAP 9.18.
+
 .Cluster security
 
 You can retrieve details of the cluster-wide security and update certain parameters. This resource type was introduced with ONTAP 9.7 and updated with ONTAP 9.8.
@@ -86,6 +90,11 @@ You can administer group configurations including groups represented with UUIDs.
 .Group role mappings
 
 You can create and administer mapping relationships between groups and roles. This resource type was introduced with ONTAP 9.16.
+
+.HA network security
+
+You can retrieve and update the HA network security configuration. This resource type was introduced with ONTAP 9.18.
+
 
 .IPSec
 
