@@ -47,6 +47,10 @@ You can use these REST API endpoints to move a file between two FlexVol volumes 
 
 This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.8.
 
+.FlexCache connection status
+
+You can retrieve the FlexCache connection status. This resource type was introduced with ONTAP 9.18.
+
 .FlexCache origins
 
 FlexCache is a persistent cache of an origin volume. This resource type was originally introduced with ONTAP 9.6. Support has been enhanced with the ONTAP 9.9 REST API to support modification through the HTTP PATCH method.
