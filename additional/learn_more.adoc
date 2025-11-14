@@ -25,7 +25,6 @@ The blog articles are arranged in several sections based on the subject.
 +
 https://www.netapp.com/blog/new-normal-for-automation[New normal for automation^]
 
-// Article no longer there, link is redirected.
 //* If you're new to using Ansible for ONTAP automation, this is a good place to start.
 //+
 //https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible[Getting Started with NetApp and Ansible: Install Ansible^]
