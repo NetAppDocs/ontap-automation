@@ -250,7 +250,7 @@ curl --request POST \
        "second_authentication_method":"none"}
   ],
   "role":"dprole1",
-  "password":"netapp123"
+  "password":"<password>"
 }
 
 .After you finish

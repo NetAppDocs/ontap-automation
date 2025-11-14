@@ -37,6 +37,12 @@ Each ONTAP release beginning with 9.6 has a PyPI package with associated documen
 .List of packages and documentation
 [%collapsible%closed]
 ====
+.ONTAP 9.17.1
+
+* https://pypi.org/project/netapp-ontap/9.17.1.0/[PyPI: NetApp ONTAP 9.17.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP3351667/html/index.html[NetApp PCL documentation for 9.17.1^]
+
 .ONTAP 9.16.1
 
 * https://pypi.org/project/netapp-ontap/9.16.1.0/[PyPI: NetApp ONTAP 9.16.1^]
