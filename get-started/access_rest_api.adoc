@@ -25,8 +25,7 @@ You can connect to the REST API through the following interfaces:
 
 The LIF you choose to use needs to be configured to support the HTTPS management protocol. Also, the firewall configuration in your network must allow the HTTPS traffic.
 
-[TIP]
-The recommended best practice is to use the cluster management LIF. This enables the cluster to be addressed as a single logical unit and provides the highest level of resiliency and load balancing. The cluster LIF can relocate in the cluster as needed to handle planned upgrades, quorum events, or other connectivity issues. If you have multiple cluster management LIFs configured, they are all equivalent regarding access to the REST API. The SVM management LIF is also load balanced but requests sent to LIFs scoped at a node level are handled locally.
+While you can use any of these LIFs, the recommended best practice is to use the cluster management LIF. This enables the cluster to be addressed as a single logical unit and provides the highest level of resiliency and load balancing. The cluster LIF can relocate in the cluster as needed to handle planned upgrades, quorum events, or other connectivity issues. If you have multiple cluster management LIFs configured, they are all equivalent regarding access to the REST API. The SVM management LIFs are also load balanced but requests sent to LIFs scoped at a node level are handled locally.
 
 == ONTAP API online documentation page
 
