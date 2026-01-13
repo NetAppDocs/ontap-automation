@@ -108,24 +108,6 @@ video::L5DZBV_Sg9E[youtube, width=848, height=480]
 +
 https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_[Automate NetApp ONTAP Management^]
 
-== Technical training and events
-
-* Insight 2022 presentation (26 minutes).
-+
-https://media.netapp.com/video-detail/152137a0-4153-59dc-ad7d-232af1785dd5/modernize-your-ontap-storage-management-with-ontap-rest-apis-1837[Modernize your ONTAP Storage Management with ONTAP REST API^]
-
-//https://www.netapp.tv/details/29670[Modernize your ONTAP Storage Management with ONTAP REST API^]
-
-* Insight 2021 presentation (31 minutes).
-+
-https://media.netapp.com/video-detail/f353c28a-2364-5e5e-bf86-5d7ef66360fe/netapp-ontap-save-time-and-simplify-using-rest-apis-brk-1103-3[NetApp ONTAP: Save time and simplify using REST APIs^]
-
-//https://www.netapp.tv/details/28343[NetApp ONTAP: Save time and simplify using REST APIs^]
-
-* NetApp Learning Services.
-+
-https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/app/shared;spf-url=common%2Fledetail%2FSTRSW-ILT-RSTAPI[Automate Storage Administration Using ONTAP REST API and Ansible^]
-
 == NetApp Knowledge Base
 
 * If you encounter an issue with the ONTAP REST API, you can report it to NetApp. 
