@@ -105,7 +105,7 @@ In addition to the parameters common with all REST API calls, the following para
 
 [source,curl]
 curl --request POST \
---location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/privileges" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
