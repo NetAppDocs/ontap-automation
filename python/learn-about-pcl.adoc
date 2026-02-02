@@ -34,11 +34,15 @@ The name of the Python client library package is _netapp-ontap_. The version ass
 
 Each ONTAP release beginning with 9.6 has a PyPI package with associated documentation. Installation requirements are included with each package and specify versions of the supporting libraries such as python, requests, requests-toolbelt, and marshmallow.
 
-// https://library.netapp.com/ecmdocs/ECMLP3364865/html/index.html
-
 .List of packages and documentation
 [%collapsible%closed]
 ====
+.ONTAP 9.18.1
+
+* https://pypi.org/project/netapp-ontap/[PyPI: NetApp ONTAP 9.18.1^]
+
+* https://library.netapp.com/ecmdocs/ECMLP3364865/html/index.html[NetApp PCL documentation for 9.18.1^]
+
 .ONTAP 9.17.1
 
 * https://pypi.org/project/netapp-ontap/9.17.1.0/[PyPI: NetApp ONTAP 9.17.1^]
