@@ -31,6 +31,10 @@ You can administer the SVM account information at the Active Directory server. T
 
 ONTAP detects files potentially containing a ransomware threat. There are several categories of endpoints. You can retrieve a list of these suspect files as well as remove them from a volume. This resource type was introduced with ONTAP 9.10.1. Support for displaying the version and updating the anti-ransomware package was added with ONTAP 9.16.
 
+.Anti-ransomware enablement
+
+You can control the operation of the Autonomous Ransomware Protection (ARP) enablement feature. This includes retrieving and modifying the configuration settings. This resource type was introduced with ONTAP 9.18.1.
+
 .Anti-ransomware entropy stats
 
 Detailed entropy statistics are available for the operation of the Autonomous Ransomware Protection (ARP) feature. This resource type was added with ONTAP 9.17.1.

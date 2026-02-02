@@ -20,7 +20,7 @@ You should review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492
 
 == ONTAP 9.18.1
 
-The ONTAP 9.18.1 release continues to expand the capabilities of the ONTAP REST API with eleven new API calls. The enhancements focus primarily on security but also include an improvement related to storage administration.
+The ONTAP 9.18.1 release continues to expand the capabilities of the ONTAP REST API with thirteen new API calls. The enhancements focus primarily on security but also include an improvement related to storage administration.
 
 Security::
 There are two major security enhancements introduced with the ONTAP 9.18.1 REST API. You can use the new cluster network API endpoints to display and update the cluster network security configuration. Robust support is included for certificate management with the cluster network. In addition, you can display and update the security configuration of the HA network for NVLog traffic.
