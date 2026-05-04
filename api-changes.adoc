@@ -31,6 +31,22 @@ Any changes to the existing API calls can affect software that accesses the REST
 
 |===
 
+== Additional REST API usage considerations
+
+In addition to disruptive changes to existing API calls, there are several additional considerations when using the ONTAP REST API. These involve new behavior or cautions that you should be aware of.
+
+[cols="40%,50%,10%",options="header"]
+|===
+| Area or endpoint | Description of behaviore | ONTAP release
+
+// CONTAP-253074
+|`/security/authentication/duo/groups`
+`/security/authentication/duo/profiles`
+|The field *_links* in the response was removed from the duogroup for these endpoints. There is no recommended customer action or workaround. The field is expected to be added back in a future ONTAP release.
+|9.15.1
+
+|===
+
 == ONTAP REST API reference documentation errors
 
 As NetApp enhances and updates the ONTAP REST API, sometimes errors can be introduced in the online reference documentation. These errors can create confusion when using the API but generally don't impact or disrupt your ONTAP automation software or environment.
