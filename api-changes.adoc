@@ -38,12 +38,9 @@ In addition to disruptive changes to existing API calls, there are several addit
 [cols="40%,50%,10%",options="header"]
 |===
 | Area or endpoint | Description of behaviore | ONTAP release
-
-// CONTAP-253074
-|`/security/authentication/duo/groups`
-`/security/authentication/duo/profiles`
-|The field *_links* in the response was removed from the duogroup for these endpoints. There is no recommended customer action or workaround. The field is expected to be added back in a future ONTAP release.
-|9.15.1
+|`/api/cluster/licensing/licenses`
+|When retrieving license information through the REST API on large ONTAP clusters (32 nodes or higher), you may experience slow response times. This performance issue impacts System Manager licensing tabs and automated workflows that query all licenses simultaneously. To reduce the impact, you can fetch licenses for specific features one at a time using query parameters, or through the system license show CLI command, instead of retrieving all licenses in a single API call.
+|9.19.1
 
 |===
 
