@@ -2,7 +2,7 @@
 permalink: api-changes.html
 sidebar: sidebar
 keywords: rest api, api changes, parameters, default values, breaking changes, documentation errors
-summary: "NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls, such as the parameters and default values used. These changes can affect software that accesses the REST API. There are additional considerations and some documentation errors as well."
+summary: "NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls that disrupt access to ONTAP functionality. There are also additional considerations when using the API as well as some documentation errors."
 ---
 
 = Changes to ONTAP REST API calls
@@ -13,11 +13,20 @@ summary: "NetApp continues to enhance and update the ONTAP REST API with each ma
 :imagesdir: ./media/
 
 [.lead]
-NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls, such as the parameters and default values used. These changes can affect software that accesses the REST API. There are additional considerations and some documentation errors as well.
+NetApp continues to enhance and update the ONTAP REST API with each major product release. These updates can occasionally include changes to existing API calls that disrupt access to ONTAP functionality. There are also additional considerations when using the API as well as some documentation errors.
 
 == Changes to existing ONTAP REST API calls
 
-Changes to the existing ONTAP REST API calls, such as endpoints and parameters, can affect software that uses the API. Some of these can be considered _breaking changes_ because they disrupt access to the ONTAP functionality. You should review the list of changes in the table below to determine if there is an impact to your automation environment. Each entry includes the applicable API endpoint, a description of the change, and the ONTAP release it was introduced.
+Changes to the existing ONTAP REST API calls, such as endpoints and parameters, can affect software that uses the API. In most situations, depending on your environment, these are considered _breaking changes_. You should review the list of changes in the table below to determine if there is an impact to your automation environment. Each entry includes the applicable API endpoint, a description of the change, and the ONTAP release it was introduced.
+
+[cols="40%,50%,10%",options="header"]
+|===
+| Endpoint or area | Description of behavior | ONTAP release
+|Azure Key Vault
+|The REST API endpoints used to enable and disable Azure Key Vault (AKV) now execute asynchronously instead of synchronously. This affects the POST operation for enabling AKV and the DELETE operation for disabling it. Clients using these endpoints should update their integration code to handle the asynchronous responses, which includes checking the job status rather than an immediate indication of completion. This change primarily impacts Azure NetApp Files (ANF) environments that manage Azure Key Vault configurations through the ONTAP REST API.
+|9.19.1
+
+|===
 
 [cols="40%,50%,10%",options="header"]
 |===
@@ -33,7 +42,7 @@ Changes to the existing ONTAP REST API calls, such as endpoints and parameters, 
 
 == Additional REST API usage considerations
 
-In addition to disruptive changes to existing API calls based on changes to the interface, there are additional considerations when using the ONTAP REST API. These may involve important new or alternative API calls as well as changes to internal processing behavior you should be aware of. Each entry includes the applicable API endpoint or area, a description of the behavior, and the ONTAP release it was introduced.
+In addition to disruptive changes to the API endpoints and parameters, there are additional considerations when using the ONTAP REST API. These include several different types of issues, such as the introduction of new or alternative API calls as well as changes to ONTAP's internal processing. Each entry includes the applicable API endpoint or area, a description of the behavior, and the ONTAP release it was introduced.
 
 [cols="40%,50%,10%",options="header"]
 |===
@@ -42,20 +51,13 @@ In addition to disruptive changes to existing API calls based on changes to the 
 |The endpoint used to create containers has been enhanced to support several volume configuration parameters that were previously only available through `/api/storage/volumes`. This enables customers, especially those using NetApp Trident for Kubernetes storage orchestration, to leverage ONTAP's balanced placement capability when provisioning persistent volumes. Volumes can be automatically distributed across cluster nodes for optimal performance and capacity utilization. You should should use the updated endpoint when deploying containerized applications that require fine-grained control over volume placement, QoS policies, or capacity management. This is particularly helpful with large-scale Kubernetes environments where automatic load balancing across storage resources is critical.
 |9.19.1
 
+|===
+
 [cols="40%,50%,10%",options="header"]
 |===
 | Endpoint or area | Description of behavior | ONTAP release
 |`/api/cluster/licensing/licenses`
 |When retrieving license information through the REST API on large ONTAP clusters (32 nodes or higher), you may experience slow response times. This performance issue affects System Manager licensing tabs and automated workflows that query all licenses simultaneously. To reduce the impact, you can fetch licenses for specific features one at a time using query parameters, or use the CLI with command `system license show`, instead of retrieving all the licenses in a single API call.
-|9.19.1
-
-|===
-
-[cols="40%,50%,10%",options="header"]
-|===
-| Endpoint or area | Description of behavior | ONTAP release
-|Azure Key Vault
-|The REST API endpoints used to enable and disable Azure Key Vault (AKV) now execute asynchronously instead of synchronously. This affects the POST operation for enabling AKV and the DELETE operation for disabling it. Clients using these endpoints should update their integration code to handle the asynchronous responses, which includes checking the job status rather than an immediate indication of completion. This change primarily impacts Azure NetApp Files (ANF) environments that manage Azure Key Vault configurations through the ONTAP REST API.
 |9.19.1
 
 |===
