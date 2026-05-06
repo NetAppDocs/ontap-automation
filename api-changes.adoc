@@ -23,7 +23,7 @@ Changes to the existing ONTAP REST API calls, such as endpoints and parameters, 
 |===
 | API endpoint or area | Description of behavior | ONTAP release
 |Azure Key Vault
-|The REST API endpoint used to enable and disable Azure Key Vault (AKV) now executes asynchronously instead of synchronously. This affects the POST operation for enabling AKV and the DELETE operation for disabling it. Clients using these API calls should update their code to handle the asynchronous responses, which involves checking the job status instead of just he HTTP status code. This change primarily impacts Azure NetApp Files (ANF) environments that manage Azure Key Vault configurations through the ONTAP REST API.
+|The REST API endpoint used to enable and disable Azure Key Vault (AKV) now executes asynchronously instead of synchronously. This affects the POST operation for enabling AKV and the DELETE operation for disabling it. Clients using these API calls should update their code to handle the asynchronous responses, which involves checking the job status instead of just the HTTP status code. This change primarily impacts Azure NetApp Files (ANF) environments that manage Azure Key Vault configurations through the ONTAP REST API.
 |9.19.1
 
 // CONTAP-253074
@@ -42,11 +42,11 @@ In addition to disruptive or breaking changes, there are several additional cons
 |===
 | API endpoint or area | Description of behavior | ONTAP release
 |`/api/application/containers`
-|The endpoint used to create containers has been enhanced to support several volume configuration parameters that were previously only available through `/api/storage/volumes`. This enables customers, especially those using NetApp Trident for Kubernetes storage orchestration, to leverage ONTAP's balanced placement capability when provisioning persistent volumes. Volumes can be automatically distributed across cluster nodes for optimal performance and capacity utilization. You should should use the updated endpoint when deploying containerized applications that require fine-grained control over volume placement, QoS policies, or capacity management. This is particularly helpful with large-scale Kubernetes environments where automatic load balancing across storage resources is critical.
+|The endpoint used to create containers has been enhanced to support several volume configuration parameters that were previously only available through `/api/storage/volumes`. This enables customers, especially those using NetApp Trident for Kubernetes storage orchestration, to leverage ONTAP's balanced placement feature when provisioning persistent volumes. Volumes can be automatically distributed across cluster nodes for optimal performance and capacity utilization. You should use the updated endpoint when deploying containerized applications that require fine-grained control over volume placement, QoS policies, or capacity management. This is particularly helpful with large-scale Kubernetes environments where automatic load balancing across storage resources is critical.
 |9.19.1
 
 |`/api/cluster/licensing/licenses`
-|When retrieving license information through the REST API for very large ONTAP clusters (32 nodes or greater), you may experience slow response times. This issue affects System Manager licensing tabs and automated workflows that query all licenses simultaneously. To reduce the impact, you can fetch licenses for specific features one at a time using query parameters, or use the CLI with command `system license show`, instead of retrieving all the licenses in a single API call.
+|When retrieving license information through the REST API for very large ONTAP clusters (32 nodes or greater), you may experience slow response times. This issue affects System Manager licensing tabs and automated workflows that query all licenses simultaneously. To reduce the impact, you can fetch licenses for specific features one at a time using query parameters or use the CLI with command `system license show`, instead of retrieving all the licenses in a single API call.
 |9.19.1
 
 |===
