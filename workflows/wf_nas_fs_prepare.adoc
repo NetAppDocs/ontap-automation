@@ -59,5 +59,4 @@ a|
 
 .Related information
 
-
 * https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py[Python script illustrating file permissions^]
