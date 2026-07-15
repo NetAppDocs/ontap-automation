@@ -200,8 +200,8 @@ You can use the REST API to configure time-based one-time password (TOTP) profil
 
 .Web authentication
 
-Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. This feature was added with ONTAP 9.16 and updated with ONTAP 9.19.1.
+Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. This feature was added with ONTAP 9.16 and updated with ONTAP 9.19.
 
 .Whoami
 
-An endpoint is available to display the details of the authenticated user including username, role, and permissions. This resource type was introduced with ONTAP 9.19.1.
+An endpoint is available to display the details of the authenticated user including username, role, and permissions. This resource type was introduced with ONTAP 9.19.
