@@ -110,11 +110,11 @@ You can add, remove, and retrieve IPSec CA certificates. This resource type is n
 
 .IPSec policies
 
-You can use this set of API calls to manage the policies in effect for an IPSec deployment. This resource type is new with ONTAP 9.8.
+You can use this set of API calls to manage the policies in effect for an IPSec deployment. This resource type is new with ONTAP 9.8. It has been updated to retrieve polices used for the cluster network with ONTAP 9.19.
 
 .IPSec security associations
 
-You can use this set of API calls to manage the security associations in effect for an IPSec deployment. This resource type is new with ONTAP 9.8.
+You can use this set of API calls to manage the security associations in effect for an IPSec deployment. This resource type is new with ONTAP 9.8. It has been updated to retrieve security associations used for the cluster network with ONTAP 9.19.
 
 .Just in time (JIT) privilege elevation
 
