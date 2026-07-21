@@ -23,7 +23,7 @@ You should review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492
 The ONTAP 9.19.1 release includes several updates which continue to enhance and refine the ONTAP REST API.
 
 Security::
-A new `whoami` feature has been added to retrieve the username, role, and permissions information for the logged in user. The web authentication (WebAuthn) capability has also been enhanced.
+A new `whoami` feature has been added to retrieve the username, role, and permissions information for the logged in user. The web authentication (WebAuthn) capability has also been enhanced. IPsec has been updated to retrieve the policies and security associations used with the cluster network.
 
 SAN::
 LUN map administration has been updated with an improved update capability.
