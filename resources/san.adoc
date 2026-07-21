@@ -55,7 +55,7 @@ LUN attributes are caller-defined name/value pairs that can be optionally stored
 
 .LUN maps
 
-A LUN map is an association between a LUN and an initiator group. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.19.1.
+A LUN map is an association between a LUN and an initiator group. This resource type was introduced with ONTAP 9.6 and updated with ONTAP 9.19.
 
 .LUN maps reporting nodes
 

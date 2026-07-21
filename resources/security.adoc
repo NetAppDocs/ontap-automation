@@ -110,11 +110,11 @@ You can add, remove, and retrieve IPSec CA certificates. This resource type is n
 
 .IPSec policies
 
-You can use this set of API calls to manage the policies in effect for an IPSec deployment. This resource type is new with ONTAP 9.8.
+You can use this set of API calls to manage the policies in effect for an IPSec deployment. This resource type is new with ONTAP 9.8. They have been updated with 9.19 to retrieve policies used for the cluster network.
 
 .IPSec security associations
 
-You can use this set of API calls to manage the security associations in effect for an IPSec deployment. This resource type is new with ONTAP 9.8.
+You can use this set of API calls to manage the security associations in effect for an IPSec deployment. This resource type is new with ONTAP 9.8. They have been updated with 9.19 to retrieve security associations used for the cluster network.
 
 .Just in time (JIT) privilege elevation
 
@@ -200,8 +200,8 @@ You can use the REST API to configure time-based one-time password (TOTP) profil
 
 .Web authentication
 
-Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. This feature was added with ONTAP 9.16 and updated with ONTAP 9.19.1.
+Web authentication (WebAuthn) is a web standard for securely authenticating users based on public key cryptography. With ONTAP, it supports the administration of phishing-resistent MFAs through System Manager and the ONTAP REST API. This feature was added with ONTAP 9.16 and updated with ONTAP 9.19.
 
 .Whoami
 
-An endpoint is available to display the details of the authenticated user including username, role, and permissions. This resource type was introduced with ONTAP 9.19.1.
+An endpoint is available to display the details of the authenticated user including username, role, and permissions. This resource type was introduced with ONTAP 9.19.
