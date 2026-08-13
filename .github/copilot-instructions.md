@@ -33,7 +33,7 @@ This repository documents the automation options available for administering ONT
 - A data *SVM* (storage virtual machine) is the primary SVM type exposed through REST for most tenant-level operations.
 
 **Naming conventions and terminology:**
-- *ONTAPI* and *ZAPI* can be used interchangeably for the proprietary API provided through the NetApp Manageability SDK; ONTAPI is the correct term.
+- *ONTAPI* and *ZAPI* can be used interchangeably for the API provided through the NetApp Manageability SDK; ONTAPI is the correct term.
 - REST endpoint paths follow ONTAP resource naming with the prefix */api/...*.
 - CLI passthrough operations use the */private/cli* base path.
 - Workflow examples use uppercase Bash-style variable tokens such as *$FQDN_IP*, *$CLUSTER_ID*, and *$BASIC_AUTH*.
