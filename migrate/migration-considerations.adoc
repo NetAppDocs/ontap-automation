@@ -37,12 +37,12 @@ The base resource path for CLI access is `/private/cli`. Refer to the ONTAP API 
 
 == Changes to SnapDiff availability in ONTAPI
 
-SnapDiff v1 and v2 are based on the ONTAPI (ZAPI) management framework and there are usability limitations with certain versions of ONTAP. The SnapDiff v3 API does not use ONTAPI and is supported in ONTAP 9.8 and later release. SnapDiff API availability across ONTAP releases is defined as follows:
+SnapDiff v1 and v2 are based on the ONTAPI (ZAPI) management framework and there are some usability limitations with certain versions of ONTAP. The SnapDiff v3 API does not use ONTAPI and is supported with ONTAP 9.8 and later releases. SnapDiff API availability across ONTAP releases is defined as follows:
 
 * ONTAP 9.7 and earlier releases: v1 and v2 (ONTAPI only)
-* ONTAP 9.8 through 9.18.1: v1, v2 and v3.  Some limitations apply; see the https://kb.netapp.com/on-prem/ontap/DP/SnapDiff/SnapDiff-KBs/FAQ_SnapDiff_Support_in_ONTAP[FAQ: SnapDiff Support in ONTAP^] for more details on ONTAP version support for SnapDiff.
+* ONTAP 9.8 through 9.19.1: v1, v2 and v3.  Some limitations apply; see the https://kb.netapp.com/on-prem/ontap/DP/SnapDiff/SnapDiff-KBs/FAQ_SnapDiff_Support_in_ONTAP[FAQ: SnapDiff Support in ONTAP^] for more details on SnapDiff support based on the ONTAP release.
 
-You should verify that your backup application supports SnapDiff and be aware of any interoperability limitations based on the specific ONTAP version. Also see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for more information.
+You should verify that your backup applications support SnapDiff and be aware of any interoperability limitations based on the ONTAP version you're using. Also see the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP Release Notes^] for more information.
 
 == Related information
 
