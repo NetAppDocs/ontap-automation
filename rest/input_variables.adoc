@@ -155,10 +155,10 @@ Note the following:
 
 == Pagination when retrieving objects in a collection
 
-When issuing an API call using GET to access a collection of objects of the same type, ONTAP attempts to return as many objects as possible based on two constraints. You can control each of these constraints using additional query parameters on the request. The first constraint reached for a specific GET request terminates the request and therefore limits the number of records returned.
+When issuing an API call using GET to access a collection of objects of the same type, ONTAP attempts to return as many objects as possible based on two constraints (maximum number of objects, time used to retrieve the objects). You can control each of these using additional query parameters on the request. The first constraint reached for a specific GET request terminates the request and therefore limits the number of records returned. If a request ends before iterating over all the objects, the response contains the link needed to retrieve the next batch of records.
 
-[NOTE]
-If a request ends before iterating over all the objects, the response contains the link needed to retrieve the next batch of records.
+[TIP]
+If zero records are returned for an API call, with no next link, this might indicate that a timeout occurred before any records could be fetched. In this case, you can retry the request using a larger `return_timeout` value or a smaller `max_records` value (or both).
 
 Limiting the number of objects::
 By default, ONTAP returns a maximum of 10,000 objects for a GET request. You can change this limit using the `max_records` query parameter. For example:
