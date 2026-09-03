@@ -5,7 +5,7 @@ keywords: overview, powershell, powershell toolkit, install powershell toolkit
 summary: "NetApp provides a toolkit for PowerShell applications that you can use to administer your ONTAP storage systems. The toolkit was created by NetApp developers and is supported by the customer community."
 ---
 
-= Learn about the NetApp PowerShell Toolkit
+= Learn about the NetApp ONTAP PowerShell Toolkit
 :hardbreaks:
 :nofooter:
 :icons: font
