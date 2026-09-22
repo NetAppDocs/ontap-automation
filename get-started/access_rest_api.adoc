@@ -5,7 +5,7 @@ keywords: access rest api, lif, cluster lif, svm lif, node lif
 summary: You can access the ONTAP REST API in several different ways.
 ---
 
-= How to access the ONTAP REST API
+= Ways to access the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
