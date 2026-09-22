@@ -5,7 +5,7 @@ keywords: ontap automation, rest api, python client library, powershell, ansible
 summary: There are several options available to automate the deployment and administration of your ONTAP storage systems.
 ---
 
-= Understand the ONTAP automation options
+= ONTAP automation options
 :hardbreaks:
 :nofooter:
 :icons: font
