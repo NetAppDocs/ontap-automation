@@ -5,7 +5,7 @@ keywords: learn, learn more, more information, additional resources
 summary: There are several additional resources you can access to get help and find more information about how to automate the deployment and administration of your ONTAP storage systems.
 ---
 
-= Learn more about the ONTAP REST API
+= Additional resources for the ONTAP REST API
 :hardbreaks:
 :nofooter:
 :icons: font
